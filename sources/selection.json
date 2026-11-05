@@ -307,13 +307,13 @@
         "kind": "service",
         "source": "youtube",
         "tag": "YouTube",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "collection",
         "source": "google-without-youtube",
         "tag": "Google",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "local",
@@ -326,20 +326,20 @@
         "kind": "local",
         "source": "microsoft-onedrive-sync",
         "tag": "OneDrive-Sync",
-        "policy": "DIRECT",
+        "policy": "direct",
         "optional": true
       },
       {
         "kind": "service",
         "source": "github",
         "tag": "GitHub",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "service",
         "source": "microsoft",
         "tag": "Microsoft",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "service",
@@ -375,61 +375,61 @@
         "kind": "service",
         "source": "telegram",
         "tag": "Telegram",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "service",
         "source": "twitter",
         "tag": "X/Twitter",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "service",
         "source": "meta",
         "tag": "Meta",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "service",
         "source": "wikimedia",
         "tag": "Wiki",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "service",
         "source": "linkedin",
         "tag": "LinkedIn",
-        "policy": "PROXY"
+        "policy": "Global"
       },
       {
         "kind": "service",
         "source": "bilibili",
         "tag": "哔哩哔哩",
-        "policy": "DIRECT"
+        "policy": "direct"
       },
       {
         "kind": "service",
         "source": "xiaohongshu",
         "tag": "小红书",
-        "policy": "DIRECT"
+        "policy": "direct"
       },
       {
         "kind": "service",
         "source": "deepseek",
         "tag": "DeepSeek",
-        "policy": "DIRECT"
+        "policy": "direct"
       },
       {
         "kind": "service",
         "source": "tencent",
         "tag": "腾讯",
-        "policy": "DIRECT"
+        "policy": "direct"
       },
       {
         "kind": "service",
         "source": "apple",
         "tag": "Apple",
-        "policy": "DIRECT"
+        "policy": "direct"
       }
     ]
   },

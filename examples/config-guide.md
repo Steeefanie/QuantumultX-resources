@@ -103,12 +103,12 @@ https://raw.githubusercontent.com/Steeefanie/QuantumultX-resources/main/filter/s
 ## 6. `[policy]`：选谁、怎么选
 
 ```ini
-static = PROXY, Hong Kong, Taiwan, Japan, Singapore, United States
+static = Global, Hong Kong, Taiwan, Japan, Singapore, United States, proxy, direct
 ```
 
-这行创建一个名为 `PROXY` 的手动选择组，对应原图里的“全球加速”，逗号后面是默认启用的 5 个主力地区候选，模板实际行还附有 `img-url`。默认使用香港、可以手动更改；首次导入后确认勾选 `Hong Kong`，不要仅靠候选排列位置判断当前选择。客户端内置的 `proxy` 不再列入这个总组，避免两个同名入口。
+这行创建一个名为 `Global` 的手动选择组，对应原图里的“全球加速”（避免占用系统保留字 `PROXY`/`proxy`），逗号后面是默认启用的 5 个主力地区候选与内置兜底项，模板实际行还附有 `img-url`。默认使用香港、可以手动更改；首次导入后确认勾选 `Hong Kong`，不要仅靠候选排列位置判断当前选择。
 
-`DIRECT` 和 `REJECT` 在配置中分别使用内置动作 `direct` 和 `reject`。分流可使用这两个动作、自定义总组 `PROXY`，也可直接指向某个英文地区组；例如 `force-policy=Japan` 表示固定使用日本组，不跟随 `PROXY` 当前选择。地区组分别定义是为了设置各自的筛选和测速，再以名称加入 `PROXY`，不依靠配置文件的缩进嵌套。
+`direct` 和 `reject` 为内置动作。分流可使用这两个动作、自定义总组 `Global`，也可直接指向某个英文地区组；例如 `force-policy=Japan` 表示固定使用日本组，不跟随 `Global` 当前选择。地区组分别定义是为了设置各自的筛选和测速，再以名称加入 `Global`，不依靠配置文件的缩进嵌套。
 
 | 参数／类型 | 作用 |
 | --- | --- |

@@ -507,9 +507,9 @@ def create_plan(data, license_text, commit, archive_hash, manifest):
         lines = [f'# {profile} 个人分流资源清单，不是可以整体订阅的分流规则文件。',
                  '# 将所需条目复制到主配置已有的[filter_remote]段；不要把这个txt作为单个分流资源添加。',
                  '# 一行对应一个独立资源，可分别绑定不同地区、节点或策略组；不合并规则正文。',
-                 '# 代理默认使用PROXY；按需将单项改为Hong Kong / Taiwan / Japan / Singapore / United States / South Korea等已有地区策略组，不按服务创建策略组。',
-                 '# PROXY可选择地区组；地区组再选择相应节点。所有自定义策略组须已在主配置中定义。',
-                 '# 直连与拒绝按Quantumult X语法写DIRECT/REJECT；所有条目默认启用。',
+                 '# 代理默认使用Global；按需将单项改为Hong Kong / Taiwan / Japan / Singapore / United States / South Korea等已有地区策略组，不按服务创建策略组。',
+                 '# Global可选择地区组；地区组再选择相应节点。所有自定义策略组须已在主配置中定义。',
+                 '# 直连与拒绝按Quantumult X语法写direct/reject；所有条目默认启用。',
                  '# YouTube优先于Google；OneDrive等子项例外优先于Microsoft等父组。以客户端展开后的顺序为准。',
                  '[filter_remote]']
         seen_paths = set()

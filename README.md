@@ -30,7 +30,7 @@ QuantumultX-resources/
 │   ├── fmz200/                     # 23 个重写配套脚本（GPL-3.0 许可）
 │   └── tools/                      # 4 个全局工具脚本（Shawn 资源解析器、流媒体解锁检测、BoxJS、UI 任务）
 ├── icon/                       # 策略组图标（256×256 PNG）
-│   ├── proxy.png                   # PROXY 总组与配置封面蓝绿地球图标
+│   ├── proxy.png                   # Global 总组与配置封面蓝绿地球图标
 │   └── hk.png / tw.png / ...       # 13 个国家／地区正方形旗帜图标
 ├── sources/                    # 上游原始快照、个人选择配置与版本哈希锁文件
 └── tools/                      # 规则构建、配置生成、域名查询与自动化测试工具
@@ -51,23 +51,23 @@ QuantumultX-resources/
 
 ### 策略组结构（`[policy]`）
 
-- **内置动作**：`DIRECT`（直连）、`REJECT`（拒绝）。
-- **总代理组 `PROXY`**：手动选择地区（默认候选首位为 `Hong Kong`），切换 `PROXY` 时所有绑定 `PROXY` 的服务同步切换出口地区。
+- **内置动作**：`direct`（直连）、`reject`（拒绝）、`proxy`（内置代理）。
+- **总代理组 `Global`**：手动选择地区（默认候选首位为 `Hong Kong`），切换 `Global` 时所有绑定 `Global` 的服务同步切换出口地区。
 - **地区策略组（默认启用 5 个主力地区 + 8 个注释备用）**：
   - 默认启用：`Hong Kong`、`Taiwan`、`Japan`、`Singapore`、`United States`（各地区内部采用 `url-latency-benchmark`，间隔 600 秒、容差 50 毫秒自动按延迟择优）。
-  - 注释备用：`South Korea`、`United Kingdom`、`Germany`、`France`、`Canada`、`Australia`、`Turkey`、`Indonesia`（如需使用，取消对应行注释并加入 `PROXY` 候选即可）。
+  - 注释备用：`South Korea`、`United Kingdom`、`Germany`、`France`、`Canada`、`Australia`、`Turkey`、`Indonesia`（如需使用，取消对应行注释并加入 `Global` 候选即可）。
 - **多机场筛选**：见 [`examples/README.md`](examples/README.md#多机场筛选)。
 
 ### 个人分流清单（`[filter_remote]`）
 
 主配置按优先级依次加载（默认均已设为 `enabled=true`）：
-1. **重写配套去广告合集**：[`filter/adblock/combined.list`](filter/adblock/combined.list)（合并全部 27 份重写配套拦截规则，策略 `REJECT`）
-2. **通用广告与跟踪拦截**：[`filter/collections/advertising.list`](filter/collections/advertising.list)（策略 `REJECT`）
+1. **重写配套去广告合集**：[`filter/adblock/combined.list`](filter/adblock/combined.list)（合并全部 27 份重写配套拦截规则，策略 `reject`）
+2. **通用广告与跟踪拦截**：[`filter/collections/advertising.list`](filter/collections/advertising.list)（策略 `reject`）
 3. **专用服务独立分流**：
    - **YouTube**（[`google-youtube.list`](filter/services/google-youtube.list)）置于 **Google 综合规则**（[`google-without-youtube.list`](filter/collections/google-without-youtube.list)）之前，支持单独指定地区；另提供可选的 [`google-gemini.list`](filter/services/google-gemini.list) 独立子项。
-   - **OneDrive** 拆分为网页端（[`onedrive-web.list`](filter/custom/onedrive-web.list)，走 `Hong Kong`）与同步端（[`onedrive-sync.list`](filter/custom/onedrive-sync.list)，走 `DIRECT`），置于 **Microsoft** 综合规则之前。
-   - **小红书**（[`xiaohongshu.list`](filter/services/xiaohongshu.list)）默认 `DIRECT`；**Steam、维基百科、Spotify、OpenAI、Anthropic、LinkedIn、Disney、Netflix、Meta、X (Twitter)** 均作为独立分流项默认指向 `PROXY`，可随时单独改绑任意地区组。
-4. **国内与海外兜底合集**：[`domestic.list`](filter/collections/domestic.list)（`DIRECT`）→ [`global.list`](filter/collections/global.list)（`PROXY`）→ `geoip, cn, DIRECT` → `final, PROXY`。
+   - **OneDrive** 拆分为网页端（[`microsoft-onedrive-web.list`](filter/custom/microsoft-onedrive-web.list)，走 `Hong Kong`）与同步端（[`microsoft-onedrive-sync.list`](filter/custom/microsoft-onedrive-sync.list)，走 `direct`），置于 **Microsoft** 综合规则之前。
+   - **小红书**（[`xiaohongshu.list`](filter/services/xiaohongshu.list)）默认 `direct`；**Steam、维基百科、Spotify、OpenAI、Anthropic、LinkedIn、Disney、Netflix、Meta、X (Twitter)** 均作为独立分流项默认指向 `Global` 或指定地区组，可随时单独改绑任意地区组。
+4. **国内与海外兜底合集**：[`domestic.list`](filter/collections/domestic.list)（`direct`）→ [`global.list`](filter/collections/global.list)（`Global`）→ `geoip, cn, direct` → `final, Global`。
 
 ---
 

@@ -6,7 +6,7 @@
 
 | 策略名称 / 用途 | 图标文件 | 来源与许可 |
 | --- | --- | --- |
-| `PROXY` 总策略组 / 配置封面 | [proxy.png](proxy.png) | 基于 [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) 公共领域海陆轮廓制作（[说明](licenses/natural-earth-PUBLIC-DOMAIN.txt)） |
+| `Global` 总策略组 / 配置封面 | [proxy.png](proxy.png) | 基于 [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) 公共领域海陆轮廓制作（[说明](licenses/natural-earth-PUBLIC-DOMAIN.txt)） |
 | Hong Kong | [hk.png](hk.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
 | Taiwan | [tw.png](tw.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
 | Japan | [jp.png](jp.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
@@ -23,4 +23,4 @@
 
 - 地区旗帜采用 1:1 满幅正方形 256×256 PNG，交由 Quantumult X 客户端自动裁切圆角。
 - `proxy.png` 为正圆球体蓝海绿陆图标，圆外完全透明。
-- `DIRECT` 与 `REJECT` 为 Quantumult X 内置动作，无需自定义策略组图标。
+- `direct` 与 `reject` 为 Quantumult X 内置动作，无需自定义策略组图标。

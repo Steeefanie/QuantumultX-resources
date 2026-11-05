@@ -36,9 +36,9 @@
 服务规则 → PROXY → 手动选择某个地区组 → 在该地区内按检测延迟自动选择节点
 ```
 
-`PROXY` 对应原配置的“全球加速”总组，使用 `static` 手动选择地区，候选默认列入 **5 个主力地区**（`Hong Kong`、`Taiwan`、`Japan`、`Singapore`、`United States`），其余 8 个地区保留注释备用；默认使用香港，可随时改选。香港保留在首个候选，首次导入后在客户端确认已勾选 `Hong Kong`，实际选中状态以界面为准。各地区组沿用 `url-latency-benchmark`，在筛选出的同地区节点中按检测延迟自动择优，`check-interval=600`、`tolerance=50`；`alive-checking=false` 表示不为空闲组持续检测。检测时机还受策略活动状态影响，不保证故障瞬间切换，也不保证低延迟节点能访问所有服务。
+`Global` 对应原配置的“全球加速”总组（避免占用 Quantumult X 系统保留名 `PROXY`/`proxy`），使用 `static` 手动选择地区，候选默认列入 **5 个主力地区**（`Hong Kong`、`Taiwan`、`Japan`、`Singapore`、`United States`）及内置 `proxy`、`direct`，其余 8 个地区保留注释备用；默认使用香港，可随时改选。香港保留在首个候选，首次导入后在客户端确认已勾选 `Hong Kong`，实际选中状态以界面为准。各地区组沿用 `url-latency-benchmark`，在筛选出的同地区节点中按检测延迟自动择优，`check-interval=600`、`tolerance=50`；`alive-checking=false` 表示不为空闲组持续检测。检测时机还受策略活动状态影响，不保证故障瞬间切换，也不保证低延迟节点能访问所有服务。
 
-分流时可选择 `REJECT`（拒绝）、`DIRECT`（直连）、`PROXY`（跟随总组当前所选地区），或直接选择 `Hong Kong`、`Japan` 等地区组。直接指定地区的资源独立于 `PROXY` 的地区选择。各地区在 `[policy]` 中分别定义筛选与测速，再由 `PROXY` 引用；这种引用形成总组与地区组的关系，配置文件不通过缩进表达层级。模板不再把客户端内置的 `proxy` 当作总组候选，避免出现两个同名入口。
+分流时可选择 `reject`（拒绝）、`direct`（直连）、`Global`（跟随总组当前所选地区），或直接选择 `Hong Kong`、`Japan` 等地区组。直接指定地区的资源独立于 `Global` 的地区选择。各地区在 `[policy]` 中分别定义筛选与测速，再由 `Global` 引用；这种引用形成总组与地区组的关系，配置文件不通过缩进表达层级。
 
 | 地区组 | 节点名称中匹配的示例 | 默认状态 |
 | --- | --- | --- |
@@ -58,7 +58,7 @@
 
 英文匹配忽略大小写；短代码限制相邻字符，减少落入普通英文单词的情况。规则排除常见流量／到期提示名称，仍无法兼容所有机场命名。本模板按常见的单地区节点名适配，不为假设的多地区中转命名增加额外逻辑。名称分类不验证实际出口 IP、地区解锁或连通性。
 
-默认启用 **港、台、日、新、美 5 个主力地区** 并列入 `PROXY`；其余 8 个地区保留注释备用，需要时取消对应策略行注释并加入 `PROXY` 候选即可。
+默认启用 **港、台、日、新、美 5 个主力地区** 并列入 `Global`；其余 8 个地区保留注释备用，需要时取消对应策略行注释并加入 `Global` 候选即可。
 
 ## 多机场筛选
 
@@ -106,6 +106,6 @@ resource-tag-regex=^Airport-A$
 
 地区筛选在国家/地区名、代码和旗帜之外，只补少量常用城市：Taipei、Tokyo、Osaka、Los Angeles / LosAngeles、San Jose / SanJose、Seattle、New York、London、Frankfurt、Berlin、Paris、Toronto、Vancouver、Sydney、Melbourne、Seoul、Istanbul、Jakarta，兼容所列城市的常用中文名称。不会根据城市名称验证实际出口。
 
-个人分流清单新增独立“小红书”资源，指向 `filter/services/xiaohongshu.list`，默认 `DIRECT`。小红书深度净化+去水印重写位于 `rewrite/purify/xiaohongshu.conf`，两者分别作用于分流与响应改写。
+个人分流清单新增独立“小红书”资源，指向 `filter/services/xiaohongshu.list`，默认 `direct`。小红书深度净化+去水印重写位于 `rewrite/purify/xiaohongshu.conf`，两者分别作用于分流与响应改写。
 
 按本轮要求，UDP 443 限制及 DNS 三个服务器、四项域名绑定均沿用原配置。不迁移个人放行、校内直连等修正规则；已确认保留的 OneDrive-Web / Sync 不变。

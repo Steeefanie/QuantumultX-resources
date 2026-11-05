@@ -23,7 +23,7 @@ def sections(text):
 
 class ConfigurationContractTests(unittest.TestCase):
     def setUp(self):
-        self.fragment='[filter_remote]\n'+RAW_ROOT+'/filter/services/openai.list, tag=OpenAI, force-policy=PROXY, enabled=true\n'
+        self.fragment='[filter_remote]\n'+RAW_ROOT+'/filter/services/openai.list, tag=OpenAI, force-policy=Global, enabled=true\n'
         self.rendered=render_full_config('test',self.fragment,'2026-11-04')
         self.config=sections(self.rendered)
 
@@ -38,15 +38,15 @@ class ConfigurationContractTests(unittest.TestCase):
 
     def test_proxy_only_selects_regions_and_regions_benchmark_nodes(self):
         policies=self.config['policy']
-        proxy=next(x for x in policies if x.startswith('static = PROXY,'))
+        proxy=next(x for x in policies if x.startswith('static = Global,'))
         candidates=[p.strip() for p in proxy.split(',')[1:] if '=' not in p]
-        self.assertEqual(candidates,[label for _,label,_,enabled in REGIONS if enabled])
+        self.assertEqual(candidates,[label for _,label,_,enabled in REGIONS if enabled] + ['proxy', 'direct'])
         self.assertEqual(candidates[0],'Hong Kong')
         benchmarks=[x for x in policies if x.startswith('url-latency-benchmark = ')]
         self.assertEqual(len(benchmarks),sum(enabled for _,_,_,enabled in REGIONS))
         for line in benchmarks:
             self.assertIn('tolerance=50,',line)
-        self.assertFalse(any('自动选择' in x or 'direct,' in x for x in policies))
+        self.assertFalse(any('自动选择' in x for x in policies))
 
     def test_rendered_resources_remain_enabled_and_sections_are_not_duplicated(self):
         for line in self.config['filter_remote']:
@@ -68,7 +68,7 @@ class RepositoryResourceTests(unittest.TestCase):
         found=[x for x in config['filter_remote'] if re.search(r',\s*tag=小红书,',x)]
         self.assertEqual(len(found),1)
         self.assertIn('/filter/services/xiaohongshu.list,',found[0])
-        self.assertIn('force-policy=DIRECT',found[0])
+        self.assertIn('force-policy=direct',found[0])
         self.assertIn('enabled=true',found[0])
 
     def test_all_local_repository_urls_resolve_to_files(self):

@@ -57,15 +57,15 @@ def render_full_config(profile, filter_text, annotation_date, rewrite_text='', c
             urls[resource['id']] = expected
     active = ', '.join(label for _, label, _, enabled in REGIONS if enabled)
     policies = [
-        f'static = PROXY, {active}, img-url={RAW_ROOT}/icon/proxy.png',
-        '# PROXY 对应原配置的“全球加速”总组，候选只列各地区，不再嵌套同名的内置 proxy。',
-        '# 默认使用香港，可随时手动改选地区；首次导入后确认 PROXY 已勾选 Hong Kong。',
+        f'static = Global, {active}, proxy, direct, img-url={RAW_ROOT}/icon/proxy.png',
+        '# Global 对应原配置的“全球加速”总组（避免占用 Quantumult X 系统保留名 PROXY/proxy）。',
+        '# 默认使用香港，可随时手动改选地区；首次导入后确认 Global 已勾选 Hong Kong。',
         '# Hong Kong 保留在首个候选；实际选中项以客户端界面为准，各地区内部自动按延迟择优。',
-        '# 分流资源可直接选 REJECT / DIRECT / PROXY，也可直接指定 Hong Kong 等地区组。',
+        '# 分流资源可直接选 reject / direct / Global，也可直接指定 Hong Kong 等地区组。',
         '# 检测间隔 check-interval=600、延迟容差 tolerance=50；空闲组不持续检测。',
         '# 检测受策略活动状态影响，不保证故障发生时立即切换，也不验证所有业务可用性。',
         f'# {sum(enabled for _, _, _, enabled in REGIONS)} 个地区默认全部定义，不保证空地区自动隐藏；没有候选的地区不要选择。',
-        '# 不需要某地区时，注释该地区行，并从 PROXY 中移除同名候选。',
+        '# 不需要某地区时，注释该地区行，并从 Global 中移除同名候选。',
         '# 以下筛选默认跨所有已启用订阅。限定机场时，在地区行添加：',
         '# resource-tag-regex=^(Airport-A|Airport-B)$',
         '# Airport-A / Airport-B 必须与 [server_remote] 的 tag 一致。',
@@ -105,7 +105,7 @@ def render_full_config(profile, filter_text, annotation_date, rewrite_text='', c
         '# 更多软件净化与 VIP 模块（酷我音乐、百度贴吧、夸克、百度网盘、京东、淘宝、美团、什么值得买、IT之家、豆瓣等）均按功能归类在 rewrite/vip/、rewrite/purify/、rewrite/enhance/ 目录。',
     ]
     rewrite_body = '\n'.join(curated_rewrites)
-    companion_body = f'{RAW_ROOT}/filter/adblock/combined.list, tag=重写配套去广告合集, force-policy=REJECT, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=true'
+    companion_body = f'{RAW_ROOT}/filter/adblock/combined.list, tag=重写配套去广告合集, force-policy=reject, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=true'
     return f'''# Quantumult X 完整配置模板 · {profile}
 # 本地整理日期：{annotation_date}（北京时间）；规则、重写、脚本与图标的独立许可见仓库 README。
 # 写法参考用户提供的现有配置与 Quantumult X 官方示例，按本项目策略重新编写。
@@ -173,38 +173,38 @@ server = /*.weixin.com/119.29.29.29
 # 重写配套去广告拦截，放在宽泛业务规则之前。
 {companion_body}
 # 通用广告与跟踪域名拦截；放行特例已前置在 [filter_local] 中。
-{RAW_ROOT}/filter/collections/advertising.list, tag=广告与跟踪, force-policy=REJECT, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=true
-# 个人服务：共用 PROXY；固定地区时改为 Hong Kong / Taiwan / Japan / Singapore / United States / South Korea 等已定义组。
+{RAW_ROOT}/filter/collections/advertising.list, tag=广告与跟踪, force-policy=reject, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=true
+# 个人服务：共用 Global；固定地区时改为 Hong Kong / Taiwan / Japan / Singapore / United States / South Korea 等已定义组。
 {filter_body}
 
 # 通用域名后置兜底集合，置于专用业务之后；集合并非互补，也不覆盖全部网站。
-{RAW_ROOT}/filter/collections/domestic.list, tag=国内域名, force-policy=DIRECT, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=true
-{RAW_ROOT}/filter/collections/global.list, tag=海外域名, force-policy=PROXY, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=true
+{RAW_ROOT}/filter/collections/domestic.list, tag=国内域名, force-policy=direct, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=true
+{RAW_ROOT}/filter/collections/global.list, tag=海外域名, force-policy=Global, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=true
 
 [filter_local]
 # 防广告域名一刀切拦截导致开屏卡死（放行连接交由重写层处理响应）：
-host, ad.12306.cn, DIRECT
-host, gg.caixin.com, DIRECT
-host, sdkapp.uve.weibo.com, DIRECT
+host, ad.12306.cn, direct
+host, gg.caixin.com, direct
+host, sdkapp.uve.weibo.com, direct
 # 拦截百度贴吧与阿里/B站 HTTPDNS 抢答，防止 App 绕过域名分流与去广告规则：
-ip-cidr, 180.76.76.200/32, REJECT
-ip-cidr, 203.107.1.1/24, REJECT
+ip-cidr, 180.76.76.200/32, reject
+ip-cidr, 203.107.1.1/24, reject
 # 本地网络与 IP 补充。以客户端展开后的匹配顺序和实际请求记录为准。
-# ip-cidr 为 IPv4 网段，ip6-cidr 为 IPv6 网段；DIRECT 为直接连接。
-ip-cidr, 10.0.0.0/8, DIRECT
-ip-cidr, 127.0.0.0/8, DIRECT
-ip-cidr, 169.254.0.0/16, DIRECT
-ip-cidr, 172.16.0.0/12, DIRECT
-ip-cidr, 192.168.0.0/16, DIRECT
-ip-cidr, 224.0.0.0/24, DIRECT
-ip-cidr, 182.254.116.0/24, DIRECT
-ip6-cidr, ::1/128, DIRECT
-ip6-cidr, fc00::/7, DIRECT
-ip6-cidr, fe80::/10, DIRECT
+# ip-cidr 为 IPv4 网段，ip6-cidr 为 IPv6 网段；direct 为直接连接。
+ip-cidr, 10.0.0.0/8, direct
+ip-cidr, 127.0.0.0/8, direct
+ip-cidr, 169.254.0.0/16, direct
+ip-cidr, 172.16.0.0/12, direct
+ip-cidr, 192.168.0.0/16, direct
+ip-cidr, 224.0.0.0/24, direct
+ip-cidr, 182.254.116.0/24, direct
+ip6-cidr, ::1/128, direct
+ip6-cidr, fc00::/7, direct
+ip6-cidr, fe80::/10, direct
 # 依赖客户端当前 GeoIP 数据；不是对所有国内服务的覆盖承诺。
-geoip, cn, DIRECT
-# 仍未命中其他规则的请求，最终交给 PROXY。
-final, PROXY
+geoip, cn, direct
+# 仍未命中其他规则的请求，最终交给 Global。
+final, Global
 
 [task_local]
 # 沿用原配置的流媒体查询任务：在节点 / 策略交互菜单中手动触发，不后台定时巡检。
