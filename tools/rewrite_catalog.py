@@ -55,7 +55,7 @@ def create_plan(root, raw_root, existing_files):
                 stripped = line.strip()
                 if not stripped or stripped.startswith(('#',';','//')):
                     if stripped.startswith('#!raw-url='): line = f'#!raw-url={raw_root}/{output}'
-                    if stripped.startswith('#!icon='): line = f'#!icon={raw_root}/icon/global.png'
+                    if stripped.startswith('#!icon='): line = f'#!icon={raw_root}/icon/Global.png'
                     if stripped.startswith('#!date='): line = f'#!date={project["checked_on"]}'
                     body.append(line); continue
                 if re.match(r'(?i)^(host|host-suffix|host-keyword|ip-cidr|ip6-cidr),',stripped):
