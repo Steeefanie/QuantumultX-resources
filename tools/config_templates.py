@@ -157,9 +157,9 @@ server = /*.weixin.com/119.29.29.29
 
 [server_remote]
 # 在本机把示例地址换成机场提供的订阅链接，再移除行首 #。
-# 链接末尾加 #emoji=2 并设 opt-parser=true，解析器会自动在每个节点名称前加上对应地区国旗 Emoji，并把台湾旗替换为 🇨🇳 以兼容国行 iPhone（非国行可用 #emoji=1）：
-# https://example.com/airport-a/sub#emoji=2, tag=Airport-A, update-interval=86400, opt-parser=true, enabled=true
-# https://example.com/airport-b/sub#emoji=2, tag=Airport-B, update-interval=86400, opt-parser=true, enabled=true
+# 设 opt-parser=true 时，资源解析器会自动转换格式并补充节点地区旗帜 Emoji：
+# https://example.com/airport-a/sub, tag=Airport-A, update-interval=86400, opt-parser=true, enabled=true
+# https://example.com/airport-b/sub, tag=Airport-B, update-interval=86400, opt-parser=true, enabled=true
 # tag 是订阅名；update-interval 单位为秒；opt-parser 控制资源解析器；enabled 控制启用。
 
 [policy]

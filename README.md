@@ -44,7 +44,7 @@ QuantumultX-resources/
 
 1. **填写机场节点订阅（`[server_remote]`）**
    - 将示例链接替换为你的机场订阅地址，并去掉行首 `#`。
-   - 订阅链接末尾默认带有 `#emoji=2` 且开启 `opt-parser=true`：内置的资源解析器会自动在每个节点名称前加上对应国旗 Emoji，并**自动将台湾旗替换为 `🇨🇳` 以完美兼容国行 iPhone（`CH/A`）**（非国行设备可改为 `#emoji=1`）。
+   - 开启 `opt-parser=true` 时，内置的资源解析器支持多格式订阅转换并为节点自动添加地区旗帜 Emoji。
 2. **填入个人 MITM 证书（`[mitm]`，可选）**
    - 仅域名分流不需要 MITM；若启用 `[rewrite_remote]` 中的去广告与 VIP 重写，请在本机生成并粘贴自己的 `passphrase` 与 `p12` 证书。
    - `[mitm]` 已默认排除 `*.apple.com`、丰巢、华米、抖音系等强校验证书域名，防止 App Store 无法切换账号或应用断网。

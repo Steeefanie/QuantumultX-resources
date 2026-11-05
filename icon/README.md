@@ -21,6 +21,6 @@
 | Turkey | [tr.png](tr.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
 | Indonesia | [id.png](id.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
 
-- 地区旗帜采用 1:1 满幅正方形 256×256 PNG，交由 Quantumult X 客户端自动裁切圆角；由于是 PNG 图像，国行 iPhone（`CH/A`）也可正常显示全部地区图标。
+- 地区旗帜采用 1:1 满幅正方形 256×256 PNG，交由 Quantumult X 客户端自动裁切圆角。
 - `proxy.png` 为正圆球体蓝海绿陆图标，圆外完全透明。
 - `DIRECT` 与 `REJECT` 为 Quantumult X 内置动作，无需自定义策略组图标。
