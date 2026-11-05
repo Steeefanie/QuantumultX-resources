@@ -93,7 +93,7 @@ resource-tag-regex=^Airport-A$
 
 `tools/config_templates.py` 保存完整模板结构与地区表达式，`sources/selection.json` 保存个人资源选择；执行 `python3 tools/build.py --rebuild` 同步生成分流片段和完整配置，生成文件不宜单独手改。请把实际订阅和凭据填写到仓库外的个人副本中。
 
-策略图标来自本仓库 [icon/](../icon/README.md)，包含 PNG 与 SVG 源文件。图标仅作显示，不参与节点筛选。
+策略图标来自本仓库 [icon/](../icon/README.md)（144×144 RGBA PNG）。图标仅作显示，不参与节点筛选。
 
 外部脚本版本、内容哈希、核对日期及用途见 [外部资源锁定记录](../sources/remote-resources.lock.json)。仓库不镜像未确认再分发许可的脚本；固定 URL 减少入口静默变化，但不能防止所有 404，也不代表客户端会核验这些哈希。注释中的 UI 任务集合内部可能继续引用可变地址，本库未递归锁定。
 

@@ -15,11 +15,7 @@ sources/third-party-licenses/** -text
 scripts/app2smile/** -text
 scripts/licenses/** -text
 metadata/*.csv -text
-icon/svg/*.svg -text
 icon/licenses/* -text
-
-# 地球原始地理数据按字节保存，保护来源哈希。
-icon/source/** -text
 
 # 额外重写来源与脚本按字节保存，保留原文及来源哈希。
 sources/fmz200/** -text
