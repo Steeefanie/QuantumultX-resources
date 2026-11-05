@@ -29,7 +29,7 @@ QuantumultX-resources/
 │   ├── app2smile/                  # 13 个重写配套脚本（MIT 许可）
 │   ├── fmz200/                     # 23 个重写配套脚本（GPL-3.0 许可）
 │   └── tools/                      # 4 个全局工具脚本（Shawn 资源解析器、流媒体解锁检测、BoxJS、UI 任务）
-├── icon/                       # 策略组图标（256×256 PNG）
+├── icon/                       # 策略组图标（108×108 PNG）
 │   ├── proxy.png                   # Global 总组与配置封面蓝绿地球图标
 │   └── hk.png / tw.png / ...       # 13 个国家／地区正方形旗帜图标
 ├── sources/                    # 上游原始快照、个人选择配置与版本哈希锁文件

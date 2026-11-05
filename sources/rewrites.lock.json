@@ -371,7 +371,7 @@
     "scripts/licenses/text-encoding-LICENSE.txt": "d1c15dc8470e037b82da06a95b1a91558414a83625549c47dc3997a9985efa17",
     "scripts/tools/UI-Action.json": "f78ae2f5cd25853f998cae4ae2bde663d145dcd8cb30a0a8317dd439b29bb6fc",
     "scripts/tools/boxjs.js": "6332d505155fd72c6d800644bf7955be6b293de73370ba56d3e8917fc118dd90",
-    "scripts/tools/resource-parser.js": "772981ce599dec27b220615f18fbd53df51a2fea85fc6f49fbf370c62c4b6ed6",
+    "scripts/tools/resource-parser.js": "7f81800775b779f6d057d2a8c678204eeb2801422fb7a46ee1ceea2e86a3f9db",
     "scripts/tools/streaming-ui-check.js": "64970f9a7b230da08d7d5989605c9a9f73fbb7b94c3b3c01b2cab3eea8f09783"
   }
 }

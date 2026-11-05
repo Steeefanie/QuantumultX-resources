@@ -1,6 +1,6 @@
 # 策略图标
 
-完整配置 [`examples/quantumult_steeefanie.conf`](../examples/quantumult_steeefanie.conf) 的地区策略使用英文全称，图标文件按地区代码保存（256×256 PNG），配置通过 `img-url` 引用本目录中的 PNG。
+完整配置 [`examples/quantumult_steeefanie.conf`](../examples/quantumult_steeefanie.conf) 的地区策略使用英文全称，图标文件按地区代码保存（108×108 PNG），配置通过 `img-url` 引用本目录中的 PNG。
 
 ## 图标列表
 
@@ -21,6 +21,6 @@
 | Turkey | [tr.png](tr.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
 | Indonesia | [id.png](id.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
 
-- 地区旗帜采用 1:1 满幅正方形 256×256 PNG，交由 Quantumult X 客户端自动裁切圆角。
+- 地区旗帜采用 1:1 满幅正方形 108×108 PNG，交由 Quantumult X 客户端自动裁切圆角。
 - `proxy.png` 为正圆球体蓝海绿陆图标，圆外完全透明。
 - `direct` 与 `reject` 为 Quantumult X 内置动作，无需自定义策略组图标。
