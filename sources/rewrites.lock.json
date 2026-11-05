@@ -217,6 +217,194 @@
         "Scripts/wechat.js": "94e1faab44e33f1394c39f5dfb253bad21551c02b6fc3a99a3b731511dd67ca1",
         "Scripts/12306.js": "ab9f5d4c35635a48dd24673219713bd0482e009b745c34e68178eae3f89e24f9"
       },
+      "file_origins": {
+        "QuantumultX/rewrite/split/partE/QSearch.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/Html/Q-Search.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "参考 @ddgksf2013 Q-Search 整理的 Safari 快捷搜索 302 重定向规则。"
+        },
+        "QuantumultX/rewrite/split/partP/Amap.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Amap.conf",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "收录 @ddgksf2013 高德地图净化重写并补充 AMDC HTTPDNS 拦截规则，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partP/Weibo.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "参考 @ddgksf2013 Weibo.conf 接口范围整理，脚本地址指向本仓库 scripts/fmz200/weibo.js。"
+        },
+        "QuantumultX/rewrite/split/partR/Redirect.snippet": {
+          "upstream": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Redirect/Redirect.conf",
+          "status": "external_upstream",
+          "license": "GPL-2.0",
+          "local_modification": "收录 blackmatrix7/ios_rule_script 神机重定向规则（GPL-2.0 许可见 scripts/licenses/blackmatrix7-GPL-2.0.txt）。"
+        },
+        "QuantumultX/rewrite/split/partS/StartUpAds.snippet": {
+          "upstream": "https://gist.githubusercontent.com/ddgksf2013/12ef6aad209155e7eb62c5b00c11b9dd/raw/StartUpAds.conf",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @ddgksf2013 StartUpAds.conf，将脚本地址指向本仓库，并注释与独立模块（Spotify/微信/广告联盟 SDK）冲突的规则。"
+        },
+        "QuantumultX/rewrite/split/partV/Meitu.snippet": {
+          "upstream": "https://yfamily.vercel.app/rewrite/meituxx.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按美图秀秀与 Wink VIP 校验接口整理的重写规则，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partV/RevenueCat.snippet": {
+          "upstream": "https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "从 Yu9191/Rewrite/main/Revenuecat.js 提取 Quantumult X 重写段，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partV/WpsCamScanner.snippet": {
+          "upstream": "https://github.com/fmz200/wool_scripts",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按 WPS 与扫描全能王账户接口整理的重写规则，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partV/Xmind.snippet": {
+          "upstream": "https://yfamily.vercel.app/rewrite/xmind.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按 Xmind 客户端订阅接口整理的重写规则，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partW/NetEaseVIP.snippet": {
+          "upstream": "https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "从 gjwj666/qx/main/Wyy.js 提取 Quantumult X 重写段，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partW/WeChatApplet.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Applet.conf",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @ddgksf2013 Applet.conf，将 getappmsgad 改为调用本仓库 wechat.js JSON 解析脚本，其余脚本指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partW/WeChatOfficialAccount.snippet": {
+          "upstream": "https://github.com/fmz200/wool_scripts/blob/4d349828f8b28862791243fb5319d47aa9c06403/QuantumultX/rewrite/split/partW/WeChatOfficialAccount.snippet",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "在 fmz200/wool_scripts@4d349828 原文基础上，结合 yfamily/wechatad.conf 改为调用 wechat.js 并补充 wxs.qq.com 与 as.weixin.qq.com 分流拦截。"
+        },
+        "QuantumultX/rewrite/split/partW/WebAdBlock.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/Html/WebAdBlock.conf",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "收录 @ddgksf2013 WebAdBlock.conf 网页去广告规则，脚本地址指向本仓库 myBlockAds.js。"
+        },
+        "QuantumultX/rewrite/split/partY/YoutubeAds.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/YoutubeAds.conf",
+          "status": "external_upstream",
+          "license": "Apache-2.0",
+          "local_modification": "收录 @Maasea / ddgksf2013 YoutubeAds.conf，脚本地址指向本仓库 youtube.response.js（Apache-2.0 许可见 scripts/licenses/maasea-sgmodule-Apache-2.0.txt）。"
+        },
+        "QuantumultX/rewrite/split/partY/YoutubeCC.snippet": {
+          "upstream": "https://raw.githubusercontent.com/id77/QuantumultX/master/rewrite/Youtube_CC.conf",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @id77 Youtube_CC.conf，默认固定输出简体中文（zh-Hans）免除 opt-parser 依赖。"
+        },
+        "Scripts/12306.js": {
+          "upstream": "https://raw.githubusercontent.com/ddgksf2013/Scripts/master/12306.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @ddgksf2013 原始脚本正文（V1.0.23）。"
+        },
+        "Scripts/UnblockURLinWeChat.js": {
+          "upstream": "https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @zZPiglet 原始脚本正文。"
+        },
+        "Scripts/Wyy.js": {
+          "upstream": "https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @ios-🐔神 / gjwj666 原始脚本正文。"
+        },
+        "Scripts/amap.js": {
+          "upstream": "https://raw.githubusercontent.com/ddgksf2013/Scripts/master/amap.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @ddgksf2013 原始脚本正文（V1.0.34）。"
+        },
+        "Scripts/amdc.js": {
+          "upstream": "https://raw.githubusercontent.com/ddgksf2013/Scripts/master/amdc.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @ddgksf2013 原始脚本正文（V1.0.11）。"
+        },
+        "Scripts/applet.js": {
+          "upstream": "https://github.com/fmz200/wool_scripts/blob/13c0f82112a54965b33d573bc00a48fc13c7d8fa/Scripts/applet.js",
+          "status": "historical_commit",
+          "license": "GPL-3.0",
+          "local_modification": "取自 fmz200/wool_scripts 历史提交 13c0f82112a54965b33d573bc00a48fc13c7d8fa；仅添加本段用途说明。"
+        },
+        "Scripts/meitu.js": {
+          "upstream": "https://yfamily.vercel.app/rewrite/meituxx.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按美图秀秀与 Wink 客户端 VIP 校验接口响应结构编写的本地解锁脚本。"
+        },
+        "Scripts/revenuecat.js": {
+          "upstream": "https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @Yu9191 Revenuecat.js 的 110+ 应用 UAMappings 映射表整理，并补充通用 pro/vip/premium 兜底权益字段。"
+        },
+        "Scripts/wechat.js": {
+          "upstream": "https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @NobyDa Wechat.js 公众号去广告逻辑整理，补充小程序 ad_info/pos_info 置空与异常捕获保护。"
+        },
+        "Scripts/weibo.js": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按微博客户端时间流、详情页、个人主页与搜索接口响应结构编写的本地 JSON 过滤脚本。"
+        },
+        "Scripts/wps_camscanner.js": {
+          "upstream": "https://github.com/fmz200/wool_scripts",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按 WPS 超级会员与扫描全能王高级账户查询接口响应结构编写的本地解锁脚本。"
+        },
+        "Scripts/wyres.js": {
+          "upstream": "https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @Keywos 原始脚本正文。"
+        },
+        "Scripts/xmind.js": {
+          "upstream": "https://yfamily.vercel.app/rewrite/xmind.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按 Xmind 客户端订阅校验响应结构编写的本地解锁脚本。"
+        },
+        "Scripts/youtube.response.js": {
+          "upstream": "https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js",
+          "status": "external_upstream",
+          "license": "Apache-2.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @Maasea 原始脚本正文（Apache-2.0 许可见 scripts/licenses/maasea-sgmodule-Apache-2.0.txt）。"
+        },
+        "Scripts/zhangshanggongjiao.js": {
+          "upstream": "https://github.com/fmz200/wool_scripts/blob/13c0f82112a54965b33d573bc00a48fc13c7d8fa/Scripts/zhangshanggongjiao.js",
+          "status": "historical_commit",
+          "license": "GPL-3.0",
+          "local_modification": "取自 fmz200/wool_scripts 历史提交 13c0f82112a54965b33d573bc00a48fc13c7d8fa；仅添加本段用途说明。"
+        },
+        "Scripts/zhihu/zhihu.js": {
+          "upstream": "https://github.com/fmz200/wool_scripts/blob/4d349828f8b28862791243fb5319d47aa9c06403/Scripts/zhihu/zhihu.js",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "在 fmz200/wool_scripts@4d349828 原文基础上，新增知乎 launch_v2 开屏广告接口 ads 数组置空分支。"
+        }
+      },
       "script_outputs": {
         "scripts/fmz200/caixin/caixinAd.js": "Scripts/caixin/caixinAd.js",
         "scripts/fmz200/ithome/ithome.js": "Scripts/ithome/ithome.js",
@@ -252,43 +440,43 @@
   "outputs": {
     "filter/adblock/bilibili.list": "5a1d0a33818b264bf28c8e7bcb178ec22b78603f9aee72c80a61c285f88077dc",
     "filter/adblock/combined.list": "4e8b8b7a8acbd6781b583338f0fddbaebc79683bb613f9d93e85a0ce0bb85c53",
-    "filter/adblock/fmz200/baidu-tieba.list": "b134780b323c0572698c822b251d55e4239cdea42824f4ba5d2319e6b67fee58",
-    "filter/adblock/fmz200/baidu.list": "e0c4e2d3cf67a008b070a948a98723147ef8b8b9984a2e0a96ade0836e99a064",
-    "filter/adblock/fmz200/caixin.list": "161b4ba3f29a2fbd4a052dc7b54dc521d7bf5ae8e2a742b7312ceeb5084ff9ff",
-    "filter/adblock/fmz200/china-mobile.list": "2936d1034905b308055877e22966d9520268cca2bce990deee29991ab582f69b",
-    "filter/adblock/fmz200/china-telecom.list": "14fd96307602b18d587f1a5d8626397e6a851dc4ab38253e3da908c4d9f627d0",
-    "filter/adblock/fmz200/china-unicom.list": "2fa0b73b68a23230e5f2e0ccebf81bf3fbdc341e149b1ced3f5f8eed6e52a59b",
-    "filter/adblock/fmz200/csdn.list": "c632d011765f88a36b8e64464e0dc56a72aa4db3e3c5d6da83f0d0002e73bfad",
-    "filter/adblock/fmz200/douban.list": "02b871ca0a7c7d40ebb58f81c670cfda67ba1d84f1b9e78ceba4faaa3fc9a35f",
-    "filter/adblock/fmz200/douyu-live.list": "bf6194c1266818a45e5bb870d8de6ead585bc15bb0b3abeaa145b0551d401353",
-    "filter/adblock/fmz200/eleme.list": "939e9e11fe64b20898de5211b16601deef13b9e44be92ab281d9c32b4d319fce",
-    "filter/adblock/fmz200/hao-you-kuai-bao.list": "16de3e05ec6bf356d117f0424ceab618320f13b0ce0e2779b17e08e9b4ddb0e4",
-    "filter/adblock/fmz200/huya-live.list": "8fdd07c35a76753c664d1a249de064969f1fafbcf12ea69476dc35d5626c68f2",
-    "filter/adblock/fmz200/i-qiyi.list": "a4f7a3a325fae6fbf377587626adb5e6535472e666155de2a40bff9c8fac71a0",
-    "filter/adblock/fmz200/jd.list": "2bbe4afb9e9e2c0c2abc423c47379c851ffadeb72ed4e6bf86b37845813df565",
-    "filter/adblock/fmz200/ku-gou-music.list": "3646335c623847ffa585e804054335539eb52fb9a44273b95ad2173a52887bdc",
-    "filter/adblock/fmz200/kuwo-vip.list": "7ce4d1b5d756e292a6a0d96672eaa2a8fc90ddd43f19d281e239aa0ed15419bb",
-    "filter/adblock/fmz200/meituan.list": "9b00708a4e20131e62b930b63340e1568eed472e0f421821200fff1a1052877c",
-    "filter/adblock/fmz200/qqmusic.list": "005e16b5e0e739bddcdd2aeccec1eb51a95d2f3f4a9f964b4218ed65a8c99e0a",
-    "filter/adblock/fmz200/smzdm.list": "ca79eb62410462e798877b77cb183c61b8598018fdc140493fc0d226ae33b416",
-    "filter/adblock/fmz200/startup-ads.list": "8e6346e02535d4003b14ed2d29544adffad488ea468e58bd5fa9454de10f5dc8",
-    "filter/adblock/fmz200/taobao.list": "3cb7d0d553271641312c82f475377cb7c78af24ae91365c2125f27afa150579a",
-    "filter/adblock/fmz200/wechat-mp.list": "0dbd0bb973d2b1639e9cb01827ca8facda1584d86f674e1b1e6747befc764030",
-    "filter/adblock/fmz200/xiaohongshu.list": "edf37d375649691a350f499d33cfd5e66ff0738b9b4b51272eea7eefe7b4759b",
-    "filter/adblock/fmz200/ximalaya.list": "7d21c220bf0efdf8da42195c1892793f6cd28a9138f060aefc3d64761ab99c45",
-    "filter/adblock/fmz200/youku.list": "1e3103bb7231c7ebe4e100c9d3d3f9c923d52df522c1afd8eba1e5c54dc78885",
-    "filter/adblock/fmz200/zhihu.list": "ca40177288eec887eda4e88d6658384aaa954a108d817a6d4dd1421ce3f73b19",
+    "filter/adblock/fmz200/baidu-tieba.list": "1db34a695900cd684fe42bbdc464cf79d366905c06293ca8e4113e22260a9784",
+    "filter/adblock/fmz200/baidu.list": "ebe4144e29bc479d473c1f7c4997473d5199b241a62e11605c670aa95f46d716",
+    "filter/adblock/fmz200/caixin.list": "e53648be3d1b87a288d4bc9dd8a0aed6bb0b16e48b442fb0fc5f3699af86cd10",
+    "filter/adblock/fmz200/china-mobile.list": "0db19494b5049cd3b77ee431c7bd7ecfbbfff4ea19f714b4be637e1ad06a8600",
+    "filter/adblock/fmz200/china-telecom.list": "4e71b9aafaca44efc241001cf4270e8e3cd02f5695ffaffcddaaf6e077548e65",
+    "filter/adblock/fmz200/china-unicom.list": "90a50a59458bd3c758269f331be8c2db2bbc7fc7f13d901594c914b85eaa1dce",
+    "filter/adblock/fmz200/csdn.list": "c92f9c67ffa3d9449f04cd1dc8eabc6ac200322d50e50ba66269ff67038c5b1c",
+    "filter/adblock/fmz200/douban.list": "a4d849a67eb3fc8d83856487c11cabaa35d29368b840b11c60112a3d7e5f697c",
+    "filter/adblock/fmz200/douyu-live.list": "1457e6a26caa406bf6ff6daa5e1c9d14f3d4d502c80ebff59bd591b07572669c",
+    "filter/adblock/fmz200/eleme.list": "45fdbe42724a60baa682380593b4975d951b44d53cee0bedf62e1c7da06941ea",
+    "filter/adblock/fmz200/hao-you-kuai-bao.list": "7f71ae63a789b2b90dc2add634655230a7a48a91540f0f082281244e00cd4ee3",
+    "filter/adblock/fmz200/huya-live.list": "b1f138d99fa9bb3bfe45da9c1d0e39264db492d428845aed7981493b39d18fed",
+    "filter/adblock/fmz200/i-qiyi.list": "3e5a3c9329cc0aa12a04a8c91f7c98984e869a1ca55d15ffe4195632551d368c",
+    "filter/adblock/fmz200/jd.list": "5251e8d3965a58e3b59b658e7a82120b2dbd4722d73ebb50a89fc64e38613c36",
+    "filter/adblock/fmz200/ku-gou-music.list": "6338ef028df62b0ec0fabc6bcece76e46a3f65aebb3ede535f4a99decaa0b80c",
+    "filter/adblock/fmz200/kuwo-vip.list": "d57d341459b623308bd9f32cc2a472072f8af24513b53a8f66e5d4f992b8e8fb",
+    "filter/adblock/fmz200/meituan.list": "9bd321982a0570041aca6ae656f39636cf567dcad267a34f61b2be6257df71e5",
+    "filter/adblock/fmz200/qqmusic.list": "34eba769a789ba0ae56c76da008b80f1d25dd6ffb1dde594a86d7f7bb2f87316",
+    "filter/adblock/fmz200/smzdm.list": "f02791ddf95d3677498853b92af2c080e9368d7ba0b51edc532cea973ab15045",
+    "filter/adblock/fmz200/startup-ads.list": "080df694dbe05b2ba325f2141515c5a18f18b51e886fd53e0eb7a4192b6dfa01",
+    "filter/adblock/fmz200/taobao.list": "8ea430b4f41341803ab36596dd9edb56d61e01d0fef3cdbfbc80b55e73ef0bfd",
+    "filter/adblock/fmz200/wechat-mp.list": "d909481de4544ff78e36bcf6990baddb01370270ceaf59c0d653bd48909d8235",
+    "filter/adblock/fmz200/xiaohongshu.list": "7b2e89f8ceb85a659d258672618b5863fbf71e52aecaa63ba483d209653d78a8",
+    "filter/adblock/fmz200/ximalaya.list": "dd499d5e359a81c9558fd0e32462fe6a21e43a762a0a797eb961eb6c30b36133",
+    "filter/adblock/fmz200/youku.list": "e4c7f9a7c277b3b1e1cec52af6b1a2e23f2b83bc7bd6315f1d4091bbf2e90dea",
+    "filter/adblock/fmz200/zhihu.list": "b6dc67f666dc10c3e9d2d85a0991f165a10a8723a785c218b762156c227495bd",
     "filter/adblock/tieba.list": "9c77bf3a16910ad0c9dc16b9c53461f20f8aa250bfe855fe0c630691e82b2664",
-    "rewrite/catalog.md": "b043fd3bd70b3cf8493d69de167d2765412500b3cb97c1db33b6e71099dfc50e",
-    "rewrite/enhance/safari-qsearch.conf": "32789f556c4de4e3fa82c324da04bc481907ac6c08ad7c925a25bdcc761e0623",
-    "rewrite/enhance/url-redirect.conf": "5564b116e73ca029325665e328994b111b1c395be52418c9af80421b2026b0eb",
-    "rewrite/enhance/web-adblock.conf": "f79860e6ca5ee5a6b9f11154d508261176a90b8bdb35f878b9b243856f20cc40",
+    "rewrite/catalog.md": "1468fd6b22e5c95702ed21e5c28dfc576f3aa399c0be6846de2b2a0fb95896fa",
+    "rewrite/enhance/safari-qsearch.conf": "aba726cb9be219d2653a3680907db86b75a7572172220a7003a805581c2f0522",
+    "rewrite/enhance/url-redirect.conf": "a9e1cab10825072af0439bbe0f06b1ae42f179fcc6a3a71cc303b4c2c52a16b7",
+    "rewrite/enhance/web-adblock.conf": "b0179f0e5e71e4036a55c24141ef06fd758dd03f18e78b3fbeb6ff5941b3a584",
     "rewrite/enhance/wechat-unlock-url.conf": "6049540f9cdf0373300e96e87cc5d47d7dd5c7a3f146228064082c11c2c185fa",
-    "rewrite/enhance/youtube-subtitle.conf": "9543098eb2741d58559dd0ca43bb99c092ac45cda78a321830c7838611bbf6e1",
+    "rewrite/enhance/youtube-subtitle.conf": "a8326e801f824db3179f9b92deeaeccdeaa7798f2efa62651cd49d25bdb62512",
     "rewrite/licenses/app2smile-MIT.txt": "f833786adb858e82204ed85c604f844ec59d268d65485f8e6aa66ebcb69ebe5d",
     "rewrite/licenses/fmz200-GPL-3.0.txt": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
     "rewrite/purify/ad-sdk.conf": "3ff07abd3c2b0e8567d239ce64fe24609ef50465915d3357c17a4ffbd69378c9",
-    "rewrite/purify/amap.conf": "bd1eb3b0bc0ad905a3962791337da4ebbacee604c655c3824f9413f8b0987c46",
+    "rewrite/purify/amap.conf": "810659a87cc191a59d72366f2954e98951ab6888d9f964ee26eab3bb4835a76b",
     "rewrite/purify/baidu-netdisk.conf": "e60bcb7d1836370da277ad172d762298a0fa72b1d51207c1985286b304474133",
     "rewrite/purify/bilibili.conf": "9a198ef6f85ede6ecf195dd692591a6b1190727e827998c39e09c0d3b081b861",
     "rewrite/purify/caixin.conf": "7829d8c496753fd0daf7a8082817936d0da0b47d479da204b62b2cda50d9c121",
@@ -300,25 +488,25 @@
     "rewrite/purify/qq-news.conf": "0ed98e872c612cf6aec41aad275fa3338dfb90c534296322d4bcec9463d6b82a",
     "rewrite/purify/quark.conf": "2373e66203b7154282afef0fb71c30b10d31868f4a498de254cdd118c8bc383b",
     "rewrite/purify/smzdm.conf": "ca255f6343e3642eed0838e98cd9e3250d57d9b0fdee64a8a3615e0ef564b22c",
-    "rewrite/purify/startup-ads.conf": "1d9eb59ab75a1128bf8e04e702065a3d4f17310067ff940c5f4d2a5f898cf35b",
+    "rewrite/purify/startup-ads.conf": "02fd7d83096415de56ef65f71353148f8c3662bc961f92c4788757d9c7dcea00",
     "rewrite/purify/taobao.conf": "99f3e379bdf4c23605397b3187a82a9d836ac07935137b45500752705536ea28",
     "rewrite/purify/tieba.conf": "3907a7bd23dc4091090e33ea75ca0459b7959214f6934fa1e40e8521ad6fc2d9",
     "rewrite/purify/vgtime.conf": "aea32e96cf8455e9004c6db3cd3497bdafcfba6b80749467927fbe161fd0a5e2",
-    "rewrite/purify/wechat-applet.conf": "330f63177f1366dfdb745dbe09f9329a685a10c68f6ea2cb1d1230be5e2f016a",
-    "rewrite/purify/wechat-mp.conf": "c6b21ba10ee58b16717ddf801077181fdb21178ea02f55bda46adff3fde52250",
-    "rewrite/purify/weibo.conf": "17f9db44d28f5473519825dc7bd41e0240c790fcc600aa51d42c266119292f78",
+    "rewrite/purify/wechat-applet.conf": "ca4f7283ee801774e1ac4c0045672e8de90a2503753515fd71ceb68f52e924a1",
+    "rewrite/purify/wechat-mp.conf": "c201395f2d106c63e39efebcb95ad3c617936df2057de5dd52d7d6ba48f5340d",
+    "rewrite/purify/weibo.conf": "fd3216abde7b29abc26a0b703799bd90d8c0be5f66ce0d7c94f4bbe58a1d7f22",
     "rewrite/purify/xiaohongshu.conf": "3f13dc090bfe57fc31bbd9948add99fd41375d36a1ceaa0ebd0f22b20b0bf302",
     "rewrite/purify/youtube-feed.conf": "01caa4c271c4ce99b44a0b9b03e0272c561c9adaad4f99be392a2d27750eef9c",
-    "rewrite/purify/youtube.conf": "ce975e134ab21d373863a026526184818229b03e502709df7a7c1bdb29978ccf",
+    "rewrite/purify/youtube.conf": "545364f610bb975f76b36d70ac3ff633aad1d455a3d5d3296624b816ae529e8c",
     "rewrite/purify/zhihu.conf": "689ba81abdaa833bb74e7ca3d96bbdc28ab5c6b5f52ae5a8830f8a92805de259",
     "rewrite/vip/kuwo-vip.conf": "bab608122226d73ddc53ec3eec374dac59c73004d367495a23ac11fd79b8e6b5",
-    "rewrite/vip/meitu.conf": "bc40e8f9bef1c1bc5bc7a3212987d62a3119f2fed2cfd31bc2aac627eddf75b0",
+    "rewrite/vip/meitu.conf": "f7209ff9718481c6f21c02659fef484b68b4173f907453d70ff88cf555103ffc",
     "rewrite/vip/netease-svip.conf": "d66b56556adb35e1391c950f75e5df79a1471cb5c31d2a5e352fee693fbc3816",
-    "rewrite/vip/netease-vip.conf": "9e161e93aca8edda9ce72eb3c8ba0756bf9c6e31d6ac2101bf353d4278a385ce",
-    "rewrite/vip/revenuecat.conf": "5976babc7f64982e4c733e19185d8189b5eeff7abc14d346d44721b80df6513d",
+    "rewrite/vip/netease-vip.conf": "339976a11055d3ae0ee564c434b3aff13d0f1570fdfb370f0dfb7f315af2045c",
+    "rewrite/vip/revenuecat.conf": "afb205adf84d05e371f86098e3660c913d855ebac21899c59cc3688694c37b92",
     "rewrite/vip/spotify.conf": "cc6ec7fa597eecae0629ebfc21bea739609659840e04d3d351901ef2195075a2",
-    "rewrite/vip/wps-camscanner.conf": "9b08100856ad290eca167a116e1a98a061c21d687dfd23740f76d46fb8a0e098",
-    "rewrite/vip/xmind.conf": "e25c7aa4eab356e2eba195e0c5a67745d2464404a4356e47191041e5c0112ed9",
+    "rewrite/vip/wps-camscanner.conf": "32814d228d32d3a7f28836db45d2dbf53e14c8d7be6ee3b4f2e86b85d5a4b143",
+    "rewrite/vip/xmind.conf": "4a8dfa5af02f0efc793fc1173226dbdcd8e0fe4c2a878899b314d692cbd91f11",
     "scripts/app2smile/LICENSE.md": "f833786adb858e82204ed85c604f844ec59d268d65485f8e6aa66ebcb69ebe5d",
     "scripts/app2smile/adsense.js": "ed6705d6f137629e9c41abaf374ad7009e6c37c174a34ee3526c1805e35d33d3",
     "scripts/app2smile/bilibili-json.js": "3fb94f2753b0aaf98642d91ef74bfc65d81af04baa57df424be7e1a60c8aa4ca",
@@ -333,33 +521,33 @@
     "scripts/app2smile/vgtime.js": "194d7dcda0908e5828d195dcf0a6760a6d120902d5689fe8754536ac26872a3d",
     "scripts/app2smile/youtube.js": "ace113b4e2d79a4b667fee58d145d89f625e27acf9121ed088ef6f800eaf7b0e",
     "scripts/app2smile/zhihu.js": "d1032f9a85affb5bf9f59907d8cc853461965fe6ec311779d6b39851ab8d9a62",
-    "scripts/fmz200/12306.js": "f48afac4998c3a07fdad9b805e499d375cc685b6784c606c71a93682b6e57bf5",
+    "scripts/fmz200/12306.js": "c989d422a48b2d3b74be6b6c7e0b25a109e772a19a7ac68b2d99a6e5c38f64c7",
     "scripts/fmz200/LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
-    "scripts/fmz200/UnblockURLinWeChat.js": "603f263cc5903d2a0064c0518e528d20755e1f4b4d7b8f08ff0ccb470d7124f5",
-    "scripts/fmz200/Wyy.js": "bd60203e217858a59e83c05688df624052be76d6809d8d3b9916a38e1cd72d9e",
-    "scripts/fmz200/amap.js": "bdeb82d8077a4d8a211df8507b57be500b1e1c284e77c4e0d15d43927e91bcb3",
-    "scripts/fmz200/amdc.js": "6391a12467c496cce274fa0fd409ac58d0c907389a67ec8e999452e57938515f",
-    "scripts/fmz200/applet.js": "c993b8ed1abb56077d5fa893219de7c7adbdc20883a377b2aabed31b135ab4cf",
+    "scripts/fmz200/UnblockURLinWeChat.js": "e7f067d548cc60ff1d69fb32a03916f98b9050c39111c1c292844f300afec8d3",
+    "scripts/fmz200/Wyy.js": "55cb544bd8f808fa2b44eb481444b30a8bba510dc399320c19ac1a2e25a15aec",
+    "scripts/fmz200/amap.js": "3e46c587f2ede82506c4a99998a153c88a36543686aae4def748c8cb4be349e8",
+    "scripts/fmz200/amdc.js": "297296f80a79184e4e04b50e2c6d08e5ef0ad1cccac704070b89d030baf82c30",
+    "scripts/fmz200/applet.js": "fb3a129d4bfe56f192b8cc6dc338b3f6dc7085420071fe5c873a632d65600c48",
     "scripts/fmz200/caixin/caixinAd.js": "df4a4f6ca6581f97d62cbe742dd20e56d894f562d76b09293a5801cb8d52b5f4",
     "scripts/fmz200/cnftp.js": "2b5ee5be10a7c1cff2f4a2abbafdf6e7cd0524da6ec670e7cd0903a694458df3",
     "scripts/fmz200/ithome/ithome.js": "4226beb03014153d1a8faaff4674cef8c28874e5a04cb6f501e2ba26b9bc4275",
     "scripts/fmz200/jingdong/jingdong.js": "83c3522287ce2cc358f6eeaea71b1e7cdfe3b14408b5f29d428238cedc6c7cd9",
     "scripts/fmz200/kuwo/kuwo.js": "497c104096a043121095e7fe83c8de42a9056d8db6937ec0e2e4088b604e77e9",
-    "scripts/fmz200/meitu.js": "a3e7040f03d557eb165ddde7446c33644b9851844bcf219087b8fc92d825dd67",
+    "scripts/fmz200/meitu.js": "55e9807f7300351da6eca80f531e6fdef842e16aff9a1486a3b253f4946da135",
     "scripts/fmz200/myBlockAds.js": "45f230fddb11376eaba8595e04d94951ea506cebab4554d9690aee59caa38d05",
     "scripts/fmz200/quark.js": "8a9ee124854a62286ddc36381ae0fb160516307c24a33bd63c7497437beee5fd",
-    "scripts/fmz200/revenuecat.js": "37472774090603e503166387c73b11ae18fc4db6f2894b628f7009e9a48bb0e8",
+    "scripts/fmz200/revenuecat.js": "55e50df74516aedae3ced9e20c2b93b8536fbc90073823f5d71e24646acc0448",
     "scripts/fmz200/smzdm/Smzdm.js": "17693b09cb15162b3bed3368446f93bfc763ed5d1b3f5446a3182d6dd4f6251d",
     "scripts/fmz200/smzdm/smzdm_ads.js": "c29f4664a66b3f9ddaa7001ab70c92aceeed171435397fe5d600f4c9ca7346be",
-    "scripts/fmz200/wechat.js": "c08f54dc1402ede3a88d74ff0e846be02437ac63db8a3cdb270179ebe3c97460",
-    "scripts/fmz200/weibo.js": "822bc23aef7060835e1d4355077ab11ed0a0c89dfae324f914aee6c659a124f7",
-    "scripts/fmz200/wps_camscanner.js": "9081e4631a3b42feeb2c5016510d0dedec58c9b3990efef5e8b152e277893a19",
-    "scripts/fmz200/wyres.js": "07228309cf1601f9ac07fe8f90e9a97d5e5b518dbc78bf98dde5e877ea2c1850",
+    "scripts/fmz200/wechat.js": "0434ffbf94a3ea85d002f3569787eb97f4dbbe46037331ee714a52fdf364633e",
+    "scripts/fmz200/weibo.js": "af95d9929593c5c02c40428b0ad6bbcb5904cd37cd4e21b49f6acc772efde9d4",
+    "scripts/fmz200/wps_camscanner.js": "f745f8eeaf80c2333f56c5e5e1511a0ce92461fbee9e45c7243fd932fc105f6c",
+    "scripts/fmz200/wyres.js": "4aa73491e1a092e95a922e11110935c5c288a083215e5c85c3fc0b226ee8b818",
     "scripts/fmz200/xiaohongshu/xiaohongshu.js": "ae5b88d9fa22f1b956d32904df55128131b46eda157fc72f1904fbe458380119",
-    "scripts/fmz200/xmind.js": "488650dcd74f321895a47dc94b2efdb8b760ea522c5e51ee3d52bdfe161f1a8f",
-    "scripts/fmz200/youtube.response.js": "ffc14d3ce9720e751ee6481fe4afa9c60098bf4b2a1ebbd42ccd5ce8fa6d9c47",
-    "scripts/fmz200/zhangshanggongjiao.js": "0cd0020e15e15200df036536c97ef4ed300e87907029b6d2e133771bcb1ec39e",
-    "scripts/fmz200/zhihu/zhihu.js": "adb8255c2e9727c32754a2f8912351bfb5425d90559eeb226e9e46daf1ed45f4",
+    "scripts/fmz200/xmind.js": "6bf35e9e506a33b83cf578695f3c1aa35cc901e2116950c02e03a40c40248cec",
+    "scripts/fmz200/youtube.response.js": "26f50a08cfda209a5998e305e108d81b49c94c60f5507bf69d285c296ba850a3",
+    "scripts/fmz200/zhangshanggongjiao.js": "bc7a72efc37da31c57a3107cc093edef29a61affb67b7c50dee2ce116308df2c",
+    "scripts/fmz200/zhihu/zhihu.js": "8af52884511e3aee26ac0cd7a9c8723992821fd2156f74ba76c1aaf26ffe4ce7",
     "scripts/licenses/blackmatrix7-GPL-2.0.txt": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
     "scripts/licenses/maasea-sgmodule-Apache-2.0.txt": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
     "scripts/licenses/protobuf-ts-Apache-2.0.txt": "5e3400b93bbb099e83e52bab885e7441750673c21f97988ca3f1240639b63283",

@@ -5,9 +5,9 @@
  * 使用前提：仅由微博净化重写规则调用；需要个人 MITM 证书及对应 hostname。
  * 使用边界：保留正常关注流与热搜正文，仅剔除带有广告或推广标记的条目。
  * 本地说明日期：2026-11-05（非上游更新时间）
- * 来源：https://github.com/fmz200/wool_scripts/blob/4b7830670baf235ed945085cb926dc499cf619e0/Scripts/weibo.js
+ * 来源：https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf
  * 来源许可：GPL-3.0；原作者署名及源代码保留在下方原文中，对应许可随目录保存。
- * 本地修改：仅添加本段用途说明；下方保留上游正文，不把原始代码归为本项目原创。
+ * 本地修改：按微博客户端时间流、详情页、个人主页与搜索接口响应结构编写的本地 JSON 过滤脚本。
  */
 let body = $response.body || "{}";
 try {

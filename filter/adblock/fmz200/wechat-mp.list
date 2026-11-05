@@ -1,5 +1,5 @@
 # 微信公众号文章净化 配套拦截；GPL-3.0，许可见 rewrite/licenses/fmz200-GPL-3.0.txt
-# 来源：fmz200/wool_scripts@4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partW/WeChatOfficialAccount.snippet
+# 来源：https://github.com/fmz200/wool_scripts/blob/4d349828f8b28862791243fb5319d47aa9c06403/QuantumultX/rewrite/split/partW/WeChatOfficialAccount.snippet
 # 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。
 host-suffix, wxs.qq.com, reject
 host-suffix, as.weixin.qq.com, reject

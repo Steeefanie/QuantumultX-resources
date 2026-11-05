@@ -28,7 +28,7 @@ REGIONS = (
     ('TR', 'Turkey', r'土耳其|turkey|turkish|türkiye|turkiye|istanbul|伊斯坦布尔|伊斯坦堡|🇹🇷|(?<![a-z])tr(?![a-z])', False),
     ('ID', 'Indonesia', r'印尼|印度尼西亚|印度尼西亞|indonesian?|jakarta|雅加达|雅加達|🇮🇩|(?<![a-z])id(?![a-z])', False),
 )
-NOTICE_NAMES = r'流量|到期|剩余|重置|套餐|公告|traffic|expire|reset|quota|balance|beta'
+NOTICE_NAMES = r'流量|到期|剩余|重置|套餐|公告|traffic|expire|reset|quota|balance|(?<![a-z])beta(?![a-z])'
 
 
 def region_regex(expression):

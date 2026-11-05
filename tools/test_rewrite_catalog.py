@@ -73,3 +73,17 @@ class ExtraRewriteTests(unittest.TestCase):
         self.assertIn('/scripts/app2smile/demo.js',files['rewrite/fmz200/demo.conf'])
         self.assertEqual(summary['scripts'],0)
         self.assertFalse(review)
+
+    def test_file_origins_override_default_commit_url_and_record_modifications(self):
+        self.project['file_origins'] = {
+            'demo.snippet': {
+                'upstream': 'https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Demo.conf',
+                'status': 'modified_upstream',
+                'license': 'GPL-3.0',
+                'local_modification': '基于上游规则调整脚本指向本仓库。',
+            }
+        }
+        (self.root/'sources/rewrite-catalog.json').write_text(json.dumps({'schema':1,'projects':[self.project]}))
+        files,rows,review,summary=create_plan(self.root,'https://resources.example/main',{})
+        self.assertIn('# 来源：https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Demo.conf\n',files['rewrite/fmz200/demo.conf'])
+        self.assertIn('# 本地修改：基于上游规则调整脚本指向本仓库。\n',files['rewrite/fmz200/demo.conf'])

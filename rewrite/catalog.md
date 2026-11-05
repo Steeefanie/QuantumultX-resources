@@ -30,9 +30,9 @@
 | [vip/netease-vip](vip/netease-vip.conf) | 处理网易云音乐播放地址、歌单及搜索接口请求头以尝试解锁会员歌曲试听。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
 | [purify/wechat-applet](purify/wechat-applet.conf) | 处理便利蜂、顺丰速运、掌上公交及 WordPress 类微信小程序与公众号图文广告接口。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
 | [purify/startup-ads](purify/startup-ads.conf) | 集中处理常见 App 的开屏广告、启动横幅与初始化推广接口。 | GPL-3.0 | 配置和直接依赖已收录 | [需要时启用](../filter/adblock/fmz200/startup-ads.list) |
-| [purify/youtube](purify/youtube.conf) | 处理 YouTube 视频贴片广告、首页瀑布流、搜索页、播放页、短视频及后台画中画播放。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
+| [purify/youtube](purify/youtube.conf) | 处理 YouTube 视频贴片广告、首页瀑布流、搜索页、播放页、短视频及后台画中画播放。 | Apache-2.0 | 配置和直接依赖已收录 | 无 |
 | [enhance/youtube-subtitle](enhance/youtube-subtitle.conf) | 匹配 YouTube timedtext 外文字幕请求并自动机翻为简体中文（tlang=zh-Hans）。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
-| [enhance/url-redirect](enhance/url-redirect.conf) | 对 Google 本地域名、电商 HTTP 链接及常见国内软件渠道代理域名执行 302 重定向。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
+| [enhance/url-redirect](enhance/url-redirect.conf) | 对 Google 本地域名、电商 HTTP 链接及常见国内软件渠道代理域名执行 302 重定向。 | GPL-2.0 | 配置和直接依赖已收录 | 无 |
 | [enhance/web-adblock](enhance/web-adblock.conf) | 清理常见伪装影视应用与网页接口中的启动公告、版本弹窗及广告配置字段。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
 | [vip/revenuecat](vip/revenuecat.conf) | 拦截 RevenueCat 订阅校验接口并注入客户端本地 Pro/VIP 订阅与权益有效期。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
 | [vip/xmind](vip/xmind.conf) | 处理 Xmind 客户端设备与订阅校验接口响应以解锁本地 Pro 会员功能。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |

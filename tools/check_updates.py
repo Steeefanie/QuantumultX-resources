@@ -50,9 +50,10 @@ def check_resource(resource):
     repository = resource['repository']; path = resource['path']
     pinned = check_sha(resource['commit'])
     expected = f'https://raw.githubusercontent.com/{repository}/{pinned}/{path}'
-    if resource['url'] != expected or not re.fullmatch(r'[0-9a-f]{64}', resource['sha256']):
+    pinned_hash = resource.get('upstream_sha256', resource['sha256'])
+    if resource['url'] != expected or not re.fullmatch(r'[0-9a-f]{64}', pinned_hash):
         raise ValueError('锁定地址或哈希无效')
-    if hashlib.sha256(download(expected)).hexdigest() != resource['sha256']:
+    if hashlib.sha256(download(expected)).hexdigest() != pinned_hash:
         raise ValueError('固定版本当前内容与锁定哈希不符；不要加载或覆盖旧记录')
     query = urlencode({'sha':resource['branch'], 'path':path, 'per_page':1})
     commits = api(f'{repository}/commits?{query}')
@@ -61,9 +62,9 @@ def check_resource(resource):
     latest = check_sha(commits[0]['sha'])
     content = download(f'https://raw.githubusercontent.com/{repository}/{latest}/{path}')
     current_hash = hashlib.sha256(content).hexdigest()
-    changed = current_hash != resource['sha256']
+    changed = current_hash != pinned_hash
     return {'name':resource['id'], 'status':'内容有变化，待审阅' if changed else '内容未变，哈希一致',
-            'pinned':pinned, 'latest':latest, 'pinned_sha256':resource['sha256'],
+            'pinned':pinned, 'latest':latest, 'pinned_sha256':pinned_hash,
             'latest_sha256':current_hash,
             'details':f'https://github.com/{repository}/compare/{pinned}...{latest}'}
 

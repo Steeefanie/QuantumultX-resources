@@ -39,8 +39,16 @@ def create_plan(root, raw_root, existing_files):
         license_output = f'rewrite/licenses/{name}-GPL-3.0.txt'
         files[license_output] = license_text
         files[f'scripts/{name}/LICENSE'] = license_text
+        file_origins = project.get('file_origins', {})
+        for orig_path, orig_meta in file_origins.items():
+            if orig_path not in source:
+                raise ValueError('file_origins 引用了未登记的源文件：'+orig_path)
+            for req_key in ('upstream', 'status', 'license', 'local_modification'):
+                val = orig_meta.get(req_key)
+                if not isinstance(val, str) or not val.strip() or any(c in val for c in ('\r', '\n', '*/')):
+                    raise ValueError(f'file_origins 字段不合法：{orig_path} / {req_key}')
         project_records.append({'repository':repository,'commit':commit,'license':project['license'],
-                                'source_files':project['files'],'script_outputs':{}})
+                                'source_files':project['files'],'file_origins':file_origins,'script_outputs':{}})
         seen = set()
         for module in project['modules']:
             module_id = module['id']
@@ -73,7 +81,14 @@ def create_plan(root, raw_root, existing_files):
                             dependency = url[len(prefix):]
                             if dependency in source and dependency.startswith('Scripts/') and dependency.endswith('.js'):
                                 target = f'scripts/{name}/'+dependency[len('Scripts/'):]
-                                files[target] = annotate_script(root,target,source[dependency],repository,commit,dependency,project['license']); scripts.add(target)
+                                orig = file_origins.get(dependency, {})
+                                files[target] = annotate_script(
+                                    root, target, source[dependency], repository, commit, dependency,
+                                    orig.get('license', project['license']),
+                                    source_url=orig.get('upstream'),
+                                    local_mod=orig.get('local_modification'),
+                                )
+                                scripts.add(target)
                                 project_records[-1]['script_outputs'][target] = dependency
                     external_aliases = {
                         'https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js': 'Scripts/wyres.js',
@@ -82,7 +97,14 @@ def create_plan(root, raw_root, existing_files):
                     if url in external_aliases and external_aliases[url] in source:
                         dependency = external_aliases[url]
                         target = f'scripts/{name}/'+dependency[len('Scripts/'):]
-                        files[target] = annotate_script(root,target,source[dependency],repository,commit,dependency,project['license']); scripts.add(target)
+                        orig = file_origins.get(dependency, {})
+                        files[target] = annotate_script(
+                            root, target, source[dependency], repository, commit, dependency,
+                            orig.get('license', project['license']),
+                            source_url=orig.get('upstream'),
+                            local_mod=orig.get('local_modification'),
+                        )
+                        scripts.add(target)
                         project_records[-1]['script_outputs'][target] = dependency
                     app_prefix = 'https://raw.githubusercontent.com/app2smile/rules/master/js/'
                     if url.startswith(app_prefix):
@@ -97,11 +119,15 @@ def create_plan(root, raw_root, existing_files):
                 if re.search(r'\burl\s+',line): rule_count += 1
                 body.append(line)
             title = re.sub(r'[,=\r\n]',' ',module['title'])
+            mod_orig = file_origins.get(module['source'], {})
+            mod_source_url = mod_orig.get('upstream') or f'https://github.com/{repository}/blob/{commit}/{module["source"]}'
+            mod_license = mod_orig.get('license') or project['license']
+            mod_local_mod = mod_orig.get('local_modification') or '分离配套分流，直接脚本地址改为本仓库；保留原作者署名。'
             companion = ''
             if domain_rules:
                 companion = f'filter/adblock/{name}/{module_id}.list'; filter_count += 1
-                files[companion] = (f'# {module["title"]} 配套拦截；GPL-3.0，许可见 {license_output}\n'
-                                    f'# 来源：{repository}@{commit}/{module["source"]}\n'
+                files[companion] = (f'# {module["title"]} 配套拦截；{mod_license}，许可见 {license_output}\n'
+                                    f'# 来源：{mod_source_url}\n'
                                     '# 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。\n'
                                     +'\n'.join(domain_rules)+'\n')
                 companions.append(f'{raw_root}/{companion}, tag={title}配套分流（{name}）, force-policy=reject, inserted-resource=true, update-interval=86400, opt-parser=false, enabled=false')
@@ -113,16 +139,16 @@ def create_plan(root, raw_root, existing_files):
             partial = bool(omitted)
             status = '保留基础条目，有脚本行隔离' if partial else '配置及直接依赖已收录'
             header = (f'# 名称：{module["title"]}\n# 用途：{module.get("description",module["title"])}\n# 本地整理日期：{project["checked_on"]}\n'
-                      f'# 来源：https://github.com/{repository}/blob/{commit}/{module["source"]}\n'
-                      f'# 许可：GPL-3.0；完整许可见 {license_output}，不改为根目录 MIT。\n'
-                      '# 本地修改：分离配套分流，直接脚本地址改为本仓库；保留原作者署名。\n'
+                      f'# 来源：{mod_source_url}\n'
+                      f'# 许可：{mod_license}；完整许可见 {license_output}，不改为根目录 MIT。\n'
+                      f'# 本地修改：{mod_local_mod}\n'
                       f'# 收录状态：{status}；隔离行号：{",".join(map(str,omitted)) or "无"}。\n'
                       '# 尚未完成真实设备验证，不承诺所有 App 版本可用或与其他来源模块等效。\n')
             files[output] = header+'\n'.join(body).rstrip()+'\n'
             title = re.sub(r'[,=\r\n]',' ',module['title'])
             resources.append(f'{raw_root}/{output}, tag={title}, update-interval=86400, opt-parser=false, enabled=false')
             rows.append({'模块':(f'{category}/{module_id}' if category else f'{name}/{module_id}'),'用途':module.get('description',module['title']),'重写文件':output,'源文件':module['source'],
-                         '上游提交':commit,'核对日期':project['checked_on'],'许可':project['license'],
+                         '上游提交':commit,'核对日期':project['checked_on'],'许可':mod_license,
                          '脚本文件':' / '.join(sorted(used_scripts)),'配套分流':companion,
                          'MITM':'按原文 hostname 配置个人证书','默认启用':False,'设备验证':'未完成',
                          '限制':status+'；'+module['notes']})

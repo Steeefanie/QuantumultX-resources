@@ -5,9 +5,9 @@
  * 使用前提：仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。
  * 使用边界：与 app2smile 的知乎模块为不同方案；同一业务选择一套，避免重复处理。
  * 本地说明日期：2026-11-04（非上游更新时间）
- * 来源：https://github.com/fmz200/wool_scripts/blob/4b7830670baf235ed945085cb926dc499cf619e0/Scripts/zhihu/zhihu.js
+ * 来源：https://github.com/fmz200/wool_scripts/blob/4d349828f8b28862791243fb5319d47aa9c06403/Scripts/zhihu/zhihu.js
  * 来源许可：GPL-3.0；原作者署名及源代码保留在下方原文中，对应许可随目录保存。
- * 本地修改：仅添加本段用途说明；下方保留上游正文，不把原始代码归为本项目原创。
+ * 本地修改：在 fmz200/wool_scripts@4d349828 原文基础上，新增知乎 launch_v2 开屏广告接口 ads 数组置空分支。
  */
 // 2026-01-19 20:50:00
 

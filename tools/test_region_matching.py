@@ -35,3 +35,4 @@ class RegionNamesTests(unittest.TestCase):
                      '[BETA-1] HongKong [0.1x]','HongKong Beta 01','US beta',
                      'candidate','shadow','judge'):
             with self.subTest(name=name): self.assertEqual(groups(name),set())
+        self.assertEqual(groups('Canada Tibetan 01'),{'Canada'})

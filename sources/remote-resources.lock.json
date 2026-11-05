@@ -15,7 +15,10 @@
       "usage": "资源解析器，只有 opt-parser=true 的资源使用",
       "license_status": "已按固定提交与 SHA256 收录至本仓库 scripts/tools/，完全消除外部仓库 404 依赖",
       "source_path": "sources/remote/kop-xiao/resource-parser.js",
-      "local_path": "scripts/tools/resource-parser.js"
+      "local_path": "scripts/tools/resource-parser.js",
+      "upstream_sha256": "591852421bd935b4642a7af0f9a8c849fddf9ea7f4abd4326ea91d3f36e9acf2",
+      "upstream_size": 271817,
+      "local_modifications": "修复分流列表 replace= 参数解析笔误（para -> para1）；保留原始地区旗帜；将 13 个主力地区移至 Lmoji 顶部并补充无空格连写（UnitedStates 等）及收紧比利时匹配（防止 [BETA] 误判）。"
     },
     {
       "id": "streaming_check",

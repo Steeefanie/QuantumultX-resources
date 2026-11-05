@@ -438,7 +438,195 @@
           "notes": "需将 Safari 默认搜索引擎设为 DuckDuckGo；纯 302 重定向无脚本开销。",
           "description": "在 Safari 地址栏输入 gh/yt/zh/bili/xh/db/wk/bd 加关键词直达对应站内搜索，无前缀默认转 Google。"
         }
-      ]
+      ],
+      "file_origins": {
+        "QuantumultX/rewrite/split/partE/QSearch.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/Html/Q-Search.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "参考 @ddgksf2013 Q-Search 整理的 Safari 快捷搜索 302 重定向规则。"
+        },
+        "QuantumultX/rewrite/split/partP/Amap.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Amap.conf",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "收录 @ddgksf2013 高德地图净化重写并补充 AMDC HTTPDNS 拦截规则，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partP/Weibo.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "参考 @ddgksf2013 Weibo.conf 接口范围整理，脚本地址指向本仓库 scripts/fmz200/weibo.js。"
+        },
+        "QuantumultX/rewrite/split/partR/Redirect.snippet": {
+          "upstream": "https://raw.githubusercontent.com/blackmatrix7/ios_rule_script/master/rewrite/QuantumultX/Redirect/Redirect.conf",
+          "status": "external_upstream",
+          "license": "GPL-2.0",
+          "local_modification": "收录 blackmatrix7/ios_rule_script 神机重定向规则（GPL-2.0 许可见 scripts/licenses/blackmatrix7-GPL-2.0.txt）。"
+        },
+        "QuantumultX/rewrite/split/partS/StartUpAds.snippet": {
+          "upstream": "https://gist.githubusercontent.com/ddgksf2013/12ef6aad209155e7eb62c5b00c11b9dd/raw/StartUpAds.conf",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @ddgksf2013 StartUpAds.conf，将脚本地址指向本仓库，并注释与独立模块（Spotify/微信/广告联盟 SDK）冲突的规则。"
+        },
+        "QuantumultX/rewrite/split/partV/Meitu.snippet": {
+          "upstream": "https://yfamily.vercel.app/rewrite/meituxx.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按美图秀秀与 Wink VIP 校验接口整理的重写规则，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partV/RevenueCat.snippet": {
+          "upstream": "https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "从 Yu9191/Rewrite/main/Revenuecat.js 提取 Quantumult X 重写段，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partV/WpsCamScanner.snippet": {
+          "upstream": "https://github.com/fmz200/wool_scripts",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按 WPS 与扫描全能王账户接口整理的重写规则，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partV/Xmind.snippet": {
+          "upstream": "https://yfamily.vercel.app/rewrite/xmind.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按 Xmind 客户端订阅接口整理的重写规则，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partW/NetEaseVIP.snippet": {
+          "upstream": "https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "从 gjwj666/qx/main/Wyy.js 提取 Quantumult X 重写段，脚本地址指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partW/WeChatApplet.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Applet.conf",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @ddgksf2013 Applet.conf，将 getappmsgad 改为调用本仓库 wechat.js JSON 解析脚本，其余脚本指向本仓库。"
+        },
+        "QuantumultX/rewrite/split/partW/WeChatOfficialAccount.snippet": {
+          "upstream": "https://github.com/fmz200/wool_scripts/blob/4d349828f8b28862791243fb5319d47aa9c06403/QuantumultX/rewrite/split/partW/WeChatOfficialAccount.snippet",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "在 fmz200/wool_scripts@4d349828 原文基础上，结合 yfamily/wechatad.conf 改为调用 wechat.js 并补充 wxs.qq.com 与 as.weixin.qq.com 分流拦截。"
+        },
+        "QuantumultX/rewrite/split/partW/WebAdBlock.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/Html/WebAdBlock.conf",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "收录 @ddgksf2013 WebAdBlock.conf 网页去广告规则，脚本地址指向本仓库 myBlockAds.js。"
+        },
+        "QuantumultX/rewrite/split/partY/YoutubeAds.snippet": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/YoutubeAds.conf",
+          "status": "external_upstream",
+          "license": "Apache-2.0",
+          "local_modification": "收录 @Maasea / ddgksf2013 YoutubeAds.conf，脚本地址指向本仓库 youtube.response.js（Apache-2.0 许可见 scripts/licenses/maasea-sgmodule-Apache-2.0.txt）。"
+        },
+        "QuantumultX/rewrite/split/partY/YoutubeCC.snippet": {
+          "upstream": "https://raw.githubusercontent.com/id77/QuantumultX/master/rewrite/Youtube_CC.conf",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @id77 Youtube_CC.conf，默认固定输出简体中文（zh-Hans）免除 opt-parser 依赖。"
+        },
+        "Scripts/12306.js": {
+          "upstream": "https://raw.githubusercontent.com/ddgksf2013/Scripts/master/12306.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @ddgksf2013 原始脚本正文（V1.0.23）。"
+        },
+        "Scripts/UnblockURLinWeChat.js": {
+          "upstream": "https://raw.githubusercontent.com/zZPiglet/Task/master/asset/UnblockURLinWeChat.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @zZPiglet 原始脚本正文。"
+        },
+        "Scripts/Wyy.js": {
+          "upstream": "https://raw.githubusercontent.com/gjwj666/qx/main/Wyy.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @ios-🐔神 / gjwj666 原始脚本正文。"
+        },
+        "Scripts/amap.js": {
+          "upstream": "https://raw.githubusercontent.com/ddgksf2013/Scripts/master/amap.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @ddgksf2013 原始脚本正文（V1.0.34）。"
+        },
+        "Scripts/amdc.js": {
+          "upstream": "https://raw.githubusercontent.com/ddgksf2013/Scripts/master/amdc.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @ddgksf2013 原始脚本正文（V1.0.11）。"
+        },
+        "Scripts/applet.js": {
+          "upstream": "https://github.com/fmz200/wool_scripts/blob/13c0f82112a54965b33d573bc00a48fc13c7d8fa/Scripts/applet.js",
+          "status": "historical_commit",
+          "license": "GPL-3.0",
+          "local_modification": "取自 fmz200/wool_scripts 历史提交 13c0f82112a54965b33d573bc00a48fc13c7d8fa；仅添加本段用途说明。"
+        },
+        "Scripts/meitu.js": {
+          "upstream": "https://yfamily.vercel.app/rewrite/meituxx.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按美图秀秀与 Wink 客户端 VIP 校验接口响应结构编写的本地解锁脚本。"
+        },
+        "Scripts/revenuecat.js": {
+          "upstream": "https://raw.githubusercontent.com/Yu9191/Rewrite/main/Revenuecat.js",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @Yu9191 Revenuecat.js 的 110+ 应用 UAMappings 映射表整理，并补充通用 pro/vip/premium 兜底权益字段。"
+        },
+        "Scripts/wechat.js": {
+          "upstream": "https://raw.githubusercontent.com/NobyDa/Script/master/QuantumultX/File/Wechat.js",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "基于 @NobyDa Wechat.js 公众号去广告逻辑整理，补充小程序 ad_info/pos_info 置空与异常捕获保护。"
+        },
+        "Scripts/weibo.js": {
+          "upstream": "https://github.com/ddgksf2013/Rewrite/raw/master/AdBlock/Weibo.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按微博客户端时间流、详情页、个人主页与搜索接口响应结构编写的本地 JSON 过滤脚本。"
+        },
+        "Scripts/wps_camscanner.js": {
+          "upstream": "https://github.com/fmz200/wool_scripts",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按 WPS 超级会员与扫描全能王高级账户查询接口响应结构编写的本地解锁脚本。"
+        },
+        "Scripts/wyres.js": {
+          "upstream": "https://raw.githubusercontent.com/Keywos/rule/main/script/wy/js/wyres.js",
+          "status": "external_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @Keywos 原始脚本正文。"
+        },
+        "Scripts/xmind.js": {
+          "upstream": "https://yfamily.vercel.app/rewrite/xmind.conf",
+          "status": "local_derivative",
+          "license": "GPL-3.0",
+          "local_modification": "按 Xmind 客户端订阅校验响应结构编写的本地解锁脚本。"
+        },
+        "Scripts/youtube.response.js": {
+          "upstream": "https://raw.githubusercontent.com/Maasea/sgmodule/master/Script/Youtube/youtube.response.js",
+          "status": "external_upstream",
+          "license": "Apache-2.0",
+          "local_modification": "仅添加本段用途说明；下方保留 @Maasea 原始脚本正文（Apache-2.0 许可见 scripts/licenses/maasea-sgmodule-Apache-2.0.txt）。"
+        },
+        "Scripts/zhangshanggongjiao.js": {
+          "upstream": "https://github.com/fmz200/wool_scripts/blob/13c0f82112a54965b33d573bc00a48fc13c7d8fa/Scripts/zhangshanggongjiao.js",
+          "status": "historical_commit",
+          "license": "GPL-3.0",
+          "local_modification": "取自 fmz200/wool_scripts 历史提交 13c0f82112a54965b33d573bc00a48fc13c7d8fa；仅添加本段用途说明。"
+        },
+        "Scripts/zhihu/zhihu.js": {
+          "upstream": "https://github.com/fmz200/wool_scripts/blob/4d349828f8b28862791243fb5319d47aa9c06403/Scripts/zhihu/zhihu.js",
+          "status": "modified_upstream",
+          "license": "GPL-3.0",
+          "local_modification": "在 fmz200/wool_scripts@4d349828 原文基础上，新增知乎 launch_v2 开屏广告接口 ads 数组置空分支。"
+        }
+      }
     }
   ]
 }

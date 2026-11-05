@@ -1,5 +1,5 @@
 # 财新周刊文章净化 配套拦截；GPL-3.0，许可见 rewrite/licenses/fmz200-GPL-3.0.txt
-# 来源：fmz200/wool_scripts@4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partC/CaiXin.snippet
+# 来源：https://github.com/fmz200/wool_scripts/blob/4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partC/CaiXin.snippet
 # 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。
 host-suffix, apollo.caixin.com, reject
 host-suffix, logstat.caixin.com, reject

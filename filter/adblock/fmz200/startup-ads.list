@@ -1,5 +1,5 @@
 # 墨鱼通用去开屏 2.0 配套拦截；GPL-3.0，许可见 rewrite/licenses/fmz200-GPL-3.0.txt
-# 来源：fmz200/wool_scripts@4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partS/StartUpAds.snippet
+# 来源：https://gist.githubusercontent.com/ddgksf2013/12ef6aad209155e7eb62c5b00c11b9dd/raw/StartUpAds.conf
 # 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。
 host-suffix, shenshiads.com, reject
 host-suffix, yfanads.com, reject
