@@ -14,7 +14,7 @@ QuantumultX-resources/
 │   ├── quantumult_steeefanie.conf  # 完整主配置模板（主力配置文件）
 │   ├── README.md                   # 订阅填写与多机场节点筛选说明
 │   └── config-guide.md             # 各段落配置参数详解（含 DoH 等 DNS 备选方案）
-├── filter/                     # 分流与去广告规则（共 1,584 份 .list）
+├── filter/                     # 分流与去广告规则（共 1,585 份 .list）
 │   ├── services/                   # 1,417 个按具体服务细分的分流规则（如 openai.list、xiaohongshu.list）
 │   ├── collections/                # 137 个综合分类合集（如 domestic.list、global.list、advertising.list）
 │   ├── adblock/                    # 重写配套去广告规则（含单条合并去重版 combined.list）
@@ -25,9 +25,9 @@ QuantumultX-resources/
 │   ├── enhance/                    # 功能增强与效率工具（微信外链解锁、油管字幕自动中译、神机重定向、Safari 搜索等）
 │   ├── catalog.md                  # 全部 37 个重写模块清单
 │   └── README.md                   # 重写分类说明与 MITM 证书排除说明
-├── scripts/                    # 重写与工具脚本（共 40 个文件）
+├── scripts/                    # 重写与工具脚本（共 43 个文件）
 │   ├── app2smile/                  # 13 个重写配套脚本（MIT 许可）
-│   ├── fmz200/                     # 23 个重写配套脚本（GPL-3.0 许可）
+│   ├── fmz200/                     # 26 个重写配套脚本（GPL-3.0 许可）
 │   └── tools/                      # 4 个全局工具脚本（Shawn 资源解析器、流媒体解锁检测、BoxJS、UI 任务）
 ├── icon/                       # 策略组图标（108×108 圆形 RGBA PNG）
 │   ├── Global.png                  # Global 总组与配置封面蓝绿地球图标
@@ -61,7 +61,7 @@ QuantumultX-resources/
 ### 个人分流清单（`[filter_remote]`）
 
 主配置按优先级依次加载（默认均已设为 `enabled=true`）：
-1. **重写配套去广告合集**：[`filter/adblock/combined.list`](filter/adblock/combined.list)（合并全部 27 份重写配套拦截规则，策略 `reject`）
+1. **重写配套去广告合集**：[`filter/adblock/combined.list`](filter/adblock/combined.list)（合并全部 28 份重写配套拦截规则，策略 `reject`）
 2. **通用广告与跟踪拦截**：[`filter/collections/advertising.list`](filter/collections/advertising.list)（策略 `reject`）
 3. **专用服务独立分流**：
    - **YouTube**（[`google-youtube.list`](filter/services/google-youtube.list)）置于 **Google 综合规则**（[`google-without-youtube.list`](filter/collections/google-without-youtube.list)）之前，支持单独指定地区；另提供可选的 [`google-gemini.list`](filter/services/google-gemini.list) 独立子项。
@@ -80,8 +80,8 @@ QuantumultX-resources/
 | 集合文件 | 用途 | 条件数 | 文件内默认策略 |
 | --- | --- | ---: | --- |
 | [domestic.list](filter/collections/domestic.list) | 国内接入域名合集 | 7,909 | `direct` |
-| [global.list](filter/collections/global.list) | 海外接入域名合集 | 25,593 | `proxy` |
-| [advertising.list](filter/collections/advertising.list) | 广告及跟踪域名合集 | 840 | `reject` |
+| [global.list](filter/collections/global.list) | 海外接入域名合集 | 25,606 | `proxy` |
+| [advertising.list](filter/collections/advertising.list) | 广告及跟踪域名合集 | 838 | `reject` |
 | [ai-global.list](filter/collections/ai-global.list) | 境外 AI 与模型服务 | 223 | `proxy` |
 | [ai-domestic.list](filter/collections/ai-domestic.list) | 境内接入 AI 与模型服务 | 120 | `direct` |
 | [media.list](filter/collections/media.list) | 流媒体与音视频服务 | 1,576 | `proxy` |
@@ -97,7 +97,7 @@ QuantumultX-resources/
 
 ## 重写模块与脚本（`rewrite/` & `scripts/`）
 
-共收录 **37 个重写模块** 与 **40 个本地脚本**，按用途归入 3 个子目录（完整列表见 [`rewrite/catalog.md`](rewrite/catalog.md)，详细说明见 [`rewrite/README.md`](rewrite/README.md)）：
+共收录 **37 个重写模块** 与 **43 个本地脚本**，按用途归入 3 个子目录（完整列表见 [`rewrite/catalog.md`](rewrite/catalog.md)，详细说明见 [`rewrite/README.md`](rewrite/README.md)）：
 
 - **[`rewrite/vip/`](rewrite/vip)**：网易云音乐本地黑胶 SVIP、Spotify VIP、RevenueCat 通用内购解锁（支持 No Fusion、Notability、Goodnotes、Locket、VSCO 等）、Xmind Pro、美图秀秀/Wink VIP、WPS 超级会员/扫描全能王 VIP、酷我音乐 VIP。
 - **[`rewrite/purify/`](rewrite/purify)**：YouTube、小红书（含无水印原图保存）、微信公众号、微信小程序去激励广告、哔哩哔哩、知乎、微博、高德地图、墨鱼通用去开屏 2.0、四大广告联盟 SDK、淘宝、京东、美团、豆瓣、百度网盘、夸克、什么值得买、IT之家等深度净化。
@@ -116,7 +116,7 @@ python3 tools/build.py --rebuild
 # 校验所有规则、重写、脚本与锁文件哈希是否一致
 python3 tools/build.py --check
 
-# 运行全部 45 项单元测试
+# 运行全部 48 项单元测试
 python3 -m unittest discover -s tools -p 'test_*.py'
 
 # 查询某个域名命中了哪些规则文件
@@ -136,6 +136,6 @@ python3 tools/build.py --refresh
 | --- | --- | --- |
 | [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) | 分流规则上游快照（`sources/v2fly/`）及转换后的 `filter/` 规则 | [MIT](sources/v2fly/LICENSE) |
 | [app2smile/rules](https://github.com/app2smile/rules) | 9 个重写模块与 13 个配套脚本（`scripts/app2smile/`） | [MIT](rewrite/licenses/app2smile-MIT.txt)（运行库见 [第三方说明](scripts/THIRD-PARTY-NOTICES.md)） |
-| [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) | 28 个重写模块、23 个配套脚本（`scripts/fmz200/`）及去广告分流 | [GPL-3.0](rewrite/licenses/fmz200-GPL-3.0.txt) |
+| [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) | 28 个重写模块、26 个配套脚本（`scripts/fmz200/`）及去广告分流 | [GPL-3.0](rewrite/licenses/fmz200-GPL-3.0.txt) |
 | [KOP-XIAO/QuantumultX](https://github.com/KOP-XIAO/QuantumultX) & [chavyleung/scripts](https://github.com/chavyleung/scripts) | 资源解析器、流媒体解锁检测、UI 任务与 BoxJS 脚本（`scripts/tools/`） | 保留原作者署名与固定版本哈希（[`sources/remote-resources.lock.json`](sources/remote-resources.lock.json)） |
 | [lipis/flag-icons](https://github.com/lipis/flag-icons) & [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) | `icon/` 下的 13 个国家／地区旗帜与 `Global.png` 地球图标 | [MIT](icon/licenses/flag-icons-MIT.txt) & [Public Domain](icon/licenses/natural-earth-PUBLIC-DOMAIN.txt) |

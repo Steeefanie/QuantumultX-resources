@@ -286,5 +286,29 @@
     "requirements": "仅由高德地图净化重写规则调用；需要个人 MITM 证书及对应 hostname。",
     "notes": "不影响核心定位、路线规划与实时导航功能。",
     "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/amdc.js": {
+    "title": "阿里系与高德 AMDC 移动调度防绕过",
+    "purpose": "拦截高德地图、淘宝、菜鸟、闲鱼、飞猪、盒马等阿里系应用的 amdc/mobileDispatch HTTPDNS 调度响应，强制回退标准域名解析以保证去广告重写生效。",
+    "stage": "响应体：文本",
+    "requirements": "由高德地图净化及通用去开屏重写规则按 URL 调用。",
+    "notes": "仅对 User-Agent 匹配的阿里系与高德客户端生效，不影响其他应用的正常网络调度。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/wechat.js": {
+    "title": "微信公众号文章底部与文中广告净化",
+    "purpose": "解析微信公众号 getappmsgad 接口 JSON 响应，将 advertisement_num 置零并清空 advertisement_info 与推广标识。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由微信公众号及小程序去广告重写规则调用；需要个人 MITM 证书及 mp.weixin.qq.com 的 hostname。",
+    "notes": "替代旧版单次字符串替换规则，完整清空文章底部与文中广告数组。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/12306.js": {
+    "title": "铁路 12306 开屏与信息流广告净化",
+    "purpose": "根据请求体中的广告位编号构造空广告返回数据，消除 12306 启动开屏等待与页面横幅广告。",
+    "stage": "请求分析与本地回包：script-analyze-echo-response",
+    "requirements": "由通用去开屏重写规则调用；需要个人 MITM 证书、ad.12306.cn 的 hostname，且该域名不能在分流层直接 reject。",
+    "notes": "若分流层直接 reject ad.12306.cn 会导致开屏超时黑屏等待，必须放行至重写层由本脚本回包。",
+    "annotation_date": "2026-11-05"
   }
 }

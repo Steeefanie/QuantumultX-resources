@@ -1,10 +1,33 @@
 #!name=高德地图界面深度净化
-#!desc=去除高德地图开屏广告、首页底部推广卡片、语音包横幅与导航结束页广告
+#!desc=去除高德地图开屏广告、首页底部推广卡片、我的页面卡片、附近推荐、搜索热词与推广横幅
 #!author=ddgksf2013
 #!homepage=https://github.com/Steeefanie/QuantumultX-resources
 
-^https?:\/\/m5\.amap\.com\/ws\/(valueadded\/alimama\/splash_screen|faas\/amap-navigation\/main-page|shield\/frogserver\/aocs\/updatable) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
-^https?:\/\/optimus-ads\.amap\.com\/uploadData url reject-dict
+# > 高德地图_拦截AMDC防止HTTPDNS直连IP绕过重写@ddgksf2013
+^https?:\/\/(amdc\.m\.taobao\.com|[a-zA-Z0-9_-]+(\.[a-zA-Z0-9_-]+){1,4}(:\d+)?)\/amdc\/mobileDispatch url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amdc.js
+# > 高德地图_开屏广告@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/valueadded\/alimama\/splash_screen url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_首页底部卡片@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/faas\/amap-navigation\/main-page url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_我的页面净化@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/shield\/dsp\/profile\/index\/nodefaasv3 url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_搜索框热词@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/shield\/search\/new_hotword url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_推广浮层与横幅@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/promotion-web\/resource url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_消息盒子横幅@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/msgbox\/pull url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_通知列表净化@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/message\/notice\/list url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_图层与AI入口净化@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/shield\/frogserver\/aocs\/updatable url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_附近页推荐净化@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/shield\/search\/nearbyrec_smart url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+# > 高德地图_打车页与优惠券推广拦截@ddgksf2013
+^https?:\/\/m5\.amap\.com\/ws\/boss\/order_web\/friendly_information url reject-200
+^https?:\/\/m5\.amap\.com\/ws\/shield\/search\/common\/coupon\/info url reject-dict
+^https?:\/\/m5\.amap\.com\/ws\/valueadded\/weather url reject-dict
 ^https?:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution url reject-dict
+^https?:\/\/optimus-ads\.amap\.com\/uploadData url reject-dict
 
-hostname = m5.amap.com, optimus-ads.amap.com
+hostname = m5.amap.com, optimus-ads.amap.com, amdc.m.taobao.com

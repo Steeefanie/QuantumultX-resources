@@ -73,6 +73,17 @@ if (url.includes("/answers/v2/") || url.includes("/articles/v2/")) {
   if (obj?.feed_egg) {
     delete obj.feed_egg;
   }
+} else if (url.includes("launch_v2")) {
+  // 开屏广告
+  if (obj?.launch) {
+    try {
+      let launch = JSON.parse(obj.launch);
+      launch.ads = [];
+      obj.launch = JSON.stringify(launch);
+    } catch (e) {
+      obj.launch = "{}";
+    }
+  }
 } else if (url.includes("/feed/render/tab/config")) {
   // 首页二级标签 白名单 live直播 edu人工智能AI
   if (obj?.selected_sections?.length > 0) {

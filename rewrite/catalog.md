@@ -24,7 +24,7 @@
 | [purify/smzdm](purify/smzdm.conf) | 处理感谢【怎么肥事】分享等原文列出的接口。 | GPL-3.0 | 配置和直接依赖已收录 | [需要时启用](../filter/adblock/fmz200/smzdm.list) |
 | [purify/taobao](purify/taobao.conf) | 处理host-suffix, ai.m.taobao.com, reject等原文列出的接口。 | GPL-3.0 | 配置和直接依赖已收录 | [需要时启用](../filter/adblock/fmz200/taobao.list) |
 | [vip/netease-svip](vip/netease-svip.conf) | 按所列 URL 条件处理网易云音乐的广告或推广接口；具体处理见下方保留原文。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
-| [purify/wechat-mp](purify/wechat-mp.conf) | 处理公众号文章下方广告、微信公众号去除商品推广等原文列出的接口。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
+| [purify/wechat-mp](purify/wechat-mp.conf) | 处理公众号文章下方广告、微信公众号去除商品推广等原文列出的接口。 | GPL-3.0 | 配置和直接依赖已收录 | [需要时启用](../filter/adblock/fmz200/wechat-mp.list) |
 | [enhance/wechat-unlock-url](enhance/wechat-unlock-url.conf) | 按所列 URL 条件处理微信解除链接限制的广告或推广接口；具体处理见下方保留原文。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |
 | [purify/xiaohongshu](purify/xiaohongshu.conf) | 处理惊喜弹窗、信息流、搜索页等原文列出的接口。 | GPL-3.0 | 配置和直接依赖已收录 | [需要时启用](../filter/adblock/fmz200/xiaohongshu.list) |
 | [vip/netease-vip](vip/netease-vip.conf) | 处理网易云音乐播放地址、歌单及搜索接口请求头以尝试解锁会员歌曲试听。 | GPL-3.0 | 配置和直接依赖已收录 | 无 |

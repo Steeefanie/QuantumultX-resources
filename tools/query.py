@@ -21,7 +21,9 @@ def find_matches(host, root, scope='all'):
                 if not line or line.startswith('#'):
                     continue
                 kind, domain, policy = [x.strip() for x in line.split(',')]
-                if host == domain or (kind == 'host-suffix' and host.endswith('.'+domain)):
+                if (host == domain
+                        or (kind == 'host-suffix' and host.endswith('.'+domain))
+                        or (kind == 'host-keyword' and domain in host)):
                     matches.append((path.relative_to(root).as_posix(), kind, domain, policy))
     return matches
 

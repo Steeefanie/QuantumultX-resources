@@ -74,3 +74,27 @@ class JavaScriptTests(unittest.TestCase):
                                request={'url':'https://napi.ithome.com/api/news/index'},
                                response={'body':json.dumps(body)})
         self.assertEqual([item['id'] for item in json.loads(result['body'])['data']['list']],[1])
+
+    def test_wechat_clears_article_ads_and_preserves_other_fields(self):
+        payload={'advertisement_num':2,'advertisement_info':[{'id':1}],'ad_info':[{'id':2}],'appid':'wx123','base_resp':{'ret':0}}
+        result=self.run_script('scripts/fmz200/wechat.js',response={'body':json.dumps(payload)})
+        body=json.loads(result['body'])
+        self.assertEqual(body['advertisement_num'],0)
+        self.assertEqual(body['advertisement_info'],[])
+        self.assertEqual(body['ad_info'],[])
+        self.assertNotIn('appid',body)
+        self.assertEqual(body['base_resp']['ret'],0)
+
+    def test_amdc_blocks_amap_httpdns_and_passes_other_clients(self):
+        blocked=self.run_script('scripts/fmz200/amdc.js',request={'headers':{'User-Agent':'AMap/15.0 iOS'}})
+        self.assertEqual(blocked['body'],'ddgksf2013')
+        passed=self.run_script('scripts/fmz200/amdc.js',request={'headers':{'User-Agent':'OtherApp/1.0'}})
+        self.assertEqual(passed,{})
+
+    def test_revenuecat_maps_no_fusion_livephoto_entitlement(self):
+        result=self.run_script('scripts/fmz200/revenuecat.js',
+                               request={'headers':{'User-Agent':'No%20Fusion/1.0'}},
+                               response={'body':json.dumps({'subscriber':{'subscriptions':{},'entitlements':{}}})})
+        sub=json.loads(result['body'])['subscriber']
+        self.assertIn('com.grey.livephoto.reference.price',sub['subscriptions'])
+        self.assertEqual(sub['entitlements']['LivePhoto']['product_identifier'],'com.grey.livephoto.reference.price')

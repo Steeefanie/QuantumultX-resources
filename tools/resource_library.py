@@ -127,9 +127,9 @@ def create_plan(root, raw_root):
                 seen_adblock.add(key)
                 combined_adblock.append(stripped)
     files['filter/adblock/combined.list'] = (
-        f'# 名称：重写配套去广告合集（合并自全部 27 份 filter/adblock/*.list）\n'
+        f'# 名称：重写配套去广告合集（合并自全部 {len(companions)+catalog_summary["filters"]} 份 filter/adblock/*.list）\n'
         f'# 本地整理日期：{manifest["checked_on"]}；共 {len(combined_adblock)} 条去重域名与 IP 拦截条件。\n'
-        '# 说明：供主配置单条订阅使用，避免在 Quantumult X 分流界面展开 27 条独立 reject 项。\n'
+        f'# 说明：供主配置单条订阅使用，避免在 Quantumult X 分流界面展开 {len(companions)+catalog_summary["filters"]} 条独立 reject 项。\n'
         '# 许可：MIT（app2smile）与 GPL-3.0（fmz200），详见 rewrite/licenses/。\n'
         + '\n'.join(combined_adblock) + '\n'
     )

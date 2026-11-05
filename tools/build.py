@@ -117,10 +117,16 @@ class Resolver:
 
 def normalize(entry, ads_only=False, include_ads=False, allow_shared=False):
     kind, value, attrs, source, line = entry
+    if source == 'sources/local-additions.json' and kind in ('host', 'host-suffix', 'host-keyword', 'user-agent', 'ip-cidr'):
+        if ads_only:
+            return None, '不是广告属性规则'
+        return (kind, value), ''
     if ads_only and 'ads' not in attrs:
         return None, '不是广告属性规则'
     if not ads_only and not include_ads and 'ads' in attrs:
         return None, '广告属性：不混入业务规则'
+    if (ads_only or include_ads) and value in ('ad.12306.cn', 'optimus-ads.amap.com'):
+        return None, '交由重写层处理响应：避免分流层直接断开导致开屏超时等待'
     if kind not in ('full', 'domain'):
         return None, '关键词或正则：不作无损转换声明'
     try:
@@ -191,10 +197,13 @@ def load_local_additions(resolver):
             raise ValueError(f'本地补充第 {number} 项缺少有效分类或来源')
         if date.fromisoformat(checked).isoformat() != checked:
             raise ValueError(f'本地补充第 {number} 项日期无效')
-        if (module, host) in seen:
-            raise ValueError(f'本地补充重复：{module} / {host}')
-        seen.add((module,host))
-        entry = ('full', host, frozenset(), 'sources/local-additions.json', number)
+        kind = item.get('kind', 'full')
+        if kind not in ('full', 'host', 'host-suffix', 'host-keyword', 'user-agent', 'ip-cidr'):
+            raise ValueError(f'本地补充第 {number} 项匹配类型无效：{kind}')
+        if (module, kind, host) in seen:
+            raise ValueError(f'本地补充重复：{module} / {kind} / {host}')
+        seen.add((module, kind, host))
+        entry = (kind, host, frozenset(), 'sources/local-additions.json', number)
         rule, reason = normalize(entry)
         if not rule or rule[1] != host:
             raise ValueError(f'本地补充第 {number} 项域名无效：{reason}')
@@ -401,11 +410,13 @@ def create_plan(data, license_text, commit, archive_hash, manifest):
     owners = defaultdict(set); unique = set(); counts = defaultdict(int)
     cache = {}; resolved_rules = {}
 
-    def convert(source, include_ads):
-        key = (source, include_ads)
+    def convert(source, include_ads, service_mode=False):
+        key = (source, include_ads, service_mode)
         if key not in cache:
             safe = set(); excluded = []
             for entry in resolver.resolve(source):
+                if not service_mode and entry[0] in ('host-keyword', 'user-agent', 'ip-cidr'):
+                    continue
                 rule, reason = normalize(entry, include_ads=include_ads,
                                          allow_shared=entry[3] in FIRST_PARTY_SHARED.get(entry[1], set()))
                 if rule:
@@ -417,8 +428,9 @@ def create_plan(data, license_text, commit, archive_hash, manifest):
 
     for path, definition in definitions.items():
         safe = set(); excluded = set(); include_ads = definition.get('include_ads', False)
+        service_mode = (definition['type'] == '服务分类')
         for source in definition['include']:
-            rules, skipped = convert(source, include_ads)
+            rules, skipped = convert(source, include_ads, service_mode=service_mode)
             safe.update(rules); excluded.update(skipped)
             membership.append({'集合文件': path, '上游分类': source, '可转换条件数': len(rules), '默认策略': definition['policy']})
         excluded_rules = set()
@@ -436,7 +448,8 @@ def create_plan(data, license_text, commit, archive_hash, manifest):
                                    '集合条件':f'{kind}, {value}', '被覆盖的排除条件':f'{child_kind}, {child_value}',
                                    '说明':'删除父后缀会影响其他服务；请让被排除业务的独立规则优先于本合集'})
         local_indexes = {e[4] for source in definition['include'] for e in resolver.resolve(source)
-                         if e[3] == 'sources/local-additions.json' and ('host', e[1]) in safe}
+                         if e[3] == 'sources/local-additions.json' and (
+                             ('host' if e[0] == 'full' else e[0]), e[1]) in safe}
         definition['local_additions'] = [r for r in local_additions if r['index'] in local_indexes]
         for entry, reason in sorted(excluded, key=lambda item: (item[0][3], item[0][4], item[1])):
             kind, value, attrs, source, line = entry

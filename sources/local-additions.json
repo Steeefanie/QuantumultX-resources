@@ -99,6 +99,135 @@
       "checked_on": "2026-11-04",
       "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
       "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "spotify",
+      "domain": "audio-akp-spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端音频流 Akamai 专用子域名；避免音频流漏入国内直连导致播放卡顿、提示连接速度缓慢或自动切歌。"
+    },
+    {
+      "module": "spotify",
+      "domain": "audio4-akp-spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端 IPv4 音频流 Akamai 专用子域名；避免音频流漏入国内直连导致播放卡顿或自动切歌。"
+    },
+    {
+      "module": "spotify",
+      "domain": "audio-akp-quic-spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端 QUIC 音频流 Akamai 专用子域名；避免音频流漏入国内直连导致播放卡顿或自动切歌。"
+    },
+    {
+      "module": "spotify",
+      "domain": "audio-akp-bbr-spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端 BBR 音频流 Akamai 专用子域名；避免音频流漏入国内直连导致播放卡顿或自动切歌。"
+    },
+    {
+      "module": "spotify",
+      "domain": "heads-akp-spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端音频预加载头数据 Akamai 专用子域名；与主音频流保持同一代理出口。"
+    },
+    {
+      "module": "spotify",
+      "domain": "heads4-akp-spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端 IPv4 音频预加载头数据 Akamai 专用子域名；与主音频流保持同一代理出口。"
+    },
+    {
+      "module": "spotify",
+      "domain": "spotify.com.edgesuite.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify Akamai EdgeSuite 专用映射域名；与 Spotify 主服务保持一致策略。"
+    },
+    {
+      "module": "spotify",
+      "kind": "host-suffix",
+      "domain": "spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify Akamai 音频流分发后缀；覆盖动态子域名以防音频流漏入直连或不同地区导致卡顿切歌。"
+    },
+    {
+      "module": "spotify",
+      "kind": "host-suffix",
+      "domain": "audio-ak-spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify Akamai 音频流子域后缀；与黑客矩阵 Spotify 规则保持一致。"
+    },
+    {
+      "module": "spotify",
+      "kind": "host-suffix",
+      "domain": "heads4-ak-spotify-com.akamaized.net",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify Akamai 音频头数据子域后缀；与黑客矩阵 Spotify 规则保持一致。"
+    },
+    {
+      "module": "spotify",
+      "kind": "host-suffix",
+      "domain": "spotify.app.link",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端深层链接服务域名；与主服务保持一致代理出口。"
+    },
+    {
+      "module": "spotify",
+      "kind": "host-suffix",
+      "domain": "spotifynewsroom.jp",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 官方资讯站点域名；与主服务保持一致代理出口。"
+    },
+    {
+      "module": "spotify",
+      "kind": "host-suffix",
+      "domain": "spotilocal.com",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 本地控制与关联域名；与黑客矩阵 Spotify 规则保持一致。"
+    },
+    {
+      "module": "spotify",
+      "kind": "host-keyword",
+      "domain": "spotify",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "覆盖包含 spotify 关键字的各类 CDN 边缘主机名，防止音频分片请求漏出目标地区。"
+    },
+    {
+      "module": "spotify",
+      "kind": "user-agent",
+      "domain": "Spotify*",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "匹配 Spotify 客户端发出的通用 CDN 音频分片请求（域名不含 spotify 时按 User-Agent 归入同一地区）。"
+    },
+    {
+      "module": "spotify",
+      "kind": "ip-cidr",
+      "domain": "104.154.127.126/32",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端 Access Point 直连 IP；避免长连接落入兜底策略造成与主 API 地区不一致而切歌。"
+    },
+    {
+      "module": "spotify",
+      "kind": "ip-cidr",
+      "domain": "35.186.224.47/32",
+      "checked_on": "2026-11-05",
+      "reference": "https://www.spotify.com/us/about-us/contact/",
+      "reason": "Spotify 客户端 Access Point 直连 IP；避免长连接落入兜底策略造成与主 API 地区不一致而切歌。"
     }
   ]
 }

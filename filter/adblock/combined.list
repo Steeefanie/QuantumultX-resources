@@ -1,6 +1,6 @@
-# 名称：重写配套去广告合集（合并自全部 27 份 filter/adblock/*.list）
-# 本地整理日期：2026-11-04；共 456 条去重域名与 IP 拦截条件。
-# 说明：供主配置单条订阅使用，避免在 Quantumult X 分流界面展开 27 条独立 reject 项。
+# 名称：重写配套去广告合集（合并自全部 28 份 filter/adblock/*.list）
+# 本地整理日期：2026-11-04；共 458 条去重域名与 IP 拦截条件。
+# 说明：供主配置单条订阅使用，避免在 Quantumult X 分流界面展开 28 条独立 reject 项。
 # 许可：MIT（app2smile）与 GPL-3.0（fmz200），详见 rewrite/licenses/。
 HOST,grpc.biliapi.net,REJECT
 IP-CIDR, 180.76.76.200/32, reject
@@ -415,6 +415,8 @@ host-suffix, click.tz.simba.taobao.com, reject
 host-suffix, stat.simba.taobao.com, reject
 host-suffix, m-adash.m.taobao.com, reject
 host-suffix, adashbc.m.taobao.com, reject
+host-suffix, wxs.qq.com, reject
+host-suffix, as.weixin.qq.com, reject
 host, ads-img-qc.xhscdn.com, reject
 host, ads-img-al.xhscdn.com, reject
 host, ads-video-al.xhscdn.com, reject

@@ -1,11 +1,11 @@
 # 名称：geolocation-!cn；说明：上游综合分类
 # 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
 # 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
-# 覆盖：25593 条域名条件；包含的上游分类：geolocation-!cn。
+# 覆盖：25606 条域名条件；包含的上游分类：geolocation-!cn。
 # 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
 # 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
 # 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/geolocation-!cn
-# 本地补充：14 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 本地补充：27 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
 # 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
 # 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
 # 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
@@ -117,7 +117,11 @@ host, as-hls-uk-live.akamaized.net, proxy
 host, asahishimbun.sc.omtrdc.net, proxy
 host, assets.ppy.sh, proxy
 host, audio-ak-spotify-com.akamaized.net, proxy
+host, audio-akp-bbr-spotify-com.akamaized.net, proxy
+host, audio-akp-quic-spotify-com.akamaized.net, proxy
+host, audio-akp-spotify-com.akamaized.net, proxy
 host, audio4-ak-spotify-com.akamaized.net, proxy
+host, audio4-akp-spotify-com.akamaized.net, proxy
 host, avail.googleflights.net, proxy
 host, avatargarenanow-a.akamaihd.net, proxy
 host, az764295.vo.msecnd.net, proxy
@@ -508,7 +512,9 @@ host, hammerandchisel.ssl.zendesk.com, proxy
 host, hb.imgix.net, proxy
 host, hb4bbbbb.pmhcjk.com, proxy
 host, heads-ak-spotify-com.akamaized.net, proxy
+host, heads-akp-spotify-com.akamaized.net, proxy
 host, heads4-ak-spotify-com.akamaized.net, proxy
+host, heads4-akp-spotify-com.akamaized.net, proxy
 host, himalaya-exchange.zendesk.com, proxy
 host, hl2rcv.adobe.com, proxy
 host, hlrcv.stage.adobe.com, proxy
@@ -991,6 +997,7 @@ host, software.download.prss.microsoft.com, proxy
 host, sp.itunes.apple.com, proxy
 host, spectator.ppy.sh, proxy
 host, speedysub.music.apple.com, proxy
+host, spotify.com.edgesuite.net, proxy
 host, spotify.map.fastly.net, proxy
 host, spotify.map.fastlylb.net, proxy
 host, ssl-google-analytics.l.google.com, proxy
@@ -3687,6 +3694,7 @@ host-suffix, aucheapbeats.com, proxy
 host-suffix, audible.com, proxy
 host-suffix, audiencenetwork.com, proxy
 host-suffix, audiencenetwork.tv, proxy
+host-suffix, audio-ak-spotify-com.akamaized.net, proxy
 host-suffix, audiobeatsau.com, proxy
 host-suffix, audiobeatsbydre.com, proxy
 host-suffix, audiomonsterbeatsonline.com, proxy
@@ -11501,6 +11509,7 @@ host-suffix, headphonesol.com, proxy
 host-suffix, headphonesretailer.com, proxy
 host-suffix, headphonessupply.com, proxy
 host-suffix, headphonezip.com, proxy
+host-suffix, heads4-ak-spotify-com.akamaized.net, proxy
 host-suffix, headset987.com, proxy
 host-suffix, health026.click, proxy
 host-suffix, healthcarecareeronline.com, proxy
@@ -21018,7 +21027,9 @@ host-suffix, sportstream.com, proxy
 host-suffix, sportswomanoftheyear.co.uk, proxy
 host-suffix, sportswomenoftheyear.co.uk, proxy
 host-suffix, spoti.fi, proxy
+host-suffix, spotify-com.akamaized.net, proxy
 host-suffix, spotify-everywhere.com, proxy
+host-suffix, spotify.app.link, proxy
 host-suffix, spotify.com, proxy
 host-suffix, spotify.com.edgesuite.net, proxy
 host-suffix, spotify.design, proxy
@@ -21030,6 +21041,8 @@ host-suffix, spotifycodes.com, proxy
 host-suffix, spotifyforbrands.com, proxy
 host-suffix, spotifyforvendors.com, proxy
 host-suffix, spotifyjobs.com, proxy
+host-suffix, spotifynewsroom.jp, proxy
+host-suffix, spotilocal.com, proxy
 host-suffix, spraynwash.com, proxy
 host-suffix, spreadprivacy.com, proxy
 host-suffix, springer.com, proxy
