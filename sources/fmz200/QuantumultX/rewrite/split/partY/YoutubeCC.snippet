@@ -1,0 +1,10 @@
+# QX Youtube 无中文字幕机翻方案（默认简体中文 zh-Hans，无需开启资源解析器）
+# 原作者：id77 (https://github.com/id77/QuantumultX)
+
+hostname = www.youtube.com
+
+# 简体中文自动翻译
+https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=(?!(zh|zh\-Hans)&)((?!&tlang=zh\-Hans).)*$ url request-header \sHTTP/1\.1(\r\n) request-header &tlang=zh-Hans HTTP/1.1$1
+
+# 如需繁体中文，可注释上方简体行并取消下方注释：
+# https:\/\/www.youtube.com\/api\/timedtext\?.+&lang=(?!zh\-Hant&)((?!&tlang=zh\-Hant).)*$ url request-header \sHTTP/1\.1(\r\n) request-header &tlang=zh-Hant HTTP/1.1$1

@@ -1,0 +1,41 @@
+# 名称：category-tech-media；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：26 条域名条件；包含的上游分类：category-tech-media。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-tech-media
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host-suffix, 9to5google.com, proxy
+host-suffix, 9to5mac.com, proxy
+host-suffix, 9to5terminal.com, proxy
+host-suffix, 9to5toys.com, proxy
+host-suffix, androidauthority.com, proxy
+host-suffix, androidpolice.com, proxy
+host-suffix, appleinsider.com, proxy
+host-suffix, digitaltrends.com, proxy
+host-suffix, dronedj.com, proxy
+host-suffix, electrek.co, proxy
+host-suffix, engadget.com, proxy
+host-suffix, macrumors.com, proxy
+host-suffix, slashdot.org, proxy
+host-suffix, spaceexplored.com, proxy
+host-suffix, startupschool.org, proxy
+host-suffix, technews.tw, proxy
+host-suffix, techradar.com, proxy
+host-suffix, techspot.com, proxy
+host-suffix, thetype.cloud, proxy
+host-suffix, thetype.com, proxy
+host-suffix, theverge.com, proxy
+host-suffix, tomsguide.com, proxy
+host-suffix, typeisbeautiful.com, proxy
+host-suffix, ycombinator.com, proxy
+host-suffix, zdnet.com, proxy
+host-suffix, zdnet.redvideo.io, proxy

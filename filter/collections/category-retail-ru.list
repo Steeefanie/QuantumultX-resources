@@ -1,0 +1,94 @@
+# 名称：category-retail-ru；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：79 条域名条件；包含的上游分类：category-retail-ru。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-retail-ru
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host, mvideo.edna.io, proxy
+host-suffix, 5ka.ru, proxy
+host-suffix, 5post.market, proxy
+host-suffix, abonementx5.ru, proxy
+host-suffix, acmvid.com, proxy
+host-suffix, auchan.ru, proxy
+host-suffix, audiohead.ru, proxy
+host-suffix, av.ru, proxy
+host-suffix, bristol.ru, proxy
+host-suffix, chizhik.club, proxy
+host-suffix, citilink.ru, proxy
+host-suffix, clubx5.ru, proxy
+host-suffix, coolera.ru, proxy
+host-suffix, detmir.ru, proxy
+host-suffix, dialogx5.ru, proxy
+host-suffix, dixy.ru, proxy
+host-suffix, dns-com.ru, proxy
+host-suffix, dns-shop.ru, proxy
+host-suffix, doctorhead.ru, proxy
+host-suffix, dodois.com, proxy
+host-suffix, dodois.io, proxy
+host-suffix, dodopizza.com, proxy
+host-suffix, dodopizza.ru, proxy
+host-suffix, dodostatic.net, proxy
+host-suffix, dostaevsky.ru, proxy
+host-suffix, e5.ru, proxy
+host-suffix, evrasia.rest, proxy
+host-suffix, fivepost.ru, proxy
+host-suffix, fix-price.com, proxy
+host-suffix, idx5.ru, proxy
+host-suffix, ilovesakura.ru, proxy
+host-suffix, jx5.ru, proxy
+host-suffix, kazanexpress.ru, proxy
+host-suffix, keyx5.ru, proxy
+host-suffix, krasnoeibeloe.ru, proxy
+host-suffix, lamoda.ru, proxy
+host-suffix, lenta.com, proxy
+host-suffix, lenta.tech, proxy
+host-suffix, magnit.com, proxy
+host-suffix, magnit.ru, proxy
+host-suffix, metro-cc.ru, proxy
+host-suffix, mm.ru, proxy
+host-suffix, mnogolososya.ru, proxy
+host-suffix, mvideo.ru, proxy
+host-suffix, myapelsin.ru, proxy
+host-suffix, myspar.ru, proxy
+host-suffix, notik.ru, proxy
+host-suffix, okolo.app, proxy
+host-suffix, oskelly.co, proxy
+host-suffix, oskelly.ru, proxy
+host-suffix, ostin.com, proxy
+host-suffix, perekrestok.com, proxy
+host-suffix, perekrestok.ru, proxy
+host-suffix, regard.ru, proxy
+host-suffix, rostics.ru, proxy
+host-suffix, sokolov.io, proxy
+host-suffix, sokolov.ru, proxy
+host-suffix, sushiwok.ru, proxy
+host-suffix, uni.rest, proxy
+host-suffix, unirest.tech, proxy
+host-suffix, vkusnoitochka.ru, proxy
+host-suffix, vkusvill.ru, proxy
+host-suffix, winelab.ru, proxy
+host-suffix, x5.ai, proxy
+host-suffix, x5.com, proxy
+host-suffix, x5.digital, proxy
+host-suffix, x5.group, proxy
+host-suffix, x5.media, proxy
+host-suffix, x5.ru, proxy
+host-suffix, x5.team, proxy
+host-suffix, x5.tech, proxy
+host-suffix, x5club.ru, proxy
+host-suffix, x5id.ru, proxy
+host-suffix, x5l.ru, proxy
+host-suffix, x5media.ru, proxy
+host-suffix, x5paket.ru, proxy
+host-suffix, x5q.ru, proxy
+host-suffix, x5static.net, proxy
+host-suffix, x5w.ru, proxy

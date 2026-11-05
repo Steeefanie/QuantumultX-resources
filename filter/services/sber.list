@@ -1,0 +1,107 @@
+# 名称：sber；原始分类：sber
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 sber 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/sber
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：2gis、okko、sberbank
+# 覆盖：91 条域名条件；示例：sberpro.vedomosti.ru、21-school.ru、2gis.ae。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/sber
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host, sberpro.vedomosti.ru, proxy
+host-suffix, 21-school.ru, proxy
+host-suffix, 2gis.ae, proxy
+host-suffix, 2gis.am, proxy
+host-suffix, 2gis.az, proxy
+host-suffix, 2gis.by, proxy
+host-suffix, 2gis.com, proxy
+host-suffix, 2gis.com.cy, proxy
+host-suffix, 2gis.cz, proxy
+host-suffix, 2gis.ge, proxy
+host-suffix, 2gis.kg, proxy
+host-suffix, 2gis.kz, proxy
+host-suffix, 2gis.ru, proxy
+host-suffix, 2gis.tech, proxy
+host-suffix, 2gis.tj, proxy
+host-suffix, 2gis.uz, proxy
+host-suffix, accesspoint.uz, proxy
+host-suffix, afisha.ru, proxy
+host-suffix, bps-sberbank.by, proxy
+host-suffix, citydrive.ru, proxy
+host-suffix, cloud.ru, proxy
+host-suffix, cloudru.cn, proxy
+host-suffix, cplsb.ru, proxy
+host-suffix, eaptechka.online, proxy
+host-suffix, eapteka.ru, proxy
+host-suffix, getsynapse.io, proxy
+host-suffix, giga.chat, proxy
+host-suffix, gitverse.ru, proxy
+host-suffix, id.ru, proxy
+host-suffix, jivo.chat, proxy
+host-suffix, jivo.ru, proxy
+host-suffix, jivochat.co.in, proxy
+host-suffix, jivochat.co.za, proxy
+host-suffix, jivochat.com, proxy
+host-suffix, jivochat.com.br, proxy
+host-suffix, jivochat.com.co, proxy
+host-suffix, jivochat.com.pe, proxy
+host-suffix, jivochat.com.tr, proxy
+host-suffix, jivochat.de, proxy
+host-suffix, jivochat.es, proxy
+host-suffix, jivochat.ng, proxy
+host-suffix, jivochat.ru, proxy
+host-suffix, jivosite.com, proxy
+host-suffix, jivosite.ru, proxy
+host-suffix, kuper.ru, proxy
+host-suffix, megamarket.ru, proxy
+host-suffix, megamarket.tech, proxy
+host-suffix, okko.sport, proxy
+host-suffix, okko.tv, proxy
+host-suffix, okkoapi.tv, proxy
+host-suffix, otello.ru, proxy
+host-suffix, payecom.ru, proxy
+host-suffix, platiecom.ru, proxy
+host-suffix, playfamily.ru, proxy
+host-suffix, restnproducts.ru, proxy
+host-suffix, samokat.ru, proxy
+host-suffix, sber-bank.by, proxy
+host-suffix, sber.pro, proxy
+host-suffix, sber.ru, proxy
+host-suffix, sberauto.com, proxy
+host-suffix, sberbank-insurance.ru, proxy
+host-suffix, sberbank-tele.com, proxy
+host-suffix, sberbank.com, proxy
+host-suffix, sberbank.ru, proxy
+host-suffix, sberbankaktivno.ru, proxy
+host-suffix, sberbankins.ru, proxy
+host-suffix, sbercloud.ru, proxy
+host-suffix, sbercloud.tech, proxy
+host-suffix, sberdevices.ru, proxy
+host-suffix, sberdisk.ru, proxy
+host-suffix, sberfactoring.ru, proxy
+host-suffix, sberhealth.ru, proxy
+host-suffix, sberindex.ru, proxy
+host-suffix, sberleasing.ru, proxy
+host-suffix, sberlogistics.ru, proxy
+host-suffix, sbermegamarket.ru, proxy
+host-suffix, sbermobile.ru, proxy
+host-suffix, sberpb.ru, proxy
+host-suffix, sberspasibo.ru, proxy
+host-suffix, sbertech.ru, proxy
+host-suffix, sbertroika.ru, proxy
+host-suffix, sbrf.ru, proxy
+host-suffix, spasibo.digital, proxy
+host-suffix, spasibo.market, proxy
+host-suffix, spasibobonus.ru, proxy
+host-suffix, spasibosb.ru, proxy
+host-suffix, spasibosberbank.ru, proxy
+host-suffix, yookassa.ru, proxy
+host-suffix, yoomoney.ru, proxy
+host-suffix, zvuk-b2b.com, proxy
+host-suffix, zvuk.com, proxy

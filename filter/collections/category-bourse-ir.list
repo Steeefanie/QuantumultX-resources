@@ -1,0 +1,63 @@
+# 名称：category-bourse-ir；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：48 条域名条件；包含的上游分类：category-bourse-ir。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-bourse-ir
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host-suffix, abanbroker.com, proxy
+host-suffix, abantether.com, proxy
+host-suffix, arman-ati.com, proxy
+host-suffix, bahmanbroker.com, proxy
+host-suffix, bit24.cash, proxy
+host-suffix, bitpin.ir, proxy
+host-suffix, bkisecurities.com, proxy
+host-suffix, bmibourse.com, proxy
+host-suffix, bourseiness.com, proxy
+host-suffix, bt-broker.com, proxy
+host-suffix, codal.ir, proxy
+host-suffix, danabroker.com, proxy
+host-suffix, emofid.com, proxy
+host-suffix, etminansahm.com, proxy
+host-suffix, exir.io, proxy
+host-suffix, farasahm.ir, proxy
+host-suffix, farhad-exchange.com, proxy
+host-suffix, hafezbourse.com, proxy
+host-suffix, ifb.ir, proxy
+host-suffix, ime.co.ir, proxy
+host-suffix, irenex.ir, proxy
+host-suffix, irfarabi.com, proxy
+host-suffix, jibitex.com, proxy
+host-suffix, kmsco.ir, proxy
+host-suffix, maskanbourse.com, proxy
+host-suffix, mellatbroker.com, proxy
+host-suffix, mofidonline.com, proxy
+host-suffix, nobitex.ir, proxy
+host-suffix, novinbourse.com, proxy
+host-suffix, oibroker.com, proxy
+host-suffix, ok-ex.io, proxy
+host-suffix, omidsahm.com, proxy
+host-suffix, ompfinex.com, proxy
+host-suffix, ramzinex.com, proxy
+host-suffix, rbc.ir, proxy
+host-suffix, saderatbourse.com, proxy
+host-suffix, sahandbroker.com, proxy
+host-suffix, samanbourse.com, proxy
+host-suffix, sdbhouse.com, proxy
+host-suffix, sepahbourse.com, proxy
+host-suffix, sukuk.ir, proxy
+host-suffix, tabdeal.org, proxy
+host-suffix, tadbirgar.com, proxy
+host-suffix, talarebourse.com, proxy
+host-suffix, tetherland.com, proxy
+host-suffix, tse.ir, proxy
+host-suffix, tsetmc.ir, proxy
+host-suffix, wallex.ir, proxy

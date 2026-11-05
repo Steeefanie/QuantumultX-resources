@@ -1,0 +1,139 @@
+# 名称：lan；说明：上游私有网络与路由器域名的可转换部分（不包含私网IP及单标签后缀）
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：124 条域名条件；包含的上游分类：private。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/private
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：direct；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host, asusrouter.com, direct
+host, instant.arubanetworks.com, direct
+host, local.adguard.org, direct
+host, localhost.weixin.qq.com, direct
+host, localhost.work.weixin.qq.com, direct
+host, miwifi.com, direct
+host, oasisauth.h3c.com, direct
+host, router.asus.com, direct
+host, routerlogin.com, direct
+host, setmeup.arubanetworks.com, direct
+host, tplogin.cn, direct
+host, www.asusrouter.com, direct
+host, www.miwifi.com, direct
+host, www.routerlogin.com, direct
+host-suffix, 1.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.0.ip6.arpa, direct
+host-suffix, 10.in-addr.arpa, direct
+host-suffix, 100.100.in-addr.arpa, direct
+host-suffix, 100.51.198.in-addr.arpa, direct
+host-suffix, 101.100.in-addr.arpa, direct
+host-suffix, 102.100.in-addr.arpa, direct
+host-suffix, 103.100.in-addr.arpa, direct
+host-suffix, 104.100.in-addr.arpa, direct
+host-suffix, 105.100.in-addr.arpa, direct
+host-suffix, 106.100.in-addr.arpa, direct
+host-suffix, 107.100.in-addr.arpa, direct
+host-suffix, 108.100.in-addr.arpa, direct
+host-suffix, 109.100.in-addr.arpa, direct
+host-suffix, 110.100.in-addr.arpa, direct
+host-suffix, 111.100.in-addr.arpa, direct
+host-suffix, 112.100.in-addr.arpa, direct
+host-suffix, 113.0.203.in-addr.arpa, direct
+host-suffix, 113.100.in-addr.arpa, direct
+host-suffix, 114.100.in-addr.arpa, direct
+host-suffix, 115.100.in-addr.arpa, direct
+host-suffix, 116.100.in-addr.arpa, direct
+host-suffix, 117.100.in-addr.arpa, direct
+host-suffix, 118.100.in-addr.arpa, direct
+host-suffix, 119.100.in-addr.arpa, direct
+host-suffix, 120.100.in-addr.arpa, direct
+host-suffix, 121.100.in-addr.arpa, direct
+host-suffix, 122.100.in-addr.arpa, direct
+host-suffix, 123.100.in-addr.arpa, direct
+host-suffix, 124.100.in-addr.arpa, direct
+host-suffix, 125.100.in-addr.arpa, direct
+host-suffix, 126.100.in-addr.arpa, direct
+host-suffix, 127.100.in-addr.arpa, direct
+host-suffix, 127.in-addr.arpa, direct
+host-suffix, 16.172.in-addr.arpa, direct
+host-suffix, 168.192.in-addr.arpa, direct
+host-suffix, 17.172.in-addr.arpa, direct
+host-suffix, 18.172.in-addr.arpa, direct
+host-suffix, 19.172.in-addr.arpa, direct
+host-suffix, 2.0.192.in-addr.arpa, direct
+host-suffix, 20.172.in-addr.arpa, direct
+host-suffix, 21.172.in-addr.arpa, direct
+host-suffix, 22.172.in-addr.arpa, direct
+host-suffix, 23.172.in-addr.arpa, direct
+host-suffix, 24.172.in-addr.arpa, direct
+host-suffix, 25.172.in-addr.arpa, direct
+host-suffix, 254.169.in-addr.arpa, direct
+host-suffix, 255.255.255.255.in-addr.arpa, direct
+host-suffix, 26.172.in-addr.arpa, direct
+host-suffix, 27.172.in-addr.arpa, direct
+host-suffix, 28.172.in-addr.arpa, direct
+host-suffix, 29.172.in-addr.arpa, direct
+host-suffix, 30.172.in-addr.arpa, direct
+host-suffix, 31.172.in-addr.arpa, direct
+host-suffix, 64.100.in-addr.arpa, direct
+host-suffix, 65.100.in-addr.arpa, direct
+host-suffix, 66.100.in-addr.arpa, direct
+host-suffix, 67.100.in-addr.arpa, direct
+host-suffix, 68.100.in-addr.arpa, direct
+host-suffix, 69.100.in-addr.arpa, direct
+host-suffix, 70.100.in-addr.arpa, direct
+host-suffix, 71.100.in-addr.arpa, direct
+host-suffix, 72.100.in-addr.arpa, direct
+host-suffix, 73.100.in-addr.arpa, direct
+host-suffix, 74.100.in-addr.arpa, direct
+host-suffix, 75.100.in-addr.arpa, direct
+host-suffix, 76.100.in-addr.arpa, direct
+host-suffix, 77.100.in-addr.arpa, direct
+host-suffix, 78.100.in-addr.arpa, direct
+host-suffix, 79.100.in-addr.arpa, direct
+host-suffix, 8.b.d.0.1.0.0.2.ip6.arpa, direct
+host-suffix, 8.e.f.ip6.arpa, direct
+host-suffix, 80.100.in-addr.arpa, direct
+host-suffix, 81.100.in-addr.arpa, direct
+host-suffix, 82.100.in-addr.arpa, direct
+host-suffix, 83.100.in-addr.arpa, direct
+host-suffix, 84.100.in-addr.arpa, direct
+host-suffix, 85.100.in-addr.arpa, direct
+host-suffix, 86.100.in-addr.arpa, direct
+host-suffix, 87.100.in-addr.arpa, direct
+host-suffix, 88.100.in-addr.arpa, direct
+host-suffix, 89.100.in-addr.arpa, direct
+host-suffix, 9.e.f.ip6.arpa, direct
+host-suffix, 90.100.in-addr.arpa, direct
+host-suffix, 91.100.in-addr.arpa, direct
+host-suffix, 92.100.in-addr.arpa, direct
+host-suffix, 93.100.in-addr.arpa, direct
+host-suffix, 94.100.in-addr.arpa, direct
+host-suffix, 95.100.in-addr.arpa, direct
+host-suffix, 96.100.in-addr.arpa, direct
+host-suffix, 97.100.in-addr.arpa, direct
+host-suffix, 98.100.in-addr.arpa, direct
+host-suffix, 99.100.in-addr.arpa, direct
+host-suffix, a.e.f.ip6.arpa, direct
+host-suffix, b.e.f.ip6.arpa, direct
+host-suffix, d.f.ip6.arpa, direct
+host-suffix, hiwifi.com, direct
+host-suffix, home.arpa, direct
+host-suffix, kis.v2.scr.kaspersky-labs.com, direct
+host-suffix, leike.cc, direct
+host-suffix, localhost.ptlogin2.qq.com, direct
+host-suffix, localhost.sec.qq.com, direct
+host-suffix, my.router, direct
+host-suffix, peiluyou.com, direct
+host-suffix, phicomm.me, direct
+host-suffix, plex.direct, direct
+host-suffix, router.ctc, direct
+host-suffix, tendawifi.com, direct
+host-suffix, tplinkwifi.net, direct
+host-suffix, ts.net, direct
+host-suffix, zte.home, direct

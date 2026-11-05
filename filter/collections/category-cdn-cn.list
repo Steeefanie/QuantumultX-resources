@@ -1,0 +1,108 @@
+# 名称：category-cdn-cn；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：93 条域名条件；包含的上游分类：category-cdn-cn。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-cdn-cn
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host-suffix, 51cdn.com, proxy
+host-suffix, 8686c.com, proxy
+host-suffix, acadn.cn, proxy
+host-suffix, acadn.com, proxy
+host-suffix, aicdn.com, proxy
+host-suffix, aocde.com, proxy
+host-suffix, bbbcdns.com, proxy
+host-suffix, bootcdn.cn, proxy
+host-suffix, bootcdn.net, proxy
+host-suffix, bootcss.com, proxy
+host-suffix, bsclink.cn, proxy
+host-suffix, cdn20.com, proxy
+host-suffix, cdn30.org, proxy
+host-suffix, cdnmg.com, proxy
+host-suffix, cf-china.info, proxy
+host-suffix, cf-ns.com, proxy
+host-suffix, cf-ns.net, proxy
+host-suffix, cf-ns.site, proxy
+host-suffix, cf-ns.tech, proxy
+host-suffix, cftest5.cn, proxy
+host-suffix, cftest6.cn, proxy
+host-suffix, cftest7.com, proxy
+host-suffix, cftest8.com, proxy
+host-suffix, chinanetcenter.com, proxy
+host-suffix, chuangcache.com, proxy
+host-suffix, chuangcdn.com, proxy
+host-suffix, cloudflare-cn.com, proxy
+host-suffix, cloudflareanycast.net, proxy
+host-suffix, cloudflarechina.cn, proxy
+host-suffix, cloudflarecn.net, proxy
+host-suffix, cloudflareglobal.net, proxy
+host-suffix, cloudflareinsights-cn.com, proxy
+host-suffix, cloudflareperf.com, proxy
+host-suffix, cloudflareprod.com, proxy
+host-suffix, cloudflarestaging.com, proxy
+host-suffix, cloudflarestoragegw.com, proxy
+host-suffix, dfyun.com.cn, proxy
+host-suffix, dlgslb.cn, proxy
+host-suffix, dlgslb.net, proxy
+host-suffix, dwion.com, proxy
+host-suffix, fastcdn.com, proxy
+host-suffix, fastcdn.com.cn, proxy
+host-suffix, flxdns.cn, proxy
+host-suffix, flxdns.com, proxy
+host-suffix, funcdn.com, proxy
+host-suffix, globalcdn.cn, proxy
+host-suffix, hydun.com, proxy
+host-suffix, jiashule.com, proxy
+host-suffix, jiasule.com, proxy
+host-suffix, lxdns.cn, proxy
+host-suffix, lxdns.com, proxy
+host-suffix, lxdns.info, proxy
+host-suffix, lxdns.net, proxy
+host-suffix, lxdns.org, proxy
+host-suffix, mcadn.cn, proxy
+host-suffix, mwcdns.com, proxy
+host-suffix, mwcloudcdn.com, proxy
+host-suffix, npsv6.com, proxy
+host-suffix, oncdp.com, proxy
+host-suffix, ourdvsss.com, proxy
+host-suffix, phpcomposer.com, proxy
+host-suffix, qbox.me, proxy
+host-suffix, qingcdn.com, proxy
+host-suffix, qiniu.com, proxy
+host-suffix, qiniucdn.com, proxy
+host-suffix, qiniudn.com, proxy
+host-suffix, qiniudns.com, proxy
+host-suffix, qiniup.com, proxy
+host-suffix, qnsdk.com, proxy
+host-suffix, qnssl.com, proxy
+host-suffix, qtlcdn.cn, proxy
+host-suffix, qtlcdn.com, proxy
+host-suffix, qtlcdn.net, proxy
+host-suffix, speedws.info, proxy
+host-suffix, speedws.org, proxy
+host-suffix, staticfile.net, proxy
+host-suffix, staticfile.org, proxy
+host-suffix, tlgslb.cn, proxy
+host-suffix, tlgslb.com, proxy
+host-suffix, trpcdn.net, proxy
+host-suffix, upai.com, proxy
+host-suffix, upaiyun.com, proxy
+host-suffix, upcdn.net, proxy
+host-suffix, upyun.com, proxy
+host-suffix, wangsu.com, proxy
+host-suffix, wscdns.com, proxy
+host-suffix, wscdns.info, proxy
+host-suffix, wscdns.org, proxy
+host-suffix, wsdvs.com, proxy
+host-suffix, wsglb.com, proxy
+host-suffix, wsglb.net, proxy
+host-suffix, wswebcdn.com, proxy
+host-suffix, wswebpic.com, proxy

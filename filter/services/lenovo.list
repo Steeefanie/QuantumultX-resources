@@ -1,0 +1,74 @@
+# 名称：lenovo；原始分类：lenovo
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 lenovo 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/lenovo
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：58 条域名条件；示例：baiying.cn、baiying.com.cn、bestrhy.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/lenovo
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, baiying.cn, proxy
+host-suffix, baiying.com.cn, proxy
+host-suffix, bestrhy.com, proxy
+host-suffix, blurdev.com, proxy
+host-suffix, cftsupport.com, proxy
+host-suffix, chainedbox.com, proxy
+host-suffix, cunchuhulian-ln.cn, proxy
+host-suffix, dayin8.com, proxy
+host-suffix, filez.com, proxy
+host-suffix, fm365.com, proxy
+host-suffix, idea123.cn, proxy
+host-suffix, ileapcloud.com, proxy
+host-suffix, iprintworks.cn, proxy
+host-suffix, jhwan.com.cn, proxy
+host-suffix, juhuiwan.com, proxy
+host-suffix, juhuiwan.com.cn, proxy
+host-suffix, juhuiwan.net, proxy
+host-suffix, lecoo.com, proxy
+host-suffix, lenauth.com, proxy
+host-suffix, lenovo.cn, proxy
+host-suffix, lenovo.com, proxy
+host-suffix, lenovo.com.cdn.cloudflare.net, proxy
+host-suffix, lenovo.com.cn, proxy
+host-suffix, lenovo.net, proxy
+host-suffix, lenovocare.com.cn, proxy
+host-suffix, lenovocloudos.com, proxy
+host-suffix, lenovocust.cn, proxy
+host-suffix, lenovoeservice.com, proxy
+host-suffix, lenovofile.com, proxy
+host-suffix, lenovogame.com, proxy
+host-suffix, lenovoimage.cn, proxy
+host-suffix, lenovoimage.com, proxy
+host-suffix, lenovomm.cn, proxy
+host-suffix, lenovomm.com, proxy
+host-suffix, lenovomobile.com, proxy
+host-suffix, lenovonetapp.com, proxy
+host-suffix, lenovopoc.com, proxy
+host-suffix, lenovoprinter.com, proxy
+host-suffix, lenovoprinter.com.cn, proxy
+host-suffix, lenovoprinter.net, proxy
+host-suffix, lenovovip.com.cn, proxy
+host-suffix, lx.pub, proxy
+host-suffix, lx.run, proxy
+host-suffix, lxzjjt.cn, proxy
+host-suffix, lxzjjt.com, proxy
+host-suffix, surepush.cn, proxy
+host-suffix, thinkcloudlab.com, proxy
+host-suffix, thinkpad.com, proxy
+host-suffix, thinkprinter.cn, proxy
+host-suffix, thinkprinter.com.cn, proxy
+host-suffix, thinkprinter.net, proxy
+host-suffix, zhiliaowenda.com.cn, proxy
+host-suffix, zui.cn, proxy
+host-suffix, zui.com, proxy
+host-suffix, zuk.cn, proxy
+host-suffix, zuk.com, proxy
+host-suffix, zuk.com.cn, proxy
+host-suffix, zxsales.cn, proxy

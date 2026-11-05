@@ -1,0 +1,4 @@
+# 哔哩哔哩 App 深度净化的配套分流；来源：app2smile/rules@df6366a7024e0b3f0aa3510c5b791eea6f3cba89/rule/bilibili-ad-qx.list
+# 本地整理日期：2026-11-04；保留原文，许可见 rewrite/licenses/app2smile-MIT.txt。
+# h2下会请求这个,但请求会很慢发出
+HOST,grpc.biliapi.net,REJECT

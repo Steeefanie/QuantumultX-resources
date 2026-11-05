@@ -45,10 +45,10 @@ include:polymer
 include:python
 include:qt
 include:readthedocs
+include:redhat
 include:redis
 include:ruby
 include:rust
-include:redhat
 include:scala
 include:sentry
 include:sourcehut
@@ -59,6 +59,8 @@ include:thelinuxfoundation
 include:tilda
 include:unity
 include:v8
+include:webflow
+include:wix
 include:wordpress
 
 adventofcode.com
@@ -69,6 +71,7 @@ artixlinux.org
 atom.io
 badgen.net
 bitvise.com
+bmonkeys.net
 bugsnag.com
 busybox.net
 centos.org
@@ -165,7 +168,6 @@ videolan.org
 vim.org
 wapm.io
 wasmer.io
-webflow.com
 weblate.org
 wireshark.org
 x.org
@@ -176,8 +178,19 @@ ziglang.org
 zsh.org
 
 # WordPress plugins
+boldgrid.com
+cloudwp.dev
 crocoblock.com
 elegantthemes.com
 hivepress.io
 motopress.com
 wpmailsmtp.com
+
+# TemplateMonster
+templatemonster.com
+tmimgcdn.com
+
+# Safety CLI Cybersecurity Inc.
+getsafety.com
+pyup.io
+safetycli.com

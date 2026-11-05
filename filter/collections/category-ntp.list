@@ -1,0 +1,131 @@
+# 名称：category-ntp；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：116 条域名条件；包含的上游分类：category-ntp。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-ntp
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host, izattime.qcomgeo2.com, proxy
+host, ntp-b.nist.gov, proxy
+host, ntp-c.colorado.edu, proxy
+host, ntp-d.nist.gov, proxy
+host, ntp-wwv.nist.gov, proxy
+host, ntp.aliyun.com, proxy
+host, ntp.tencent.com, proxy
+host, ntp.time.nl, proxy
+host, ntp.ubuntu.com, proxy
+host, ntp0.ntp-servers.net, proxy
+host, ntp1.aliyun.com, proxy
+host, ntp1.ntp-servers.net, proxy
+host, ntp1.tencent.com, proxy
+host, ntp1.time.nl, proxy
+host, ntp2.aliyun.com, proxy
+host, ntp2.ntp-servers.net, proxy
+host, ntp2.tencent.com, proxy
+host, ntp2.time.nl, proxy
+host, ntp3.aliyun.com, proxy
+host, ntp3.ntp-servers.net, proxy
+host, ntp3.tencent.com, proxy
+host, ntp4.aliyun.com, proxy
+host, ntp4.ntp-servers.net, proxy
+host, ntp4.tencent.com, proxy
+host, ntp5.aliyun.com, proxy
+host, ntp5.ntp-servers.net, proxy
+host, ntp5.tencent.com, proxy
+host, ntp6.aliyun.com, proxy
+host, ntp6.ntp-servers.net, proxy
+host, ntp7.aliyun.com, proxy
+host, ntp7.ntp-servers.net, proxy
+host, ntppool1.time.nl, proxy
+host, ntppool2.time.nl, proxy
+host, time-a-b.nist.gov, proxy
+host, time-a-g.nist.gov, proxy
+host, time-a-wwv.nist.gov, proxy
+host, time-b-b.nist.gov, proxy
+host, time-b-g.nist.gov, proxy
+host, time-b-wwv.nist.gov, proxy
+host, time-c-b.nist.gov, proxy
+host, time-c-g.nist.gov, proxy
+host, time-c-wwv.nist.gov, proxy
+host, time-d-b.nist.gov, proxy
+host, time-d-g.nist.gov, proxy
+host, time-d-wwv.nist.gov, proxy
+host, time-e-b.nist.gov, proxy
+host, time-e-g.nist.gov, proxy
+host, time-e-wwv.nist.gov, proxy
+host, time.amazonaws.cn, proxy
+host, time.apple.com, proxy
+host, time.asia.apple.com, proxy
+host, time.aws.com, proxy
+host, time.cloudflare.com, proxy
+host, time.euro.apple.com, proxy
+host, time.facebook.com, proxy
+host, time.google.com, proxy
+host, time.izatcloud.net, proxy
+host, time.nist.gov, proxy
+host, time.windows.com, proxy
+host, time.xtracloud.net, proxy
+host, time1.facebook.com, proxy
+host, time1.google.com, proxy
+host, time2.facebook.com, proxy
+host, time2.google.com, proxy
+host, time3.facebook.com, proxy
+host, time3.google.com, proxy
+host, time4.facebook.com, proxy
+host, time4.google.com, proxy
+host, time5.facebook.com, proxy
+host, ut1-time.colorado.edu, proxy
+host, ut1-wwv.nist.gov, proxy
+host, utcnist.colorado.edu, proxy
+host, utcnist2.colorado.edu, proxy
+host, utcnist3.colorado.edu, proxy
+host, xtratime.qcomgeo2.com, proxy
+host-suffix, ats1.e-timing.ne.jp, proxy
+host-suffix, clock.isc.org, proxy
+host-suffix, cn.pool.ntp.org, proxy
+host-suffix, ntp-os01.ocn.ad.jp, proxy
+host-suffix, ntp-tk01.ocn.ad.jp, proxy
+host-suffix, ntp-tk02.ocn.ad.jp, proxy
+host-suffix, ntp.dnsbalance.ring.gr.jp, proxy
+host-suffix, ntp.fiord.ru, proxy
+host-suffix, ntp.jst.mfeed.ad.jp, proxy
+host-suffix, ntp.nat.ms, proxy
+host-suffix, ntp.nc.u-tokyo.ac.jp, proxy
+host-suffix, ntp.neu.edu.cn, proxy
+host-suffix, ntp.nic.cz, proxy
+host-suffix, ntp.nict.jp, proxy
+host-suffix, ntp.ntsc.ac.cn, proxy
+host-suffix, ntp.org.cn, proxy
+host-suffix, ntp.ring.gr.jp, proxy
+host-suffix, ntp.ripe.net, proxy
+host-suffix, ntp.se, proxy
+host-suffix, ntp.t.ring.gr.jp, proxy
+host-suffix, ntp.tohoku.ac.jp, proxy
+host-suffix, ntp.tut.ac.jp, proxy
+host-suffix, ntp.ufe.cz, proxy
+host-suffix, ntp0.ring.gr.jp, proxy
+host-suffix, ntp1.jst.mfeed.ad.jp, proxy
+host-suffix, ntp1.plala.or.jp, proxy
+host-suffix, ntp1.ring.gr.jp, proxy
+host-suffix, ntp1.tohoku.ac.jp, proxy
+host-suffix, ntp1.v6.mfeed.ad.jp, proxy
+host-suffix, ntp1.wakwak.com, proxy
+host-suffix, ntp2.jst.mfeed.ad.jp, proxy
+host-suffix, ntp2.plala.or.jp, proxy
+host-suffix, ntp2.ring.gr.jp, proxy
+host-suffix, ntp2.tohoku.ac.jp, proxy
+host-suffix, ntp2.v6.mfeed.ad.jp, proxy
+host-suffix, ntp2.wakwak.com, proxy
+host-suffix, ntp3.jst.mfeed.ad.jp, proxy
+host-suffix, ntp3.v6.mfeed.ad.jp, proxy
+host-suffix, pool.ntp.org, proxy
+host-suffix, s2csntp.miz.nao.ac.jp, proxy
+host-suffix, time.nrc.ca, proxy

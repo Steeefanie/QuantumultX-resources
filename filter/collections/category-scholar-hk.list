@@ -1,0 +1,48 @@
+# 名称：category-scholar-hk；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：33 条域名条件；包含的上游分类：category-scholar-hk。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-scholar-hk
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host-suffix, cityu.edu.hk, proxy
+host-suffix, cityu.hk, proxy
+host-suffix, cpce-polyu.edu.hk, proxy
+host-suffix, cuhk.edu.hk, proxy
+host-suffix, cuhk.hk, proxy
+host-suffix, edu.hk, proxy
+host-suffix, eduhk.edu.hk, proxy
+host-suffix, eduhk.hk, proxy
+host-suffix, hkbu.edu.hk, proxy
+host-suffix, hkbu.hk, proxy
+host-suffix, hkcc-polyu.edu.hk, proxy
+host-suffix, hku.edu.hk, proxy
+host-suffix, hku.hk, proxy
+host-suffix, hkust.edu.hk, proxy
+host-suffix, hkust.hk, proxy
+host-suffix, polyu.edu.hk, proxy
+host-suffix, polyu.hk, proxy
+host-suffix, speed-polyu.edu.hk, proxy
+host-suffix, xn----fr0b94b15d2ue8q7a1o3e.xn--wcvs22d.xn--j6w193g, proxy
+host-suffix, xn--fiq80y.hk, proxy
+host-suffix, xn--fiq80y.xn--j6w193g, proxy
+host-suffix, xn--fiq80y3xbiwr.hk, proxy
+host-suffix, xn--fiq80y3xbiwr.xn--j6w193g, proxy
+host-suffix, xn--fiq80y3xbiwrs0kiu9d.hk, proxy
+host-suffix, xn--fiq80y3xbiwrs0kiu9d.xn--j6w193g, proxy
+host-suffix, xn--pssu7ci2j23mp9ny48b.hk, proxy
+host-suffix, xn--pssu7ci2j23mp9ny48b.xn--j6w193g, proxy
+host-suffix, xn--pssu7ci3q5oge0ai91q.xn--j6w193g, proxy
+host-suffix, xn--pssu7cv61af44b.hk, proxy
+host-suffix, xn--pssu7cv61af44b.xn--j6w193g, proxy
+host-suffix, xn--pssu7cz8nr8ibkx1e8a.xn--j6w193g, proxy
+host-suffix, xn--uis44a.xn--j6w193g, proxy
+host-suffix, xn--wcvs22d.xn--j6w193g, proxy

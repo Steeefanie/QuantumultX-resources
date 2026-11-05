@@ -1,0 +1,61 @@
+# 名称：binance；原始分类：binance
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 binance 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/binance
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：45 条域名条件；示例：zftksc.cdn-settings.appsflyersdk.com、zftksc.launches.appsflyersdk.com、binance.cc。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/binance
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host, zftksc.cdn-settings.appsflyersdk.com, proxy
+host, zftksc.launches.appsflyersdk.com, proxy
+host-suffix, binance.cc, proxy
+host-suffix, binance.charity, proxy
+host-suffix, binance.cloud, proxy
+host-suffix, binance.co, proxy
+host-suffix, binance.com, proxy
+host-suffix, binance.info, proxy
+host-suffix, binance.me, proxy
+host-suffix, binance.net, proxy
+host-suffix, binance.org, proxy
+host-suffix, binance.us, proxy
+host-suffix, binance.vision, proxy
+host-suffix, binanceapi.com, proxy
+host-suffix, binancecnt.com, proxy
+host-suffix, binanceru.net, proxy
+host-suffix, binancezh.be, proxy
+host-suffix, binancezh.biz, proxy
+host-suffix, binancezh.cc, proxy
+host-suffix, binancezh.co, proxy
+host-suffix, binancezh.com, proxy
+host-suffix, binancezh.info, proxy
+host-suffix, binancezh.ink, proxy
+host-suffix, binancezh.kim, proxy
+host-suffix, binancezh.link, proxy
+host-suffix, binancezh.live, proxy
+host-suffix, binancezh.mobi, proxy
+host-suffix, binancezh.net, proxy
+host-suffix, binancezh.pro, proxy
+host-suffix, binancezh.sh, proxy
+host-suffix, binancezh.top, proxy
+host-suffix, bmwweb.solutions, proxy
+host-suffix, bnappweb.black, proxy
+host-suffix, bnbchain.org, proxy
+host-suffix, bnbstatic.com, proxy
+host-suffix, bntrace.com, proxy
+host-suffix, bsappapi.cc, proxy
+host-suffix, bsappapi.com, proxy
+host-suffix, bscdnweb.com, proxy
+host-suffix, nftstatic.com, proxy
+host-suffix, saasexch.cc, proxy
+host-suffix, saasexch.co, proxy
+host-suffix, saasexch.com, proxy
+host-suffix, saasexch.info, proxy
+host-suffix, saasexch.io, proxy

@@ -1,0 +1,99 @@
+# 名称：noip；原始分类：noip
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 noip 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/noip
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：83 条域名条件；示例：3utilities.com、access.ly、blogsyte.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/noip
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, 3utilities.com, proxy
+host-suffix, access.ly, proxy
+host-suffix, blogsyte.com, proxy
+host-suffix, bounceme.net, proxy
+host-suffix, brasilia.me, proxy
+host-suffix, cable-modem.org, proxy
+host-suffix, ciscofreak.com, proxy
+host-suffix, collegefan.org, proxy
+host-suffix, couchpotatofries.org, proxy
+host-suffix, damnserver.com, proxy
+host-suffix, ddns.me, proxy
+host-suffix, ddns.net, proxy
+host-suffix, ddnsking.com, proxy
+host-suffix, ditchyourip.com, proxy
+host-suffix, dnsfor.me, proxy
+host-suffix, dnsiskinky.com, proxy
+host-suffix, dvrcam.info, proxy
+host-suffix, dynns.com, proxy
+host-suffix, eating-organic.net, proxy
+host-suffix, fantasyleague.cc, proxy
+host-suffix, freedynamicdns.net, proxy
+host-suffix, freedynamicdns.org, proxy
+host-suffix, geekgalaxy.com, proxy
+host-suffix, golffan.us, proxy
+host-suffix, gotdns.ch, proxy
+host-suffix, health-carereform.com, proxy
+host-suffix, homesecuritymac.com, proxy
+host-suffix, homesecuritypc.com, proxy
+host-suffix, hopto.me, proxy
+host-suffix, hopto.org, proxy
+host-suffix, hosthampster.com, proxy
+host-suffix, ilovecollege.info, proxy
+host-suffix, loginto.me, proxy
+host-suffix, mlbfan.org, proxy
+host-suffix, mmafan.biz, proxy
+host-suffix, myactivedirectory.com, proxy
+host-suffix, myddns.me, proxy
+host-suffix, mydissent.net, proxy
+host-suffix, myeffect.net, proxy
+host-suffix, myftp.biz, proxy
+host-suffix, myftp.org, proxy
+host-suffix, mymediapc.net, proxy
+host-suffix, mypsx.net, proxy
+host-suffix, mysecuritycamera.com, proxy
+host-suffix, mysecuritycamera.net, proxy
+host-suffix, mysecuritycamera.org, proxy
+host-suffix, myvnc.com, proxy
+host-suffix, net-freaks.com, proxy
+host-suffix, nflfan.org, proxy
+host-suffix, nhlfan.net, proxy
+host-suffix, onthewifi.com, proxy
+host-suffix, pgafan.net, proxy
+host-suffix, point2this.com, proxy
+host-suffix, pointto.us, proxy
+host-suffix, privatizehealthinsurance.net, proxy
+host-suffix, quicksytes.com, proxy
+host-suffix, read-books.org, proxy
+host-suffix, redirectme.net, proxy
+host-suffix, securitytactics.com, proxy
+host-suffix, servebeer.com, proxy
+host-suffix, serveblog.net, proxy
+host-suffix, servecounterstrike.com, proxy
+host-suffix, serveexchange.com, proxy
+host-suffix, serveftp.com, proxy
+host-suffix, servegame.com, proxy
+host-suffix, servehalflife.com, proxy
+host-suffix, servehttp.com, proxy
+host-suffix, servehumour.com, proxy
+host-suffix, serveirc.com, proxy
+host-suffix, serveminecraft.net, proxy
+host-suffix, servemp3.com, proxy
+host-suffix, servep2p.com, proxy
+host-suffix, servepics.com, proxy
+host-suffix, servequake.com, proxy
+host-suffix, servesarcasm.com, proxy
+host-suffix, stufftoread.com, proxy
+host-suffix, sytes.net, proxy
+host-suffix, ufcfan.org, proxy
+host-suffix, unusualperson.com, proxy
+host-suffix, viewdns.net, proxy
+host-suffix, webhop.me, proxy
+host-suffix, workisboring.com, proxy
+host-suffix, zapto.org, proxy

@@ -1,0 +1,95 @@
+# 名称：akamai；原始分类：akamai
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 akamai 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/akamai
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：79 条域名条件；示例：accdn.com.cn、ak1.net、aka-ai.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/akamai
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, accdn.com.cn, proxy
+host-suffix, ak1.net, proxy
+host-suffix, aka-ai.com, proxy
+host-suffix, aka-ai.net, proxy
+host-suffix, akacrypto.net, proxy
+host-suffix, akadeem.net, proxy
+host-suffix, akadns.com, proxy
+host-suffix, akadns.net, proxy
+host-suffix, akadns6.net, proxy
+host-suffix, akadns88.net, proxy
+host-suffix, akadns99.net, proxy
+host-suffix, akaeai.com, proxy
+host-suffix, akafms.net, proxy
+host-suffix, akagtm.org, proxy
+host-suffix, akahost.net, proxy
+host-suffix, akaint.net, proxy
+host-suffix, akam.net, proxy
+host-suffix, akamaa.com, proxy
+host-suffix, akamah.com, proxy
+host-suffix, akamai-access.com, proxy
+host-suffix, akamai-access.net, proxy
+host-suffix, akamai-cdn.com, proxy
+host-suffix, akamai-platform-internal.net, proxy
+host-suffix, akamai-platform-staging.com, proxy
+host-suffix, akamai-platform.net, proxy
+host-suffix, akamai-regression.net, proxy
+host-suffix, akamai-staging.net, proxy
+host-suffix, akamai-sucks.net, proxy
+host-suffix, akamai-thailand.com, proxy
+host-suffix, akamai-thailand.net, proxy
+host-suffix, akamai-trials.com, proxy
+host-suffix, akamai.co.kr, proxy
+host-suffix, akamai.com, proxy
+host-suffix, akamai.net, proxy
+host-suffix, akamaiedge.net, proxy
+host-suffix, akamaientrypoint.net, proxy
+host-suffix, akamaietpcnctest.com, proxy
+host-suffix, akamaietpcompromisedcnctest.com, proxy
+host-suffix, akamaietpcompromisedmalwaretest.com, proxy
+host-suffix, akamaietpmalwaretest.com, proxy
+host-suffix, akamaietpphishingtest.com, proxy
+host-suffix, akamaihd-staging.net, proxy
+host-suffix, akamaihd.com, proxy
+host-suffix, akamaimagicmath.net, proxy
+host-suffix, akamainewzealand.com, proxy
+host-suffix, akamaiphillipines.com, proxy
+host-suffix, akamaiphillipines.net, proxy
+host-suffix, akamaisingapore.net, proxy
+host-suffix, akamaistream.net, proxy
+host-suffix, akamaitech.com, proxy
+host-suffix, akamaitech.net, proxy
+host-suffix, akamaitechnologies.com, proxy
+host-suffix, akamaitechnologies.net, proxy
+host-suffix, akamaized-staging.net, proxy
+host-suffix, akamaizercentral.com, proxy
+host-suffix, akamak.com, proxy
+host-suffix, akamam.com, proxy
+host-suffix, akamci.com, proxy
+host-suffix, akami.com, proxy
+host-suffix, akami.net, proxy
+host-suffix, akamii.com, proxy
+host-suffix, akamqi.com, proxy
+host-suffix, akastream.com, proxy
+host-suffix, akastream.net, proxy
+host-suffix, akatns.net, proxy
+host-suffix, akcdn.com.cn, proxy
+host-suffix, akstat.io, proxy
+host-suffix, aptdn.net, proxy
+host-suffix, edgekey.net, proxy
+host-suffix, edgekey88.net, proxy
+host-suffix, edgesuite.net, proxy
+host-suffix, iamakamai.com, proxy
+host-suffix, iamakamai.net, proxy
+host-suffix, janrain.biz, proxy
+host-suffix, janrainservices.com, proxy
+host-suffix, skycdn.com.cn, proxy
+host-suffix, soasta-dswb.com, proxy
+host-suffix, srtcdn.net, proxy
+host-suffix, tl88.net, proxy

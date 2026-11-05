@@ -1,0 +1,94 @@
+# 名称：category-flight-simulator；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：79 条域名条件；包含的上游分类：category-flight-simulator。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-flight-simulator
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host, flightsimulator.azureedge.net, proxy
+host, fsdt.virtuali.s3.amazonaws.com, proxy
+host-suffix, a2asimulations.com, proxy
+host-suffix, aerosoft.com, proxy
+host-suffix, apocfly.com, proxy
+host-suffix, asobostudio.com, proxy
+host-suffix, beyondatc.app, proxy
+host-suffix, beyondatc.net, proxy
+host-suffix, carenado.com, proxy
+host-suffix, css.aero, proxy
+host-suffix, digitalcombatsimulator.com, proxy
+host-suffix, fenixsim.com, proxy
+host-suffix, flight1.com, proxy
+host-suffix, flightsim.to, proxy
+host-suffix, flightsimlabs.com, proxy
+host-suffix, flightsimulator.com, proxy
+host-suffix, flybywiresim.com, proxy
+host-suffix, flyisfp.com, proxy
+host-suffix, flytampa.org, proxy
+host-suffix, fs2crew.com, proxy
+host-suffix, fsdreamteam.com, proxy
+host-suffix, hifisimtech.com, proxy
+host-suffix, hifisimtech.zendesk.com, proxy
+host-suffix, hoppie.nl, proxy
+host-suffix, infiniteflight.com, proxy
+host-suffix, infiniteflight.live, proxy
+host-suffix, inibuilds.com, proxy
+host-suffix, ivao.aero, proxy
+host-suffix, justflight.com, proxy
+host-suffix, navigraph.com, proxy
+host-suffix, orbxdirect.com, proxy
+host-suffix, orbxsystems.com, proxy
+host-suffix, parallel42.com, proxy
+host-suffix, pilotedge.net, proxy
+host-suffix, pmdg.com, proxy
+host-suffix, poscon.net, proxy
+host-suffix, precisionmanuals.com, proxy
+host-suffix, prepar3d.com, proxy
+host-suffix, rexgamestudios.com, proxy
+host-suffix, rexsimulations.com, proxy
+host-suffix, rosscarlson.dev, proxy
+host-suffix, sayintentions.ai, proxy
+host-suffix, simbrief.com, proxy
+host-suffix, simmarket.com, proxy
+host-suffix, skylitefly.com, proxy
+host-suffix, synapticsim.com, proxy
+host-suffix, tfdidesign.com, proxy
+host-suffix, thresholdx.net, proxy
+host-suffix, vat-apac.com, proxy
+host-suffix, vatca.org, proxy
+host-suffix, vatcan.ca, proxy
+host-suffix, vatcar.net, proxy
+host-suffix, vateud.net, proxy
+host-suffix, vathk.com, proxy
+host-suffix, vatil.org.il, proxy
+host-suffix, vatjpn.org, proxy
+host-suffix, vatkor.net, proxy
+host-suffix, vatmex.com.mx, proxy
+host-suffix, vatnz.net, proxy
+host-suffix, vatpac.org, proxy
+host-suffix, vatprc.net, proxy
+host-suffix, vatroc.net, proxy
+host-suffix, vats.im, proxy
+host-suffix, vatsea.org, proxy
+host-suffix, vatsim-radar.com, proxy
+host-suffix, vatsim.com.br, proxy
+host-suffix, vatsim.dev, proxy
+host-suffix, vatsim.me, proxy
+host-suffix, vatsim.net, proxy
+host-suffix, vatsim.uk, proxy
+host-suffix, vatssa.com, proxy
+host-suffix, vatsur.org, proxy
+host-suffix, vatusa.net, proxy
+host-suffix, vatwa.net, proxy
+host-suffix, virtualisoftware.com, proxy
+host-suffix, x-plane.com, proxy
+host-suffix, x-plane.org, proxy
+host-suffix, xenviro.net, proxy
+host-suffix, xpilot-project.org, proxy

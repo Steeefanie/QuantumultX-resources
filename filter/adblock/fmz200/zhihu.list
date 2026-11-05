@@ -1,0 +1,11 @@
+# 知乎 配套拦截；GPL-3.0，许可见 rewrite/licenses/fmz200-GPL-3.0.txt
+# 来源：fmz200/wool_scripts@4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partZ/Zhihu.snippet
+# 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。
+host, appcloud.zhihu.com, reject
+host, appcloud2.in.zhihu.com, reject
+host, mqtt.zhihu.com, reject
+host, sugar.zhihu.com, reject
+host, crash2.zhihu.com, reject
+host, 118.89.204.198, reject
+IP-CIDR, 118.89.204.198/32, reject
+IP6-CIDR,2402:4e00:1200:ed00:0:9089:6dac:96b6/128, reject

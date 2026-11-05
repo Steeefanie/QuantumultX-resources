@@ -1,0 +1,109 @@
+# 名称：pearson；原始分类：pearson
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 pearson 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/pearson
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：93 条域名条件；示例：activelearnprimary.co.uk、activelearnprimary.com.au、activeteachonline.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/pearson
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, activelearnprimary.co.uk, proxy
+host-suffix, activelearnprimary.com.au, proxy
+host-suffix, activeteachonline.com, proxy
+host-suffix, addison-wesley.ch, proxy
+host-suffix, adobepress.ch, proxy
+host-suffix, btec.co.uk, proxy
+host-suffix, ciscopress.ch, proxy
+host-suffix, connectionsacademy.com, proxy
+host-suffix, connectionseducation.com, proxy
+host-suffix, connectionslearning.com, proxy
+host-suffix, dombosco.com.br, proxy
+host-suffix, ecpa.fr, proxy
+host-suffix, escapestudios.co.uk, proxy
+host-suffix, ilongman.com, proxy
+host-suffix, integral7.com, proxy
+host-suffix, internationalconnectionsacademy.com, proxy
+host-suffix, longman.ch, proxy
+host-suffix, mut.ch, proxy
+host-suffix, myhelpinglab.com, proxy
+host-suffix, mylogiclab.com, proxy
+host-suffix, mypearson.com, proxy
+host-suffix, mypearsonenglish.ch, proxy
+host-suffix, mypearsonshop.com.mx, proxy
+host-suffix, mypearsonshop.mx, proxy
+host-suffix, mysocialworklab.com, proxy
+host-suffix, netname.com.br, proxy
+host-suffix, pearson-anaya.com, proxy
+host-suffix, pearson-intl.com, proxy
+host-suffix, pearson-schule.ch, proxy
+host-suffix, pearson-studium.ch, proxy
+host-suffix, pearson.ch, proxy
+host-suffix, pearson.cl, proxy
+host-suffix, pearson.co.in, proxy
+host-suffix, pearson.co.jp, proxy
+host-suffix, pearson.com, proxy
+host-suffix, pearson.com.ar, proxy
+host-suffix, pearson.com.au, proxy
+host-suffix, pearson.com.cn, proxy
+host-suffix, pearson.com.hk, proxy
+host-suffix, pearson.com.uy, proxy
+host-suffix, pearson.es, proxy
+host-suffix, pearson.fr, proxy
+host-suffix, pearson.pl, proxy
+host-suffix, pearsonactivelearn.com, proxy
+host-suffix, pearsonassessment.be, proxy
+host-suffix, pearsonassessment.de, proxy
+host-suffix, pearsonassessment.dk, proxy
+host-suffix, pearsonassessment.fr, proxy
+host-suffix, pearsonassessment.nl, proxy
+host-suffix, pearsonassessment.no, proxy
+host-suffix, pearsonassessment.se, proxy
+host-suffix, pearsonassessments.com, proxy
+host-suffix, pearsoncanada.ca, proxy
+host-suffix, pearsonclinical.be, proxy
+host-suffix, pearsonclinical.ca, proxy
+host-suffix, pearsonclinical.co.uk, proxy
+host-suffix, pearsonclinical.com.au, proxy
+host-suffix, pearsonclinical.com.br, proxy
+host-suffix, pearsonclinical.de, proxy
+host-suffix, pearsonclinical.dk, proxy
+host-suffix, pearsonclinical.es, proxy
+host-suffix, pearsonclinical.eu, proxy
+host-suffix, pearsonclinical.fr, proxy
+host-suffix, pearsonclinical.in, proxy
+host-suffix, pearsonclinical.nl, proxy
+host-suffix, pearsonclinical.no, proxy
+host-suffix, pearsonclinical.se, proxy
+host-suffix, pearsoncmg.com, proxy
+host-suffix, pearsoncred.com, proxy
+host-suffix, pearsoned.co.nz, proxy
+host-suffix, pearsoned.com, proxy
+host-suffix, pearsoneducacion.net, proxy
+host-suffix, pearsoneducationbooks.com, proxy
+host-suffix, pearsonelt.ch, proxy
+host-suffix, pearsonelt.com, proxy
+host-suffix, pearsonenespanol.com, proxy
+host-suffix, pearsonhighered.com, proxy
+host-suffix, pearsoninstitute.ac.za, proxy
+host-suffix, pearsonlongman.ch, proxy
+host-suffix, pearsononlineacademy.com, proxy
+host-suffix, pearsonperu.pe, proxy
+host-suffix, pearsonplaces.com.au, proxy
+host-suffix, pearsonschoolsandfecolleges.co.uk, proxy
+host-suffix, pearsonvue.com, proxy
+host-suffix, pearsonvue.net, proxy
+host-suffix, pobl-content.com, proxy
+host-suffix, pvue1.com, proxy
+host-suffix, pvue2.com, proxy
+host-suffix, quatrum.com.br, proxy
+host-suffix, stark-verlag.ch, proxy
+host-suffix, talentlens.com, proxy
+host-suffix, themathsfactor.com, proxy
+host-suffix, xn--pearsonenespaol-brb.com, proxy

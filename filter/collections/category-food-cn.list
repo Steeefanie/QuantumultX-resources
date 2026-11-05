@@ -1,0 +1,77 @@
+# 名称：category-food-cn；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：62 条域名条件；包含的上游分类：category-food-cn。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-food-cn
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host-suffix, 3songshu.com, proxy
+host-suffix, 4008-517-517.cn, proxy
+host-suffix, 4008117117.com, proxy
+host-suffix, 517lppz.com, proxy
+host-suffix, anlaiye.com, proxy
+host-suffix, anlaiye.com.cn, proxy
+host-suffix, bkchina.cn, proxy
+host-suffix, brightdairy.com, proxy
+host-suffix, brighticecream.com, proxy
+host-suffix, busyming.com, proxy
+host-suffix, chinabdh.com, proxy
+host-suffix, chinacow.com, proxy
+host-suffix, chinatea.com.cn, proxy
+host-suffix, cofco.com, proxy
+host-suffix, dicos.com.cn, proxy
+host-suffix, greatwallwine.com.cn, proxy
+host-suffix, hacl.cn, proxy
+host-suffix, haidilao.com, proxy
+host-suffix, hdlcdns.com, proxy
+host-suffix, heytea.com, proxy
+host-suffix, hnlshm.com, proxy
+host-suffix, hophing.cn, proxy
+host-suffix, hophing.com.cn, proxy
+host-suffix, hwwt8.com, proxy
+host-suffix, imcome.net, proxy
+host-suffix, imcoming.com, proxy
+host-suffix, junlebaoruye.com, proxy
+host-suffix, kemen.cn, proxy
+host-suffix, kfc.com.cn, proxy
+host-suffix, kiwa-tech.com, proxy
+host-suffix, lkcoffee.com, proxy
+host-suffix, lppz.com, proxy
+host-suffix, lppzimg.com, proxy
+host-suffix, luckincoffeecdn.com, proxy
+host-suffix, luhua.cn, proxy
+host-suffix, mcd.cn, proxy
+host-suffix, mcdchina.net, proxy
+host-suffix, mcdonalds.com.cn, proxy
+host-suffix, meican.com, proxy
+host-suffix, meicanstatic.com, proxy
+host-suffix, mengniu.com.cn, proxy
+host-suffix, micun.com, proxy
+host-suffix, mxbc.com, proxy
+host-suffix, mxbc.net, proxy
+host-suffix, nongfuspring.com, proxy
+host-suffix, qiaqiafood.com, proxy
+host-suffix, qmai.cn, proxy
+host-suffix, qmai.com, proxy
+host-suffix, qmimg.cn, proxy
+host-suffix, shuanghui.net, proxy
+host-suffix, shuxinyc.com, proxy
+host-suffix, starbucks.com.cn, proxy
+host-suffix, telunsu.net, proxy
+host-suffix, vipbcw.com, proxy
+host-suffix, wahaha.com.cn, proxy
+host-suffix, whhhealth.com, proxy
+host-suffix, yihaikerry.net.cn, proxy
+host-suffix, yili.com, proxy
+host-suffix, yst.com.cn, proxy
+host-suffix, yumchina.com, proxy
+host-suffix, yyds.co, proxy
+host-suffix, zymls.com, proxy

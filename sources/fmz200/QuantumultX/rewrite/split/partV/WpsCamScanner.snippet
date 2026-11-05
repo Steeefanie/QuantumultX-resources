@@ -1,0 +1,9 @@
+#!name=WPS 超级会员与扫描全能王 VIP
+#!desc=解锁 WPS Office 本地超级会员/稻壳会员及扫描全能王（CamScanner）高级账户状态
+#!author=Steeefanie
+#!homepage=https://github.com/Steeefanie/QuantumultX-resources
+
+^https?:\/\/account\.wps\.cn\/api\/users\/.+\/overview url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/wps_camscanner.js
+^https?:\/\/(api|api-cs)\.intsig\.net\/purchase\/cs\/query_property url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/wps_camscanner.js
+
+hostname = account.wps.cn, api.intsig.net, api-cs.intsig.net

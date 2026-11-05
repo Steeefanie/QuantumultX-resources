@@ -1,0 +1,92 @@
+# 名称：google-blogspot；原始分类：blogspot
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：按上游 Google（谷歌） 规则归组；具体运营主体未逐项核实
+# 服务说明：Blogger/Blogspot 博客发布与访问服务。
+# 说明状态：服务用途说明；运营主体未单独核实
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/blogspot
+# 规则分组：google；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：76 条域名条件；示例：blogblog.com、blogger.com、blogger.googleusercontent.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/blogspot
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, blogblog.com, proxy
+host-suffix, blogger.com, proxy
+host-suffix, blogger.googleusercontent.com, proxy
+host-suffix, blogspot.ae, proxy
+host-suffix, blogspot.al, proxy
+host-suffix, blogspot.am, proxy
+host-suffix, blogspot.ba, proxy
+host-suffix, blogspot.be, proxy
+host-suffix, blogspot.bg, proxy
+host-suffix, blogspot.bj, proxy
+host-suffix, blogspot.ca, proxy
+host-suffix, blogspot.cf, proxy
+host-suffix, blogspot.ch, proxy
+host-suffix, blogspot.cl, proxy
+host-suffix, blogspot.co.at, proxy
+host-suffix, blogspot.co.id, proxy
+host-suffix, blogspot.co.il, proxy
+host-suffix, blogspot.co.ke, proxy
+host-suffix, blogspot.co.nz, proxy
+host-suffix, blogspot.co.uk, proxy
+host-suffix, blogspot.co.za, proxy
+host-suffix, blogspot.com, proxy
+host-suffix, blogspot.com.ar, proxy
+host-suffix, blogspot.com.au, proxy
+host-suffix, blogspot.com.br, proxy
+host-suffix, blogspot.com.by, proxy
+host-suffix, blogspot.com.co, proxy
+host-suffix, blogspot.com.cy, proxy
+host-suffix, blogspot.com.ee, proxy
+host-suffix, blogspot.com.eg, proxy
+host-suffix, blogspot.com.es, proxy
+host-suffix, blogspot.com.mt, proxy
+host-suffix, blogspot.com.ng, proxy
+host-suffix, blogspot.com.tr, proxy
+host-suffix, blogspot.com.uy, proxy
+host-suffix, blogspot.cv, proxy
+host-suffix, blogspot.cz, proxy
+host-suffix, blogspot.de, proxy
+host-suffix, blogspot.dk, proxy
+host-suffix, blogspot.fi, proxy
+host-suffix, blogspot.fr, proxy
+host-suffix, blogspot.gr, proxy
+host-suffix, blogspot.hk, proxy
+host-suffix, blogspot.hr, proxy
+host-suffix, blogspot.hu, proxy
+host-suffix, blogspot.ie, proxy
+host-suffix, blogspot.in, proxy
+host-suffix, blogspot.is, proxy
+host-suffix, blogspot.it, proxy
+host-suffix, blogspot.jp, proxy
+host-suffix, blogspot.kr, proxy
+host-suffix, blogspot.li, proxy
+host-suffix, blogspot.lt, proxy
+host-suffix, blogspot.lu, proxy
+host-suffix, blogspot.md, proxy
+host-suffix, blogspot.mk, proxy
+host-suffix, blogspot.mx, proxy
+host-suffix, blogspot.my, proxy
+host-suffix, blogspot.nl, proxy
+host-suffix, blogspot.no, proxy
+host-suffix, blogspot.pe, proxy
+host-suffix, blogspot.pt, proxy
+host-suffix, blogspot.qa, proxy
+host-suffix, blogspot.re, proxy
+host-suffix, blogspot.ro, proxy
+host-suffix, blogspot.rs, proxy
+host-suffix, blogspot.ru, proxy
+host-suffix, blogspot.se, proxy
+host-suffix, blogspot.sg, proxy
+host-suffix, blogspot.si, proxy
+host-suffix, blogspot.sk, proxy
+host-suffix, blogspot.sn, proxy
+host-suffix, blogspot.td, proxy
+host-suffix, blogspot.tw, proxy
+host-suffix, blogspot.ug, proxy
+host-suffix, blogspot.vn, proxy

@@ -1,0 +1,10 @@
+#!name=微博客户端深度净化
+#!desc=去除微博客户端开屏广告、信息流推广微博、热搜广告与超话横幅
+#!author=ddgksf2013
+#!homepage=https://github.com/Steeefanie/QuantumultX-resources
+
+^https?:\/\/m?api\.weibo\.c(n|om)\/2\/(statuses\/(unread|friends|hot)_timeline|cardlist|searchall) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/weibo.js
+^https?:\/\/sdkapp\.uve\.weibo\.com\/interface\/sdk\/sdkad\.php url reject-dict
+^https?:\/\/wbapp\.uve\.weibo\.com\/wbapplua\/wbpullad\.lua url reject-dict
+
+hostname = api.weibo.cn, mapi.weibo.com, sdkapp.uve.weibo.com, wbapp.uve.weibo.com

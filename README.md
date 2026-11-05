@@ -1,170 +1,141 @@
-# Quantumult X 分流规则库
+# QuantumultX-resources
 
-按服务分类、可追溯、可检查的 Quantumult X 域名规则。用于补充和细化个人分流配置，不包含节点订阅、账户信息、证书、会员修改脚本或整套代理配置。
+**100% 自托管、零外部依赖**的 Quantumult X 分流规则、重写模块、脚本、策略图标与完整主配置库。
 
-本项目区分业务归属与连接策略：规则文件描述域名属于哪些服务，主配置决定直连、代理、拒绝或使用哪个策略组。维护目标是减少宽泛匹配与规则交叉，不以规则数量衡量准确性。
+所有分流规则、重写配置、配套 JS 脚本、解析器工具及策略组图标均完整保存在本仓库内，运行时不引用任何第三方仓库外链，避免因上游删库或改链导致配置失效。
 
-## 当前范围
+---
 
-初始数据快照包含 **1,548 个上游分类**，已构建 **155 个常用业务模块、9,179 条域名条件**。数量随上游更新变化，以 [来源锁定记录](sources/lock.json) 与 [分类目录](catalog/services.csv) 为准。
-
-| 分类 | 代表性模块 |
-| --- | --- |
-| AI 与模型 | OpenAI、Anthropic、Gemini、DeepSeek、Copilot、Cursor、Perplexity、Hugging Face |
-| 办公与协作 | Microsoft、OneDrive、Notion、Slack、Zoom、Adobe、Figma |
-| 谷歌服务 | Google、Google Play、Google FCM、Google Scholar |
-| 苹果服务 | Apple、iCloud、Apple Intelligence、Apple Music、Apple TV+ |
-| 学术与教育 | 知网、万方、DOI、IEEE、Elsevier、Springer、Zotero |
-| 开发与软件 | GitHub、GitLab、Docker、Python、npm、JetBrains、Vercel |
-| 社交与通讯 | Telegram、WhatsApp、Discord、LinkedIn、Reddit、微信、小红书 |
-| 视频与音乐 | YouTube、Netflix、Disney、Spotify、TikTok、哔哩哔哩 |
-| 游戏与下载 | Steam、Epic Games、PlayStation、Xbox、Nintendo、Synology |
-| 国内常用服务 | 百度、腾讯、阿里巴巴、京东、美团、高德、银行与支付服务 |
-
-这不是所有服务均已覆盖的承诺。完整上游分类在目录中可检索，只有“已构建”为 `True` 的分类才有本仓库的订阅文件。未选分类可在 `sources/selection.json` 中添加后重新构建。
-
-## 使用
-
-规则位于 `rules/services/<服务名>.list`，服务名使用小写英文，与上游分类名一致。
-
-仓库发布后，Raw 链接格式为：
+## 目录结构
 
 ```text
-https://raw.githubusercontent.com/Steeefanie/QuantumultX-filter-rules/main/rules/services/openai.list
+QuantumultX-resources/
+├── examples/                   # 主配置文件与参数说明
+│   ├── quantumult_steeefanie.conf  # 完整主配置模板（主力配置文件）
+│   ├── README.md                   # 订阅填写与多机场节点筛选说明
+│   └── config-guide.md             # 各段落配置参数详解（含 DoH 等 DNS 备选方案）
+├── filter/                     # 分流与去广告规则（共 1,584 份 .list）
+│   ├── services/                   # 1,417 个按具体服务细分的分流规则（如 openai.list、xiaohongshu.list）
+│   ├── collections/                # 137 个综合分类合集（如 domestic.list、global.list、advertising.list）
+│   ├── adblock/                    # 重写配套去广告规则（含单条合并去重版 combined.list）
+│   └── custom/                     # OneDrive 网页端与同步端独立规则
+├── rewrite/                    # 重写模块（共 37 个模块，按功能分为 3 类）
+│   ├── vip/                        # 会员解锁与本地 VIP（网易云、Spotify、RevenueCat、Xmind、美图、WPS 等）
+│   ├── purify/                     # 软件去广告与界面净化（小红书、微信、B站、知乎、微博、高德、油管、去开屏等）
+│   ├── enhance/                    # 功能增强与效率工具（微信外链解锁、油管字幕自动中译、神机重定向、Safari 搜索等）
+│   ├── catalog.md                  # 全部 37 个重写模块清单
+│   └── README.md                   # 重写分类说明与 MITM 证书排除说明
+├── scripts/                    # 重写与工具脚本（共 40 个文件）
+│   ├── app2smile/                  # 13 个重写配套脚本（MIT 许可）
+│   ├── fmz200/                     # 23 个重写配套脚本（GPL-3.0 许可）
+│   └── tools/                      # 4 个全局工具脚本（Shawn 资源解析器、流媒体解锁检测、BoxJS、UI 任务）
+├── icon/                       # 策略组图标（256×256 PNG）
+│   ├── proxy.png                   # PROXY 总组与配置封面蓝绿地球图标
+│   └── hk.png / tw.png / ...       # 13 个国家／地区正方形旗帜图标
+├── sources/                    # 上游原始快照、个人选择配置与版本哈希锁文件
+└── tools/                      # 规则构建、配置生成、域名查询与自动化测试工具
 ```
 
-以上地址对应本仓库的 OpenAI 分流规则。
+---
 
-在现有主配置的 `[filter_remote]` 中添加所需模块。例如：
+## 快速开始：使用完整主配置
 
-```ini
-[filter_remote]
-https://raw.githubusercontent.com/Steeefanie/QuantumultX-filter-rules/main/rules/services/openai.list, tag=OpenAI, force-policy=狮城节点, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Steeefanie/QuantumultX-filter-rules/main/rules/services/onedrive.list, tag=OneDrive, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-https://raw.githubusercontent.com/Steeefanie/QuantumultX-filter-rules/main/rules/services/cnki.list, tag=知网, force-policy=direct, update-interval=86400, opt-parser=false, enabled=true
-```
+直接导入或参考 [`examples/quantumult_steeefanie.conf`](examples/quantumult_steeefanie.conf)，只需在本机完成以下两步：
 
-“狮城节点”必须是你的配置中已存在的策略名称。示例仅说明写法，不表示对应服务必须使用该地区或必须直连。不要重复创建 `[filter_remote]` 段；将条目放入已有段落即可。
+1. **填写机场节点订阅（`[server_remote]`）**
+   - 将示例链接替换为你的机场订阅地址，并去掉行首 `#`。
+   - 订阅链接末尾默认带有 `#emoji=2` 且开启 `opt-parser=true`：内置的资源解析器会自动在每个节点名称前加上对应国旗 Emoji，并**自动将台湾旗替换为 `🇨🇳` 以完美兼容国行 iPhone（`CH/A`）**（非国行设备可改为 `#emoji=1`）。
+2. **填入个人 MITM 证书（`[mitm]`，可选）**
+   - 仅域名分流不需要 MITM；若启用 `[rewrite_remote]` 中的去广告与 VIP 重写，请在本机生成并粘贴自己的 `passphrase` 与 `p12` 证书。
+   - `[mitm]` 已默认排除 `*.apple.com`、丰巢、华米、抖音系等强校验证书域名，防止 App Store 无法切换账号或应用断网。
 
-文件内部统一写 `proxy`，由 `force-policy` 覆盖。如果不设置该参数，文件内部策略将决定去向。规则已是 Quantumult X 格式，无需资源解析器。域名分流本身不需要 MITM。
+### 策略组结构（`[policy]`）
 
-建议逐个替换对应旧模块，检查实际命中后再继续。不要将所有模块同时启用，也不要把 Google、Microsoft 等集团集合与所有子服务随意叠加。具体业务有独立去向时，需结合客户端的规则优先级与实际日志检查集团规则是否覆盖子业务。
+- **内置动作**：`DIRECT`（直连）、`REJECT`（拒绝）。
+- **总代理组 `PROXY`**：手动选择地区（默认候选首位为 `Hong Kong`），切换 `PROXY` 时所有绑定 `PROXY` 的服务同步切换出口地区。
+- **地区策略组（默认启用 5 个主力地区 + 8 个注释备用）**：
+  - 默认启用：`Hong Kong`、`Taiwan`、`Japan`、`Singapore`、`United States`（各地区内部采用 `url-latency-benchmark`，间隔 600 秒、容差 50 毫秒自动按延迟择优）。
+  - 注释备用：`South Korea`、`United Kingdom`、`Germany`、`France`、`Canada`、`Australia`、`Turkey`、`Indonesia`（如需使用，取消对应行注释并加入 `PROXY` 候选即可）。
+- **多机场筛选**：见 [`examples/README.md`](examples/README.md#多机场筛选)。
 
-## 精度边界
+### 个人分流清单（`[filter_remote]`）
 
-- `full:` 转为 `host`，`domain:` 转为 `host-suffix`，保持明确域名与子域名匹配的区别。
-- 递归解析上游 `include:`，按官方语法执行属性过滤与 affiliation，不把属性过滤误当属性添加。
-- 去除同一文件内的重复条件。
-- 带 `@ads` 的条件不放入业务规则，列入审查报告；本项目当前不提供广告拦截订阅。
-- `keyword:`、`regexp:` 不直接混入业务文件，保留审查记录。因此生成结果不是上游的无损全量转换。
-- 对共享云平台、公共认证、统计和支付平台的一组根域名采用显式审查名单；专用子域名仍可保留。这只是有限名单，不代表已识别全部共享基础设施。
-- [模块交叉报告](reports/overlaps.csv) 包含同名条件和后缀包含关系。交叉不一定错误，也不代表已确定运行时谁优先。
-- 同一域名可能同时供网页、客户端、登录和同步使用。仅靠域名规则无法可靠区分 OneDrive 网页与同步客户端，也不能按某个页面路径细分 HTTPS 流量。
-- 规则不保证服务可访问、地区解锁或节点可用。纯 IP 请求、被隔离的正则条件、HTTPDNS 等情况不在当前域名文件的完整覆盖承诺之内。
+主配置按优先级依次加载（默认均已设为 `enabled=true`）：
+1. **重写配套去广告合集**：[`filter/adblock/combined.list`](filter/adblock/combined.list)（合并全部 27 份重写配套拦截规则，策略 `REJECT`）
+2. **通用广告与跟踪拦截**：[`filter/collections/advertising.list`](filter/collections/advertising.list)（策略 `REJECT`）
+3. **专用服务独立分流**：
+   - **YouTube**（[`google-youtube.list`](filter/services/google-youtube.list)）置于 **Google 综合规则**（[`google-without-youtube.list`](filter/collections/google-without-youtube.list)）之前，支持单独指定地区；另提供可选的 [`google-gemini.list`](filter/services/google-gemini.list) 独立子项。
+   - **OneDrive** 拆分为网页端（[`onedrive-web.list`](filter/custom/onedrive-web.list)，走 `Hong Kong`）与同步端（[`onedrive-sync.list`](filter/custom/onedrive-sync.list)，走 `DIRECT`），置于 **Microsoft** 综合规则之前。
+   - **小红书**（[`xiaohongshu.list`](filter/services/xiaohongshu.list)）默认 `DIRECT`；**Steam、维基百科、Spotify、OpenAI、Anthropic、LinkedIn、Disney、Netflix、Meta、X (Twitter)** 均作为独立分流项默认指向 `PROXY`，可随时单独改绑任意地区组。
+4. **国内与海外兜底合集**：[`domestic.list`](filter/collections/domestic.list)（`DIRECT`）→ [`global.list`](filter/collections/global.list)（`PROXY`）→ `geoip, cn, DIRECT` → `final, PROXY`。
 
-如出现误分流，优先记录目标域名、实际命中的规则、预期策略和测试结果，再修正最小范围。不要通过新增 `wiki`、`xhs` 等宽泛关键词掩盖遗漏。
+---
 
-## 来源、署名与许可
+## 分流规则库（`filter/`）
 
-许可核查日期：2026-10-19。许可信息以各来源实际文件及后续变更为准；“未确认”不表示作者已经拒绝授权。署名不能代替许可。
+基于 V2Fly `domain-list-community` 快照转换，共 **1,417 个服务文件**（`filter/services/*.list`）与 **137 个分类集合**（`filter/collections/*.list`），并补充了 14 个 Google AI / Antigravity 官方端点（见 [`sources/local-additions.json`](sources/local-additions.json)）。
 
-### 实际使用的数据
+### 常用综合集合
 
-| 作者或项目 | 使用方式 | 许可及处理 |
-| --- | --- | --- |
-| [V2Fly / V2Ray 社区贡献者](https://github.com/v2fly/domain-list-community) | 保存上游域名数据；解析分类引用、筛选并转换为 Quantumult X 格式 | 已核对 [MIT 许可](https://github.com/v2fly/domain-list-community/blob/master/LICENSE)，保留原始版权声明和完整许可文本 |
+| 集合文件 | 用途 | 条件数 | 文件内默认策略 |
+| --- | --- | ---: | --- |
+| [domestic.list](filter/collections/domestic.list) | 国内接入域名合集 | 7,909 | `direct` |
+| [global.list](filter/collections/global.list) | 海外接入域名合集 | 25,593 | `proxy` |
+| [advertising.list](filter/collections/advertising.list) | 广告及跟踪域名合集 | 840 | `reject` |
+| [ai-global.list](filter/collections/ai-global.list) | 境外 AI 与模型服务 | 223 | `proxy` |
+| [ai-domestic.list](filter/collections/ai-domestic.list) | 境内接入 AI 与模型服务 | 120 | `direct` |
+| [media.list](filter/collections/media.list) | 流媒体与音视频服务 | 1,576 | `proxy` |
+| [development.list](filter/collections/development.list) | 开发与软件服务 | 681 | `proxy` |
+| [games.list](filter/collections/games.list) | 游戏平台与下载服务 | 1,155 | `proxy` |
+| [social-global.list](filter/collections/social-global.list) | 境外社交媒体 | 606 | `proxy` |
+| [scholar-global.list](filter/collections/scholar-global.list) | 境外学术与出版服务 | 484 | `proxy` |
+| [cloud-global.list](filter/collections/cloud-global.list) | 境外网盘服务 | 58 | `proxy` |
+| [lan.list](filter/collections/lan.list) | 私有网络与路由器域名 | 124 | `direct` |
+| [google-without-youtube.list](filter/collections/google-without-youtube.list) | 排除 YouTube 专用条件后的 Google 综合域名 | 888 | `proxy` |
 
-上游完整原文在 `sources/v2fly/data/`，上游许可在 `sources/v2fly/LICENSE`。`sources/lock.json` 记录确切提交和原始压缩包哈希；生成文件头标明来源提交和本地修改。本项目自编维护工具同样采用根目录 [MIT 许可](LICENSE)，不改变其他来源的权利归属。
+---
 
-### 规则结构、目录与资料参考
+## 重写模块与脚本（`rewrite/` & `scripts/`）
 
-以下来源用于了解分类、配置形式或提供原始入口。初始公开版本**没有复制或合并其规则正文、脚本及完整主配置**，也不声称获得作者专门授权。涉及未确认授权或额外声明的资源，不做自动镜像。
+共收录 **37 个重写模块** 与 **40 个本地脚本**，按用途归入 3 个子目录（完整列表见 [`rewrite/catalog.md`](rewrite/catalog.md)，详细说明见 [`rewrite/README.md`](rewrite/README.md)）：
 
-| 作者或项目 | 本次核查情况 | 本项目处理 |
-| --- | --- | --- |
-| [blackmatrix7](https://github.com/blackmatrix7/ios_rule_script) | 根目录有 GPL-2.0 文件，README 另有转载及使用声明；规则还列有各自来源 | 仅保留分类入口与参考链接，未复制其规则进入公开版本 |
-| [ConnersHua / RuleGo](https://github.com/ConnersHua/RuleGo) | 未从本次检查的根目录 LICENSE 与 README 确认明确再分发许可 | 保留规则文件来源索引，不复制正文 |
-| [大飞 / w37fhy](https://github.com/w37fhy/QuantumultX) | 已查到 GPL-3.0 许可文件；配置中引用的第三方资源需另行判断 | 仅参考配置结构，不将 GPL 内容并入 MIT 数据 |
-| [彭于晏 / 89996462](https://github.com/89996462/Quantumult-X) | README 与配置含转载、用途方面的限制性声明 | 仅保留来源链接 |
-| [Shawn / KOP-XIAO](https://github.com/KOP-XIAO/QuantumultX) | 本次未确认明确再分发许可 | 参考模块说明与配置结构，不复制正文 |
-| [Orz-3](https://github.com/Orz-3/QuantumultX) | 本次未确认明确再分发许可 | 参考分类结构，不复制正文 |
-| [烧烤哥 / Tartarus2014](https://github.com/Tartarus2014/QuantumultX-Script) | 本次未确认明确再分发许可 | 仅保留来源链接 |
-| [奇心 / zwf234](https://github.com/zwf234/rules) | 本次未确认网站配置的明确再分发许可 | 仅保留原始入口与引用记录 |
-| [耳东橙 / erdongchanyo](https://github.com/erdongchanyo/Rules) | 本次未确认明确再分发许可 | 仅保留来源链接 |
-| [懒人配置 / Sonmbs](https://github.com/Sonmbs/quantumult_X) | 本次未确认明确再分发许可 | 仅保留来源链接 |
-| [Space / WSL33099](https://github.com/WSL33099/QuantumultX) | 原配置链接不可用，未确认许可 | 不复制内容 |
-| [张军 / 28413761](https://github.com/28413761/QX) | 原配置链接不可用，未确认许可 | 不复制内容 |
-| [墨鱼 / ddgksf2013](https://github.com/ddgksf2013/Filter) | 本次未确认明确再分发许可 | 仅作现有规则来源参考，不复制正文 |
+- **[`rewrite/vip/`](rewrite/vip)**：网易云音乐本地黑胶 SVIP、Spotify VIP、RevenueCat 通用内购解锁（支持 No Fusion、Notability、Goodnotes、Locket、VSCO 等）、Xmind Pro、美图秀秀/Wink VIP、WPS 超级会员/扫描全能王 VIP、酷我音乐 VIP。
+- **[`rewrite/purify/`](rewrite/purify)**：YouTube、小红书（含无水印原图保存）、微信公众号、微信小程序去激励广告、哔哩哔哩、知乎、微博、高德地图、墨鱼通用去开屏 2.0、四大广告联盟 SDK、淘宝、京东、美团、豆瓣、百度网盘、夸克、什么值得买、IT之家等深度净化。
+- **[`rewrite/enhance/`](rewrite/enhance)**：微信外链直接打开、YouTube 字幕自动中译、神机重定向、Safari 超级搜索 Q-Search、网页与影视站点弹窗净化。
 
-说明：部分作者通过公共规则文件维护资源，不等于公开授予了所有使用方式的许可。本次只检查了可访问的声明文件与指定配置，没有联系作者请求授权，也未穷尽每个子目录的授权文件。未来若实际引入其他数据，应先核查具体文件许可，保留相应版权声明，并更新此表。
+---
 
-[Quantumult X 官方示例](https://github.com/crossutility/Quantumult-X)用于语法核对；[Loyalsoldier](https://github.com/Loyalsoldier/v2ray-rules-dat) 与 [MetaCubeX](https://github.com/MetaCubeX/meta-rules-dat)作为规则生态参考，初始版本没有复制其编译产物。[Steeefanie/personal-site](https://github.com/Steeefanie/personal-site)仅作中文 README 编排风格参考，未复制代码或正文。
+## 日常维护命令
 
-## 目录
-
-```text
-README.md                   使用、来源、许可及维护说明
-LICENSE                     MIT 许可及上游版权声明
-rules/services/             可直接引用的业务域名规则
-sources/selection.json      选定服务及分类
-sources/lock.json           上游提交与数据哈希
-sources/v2fly/              可追溯的 MIT 上游快照及许可
-catalog/                    分类、博主引用与补充来源索引
-reports/                    宽泛条件与模块交叉审查数据
-tools/                      构建、校验、域名查询和提交检查工具
-.github/workflows/          规则校验流程
-```
-
-## 维护
-
-环境要求：Python 3.10 或以上，仅使用标准库。
+要求 Python 3.10+（仅依赖标准库）：
 
 ```bash
-# 校验现有文件，并核对其是否与上游快照的转换结果一致
+# 修改 sources/selection.json 或 tools/config_templates.py 后，离线重新生成全部规则与主配置
+python3 tools/build.py --rebuild
+
+# 校验所有规则、重写、脚本与锁文件哈希是否一致
 python3 tools/build.py --check
 
-# 测试引用过滤、循环引用、共享域名等边界
+# 运行全部 45 项单元测试
 python3 -m unittest discover -s tools -p 'test_*.py'
 
-# 查询一个域名在哪些已构建服务中匹配
+# 查询某个域名命中了哪些规则文件
 python3 tools/query.py chatgpt.com
 
-# 拉取上游并重新生成；不会自动提交或推送
+# 从上游拉取最新 V2Fly 域名数据并重新构建
 python3 tools/build.py --refresh
 ```
 
-上游许可不再为已核查的 MIT、分类引用缺失、循环引用或选定模块无法生成时，构建会报错。上游网络请求失败时，不发布空文件。刷新后必须检查来源变化、规则增减及交叉报告，再执行验证与提交。
+---
 
-GitHub Actions 会在推送、PR 或手动运行时校验规则。初始版本不启用定时同步，也不自动提交上游变化。以后增加自动更新，应明确更新频率、失败处理和变更审阅方式。
+## 来源署名与许可
 
-### 提交与 PR 规范
+本项目自编构建工具与配置模板采用 [MIT 许可](LICENSE)。仓库内收录的第三方规则、脚本与图标均保留原作者署名与各自独立许可：
 
-采用 Conventional Commits，格式为 `type(scope): 中文变更说明`。标题说明与正文均使用中文；类型、范围、服务名、协议字段和必要技术术语可保留英文。标题控制在 72 个字符以内。
-
-| 类型 | 用途 | 示例 |
+| 来源项目 | 本仓库收录内容 | 许可 |
 | --- | --- | --- |
-| `feat` | 新增规则模块或能力 | `feat(ai): 新增模型服务分类` |
-| `fix` | 修正遗漏、误匹配或错误转换 | `fix(onedrive): 收紧共享域名匹配范围` |
-| `refactor` | 调整组织方式且不改变预期行为 | `refactor(rules): 拆分服务分类定义` |
-| `chore` | 上游同步及维护记录 | `chore(upstream): 同步社区域名数据` |
-| `docs` | 文档调整 | `docs(readme): 补充来源许可说明` |
-| `test` | 测试与边界验证 | `test(parser): 覆盖属性筛选场景` |
-| `ci` | 校验流程调整 | `ci(validation): 添加中文提交检查` |
-
-固定常用范围：`rules`、`upstream`、`parser`、`catalog`、`validation`、`readme`、`ai`、`onedrive`、`google`、`apple`、`media`、`gaming`、`scholar`。新增具体服务范围时沿用小写英文及连字符。
-
-正文写明修改原因、主要变更、影响范围、来源及许可、验证结果；没有完成设备验证时如实说明。PR 标题遵循同一格式，合并时保留有意义的中文说明。破坏性变更使用 `!` 并在正文加入 `BREAKING CHANGE: 中文迁移说明`。
-
-本地可使用 `.gitmessage` 作为提交模板，并在提交前运行：
-
-```bash
-python3 tools/check_commit.py 提交消息文件
-```
-
-### 反馈误分流
-
-反馈请包含服务名称、目标域名、当前命中的规则或模块、预期策略和复现结果。不要提交完整节点配置、私人订阅链接、访问令牌、证书、Cookie 或带个人信息的完整请求日志。
-
-## 初始版本记录
-
-2026-10-19：建立许可明确的数据基础、服务模块、上游快照、来源索引及静态校验流程。当前仅完成格式、转换一致性和自动化测试；尚未在真实 Quantumult X 设备完成逐项业务验证。
+| [v2fly/domain-list-community](https://github.com/v2fly/domain-list-community) | 分流规则上游快照（`sources/v2fly/`）及转换后的 `filter/` 规则 | [MIT](sources/v2fly/LICENSE) |
+| [app2smile/rules](https://github.com/app2smile/rules) | 9 个重写模块与 13 个配套脚本（`scripts/app2smile/`） | [MIT](rewrite/licenses/app2smile-MIT.txt)（运行库见 [第三方说明](scripts/THIRD-PARTY-NOTICES.md)） |
+| [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) | 28 个重写模块、23 个配套脚本（`scripts/fmz200/`）及去广告分流 | [GPL-3.0](rewrite/licenses/fmz200-GPL-3.0.txt) |
+| [KOP-XIAO/QuantumultX](https://github.com/KOP-XIAO/QuantumultX) & [chavyleung/scripts](https://github.com/chavyleung/scripts) | 资源解析器、流媒体解锁检测、UI 任务与 BoxJS 脚本（`scripts/tools/`） | 保留原作者署名与固定版本哈希（[`sources/remote-resources.lock.json`](sources/remote-resources.lock.json)） |
+| [lipis/flag-icons](https://github.com/lipis/flag-icons) & [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) | `icon/` 下的 13 个国家／地区旗帜与 `proxy.png` 地球图标 | [MIT](icon/licenses/flag-icons-MIT.txt) & [Public Domain](icon/licenses/natural-earth-PUBLIC-DOMAIN.txt) |

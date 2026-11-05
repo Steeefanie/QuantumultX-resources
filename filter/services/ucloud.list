@@ -1,0 +1,70 @@
+# 名称：ucloud；原始分类：ucloud
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 ucloud 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/ucloud
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：54 条域名条件；示例：apimkt.net、cdndo.com、clk1.cn。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/ucloud
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, apimkt.net, proxy
+host-suffix, cdndo.com, proxy
+host-suffix, clk1.cn, proxy
+host-suffix, clk1.top, proxy
+host-suffix, ecloud-gdu.com, proxy
+host-suffix, fshark.cn, proxy
+host-suffix, globalrdp.cn, proxy
+host-suffix, globalssh.cn, proxy
+host-suffix, iprdp.net, proxy
+host-suffix, ipssh.net, proxy
+host-suffix, me1.ltd, proxy
+host-suffix, slk1.net, proxy
+host-suffix, u-cdn.net, proxy
+host-suffix, ucgslb.cn, proxy
+host-suffix, ucgslb.com, proxy
+host-suffix, ucgslb.info, proxy
+host-suffix, ucgslb.net, proxy
+host-suffix, ucgslb.top, proxy
+host-suffix, ucloud-edm.com, proxy
+host-suffix, ucloud.cn, proxy
+host-suffix, ucloud.com.cn, proxy
+host-suffix, ucloud365.com, proxy
+host-suffix, ucloudadmin.com, proxy
+host-suffix, ucloudapi.com, proxy
+host-suffix, ucloudgda.com, proxy
+host-suffix, ucloudnaming.cn, proxy
+host-suffix, ucloudnaming.com, proxy
+host-suffix, ucloudnaming.info, proxy
+host-suffix, ucloudnaming.net, proxy
+host-suffix, ucloudoss.com, proxy
+host-suffix, ucloudstack.cn, proxy
+host-suffix, ucloudstack.com, proxy
+host-suffix, ucloudstack.net, proxy
+host-suffix, ucloudstor.com, proxy
+host-suffix, ucloudufile.com, proxy
+host-suffix, ucnaming.cn, proxy
+host-suffix, ucnaming.com, proxy
+host-suffix, ucnaming.info, proxy
+host-suffix, ucnaming.net, proxy
+host-suffix, uewaf.com, proxy
+host-suffix, ufileos.com, proxy
+host-suffix, ugslb.cn, proxy
+host-suffix, ugslb.com, proxy
+host-suffix, ugslb.info, proxy
+host-suffix, ugslb.net, proxy
+host-suffix, ugslb.top, proxy
+host-suffix, ugslb2.net, proxy
+host-suffix, uhasadmin.com, proxy
+host-suffix, unaming.cn, proxy
+host-suffix, unaming.info, proxy
+host-suffix, unaming.net, proxy
+host-suffix, urtc.com.cn, proxy
+host-suffix, uslk.net, proxy
+host-suffix, uucl.vip, proxy

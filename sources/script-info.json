@@ -1,0 +1,290 @@
+{
+  "scripts/app2smile/adsense.js": {
+    "title": "广告联盟响应处理",
+    "purpose": "处理穿山甲、腾讯优量汇、快手联盟匹配接口的返回码与填充状态，使对应广告不下发。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "只覆盖配置中列出的广告接口，不能替代所有 App 的独立去广告规则。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/bilibili-json.js": {
+    "title": "哔哩哔哩 JSON 接口净化",
+    "purpose": "处理开屏、首页推荐及部分导航字段，过滤源代码列出的广告卡片或推广入口。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "需要搭配同模块的协议脚本和配套分流；效果随 App 接口变化。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/bilibili-proto.js": {
+    "title": "哔哩哔哩协议响应处理",
+    "purpose": "解码并重编码匹配的二进制协议响应，处理动态、视频详情等接口中的广告与推广字段。",
+    "stage": "响应体：二进制 / Protocol Buffers",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "包含编码、协议及压缩运行库，不应当作普通 JSON 脚本挂载；来源要求 iOS 15 及以上。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/qidian.js": {
+    "title": "起点阅读接口净化",
+    "purpose": "处理起点阅读匹配接口中的开屏、活动入口、书架及书城推广字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "按原文匹配的 App 版本使用；部分配置会影响活动或导航入口。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/qq-news.js": {
+    "title": "腾讯新闻接口去广告",
+    "purpose": "清理开屏及新闻列表响应中的 adList、广告组件等字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "代码按对应 POST 接口处理；接口版本变化时可能只保留部分效果。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/spotify-json.js": {
+    "title": "Spotify 请求 URL 兼容调整",
+    "purpose": "将匹配请求中的 platform=iphone 改为 platform=ipad，并处理主机名后的 :443 写法。",
+    "stage": "请求阶段：由 script-request-header 调用，实际返回改写后的 URL",
+    "requirements": "由 Spotify 重写中对应的请求头阶段规则调用；按实际匹配 hostname 配置。",
+    "notes": "文件名含 json，但本脚本不解析响应 JSON；不要把它挂到响应体阶段。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/spotify-qx-header.js": {
+    "title": "Spotify 请求缓存头处理",
+    "purpose": "移除匹配请求中的 If-None-Match 缓存校验头，让对应接口重新返回响应内容。",
+    "stage": "请求头",
+    "requirements": "由 Spotify 模块的 script-request-header 规则调用。",
+    "notes": "只处理匹配请求的头部，不负责代理地区、响应广告过滤或账户服务端权限。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/spotify-proto.js": {
+    "title": "Spotify 协议响应处理",
+    "purpose": "解码并重编码匹配的协议响应，调整广告、播放行为及部分客户端账户属性字段。",
+    "stage": "响应体：二进制 / Protocol Buffers",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "不能提供超高音质，也不保证付费权益、服务端权限或长期有效；按上游 iOS 要求使用。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/tieba-json.js": {
+    "title": "百度贴吧 JSON 接口净化",
+    "purpose": "处理开屏、帖子列表、详情、看图模式及部分广告配置字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "应与对应协议脚本及配套拦截一起按需配置，不保证所有版本界面一致。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/tieba-proto.js": {
+    "title": "百度贴吧协议响应净化",
+    "purpose": "处理匹配二进制接口中的帖子列表、详情及广告相关字段。",
+    "stage": "响应体：二进制 / Protocol Buffers",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "不是普通文本替换脚本；按来源要求使用 iOS 15 及以上，并配置配套分流。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/vgtime.js": {
+    "title": "游戏时光开屏广告处理",
+    "purpose": "将游戏时光初始化响应中的 data.ad 置空，处理对应开屏广告。",
+    "stage": "响应体：JSON",
+    "requirements": "原模块匹配 HTTP 接口，不因本条规则本身要求 HTTPS 解密。",
+    "notes": "只处理该初始化接口；其他信息流广告可能需要广告联盟模块。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/youtube.js": {
+    "title": "YouTube 首页与推荐接口净化",
+    "purpose": "处理 browse / next 协议响应中的首页信息流和播放页推荐广告条目。",
+    "stage": "响应体：二进制 / Protocol Buffers",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "不处理播放器贴片广告，不是旧 Maasea 模块的完整替代；来源要求 iOS 15 及以上。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/app2smile/zhihu.js": {
+    "title": "知乎 App 广告接口净化",
+    "purpose": "处理知乎开屏、推荐列表、问题回答列表及文章相关推荐接口中的广告字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "只处理源配置列明的接口，不是浏览器页面 CSS 去广告规则。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/caixin/caixinAd.js": {
+    "title": "财新广告配置处理",
+    "purpose": "按来源配置处理财新广告展示时间、展示间隔等字段。",
+    "stage": "响应体：文本字段替换",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "原文采用混淆形式，本地仅补充说明，未完整审计内部逻辑；不作为付费内容权限说明。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/cnftp.js": {
+    "title": "视频 App 共用响应净化",
+    "purpose": "包含爱奇艺、优酷及其他视频 App 的开屏、信息流、播放页推广和导航处理分支；本库由所选视频模块按 URL 调用。",
+    "stage": "响应体：按匹配接口处理 JSON 或文本",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "这是多服务共用脚本，不是全部请求常驻处理；选用哪个模块决定实际触发范围。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/ithome/ithome.js": {
+    "title": "IT之家新闻列表去广告",
+    "purpose": "过滤 IT之家匹配新闻列表中的广告标签及特定广告 feedType。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "只处理源配置列出的新闻列表接口，接口字段变化会影响效果。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/jingdong/jingdong.js": {
+    "title": "京东界面与推广净化",
+    "purpose": "处理匹配的订单、物流、服务及推广接口，移除来源列出的营销楼层、活动入口和广告内容。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "只处理匹配接口的响应，不负责地区选择；部分营销、活动或推荐入口可能被隐藏。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/kuwo/kuwo.js": {
+    "title": "酷我音乐接口调整",
+    "purpose": "处理部分广告和推荐内容，同时包含客户端播放、下载及权益字段调整分支。",
+    "stage": "响应体：JSON / 文本",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "并非仅删除广告；客户端字段变化不保证服务端权限、实际可播放内容或付费权益。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/myBlockAds.js": {
+    "title": "多应用共用广告处理",
+    "purpose": "包含淘宝及其他应用的开屏、活动和推广处理分支；本库主要由淘宝模块按匹配 URL 调用。",
+    "stage": "响应体：按 URL 处理 JSON / 文本",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "原文还包含其他服务分支，不会因保存脚本就全局触发；实际范围由重写规则决定。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/quark.js": {
+    "title": "夸克匹配接口处理",
+    "purpose": "由夸克重写中的对应规则调用，处理来源列出的配置与推广接口。",
+    "stage": "响应体：按来源规则处理",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "原文为混淆代码，内部字段未逐项确认；本说明不把全部行为概括为单纯广告删除。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/smzdm/Smzdm.js": {
+    "title": "什么值得买首页与界面净化",
+    "purpose": "处理首页广告卡片、个人中心推广、悬浮入口及部分导航服务字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "与 smzdm_ads.js 分别匹配不同接口，某些活动或服务入口可能被隐藏。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/smzdm/smzdm_ads.js": {
+    "title": "什么值得买列表广告处理",
+    "purpose": "清理个人中心、详情、排行榜、搜索结果及搜索热榜中的指定广告或营销字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "只处理源配置列明的接口，与首页净化脚本的职责范围不同。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/xiaohongshu/xiaohongshu.js": {
+    "title": "小红书界面与内容接口净化",
+    "purpose": "处理搜索热词、开屏、信息流、详情页及部分图片/视频保存和水印相关字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "不决定小红书走哪个地区；包含内容保存与画质相关分支，效果和适用范围以原文及 App 版本为准。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/zhihu/zhihu.js": {
+    "title": "知乎界面与推荐净化",
+    "purpose": "处理知乎全局配置、首页导航、悬浮入口、热榜、回答列表及推广相关字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由对应重写规则按 URL 调用；HTTPS 响应处理通常需要个人 MITM 证书及对应 hostname。",
+    "notes": "与 app2smile 的知乎模块为不同方案；同一业务选择一套，避免重复处理。",
+    "annotation_date": "2026-11-04"
+  },
+  "scripts/fmz200/wyres.js": {
+    "title": "网易云音乐响应净化与客户端权益调整",
+    "purpose": "解密并重编码网易云音乐 eapi 响应，清理底部标签、横幅、推荐页及评论区推广，并调整客户端黑胶会员与音效等显示字段。",
+    "stage": "响应体：AES 加密 JSON / gzip",
+    "requirements": "仅由网易云音乐重写规则按 URL 调用；需要个人 MITM 证书及对应 hostname。",
+    "notes": "包含 CryptoJS AES 解密逻辑；客户端会员等级与音效字段调整不代表服务端曲库版权全部放行，可按需搭配 netease-vip 模块。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/Wyy.js": {
+    "title": "网易云音乐 VIP 试听请求头处理",
+    "purpose": "在匹配的播放地址、歌单及搜索请求头中注入共享会员标识以获取 VIP 歌曲试听流。",
+    "stage": "请求头",
+    "requirements": "仅由网易云音乐 VIP 重写规则按 URL 调用；需要个人 MITM 证书及对应 hostname。",
+    "notes": "原文采用混淆形式；仅处理歌曲播放与列表请求头，不改变客户端黑胶外观或最高音质，且受上游凭据时效影响。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/UnblockURLinWeChat.js": {
+    "title": "微信被屏蔽链接解析与直达",
+    "purpose": "处理微信安全中心拦截确认页响应，提取原始目标 URL 并提供直接跳转或快照展示。",
+    "stage": "响应体：HTML / 文本",
+    "requirements": "仅由微信解除链接限制重写规则调用；需要个人 MITM 证书及 weixin110.qq.com、security.wechat.com 的 hostname。",
+    "notes": "支持 BoxJS 可选配置；只处理微信拦截中间页，不改变微信其他聊天或支付请求。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/applet.js": {
+    "title": "微信小程序内容接口去广告",
+    "purpose": "清理匹配 WordPress 类小程序文章接口响应中的激励视频广告、弹窗广告及推广字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由微信小程序去广告重写规则按 URL 调用；HTTPS 响应处理需要个人 MITM 证书及对应 hostname。",
+    "notes": "只针对规则匹配的小程序接口生效，无法去除所有微信小程序的通用 5 秒开屏广告。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/zhangshanggongjiao.js": {
+    "title": "掌上公交小程序接口去广告",
+    "purpose": "清理掌上公交小程序 ApiData 接口响应中的广告字段。",
+    "stage": "响应体：JSON / 文本",
+    "requirements": "仅由微信小程序去广告重写规则按 URL 调用；需要个人 MITM 证书及 wx.mygolbs.com 的 hostname。",
+    "notes": "仅作用于掌上公交小程序接口。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/youtube.response.js": {
+    "title": "YouTube 协议响应去广告与播放增强",
+    "purpose": "解码并重编码 YouTube browse、next、player、search、reel 等 Protobuf 响应，移除贴片与信息流广告并启用后台播放、画中画及字幕翻译选项。",
+    "stage": "响应体：二进制 / Protocol Buffers",
+    "requirements": "仅由 YouTube 去广告重写规则调用；需要个人 MITM 证书、对应 hostname 及禁用 QUIC（udp_whitelist 排除 443）。",
+    "notes": "来自 Maasea/sgmodule（Apache-2.0）；与 app2smile 的 youtube.conf 同属 YouTube 重写，同一客户端只启用其中一套。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/revenuecat.js": {
+    "title": "RevenueCat 通用内购订阅状态调整",
+    "purpose": "移除请求头中的 ETag 缓存标识，并在匹配的 RevenueCat 订阅校验响应中注入客户端订阅与权益有效期字段。",
+    "stage": "请求头与响应体：JSON",
+    "requirements": "仅由 RevenueCat 通用内购重写规则调用；需要个人 MITM 证书及 api.revenuecat.com、api.rc-backup.com 的 hostname。",
+    "notes": "适用于采用 RevenueCat 客户端校验的摄影、笔记与工具类应用（如 No Fusion、Locket、Notability 等）；服务端强校验功能不保证生效。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/xmind.js": {
+    "title": "Xmind 客户端 Pro 状态调整",
+    "purpose": "处理 Xmind 设备与订阅校验接口响应，将客户端订阅状态字段设为有效。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由 Xmind 重写规则调用；需要个人 MITM 证书及对应 hostname。",
+    "notes": "仅调整客户端本地功能状态显示与导出限制，不包含云端账号同步权益。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/meitu.js": {
+    "title": "美图秀秀与 Wink 客户端 VIP 状态调整",
+    "purpose": "处理美图秀秀及 Wink 用户与会员信息接口响应，将客户端本地 VIP 标识与有效期字段设为开启。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由美图秀秀重写规则调用；需要个人 MITM 证书及对应 hostname。",
+    "notes": "仅调整客户端本地滤镜、修图与工具权限判断，云端 AI 算力类功能由服务端鉴权。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/wps_camscanner.js": {
+    "title": "WPS 与扫描全能王客户端会员状态调整",
+    "purpose": "处理 WPS Office 用户概览及扫描全能王资产查询接口响应，调整客户端本地会员等级与到期时间字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由 WPS 与扫描全能王重写规则调用；需要个人 MITM 证书及对应 hostname。",
+    "notes": "仅影响客户端本地会员功能判断，不提供云空间扩容或服务端付费接口权限。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/weibo.js": {
+    "title": "微博信息流与搜索卡片净化",
+    "purpose": "过滤微博时间流、卡片列表与搜索结果响应中的推广微博、热推及广告数组字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由微博净化重写规则调用；需要个人 MITM 证书及对应 hostname。",
+    "notes": "保留正常关注流与热搜正文，仅剔除带有广告或推广标记的条目。",
+    "annotation_date": "2026-11-05"
+  },
+  "scripts/fmz200/amap.js": {
+    "title": "高德地图首页与导航页卡片净化",
+    "purpose": "清理高德地图开屏、首页底部推广卡片、横幅及活动浮层字段。",
+    "stage": "响应体：JSON",
+    "requirements": "仅由高德地图净化重写规则调用；需要个人 MITM 证书及对应 hostname。",
+    "notes": "不影响核心定位、路线规划与实时导航功能。",
+    "annotation_date": "2026-11-05"
+  }
+}

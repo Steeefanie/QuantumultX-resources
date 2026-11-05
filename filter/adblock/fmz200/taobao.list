@@ -1,0 +1,35 @@
+# 淘宝 App 界面净化 配套拦截；GPL-3.0，许可见 rewrite/licenses/fmz200-GPL-3.0.txt
+# 来源：fmz200/wool_scripts@4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partT/Taobao.snippet
+# 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。
+host-suffix, apoll.m.taobao.com, reject
+host-suffix, h-adashx.ut.taobao.com, reject
+host-suffix, w.m.taobao.com, reject
+host, tunion-api.m.taobao.com, reject
+host-suffix, re.m.taobao.com, reject
+host-suffix, agoodm.m.taobao.com, reject
+host-suffix, ai.taobao.com, reject
+host-suffix, api.waptest.taobao.com, reject
+host-suffix, dsp.simba.taobao.com, reject
+host-suffix, fav.simba.taobao.com, reject
+host-suffix, m.simba.taobao.com, reject
+host-suffix, mclick.simba.taobao.com, reject
+host-suffix, re.taobao.com, reject
+host-suffix, redirect.simba.taobao.com, reject
+host-suffix, simba.m.taobao.com, reject
+host-suffix, srd.simba.taobao.com, reject
+host-suffix, temai.taobao.com, reject
+host-suffix, textlink.simba.taobao.com, reject
+host-suffix, unitacs.m.taobao.com, reject
+host-suffix, acs4baichuan.m.taobao.com, reject
+host-suffix, adashbc.ut.taobao.com, reject
+host-suffix, adash-c.ut.taobao.com, reject
+host-suffix, adashxgc.ut.taobao.com, reject
+host-suffix, adashx4yt.m.taobao.com, reject
+host-suffix, tunion-api.m.taobao.com, reject
+host-suffix, tns.simba.taobao.com, reject
+host-suffix, click.mz.simba.taobao.com, reject
+host-suffix, click.simba.taobao.com, reject
+host-suffix, click.tz.simba.taobao.com, reject
+host-suffix, stat.simba.taobao.com, reject
+host-suffix, m-adash.m.taobao.com, reject
+host-suffix, adashbc.m.taobao.com, reject

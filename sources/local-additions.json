@@ -1,0 +1,104 @@
+{
+  "schema": 1,
+  "description": "依据官方网络清单补充明确主机名，采用host匹配；这是本地补充，不属于V2Fly原始快照。",
+  "entries": [
+    {
+      "module": "google-deepmind",
+      "domain": "businessaicode.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "businessaicode.us.rep.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "businessaicode.eu.rep.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "businessaicode.mtls.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "aiplatform.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "aiplatform.us.rep.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "aiplatform.eu.rep.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "aiplatform.mtls.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "discoveryengine.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "us-discoveryengine.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "eu-discoveryengine.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "discoveryengine.mtls.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "us-discoveryengine.mtls.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    },
+    {
+      "module": "google-deepmind",
+      "domain": "eu-discoveryengine.mtls.googleapis.com",
+      "checked_on": "2026-11-04",
+      "reference": "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints",
+      "reason": "官方列明的 Antigravity 企业版、AI 编排、Vertex AI 或 Discovery Engine 网络端点；部分接口为 Google Cloud 多业务共享，不等同于专属 App 域名。"
+    }
+  ]
+}

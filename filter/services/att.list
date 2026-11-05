@@ -1,0 +1,151 @@
+# 名称：att；原始分类：att
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 att 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/att
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：attwatchtv
+# 覆盖：135 条域名条件；示例：accbusiness.com、atandt.com、att-bundles.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/att
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, accbusiness.com, proxy
+host-suffix, atandt.com, proxy
+host-suffix, att-bundles.com, proxy
+host-suffix, att-idns.net, proxy
+host-suffix, att-japan.com, proxy
+host-suffix, att-mail.com, proxy
+host-suffix, att-promotions.com, proxy
+host-suffix, att-rsvp.com, proxy
+host-suffix, att.cn, proxy
+host-suffix, att.com, proxy
+host-suffix, att.jobs, proxy
+host-suffix, att.net, proxy
+host-suffix, att.tv, proxy
+host-suffix, attalascom.com, proxy
+host-suffix, attbelieves.com, proxy
+host-suffix, attbusiness.net, proxy
+host-suffix, attcenter.com, proxy
+host-suffix, attcollaborate.com, proxy
+host-suffix, attcorp.cn, proxy
+host-suffix, attdns.com, proxy
+host-suffix, attdns.net, proxy
+host-suffix, attexperts.com, proxy
+host-suffix, attglobal.net, proxy
+host-suffix, attinnovationspace.com, proxy
+host-suffix, attinternetservice.com, proxy
+host-suffix, attjoy.com, proxy
+host-suffix, attnetclient.com, proxy
+host-suffix, attonlineoffers.com, proxy
+host-suffix, attproxy.com, proxy
+host-suffix, attpublicpolicy.com, proxy
+host-suffix, attpurchasing.com, proxy
+host-suffix, attsavings.com, proxy
+host-suffix, attspecial.com, proxy
+host-suffix, attssl.com, proxy
+host-suffix, attstadium.com, proxy
+host-suffix, attsuppliers.com, proxy
+host-suffix, atttvnow.com, proxy
+host-suffix, attuverseoffers.com, proxy
+host-suffix, attuverseonline.com, proxy
+host-suffix, attvoip.com, proxy
+host-suffix, attwatchtv.com, proxy
+host-suffix, attwifi.com, proxy
+host-suffix, attwirelessinternet.com, proxy
+host-suffix, attwirelessonline.com, proxy
+host-suffix, attwirelesssolutions.com, proxy
+host-suffix, audiencenetwork.com, proxy
+host-suffix, audiencenetwork.tv, proxy
+host-suffix, bellsouth.net, proxy
+host-suffix, budatt.com, proxy
+host-suffix, cabletvdirectv.com, proxy
+host-suffix, cobatt.com, proxy
+host-suffix, currently.com, proxy
+host-suffix, currently.net, proxy
+host-suffix, dierectv.com, proxy
+host-suffix, dirctv.com, proxy
+host-suffix, direcpath.com, proxy
+host-suffix, direcpath.net, proxy
+host-suffix, directtv-deals.tv, proxy
+host-suffix, directtv-dish.com, proxy
+host-suffix, directtv.net, proxy
+host-suffix, directtvdeals.tv, proxy
+host-suffix, directtvreviews.com, proxy
+host-suffix, directv-4-you.com, proxy
+host-suffix, directv-newyork.com, proxy
+host-suffix, directv.com, proxy
+host-suffix, directvadsales.com, proxy
+host-suffix, directvatlantaga.com, proxy
+host-suffix, directvboston.com, proxy
+host-suffix, directvbundles.com, proxy
+host-suffix, directvbusiness.com, proxy
+host-suffix, directvbusinessmarket.com, proxy
+host-suffix, directvcincinnatioh.com, proxy
+host-suffix, directvcinema.com, proxy
+host-suffix, directvconnect.com, proxy
+host-suffix, directvcookevilletn.com, proxy
+host-suffix, directvcrossvilletn.com, proxy
+host-suffix, directvdealer.com, proxy
+host-suffix, directvdeals.com, proxy
+host-suffix, directvdealsnow.com, proxy
+host-suffix, directvdsl.tv, proxy
+host-suffix, directvforhotels.com, proxy
+host-suffix, directvgrandslam.com, proxy
+host-suffix, directvhouston.com, proxy
+host-suffix, directvinternet.com, proxy
+host-suffix, directvkentucky.com, proxy
+host-suffix, directvlebanontn.com, proxy
+host-suffix, directvlosangeles.com, proxy
+host-suffix, directvmetropolisil.com, proxy
+host-suffix, directvmonitoring.com, proxy
+host-suffix, directvmurfreesborotn.com, proxy
+host-suffix, directvnewhampshire.com, proxy
+host-suffix, directvnow.com, proxy
+host-suffix, directvoffercodes.com, proxy
+host-suffix, directvonline.com, proxy
+host-suffix, directvplans.com, proxy
+host-suffix, directvpomise.com, proxy
+host-suffix, directvpromise.com, proxy
+host-suffix, directvpromotions.com, proxy
+host-suffix, directvrebate.com, proxy
+host-suffix, directvrichmond.com, proxy
+host-suffix, directvsavings.com, proxy
+host-suffix, directvsports.com, proxy
+host-suffix, directvsundayticket.com, proxy
+host-suffix, direectv.com, proxy
+host-suffix, diretv.com, proxy
+host-suffix, dkrecttv.com, proxy
+host-suffix, dtv2009offers.com, proxy
+host-suffix, dtvce.com, proxy
+host-suffix, enterprisepaging.com, proxy
+host-suffix, freedirecttvspecial.com, proxy
+host-suffix, getdirect.tv, proxy
+host-suffix, hddirectv.com, proxy
+host-suffix, itcanwait.com, proxy
+host-suffix, le-direct.tv, proxy
+host-suffix, mydirectgroove.com, proxy
+host-suffix, mydirectvchannels.com, proxy
+host-suffix, mymmode.com, proxy
+host-suffix, na-att-idns.net, proxy
+host-suffix, naturalvoices.com, proxy
+host-suffix, nettyinternet.com, proxy
+host-suffix, openapiplatform.com, proxy
+host-suffix, openapiservice.com, proxy
+host-suffix, patentgold.net, proxy
+host-suffix, paygonline.com, proxy
+host-suffix, raponlinereview.com, proxy
+host-suffix, redzonechannel.com, proxy
+host-suffix, signalbar.com, proxy
+host-suffix, sundayready.com, proxy
+host-suffix, synaptic.net, proxy
+host-suffix, thanksloyalty.com, proxy
+host-suffix, tvpromise.com, proxy
+host-suffix, txdirectv.com, proxy
+host-suffix, uverse.com, proxy
+host-suffix, webhosting.com, proxy
+host-suffix, xandr.com, proxy

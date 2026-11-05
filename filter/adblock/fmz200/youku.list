@@ -1,0 +1,24 @@
+# 优酷 配套拦截；GPL-3.0，许可见 rewrite/licenses/fmz200-GPL-3.0.txt
+# 来源：fmz200/wool_scripts@4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partY/Youku.snippet
+# 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。
+host-suffix, partner.uc.cn, reject
+host-suffix, ubixioe.com, reject
+host-suffix, uczzd.cn, reject
+host-suffix, ranfenghd.com, reject
+host-suffix, zconfig.alibabausercontent.com, reject
+host-suffix, bgg.baidu.com, reject
+host-suffix, adx-core.youku.com, reject
+host-suffix, adx-open-service.youku.com, reject
+host-suffix, rhdc-acs.youku.com, reject
+host-suffix, ad.api.3g.tudou.com, reject
+host-suffix, ad.api.3g.youku.com, reject
+host-suffix, ad.api.mobile.youku.com, reject
+host-suffix, gamex.mobile.youku.com, reject
+host-suffix, p.l.youku.com, reject
+host-suffix, r.l.youku.com, reject
+host-suffix, v.l.youku.com, reject
+host-suffix, l.ykimg.com, reject
+host-suffix, p-log.ykimg.com, reject
+host-suffix, s.p.youku.com, reject
+host-suffix, tdrec.youku.com, reject
+host-suffix, test.ott.youku.com, reject

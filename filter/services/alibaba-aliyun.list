@@ -1,0 +1,95 @@
+# 名称：alibaba-aliyun；原始分类：aliyun
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：按上游 Alibaba（阿里巴巴） 规则归组；具体运营主体未逐项核实
+# 服务说明：阿里云相关云计算、账号及开发接口。
+# 说明状态：服务用途说明；运营主体未单独核实
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/aliyun
+# 规则分组：alibaba；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：79 条域名条件；示例：alibabadns.com、alicdn.com、alicloudapi.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/aliyun
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, alibabadns.com, proxy
+host-suffix, alicdn.com, proxy
+host-suffix, alicloudapi.com, proxy
+host-suffix, alidayu.com, proxy
+host-suffix, alidns.com, proxy
+host-suffix, aligfwaf.com, proxy
+host-suffix, alikunlun.com, proxy
+host-suffix, alikunlun.net, proxy
+host-suffix, aliyun-inc.com, proxy
+host-suffix, aliyun-iot-share.com, proxy
+host-suffix, aliyun.com, proxy
+host-suffix, aliyuncdn.com, proxy
+host-suffix, aliyuncdn.net, proxy
+host-suffix, aliyunfile.com, proxy
+host-suffix, aliyunidaas.com, proxy
+host-suffix, aliyunpds.com, proxy
+host-suffix, ap-southeast-1.aliyuncs.com, proxy
+host-suffix, cdngslb.com, proxy
+host-suffix, cn-beijing.aliyuncs.com, proxy
+host-suffix, cn-chengdu.aliyuncs.com, proxy
+host-suffix, cn-guangzhou.aliyuncs.com, proxy
+host-suffix, cn-hangzhou.aliyuncs.com, proxy
+host-suffix, cn-hongkong.aliyuncs.com, proxy
+host-suffix, cn-shanghai.aliyuncs.com, proxy
+host-suffix, fcapp.run, proxy
+host-suffix, hichina.com, proxy
+host-suffix, hotfix-api.aliyuncs.com, proxy
+host-suffix, ica-alliance.org, proxy
+host-suffix, kunlunaq.com, proxy
+host-suffix, kunlunar.com, proxy
+host-suffix, kunlunca.com, proxy
+host-suffix, kunluncan.com, proxy
+host-suffix, kunlunea.com, proxy
+host-suffix, kunlungem.com, proxy
+host-suffix, kunlungr.com, proxy
+host-suffix, kunlunhuf.com, proxy
+host-suffix, kunlunle.com, proxy
+host-suffix, kunlunli.com, proxy
+host-suffix, kunlunno.com, proxy
+host-suffix, kunlunpi.com, proxy
+host-suffix, kunlunra.com, proxy
+host-suffix, kunlunsa.com, proxy
+host-suffix, kunlunsc.com, proxy
+host-suffix, kunlunsl.com, proxy
+host-suffix, kunlunso.com, proxy
+host-suffix, kunlunta.com, proxy
+host-suffix, kunlunvi.com, proxy
+host-suffix, kunlunwe.com, proxy
+host-suffix, log-global.aliyuncs.com, proxy
+host-suffix, mxhichina.com, proxy
+host-suffix, myalicdn.com, proxy
+host-suffix, oss-ap-northeast-1.aliyuncs.com, proxy
+host-suffix, oss-ap-northeast-2.aliyuncs.com, proxy
+host-suffix, oss-ap-south-1.aliyuncs.com, proxy
+host-suffix, oss-ap-southeast-1.aliyuncs.com, proxy
+host-suffix, oss-ap-southeast-2.aliyuncs.com, proxy
+host-suffix, oss-ap-southeast-3.aliyuncs.com, proxy
+host-suffix, oss-ap-southeast-5.aliyuncs.com, proxy
+host-suffix, oss-ap-southeast-6.aliyuncs.com, proxy
+host-suffix, oss-ap-southeast-7.aliyuncs.com, proxy
+host-suffix, oss-cn-beijing.aliyuncs.com, proxy
+host-suffix, oss-cn-chengdu.aliyuncs.com, proxy
+host-suffix, oss-cn-guangzhou.aliyuncs.com, proxy
+host-suffix, oss-cn-hangzhou.aliyuncs.com, proxy
+host-suffix, oss-cn-heyuan.aliyuncs.com, proxy
+host-suffix, oss-cn-hongkong.aliyuncs.com, proxy
+host-suffix, oss-cn-huhehaote.aliyuncs.com, proxy
+host-suffix, oss-cn-nanjing.aliyuncs.com, proxy
+host-suffix, oss-cn-qingdao.aliyuncs.com, proxy
+host-suffix, oss-cn-shanghai.aliyuncs.com, proxy
+host-suffix, oss-cn-shenzhen.aliyuncs.com, proxy
+host-suffix, oss-cn-wulanchabu.aliyuncs.com, proxy
+host-suffix, oss-cn-zhangjiakou.aliyuncs.com, proxy
+host-suffix, oss-eu-central-1.aliyuncs.com, proxy
+host-suffix, oss-eu-west-1.aliyuncs.com, proxy
+host-suffix, oss-me-east-1.aliyuncs.com, proxy
+host-suffix, oss-us-east-1.aliyuncs.com, proxy
+host-suffix, oss-us-west-1.aliyuncs.com, proxy
+host-suffix, registry.aliyuncs.com, proxy

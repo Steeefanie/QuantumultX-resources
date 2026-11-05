@@ -1,0 +1,92 @@
+# 名称：google-scholar；原始分类：google-scholar
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：按上游 Google（谷歌） 规则归组；具体运营主体未逐项核实
+# 服务说明：Google Scholar（谷歌学术）文献检索服务。
+# 说明状态：服务用途说明；运营主体未单独核实
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/google-scholar
+# 规则分组：google；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：76 条域名条件；示例：scholar.google.ae、scholar.google.at、scholar.google.be。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/google-scholar
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host, scholar.google.ae, proxy
+host, scholar.google.at, proxy
+host, scholar.google.be, proxy
+host, scholar.google.bg, proxy
+host, scholar.google.ca, proxy
+host, scholar.google.cat, proxy
+host, scholar.google.ch, proxy
+host, scholar.google.cl, proxy
+host, scholar.google.cn, proxy
+host, scholar.google.co.cr, proxy
+host, scholar.google.co.id, proxy
+host, scholar.google.co.il, proxy
+host, scholar.google.co.in, proxy
+host, scholar.google.co.jp, proxy
+host, scholar.google.co.kr, proxy
+host, scholar.google.co.nz, proxy
+host, scholar.google.co.th, proxy
+host, scholar.google.co.uk, proxy
+host, scholar.google.co.ve, proxy
+host, scholar.google.co.za, proxy
+host, scholar.google.com, proxy
+host, scholar.google.com.ar, proxy
+host, scholar.google.com.au, proxy
+host, scholar.google.com.bo, proxy
+host, scholar.google.com.br, proxy
+host, scholar.google.com.co, proxy
+host, scholar.google.com.cu, proxy
+host, scholar.google.com.do, proxy
+host, scholar.google.com.ec, proxy
+host, scholar.google.com.eg, proxy
+host, scholar.google.com.gt, proxy
+host, scholar.google.com.hk, proxy
+host, scholar.google.com.ly, proxy
+host, scholar.google.com.mx, proxy
+host, scholar.google.com.my, proxy
+host, scholar.google.com.ni, proxy
+host, scholar.google.com.pa, proxy
+host, scholar.google.com.pe, proxy
+host, scholar.google.com.ph, proxy
+host, scholar.google.com.pk, proxy
+host, scholar.google.com.pr, proxy
+host, scholar.google.com.py, proxy
+host, scholar.google.com.sg, proxy
+host, scholar.google.com.sv, proxy
+host, scholar.google.com.tr, proxy
+host, scholar.google.com.tw, proxy
+host, scholar.google.com.ua, proxy
+host, scholar.google.com.uy, proxy
+host, scholar.google.com.vn, proxy
+host, scholar.google.cz, proxy
+host, scholar.google.de, proxy
+host, scholar.google.dk, proxy
+host, scholar.google.es, proxy
+host, scholar.google.fi, proxy
+host, scholar.google.fr, proxy
+host, scholar.google.gr, proxy
+host, scholar.google.hn, proxy
+host, scholar.google.hr, proxy
+host, scholar.google.hu, proxy
+host, scholar.google.is, proxy
+host, scholar.google.it, proxy
+host, scholar.google.li, proxy
+host, scholar.google.lt, proxy
+host, scholar.google.lu, proxy
+host, scholar.google.lv, proxy
+host, scholar.google.nl, proxy
+host, scholar.google.no, proxy
+host, scholar.google.pl, proxy
+host, scholar.google.pt, proxy
+host, scholar.google.ro, proxy
+host, scholar.google.ru, proxy
+host, scholar.google.se, proxy
+host, scholar.google.si, proxy
+host, scholar.google.sk, proxy
+host, scholar.googleusercontent.com, proxy
+host, scholar.l.google.com, proxy

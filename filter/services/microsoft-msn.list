@@ -1,0 +1,35 @@
+# 名称：microsoft-msn；原始分类：msn
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：按上游 Microsoft（微软） 规则归组；具体运营主体未逐项核实
+# 服务说明：MSN 新闻、门户和相关内容服务。
+# 说明状态：服务用途说明；运营主体未单独核实
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/msn
+# 规则分组：microsoft；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：19 条域名条件；示例：microsoftnews.cc、microsoftnews.cn、microsoftnews.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/msn
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, microsoftnews.cc, proxy
+host-suffix, microsoftnews.cn, proxy
+host-suffix, microsoftnews.com, proxy
+host-suffix, microsoftnews.net, proxy
+host-suffix, microsoftnews.org, proxy
+host-suffix, microsoftnewsforkids.com, proxy
+host-suffix, microsoftnewsforkids.net, proxy
+host-suffix, microsoftnewsforkids.org, proxy
+host-suffix, microsoftnewskids.com, proxy
+host-suffix, microsoftnewskids.net, proxy
+host-suffix, microsoftnewskids.org, proxy
+host-suffix, microsoftstart.com, proxy
+host-suffix, msn.cn, proxy
+host-suffix, msn.com, proxy
+host-suffix, msnewskids.com, proxy
+host-suffix, msnewskids.net, proxy
+host-suffix, msnewskids.org, proxy
+host-suffix, msnkids.com, proxy
+host-suffix, start.com, proxy

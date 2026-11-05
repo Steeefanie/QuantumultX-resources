@@ -8,3 +8,6 @@ __pycache__/
 *.key
 private/
 work/
+# 本地原始配置可能包含私人订阅、节点凭据及证书；公开模板位于 examples/。
+/quantumult_*.conf
+*.code-workspace

@@ -1,0 +1,51 @@
+# 名称：dettol；原始分类：dettol
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 dettol 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/dettol
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：35 条域名条件；示例：dettol-prize.com、dettol.at、dettol.be。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/dettol
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, dettol-prize.com, proxy
+host-suffix, dettol.at, proxy
+host-suffix, dettol.be, proxy
+host-suffix, dettol.ch, proxy
+host-suffix, dettol.cl, proxy
+host-suffix, dettol.co.id, proxy
+host-suffix, dettol.co.in, proxy
+host-suffix, dettol.co.ke, proxy
+host-suffix, dettol.co.nz, proxy
+host-suffix, dettol.co.uk, proxy
+host-suffix, dettol.com, proxy
+host-suffix, dettol.com.au, proxy
+host-suffix, dettol.com.bd, proxy
+host-suffix, dettol.com.br, proxy
+host-suffix, dettol.com.cn, proxy
+host-suffix, dettol.com.eg, proxy
+host-suffix, dettol.com.hk, proxy
+host-suffix, dettol.com.my, proxy
+host-suffix, dettol.com.ng, proxy
+host-suffix, dettol.com.sg, proxy
+host-suffix, dettol.cz, proxy
+host-suffix, dettol.fr, proxy
+host-suffix, dettol.hu, proxy
+host-suffix, dettol.ie, proxy
+host-suffix, dettol.net, proxy
+host-suffix, dettol.nl, proxy
+host-suffix, dettol.pk, proxy
+host-suffix, dettol.pl, proxy
+host-suffix, dettol.pt, proxy
+host-suffix, dettol.ru, proxy
+host-suffix, dettolarabia.com, proxy
+host-suffix, dettolcleannaija.com, proxy
+host-suffix, dettolsitishield.co.in, proxy
+host-suffix, dettolthailand.com, proxy
+host-suffix, espadoldettol.com.ar, proxy

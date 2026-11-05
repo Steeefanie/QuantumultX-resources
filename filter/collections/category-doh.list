@@ -1,0 +1,142 @@
+# 名称：category-doh；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：127 条域名条件；包含的上游分类：category-doh。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-doh
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host, 5u35p8m9i7.cloudflare-gateway.com, proxy
+host, ada.openbld.net, proxy
+host, adblock.dns.mullvad.net, proxy
+host, all.dns.mullvad.net, proxy
+host, antivirus.bebasid.com, proxy
+host, au-syd.doh.sb, proxy
+host, base.dns.mullvad.net, proxy
+host, basic.rethinkdns.com, proxy
+host, ca-yyz.doh.sb, proxy
+host, child-noads.joindns4.eu, proxy
+host, child.joindns4.eu, proxy
+host, common.dot.dns.yandex.net, proxy
+host, dandelionsprout.asuscomm.com, proxy
+host, de-ber.doh.sb, proxy
+host, de-dus.doh.sb, proxy
+host, de-fra.doh.sb, proxy
+host, dns-doh.dnsforfamily.com, proxy
+host, dns.adguard-dns.com, proxy
+host, dns.adguard.com, proxy
+host, dns.alidns.com, proxy
+host, dns.arapurayil.com, proxy
+host, dns.astracat.ru, proxy
+host, dns.bebasid.com, proxy
+host, dns.caliph.dev, proxy
+host, dns.cfiec.net, proxy
+host, dns.cloudflare.com, proxy
+host, dns.comss.one, proxy
+host, dns.de.futuredns.eu.org, proxy
+host, dns.decloudus.com, proxy
+host, dns.digitale-gesellschaft.ch, proxy
+host, dns.dnswarden.com, proxy
+host, dns.geohide.ru, proxy
+host, dns.google, proxy
+host, dns.jupitrdns.com, proxy
+host, dns.mafioznik.xyz, proxy
+host, dns.malw.link, proxy
+host, dns.marbledfennec.net, proxy
+host, dns.mullvad.net, proxy
+host, dns.oszx.co, proxy
+host, dns.pub, proxy
+host, dns.pumplex.com, proxy
+host, dns.quad9.net, proxy
+host, dns.rabbitdns.org, proxy
+host, dns.sb, proxy
+host, dns.seia.io, proxy
+host, dns.shaw.ca, proxy
+host, dns.surfsharkdns.com, proxy
+host, dns.switch.ch, proxy
+host, dns.twnic.tw, proxy
+host, dns.us.futuredns.eu.org, proxy
+host, dns10.quad9.net, proxy
+host, dns11.quad9.net, proxy
+host, dnsforge.de, proxy
+host, dnsguard.pub, proxy
+host, doh-pure.onedns.net, proxy
+host, doh.18bit.cn, proxy
+host, doh.360.cn, proxy
+host, doh.applied-privacy.net, proxy
+host, doh.cleanbrowsing.org, proxy
+host, doh.dns.apple.com, proxy
+host, doh.dns.sb, proxy
+host, doh.ffmuc.net, proxy
+host, doh.la.ahadns.net, proxy
+host, doh.libredns.gr, proxy
+host, doh.nl.ahadns.net, proxy
+host, doh.onedns.net, proxy
+host, doh.pub, proxy
+host, doh.qis.io, proxy
+host, doh.sb, proxy
+host, doh.tiar.app, proxy
+host, doh.tiarap.org, proxy
+host, doh.xfinity.com, proxy
+host, ee-tll.doh.sb, proxy
+host, extended.dns.mullvad.net, proxy
+host, family.adguard-dns.com, proxy
+host, family.canadianshield.cira.ca, proxy
+host, family.dns.mullvad.net, proxy
+host, family.dot.dns.yandex.net, proxy
+host, family.rabbitdns.org, proxy
+host, frd4wvnobp.cloudflare-gateway.com, proxy
+host, freedns.controld.com, proxy
+host, futuredns.eu.org, proxy
+host, hk-hkg.doh.sb, proxy
+host, ibksturm.synology.me, proxy
+host, in-blr.doh.sb, proxy
+host, internetsehat.bebasid.com, proxy
+host, jp-kix.doh.sb, proxy
+host, jp-nrt.doh.sb, proxy
+host, jp.tiar.app, proxy
+host, jp.tiarap.org, proxy
+host, kaitain.restena.lu, proxy
+host, kids.ns.nwps.fi, proxy
+host, kr-sel.doh.sb, proxy
+host, nl-ams.doh.sb, proxy
+host, noads.joindns4.eu, proxy
+host, odvr.nic.cz, proxy
+host, one.one.one.one, proxy
+host, ordns.he.net, proxy
+host, private.canadianshield.cira.ca, proxy
+host, protected.canadianshield.cira.ca, proxy
+host, protective.joindns4.eu, proxy
+host, public.dns.iij.jp, proxy
+host, public.ns.nwps.fi, proxy
+host, resolver-eu.lelux.fi, proxy
+host, resolver.dnsprivacy.org.uk, proxy
+host, ric.openbld.net, proxy
+host, router.comss.one, proxy
+host, ru-mow.doh.sb, proxy
+host, rx.techomespace.com, proxy
+host, safe.dot.dns.yandex.net, proxy
+host, secondary.dns.seia.io, proxy
+host, security.rabbitdns.org, proxy
+host, sg-sin.doh.sb, proxy
+host, sm2.doh.pub, proxy
+host, uk-lon.doh.sb, proxy
+host, unfiltered.adguard-dns.com, proxy
+host, unfiltered.joindns4.eu, proxy
+host, us-chi.doh.sb, proxy
+host, us-nyc.doh.sb, proxy
+host, us-sjc.doh.sb, proxy
+host, v.recipes, proxy
+host, wikimedia-dns.org, proxy
+host, xbox-dns.ru, proxy
+host, zero.dns0.eu, proxy
+host-suffix, cloudflare-dns.com, proxy
+host-suffix, nextdns.io, proxy
+host-suffix, opendns.com, proxy

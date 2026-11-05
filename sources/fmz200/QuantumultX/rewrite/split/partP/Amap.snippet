@@ -1,0 +1,10 @@
+#!name=高德地图界面深度净化
+#!desc=去除高德地图开屏广告、首页底部推广卡片、语音包横幅与导航结束页广告
+#!author=ddgksf2013
+#!homepage=https://github.com/Steeefanie/QuantumultX-resources
+
+^https?:\/\/m5\.amap\.com\/ws\/(valueadded\/alimama\/splash_screen|faas\/amap-navigation\/main-page|shield\/frogserver\/aocs\/updatable) url script-response-body https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/amap.js
+^https?:\/\/optimus-ads\.amap\.com\/uploadData url reject-dict
+^https?:\/\/m5\.amap\.com\/ws\/asa\/ads_attribution url reject-dict
+
+hostname = m5.amap.com, optimus-ads.amap.com

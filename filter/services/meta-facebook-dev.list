@@ -1,0 +1,60 @@
+# 名称：meta-facebook-dev；原始分类：facebook-dev
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：按上游 Meta 规则归组；具体运营主体未逐项核实
+# 服务说明：Facebook 开发者平台及相关接口。
+# 说明状态：服务用途说明；运营主体未单独核实
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/facebook-dev
+# 规则分组：meta；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：44 条域名条件；示例：developers.facebook.com、accountkit.com、atscaleconference.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/facebook-dev
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host, developers.facebook.com, proxy
+host-suffix, accountkit.com, proxy
+host-suffix, atscaleconference.com, proxy
+host-suffix, botorch.org, proxy
+host-suffix, buck.build, proxy
+host-suffix, buckbuild.com, proxy
+host-suffix, componentkit.org, proxy
+host-suffix, draftjs.org, proxy
+host-suffix, f8.com, proxy
+host-suffix, facebookappcenter.info, proxy
+host-suffix, facebookappcenter.net, proxy
+host-suffix, facebookappcenter.org, proxy
+host-suffix, facebookconnect.com, proxy
+host-suffix, facebookdevelopergarage.com, proxy
+host-suffix, faciometrics.com, proxy
+host-suffix, fasttext.cc, proxy
+host-suffix, fbf8.com, proxy
+host-suffix, fbinfer.com, proxy
+host-suffix, fblitho.com, proxy
+host-suffix, fbredex.com, proxy
+host-suffix, fbrell.com, proxy
+host-suffix, flow.dev, proxy
+host-suffix, flow.org, proxy
+host-suffix, flowtype.org, proxy
+host-suffix, frescolib.org, proxy
+host-suffix, hacklang.org, proxy
+host-suffix, hhvm.com, proxy
+host-suffix, makeitopen.com, proxy
+host-suffix, mcrouter.net, proxy
+host-suffix, mcrouter.org, proxy
+host-suffix, messengerdevelopers.com, proxy
+host-suffix, ogp.me, proxy
+host-suffix, opengraphprotocol.com, proxy
+host-suffix, opengraphprotocol.org, proxy
+host-suffix, parse.com, proxy
+host-suffix, pyrobot.org, proxy
+host-suffix, react.com, proxy
+host-suffix, reactjs.com, proxy
+host-suffix, reactjs.org, proxy
+host-suffix, recoiljs.org, proxy
+host-suffix, rocksdb.com, proxy
+host-suffix, rocksdb.net, proxy
+host-suffix, rocksdb.org, proxy
+host-suffix, yogalayout.com, proxy

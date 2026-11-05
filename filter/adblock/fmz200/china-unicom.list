@@ -1,0 +1,4 @@
+# 中国联通 配套拦截；GPL-3.0，许可见 rewrite/licenses/fmz200-GPL-3.0.txt
+# 来源：fmz200/wool_scripts@4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partZ/ChinaUnicom.snippet
+# 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。
+host-suffix, m1.ad.10010.com, reject

@@ -1,0 +1,12 @@
+#!name=网易云音乐 VIP
+#!desc=网易云音乐 VIP 歌曲试听请求头处理；与网易云音乐净化可按需配合或单独开启
+#!author=ios-🐔神 / gjwj666
+#!homepage=https://github.com/gjwj666/qx
+#!raw-url=https://github.com/fmz200/wool_scripts/raw/main/QuantumultX/rewrite/split/partW/NetEaseVIP.snippet
+#!date=2023-10-21
+#############################################
+
+# > 网易云解锁VIP（请求头注入试听权限，不改变黑胶外观，外观与净化见 netease-cloud-music.conf）
+^https?:\/\/.+music.+(player\/url|playlist|entrance|\/eapi\/search\/).*$ url script-request-header https://raw.githubusercontent.com/fmz200/wool_scripts/main/Scripts/Wyy.js
+
+hostname = *.music.163.com

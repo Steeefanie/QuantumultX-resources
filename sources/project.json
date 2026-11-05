@@ -1,0 +1,8 @@
+{
+  "schema": 1,
+  "repository": "Steeefanie/QuantumultX-resources",
+  "ref": "main",
+  "previous_repository": "Steeefanie/QuantumultX-filter-rules",
+  "remote_rename_pending": false,
+  "description": "Quantumult X 分流、重写、脚本、图标与配置示例"
+}

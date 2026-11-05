@@ -1,0 +1,141 @@
+# 名称：category-anticensorship；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：126 条域名条件；包含的上游分类：category-anticensorship。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-anticensorship
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host, matsuridayo.github.io, proxy
+host, metacubex.github.io, proxy
+host, rabbit-hole-1.gitbook.io, proxy
+host, throneproj.github.io, proxy
+host, trojan-gfw.github.io, proxy
+host, xtls.github.io, proxy
+host-suffix, 2dust.link, proxy
+host-suffix, 4everland.io, proxy
+host-suffix, ahmia.fi, proxy
+host-suffix, akasha.world, proxy
+host-suffix, amnezia.org, proxy
+host-suffix, applecensorship.com, proxy
+host-suffix, browserleaks.com, proxy
+host-suffix, bypasscensorship.org, proxy
+host-suffix, c4rex.co, proxy
+host-suffix, ceno.app, proxy
+host-suffix, censorship.ai, proxy
+host-suffix, censorship.no, proxy
+host-suffix, cf-ipfs.com, proxy
+host-suffix, citizenlab.ca, proxy
+host-suffix, citizenlab.org, proxy
+host-suffix, clashmi.app, proxy
+host-suffix, clashparty.org, proxy
+host-suffix, clashverge.dev, proxy
+host-suffix, clashyun.com, proxy
+host-suffix, cloudflare-ipfs.com, proxy
+host-suffix, crustwebsites.net, proxy
+host-suffix, dat.foundation, proxy
+host-suffix, democracy.earth, proxy
+host-suffix, docs.rw, proxy
+host-suffix, dweb.link, proxy
+host-suffix, eff.org, proxy
+host-suffix, epicbrowser.com, proxy
+host-suffix, ffprofile.com, proxy
+host-suffix, flclashx.app, proxy
+host-suffix, flowvy.io, proxy
+host-suffix, freebrowser.org, proxy
+host-suffix, freenetproject.org, proxy
+host-suffix, freewechat.com, proxy
+host-suffix, freeweibo.com, proxy
+host-suffix, freezhihu.org, proxy
+host-suffix, fteproxy.org, proxy
+host-suffix, gateway.pinata.cloud, proxy
+host-suffix, geti2p.net, proxy
+host-suffix, getlantern.org, proxy
+host-suffix, getoutline.org, proxy
+host-suffix, gfw.report, proxy
+host-suffix, googlecensorship.org, proxy
+host-suffix, googleplaycensorship.com, proxy
+host-suffix, greatfire.org, proxy
+host-suffix, greatfirevpn.com, proxy
+host-suffix, guardianproject.info, proxy
+host-suffix, happ.info, proxy
+host-suffix, happ.su, proxy
+host-suffix, haveibeenpwned.com, proxy
+host-suffix, hiddify.com, proxy
+host-suffix, huarun.win, proxy
+host-suffix, incy.cc, proxy
+host-suffix, ipfs-gateway.cloud, proxy
+host-suffix, ipfs.anonymize.com, proxy
+host-suffix, ipfs.best-practice.se, proxy
+host-suffix, ipfs.eternum.io, proxy
+host-suffix, ipfs.eth.aragon.network, proxy
+host-suffix, ipfs.fleek.co, proxy
+host-suffix, ipfs.io, proxy
+host-suffix, ipfs.lain.la, proxy
+host-suffix, ipfs.runfission.com, proxy
+host-suffix, ipfs.tech, proxy
+host-suffix, ipns.co, proxy
+host-suffix, jitsi.org, proxy
+host-suffix, jorropo.net, proxy
+host-suffix, karing.app, proxy
+host-suffix, lantern.io, proxy
+host-suffix, log.rw, proxy
+host-suffix, lokinet.org, proxy
+host-suffix, metacubex.one, proxy
+host-suffix, nftstorage.link, proxy
+host-suffix, nsloon.com, proxy
+host-suffix, ntc.party, proxy
+host-suffix, onexray.com, proxy
+host-suffix, onionshare.org, proxy
+host-suffix, ooni.org, proxy
+host-suffix, opengw.net, proxy
+host-suffix, openvpn.net, proxy
+host-suffix, pao-pao.net, proxy
+host-suffix, paskoocheh.com, proxy
+host-suffix, privacytools.io, proxy
+host-suffix, prizrak.app, proxy
+host-suffix, proxifier.com, proxy
+host-suffix, psiphon.ca, proxy
+host-suffix, psiphon3.com, proxy
+host-suffix, pwnedpasswords.com, proxy
+host-suffix, remna.st, proxy
+host-suffix, sagernet.org, proxy
+host-suffix, shadowlaunch.com, proxy
+host-suffix, shadowsocks.org, proxy
+host-suffix, sing-box.app, proxy
+host-suffix, softether-download.com, proxy
+host-suffix, softether.org, proxy
+host-suffix, sspanel.net, proxy
+host-suffix, stash.wiki, proxy
+host-suffix, stash.ws, proxy
+host-suffix, stunnel.org, proxy
+host-suffix, telex.cc, proxy
+host-suffix, torproject.org, proxy
+host-suffix, tribler.org, proxy
+host-suffix, try.rw, proxy
+host-suffix, tunsafe.com, proxy
+host-suffix, turkeyblocks.org, proxy
+host-suffix, twister.net.co, proxy
+host-suffix, uproxy.org, proxy
+host-suffix, v2fly.org, proxy
+host-suffix, v2ray.com, proxy
+host-suffix, v2ray.cool, proxy
+host-suffix, via0.com, proxy
+host-suffix, vpngate.jp, proxy
+host-suffix, vpngate.net, proxy
+host-suffix, vpnrouter.homes, proxy
+host-suffix, vuvuzela.io, proxy
+host-suffix, wgtunnel.com, proxy
+host-suffix, whonix.org, proxy
+host-suffix, wikileaks.org, proxy
+host-suffix, wikiunblocked.org, proxy
+host-suffix, wireguard.com, proxy
+host-suffix, wiresock.net, proxy
+host-suffix, zeronet.io, proxy

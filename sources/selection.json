@@ -1,6 +1,6 @@
 {
-  "schema": 1,
-  "description": "分类归属仅用于目录组织，不意味着默认代理或直连。",
+  "schema": 2,
+  "description": "自动生成可转换的服务分类与上游集合；常用集合另行定义。集合可以重叠，策略由主配置和实际加载顺序决定。",
   "services": {
     "adobe": "微软与办公",
     "aixcoder": "AI与模型",
@@ -157,5 +157,294 @@
     "zoho": "微软与办公",
     "zoom": "微软与办公",
     "zotero": "学术与教育"
-  }
+  },
+  "all_services": true,
+  "all_collections": true,
+  "collections": {
+    "domestic": {
+      "title": "国内接入域名合集（不等于全部国内网站或中国IP）",
+      "include": [
+        "geolocation-cn"
+      ],
+      "policy": "direct"
+    },
+    "global": {
+      "title": "上游归类为无中国大陆接入点的域名合集（非全部海外网站）",
+      "include": [
+        "geolocation-!cn"
+      ],
+      "policy": "proxy"
+    },
+    "advertising": {
+      "title": "明确广告及跟踪域名（可选，可能影响统计或应用功能）",
+      "include": [
+        "category-ads"
+      ],
+      "policy": "reject",
+      "include_ads": true
+    },
+    "ai-global": {
+      "title": "境外AI与模型服务",
+      "include": [
+        "category-ai-!cn"
+      ],
+      "policy": "proxy"
+    },
+    "ai-domestic": {
+      "title": "境内接入AI与模型服务",
+      "include": [
+        "category-ai-cn"
+      ],
+      "policy": "direct"
+    },
+    "media": {
+      "title": "媒体服务（含不同地区，按业务需要覆盖策略）",
+      "include": [
+        "category-media"
+      ],
+      "policy": "proxy"
+    },
+    "development": {
+      "title": "开发与软件服务（不保证均需代理）",
+      "include": [
+        "category-dev"
+      ],
+      "policy": "proxy"
+    },
+    "games": {
+      "title": "游戏服务（含不同地区，下载与登录需求可能不同）",
+      "include": [
+        "category-games"
+      ],
+      "policy": "proxy"
+    },
+    "social-global": {
+      "title": "境外社交媒体",
+      "include": [
+        "category-social-media-!cn"
+      ],
+      "policy": "proxy"
+    },
+    "scholar-global": {
+      "title": "境外学术服务（不代替机构访问授权）",
+      "include": [
+        "category-scholar-!cn"
+      ],
+      "policy": "proxy"
+    },
+    "cloud-global": {
+      "title": "境外网盘服务（网页与同步可能需要不同策略）",
+      "include": [
+        "category-netdisk-!cn"
+      ],
+      "policy": "proxy"
+    },
+    "lan": {
+      "title": "上游私有网络与路由器域名的可转换部分（不包含私网IP及单标签后缀）",
+      "include": [
+        "private"
+      ],
+      "policy": "direct"
+    },
+    "google-without-youtube": {
+      "title": "Google 综合域名（排除 YouTube 分类的专用条件；共享域名仍可能交叉）",
+      "include": [
+        "google"
+      ],
+      "exclude": [
+        "youtube"
+      ],
+      "policy": "proxy"
+    }
+  },
+  "annotation_date": "2026-11-04",
+  "group_roots": [
+    "microsoft",
+    "google",
+    "apple",
+    "amazon",
+    "meta",
+    "tencent",
+    "alibaba",
+    "bytedance",
+    "sony",
+    "jetbrains",
+    "mozilla",
+    "adobe",
+    "huawei",
+    "xiaomi",
+    "cloudflare",
+    "yandex",
+    "ea"
+  ],
+  "filename_overrides": {
+    "googlefcm": "google-fcm",
+    "amazontrust": "amazon-trust",
+    "alibabacloud": "alibaba-cloud"
+  },
+  "personal_profiles": {
+    "steeefanie": [
+      {
+        "kind": "service",
+        "source": "openai",
+        "tag": "OpenAI",
+        "policy": "United States"
+      },
+      {
+        "kind": "service",
+        "source": "anthropic",
+        "tag": "Anthropic",
+        "policy": "United States"
+      },
+      {
+        "kind": "service",
+        "source": "google-gemini",
+        "tag": "Gemini&Antigravity",
+        "policy": "United States",
+        "optional": true
+      },
+      {
+        "kind": "service",
+        "source": "youtube",
+        "tag": "YouTube",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "collection",
+        "source": "google-without-youtube",
+        "tag": "Google",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "local",
+        "source": "microsoft-onedrive-web",
+        "tag": "OneDrive-Web",
+        "policy": "Hong Kong",
+        "optional": true
+      },
+      {
+        "kind": "local",
+        "source": "microsoft-onedrive-sync",
+        "tag": "OneDrive-Sync",
+        "policy": "DIRECT",
+        "optional": true
+      },
+      {
+        "kind": "service",
+        "source": "github",
+        "tag": "GitHub",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "service",
+        "source": "microsoft",
+        "tag": "Microsoft",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "service",
+        "source": "spotify",
+        "tag": "Spotify",
+        "policy": "United States"
+      },
+      {
+        "kind": "service",
+        "source": "tiktok",
+        "tag": "TikTok",
+        "policy": "Singapore"
+      },
+      {
+        "kind": "service",
+        "source": "netflix",
+        "tag": "Netflix",
+        "policy": "Singapore"
+      },
+      {
+        "kind": "service",
+        "source": "disney",
+        "tag": "Disney",
+        "policy": "Singapore"
+      },
+      {
+        "kind": "service",
+        "source": "steam",
+        "tag": "Steam",
+        "policy": "Hong Kong"
+      },
+      {
+        "kind": "service",
+        "source": "telegram",
+        "tag": "Telegram",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "service",
+        "source": "twitter",
+        "tag": "X/Twitter",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "service",
+        "source": "meta",
+        "tag": "Meta",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "service",
+        "source": "wikimedia",
+        "tag": "Wiki",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "service",
+        "source": "linkedin",
+        "tag": "LinkedIn",
+        "policy": "PROXY"
+      },
+      {
+        "kind": "service",
+        "source": "bilibili",
+        "tag": "哔哩哔哩",
+        "policy": "DIRECT"
+      },
+      {
+        "kind": "service",
+        "source": "xiaohongshu",
+        "tag": "小红书",
+        "policy": "DIRECT"
+      },
+      {
+        "kind": "service",
+        "source": "deepseek",
+        "tag": "DeepSeek",
+        "policy": "DIRECT"
+      },
+      {
+        "kind": "service",
+        "source": "tencent",
+        "tag": "腾讯",
+        "policy": "DIRECT"
+      },
+      {
+        "kind": "service",
+        "source": "apple",
+        "tag": "Apple",
+        "policy": "DIRECT"
+      }
+    ]
+  },
+  "local_rules": [
+    {
+      "id": "microsoft-onedrive-web",
+      "title": "OneDrive 网页与登录",
+      "source": "sources/local/onedrive-web.snippet",
+      "sha256": "b9842fc963fa6be7335c45d44cf3124afc459862e55a8f9c2566c2a5dcbbc529"
+    },
+    {
+      "id": "microsoft-onedrive-sync",
+      "title": "OneDrive 同步与存储",
+      "source": "sources/local/onedrive-sync.snippet",
+      "sha256": "52415410cad5fc2cbbc0f45aaab0bdfe9ec3263e710a165924843cc370685530"
+    }
+  ]
 }

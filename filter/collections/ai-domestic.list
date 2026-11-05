@@ -1,0 +1,135 @@
+# 名称：ai-domestic；说明：境内接入AI与模型服务
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：120 条域名条件；包含的上游分类：category-ai-cn。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-ai-cn
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：direct；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host, ai.zhaomi.cn, direct
+host, cueme-api.quark.cn, direct
+host-suffix, aispeech.com, direct
+host-suffix, antafu.com, direct
+host-suffix, antaq.com, direct
+host-suffix, aorizon.cn, direct
+host-suffix, api-building.fun, direct
+host-suffix, askdiandian.com, direct
+host-suffix, baichuan-ai.com, direct
+host-suffix, bigmodel.cn, direct
+host-suffix, building.fun, direct
+host-suffix, butterfly-static.cn, direct
+host-suffix, butterflyai.cn, direct
+host-suffix, chatglm.cn, direct
+host-suffix, clawhub-mirror.com, direct
+host-suffix, codebuddy.cn, direct
+host-suffix, coze-dns-01.com, direct
+host-suffix, coze.cn, direct
+host-suffix, coze.email, direct
+host-suffix, coze.site, direct
+host-suffix, cozeapp.net, direct
+host-suffix, cozebaas.cn, direct
+host-suffix, cozebuild.com, direct
+host-suffix, cozecdn.com, direct
+host-suffix, cozedeploy.com, direct
+host-suffix, cozefn.cn, direct
+host-suffix, cozeide.cn, direct
+host-suffix, cozesdk.com, direct
+host-suffix, cozetest.cn, direct
+host-suffix, cozetest2.cn, direct
+host-suffix, cozetest3.cn, direct
+host-suffix, cueme.cn, direct
+host-suffix, dbbuilding.fun, direct
+host-suffix, deepseek.com, direct
+host-suffix, deepseeksvc.com, direct
+host-suffix, diandianlife.top, direct
+host-suffix, doubao-dev.com, direct
+host-suffix, doubao.com, direct
+host-suffix, doubaoapps.com, direct
+host-suffix, doubaocdn.com, direct
+host-suffix, doudou.com, direct
+host-suffix, dui.ai, direct
+host-suffix, duiopen.com, direct
+host-suffix, dumate.cn, direct
+host-suffix, favonis.cloud, direct
+host-suffix, favonis.com, direct
+host-suffix, favonis.space, direct
+host-suffix, faxingbao.com, direct
+host-suffix, hailuoai.com, direct
+host-suffix, happyhorse.cn, direct
+host-suffix, happyshrimp.cn, direct
+host-suffix, hi-butterfly.cn, direct
+host-suffix, hunyuan.tencent.com, direct
+host-suffix, instreet.com, direct
+host-suffix, kakaxing.com, direct
+host-suffix, kechuangai.com, direct
+host-suffix, kimi.com, direct
+host-suffix, kling-ai.com, direct
+host-suffix, klingai.com, direct
+host-suffix, liblib.art, direct
+host-suffix, liblib.cloud, direct
+host-suffix, liblib.tv, direct
+host-suffix, linka2a.net, direct
+host-suffix, maoxiangai.com, direct
+host-suffix, marscode.cn, direct
+host-suffix, marscode.com.cn, direct
+host-suffix, mcbaas.work, direct
+host-suffix, mcdemo.show, direct
+host-suffix, mchost.guru, direct
+host-suffix, mcprev.cn, direct
+host-suffix, mcpworld.com, direct
+host-suffix, meta.law, direct
+host-suffix, metaso.cn, direct
+host-suffix, miaibox.com, direct
+host-suffix, miaoda.cn, direct
+host-suffix, miaoyanai.com, direct
+host-suffix, minimaxi.com, direct
+host-suffix, moonshot.cn, direct
+host-suffix, myparallelstory.com, direct
+host-suffix, n.cn, direct
+host-suffix, namiso.com, direct
+host-suffix, obriccloud.com, direct
+host-suffix, obricclouddw.com, direct
+host-suffix, oceancloudapi.com, direct
+host-suffix, picpic-ai.cn, direct
+host-suffix, pixeldance.com, direct
+host-suffix, qianwen.aliyun.com, direct
+host-suffix, qianwen.com, direct
+host-suffix, qianwenai.com, direct
+host-suffix, qwen.ai, direct
+host-suffix, qwenlm.ai, direct
+host-suffix, rwkv.cn, direct
+host-suffix, rwkv.com, direct
+host-suffix, safeskill.cn, direct
+host-suffix, shunjing.xin, direct
+host-suffix, skillhub.cn, direct
+host-suffix, sleeplesshorizon.cn, direct
+host-suffix, tapnow.top, direct
+host-suffix, tcwqqdy.guru, direct
+host-suffix, tiangong.cn, direct
+host-suffix, tongyi.aliyun.com, direct
+host-suffix, tongyi.com, direct
+host-suffix, trae.cn, direct
+host-suffix, trae.com.cn, direct
+host-suffix, trae.guru, direct
+host-suffix, workbuddy.cn, direct
+host-suffix, xiaoaiassist.com, direct
+host-suffix, xiaomimimo.com, direct
+host-suffix, xiezuocat.com, direct
+host-suffix, xinghuo.xfyun.cn, direct
+host-suffix, xingyeai.com, direct
+host-suffix, yiyan.baidu.com, direct
+host-suffix, yoma.cn, direct
+host-suffix, yuanbao.tencent.com, direct
+host-suffix, yuanqi.tencent.com, direct
+host-suffix, yzsgo.com, direct
+host-suffix, z.ai, direct
+host-suffix, zhiexa.com, direct
+host-suffix, zhipuai.cn, direct
+host-suffix, zhipucn.com, direct

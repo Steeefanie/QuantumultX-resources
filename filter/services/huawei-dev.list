@@ -1,0 +1,39 @@
+# 名称：huawei-dev；原始分类：huawei-dev
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：按上游 Huawei（华为） 规则归组；具体运营主体未逐项核实
+# 服务说明：华为开发者平台及相关接口。
+# 说明状态：服务用途说明；运营主体未单独核实
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/huawei-dev
+# 规则分组：huawei；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：23 条域名条件；示例：bisheng.cn、bishengcompiler.cn、devui.design。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/huawei-dev
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, bisheng.cn, proxy
+host-suffix, bishengcompiler.cn, proxy
+host-suffix, devui.design, proxy
+host-suffix, gneec.com, proxy
+host-suffix, gneec.com.cn, proxy
+host-suffix, gneec3.com, proxy
+host-suffix, gneec4.com, proxy
+host-suffix, gneec7.com, proxy
+host-suffix, harmonyos.com, proxy
+host-suffix, hiascend.cn, proxy
+host-suffix, hiascend.com, proxy
+host-suffix, hiclc.com, proxy
+host-suffix, hikunpeng.cn, proxy
+host-suffix, hikunpeng.com, proxy
+host-suffix, hikunpeng.com.cn, proxy
+host-suffix, hikunpeng.net, proxy
+host-suffix, hisilicon.com, proxy
+host-suffix, hisilicon.com.cn, proxy
+host-suffix, huaweiapaas.com, proxy
+host-suffix, mindspore.cn, proxy
+host-suffix, owsgo.com, proxy
+host-suffix, saasops.tech, proxy
+host-suffix, teleows.com, proxy

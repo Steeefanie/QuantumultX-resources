@@ -1,0 +1,40 @@
+# 名称：amazon-primevideo；原始分类：primevideo
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：Amazon（亚马逊）
+# 服务说明：亚马逊的影视内容播放服务；具体内容可用性取决于账号、地区及服务授权。
+# 说明状态：人工登记，依据所列官方页面；不等同于对全部域名的归属核验
+# 说明依据：https://www.aboutamazon.com/what-we-do
+# 规则分组：amazon；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：24 条域名条件；示例：d1v5ir2lpwr8os.cloudfront.net、d22qjgkvxw22r6.cloudfront.net、d25xi40x97liuc.cloudfront.net。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/primevideo
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host, d1v5ir2lpwr8os.cloudfront.net, proxy
+host, d22qjgkvxw22r6.cloudfront.net, proxy
+host, d25xi40x97liuc.cloudfront.net, proxy
+host, d27xxe7juh1us6.cloudfront.net, proxy
+host, dmqdd6hw24ucf.cloudfront.net, proxy
+host, images-eu.ssl-images-amazon.com, proxy
+host, images-fe.ssl-images-amazon.com, proxy
+host, images-na.ssl-images-amazon.com, proxy
+host, msh.amazon.co.uk, proxy
+host, static.siege-amazon.com, proxy
+host-suffix, aiv-cdn.net, proxy
+host-suffix, amazonprimevideo.cn, proxy
+host-suffix, amazonprimevideo.com.cn, proxy
+host-suffix, amazonprimevideos.com, proxy
+host-suffix, amazonvideo.cc, proxy
+host-suffix, amazonvideo.com, proxy
+host-suffix, prime-video.com, proxy
+host-suffix, primevideo.cc, proxy
+host-suffix, primevideo.com, proxy
+host-suffix, primevideo.info, proxy
+host-suffix, primevideo.org, proxy
+host-suffix, primevideo.tv, proxy
+host-suffix, prod.service.minerva.devices.a2z.com, proxy
+host-suffix, pv-cdn.net, proxy

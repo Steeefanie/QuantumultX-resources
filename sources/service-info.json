@@ -1,0 +1,804 @@
+{
+  "microsoft": {
+    "label": "Microsoft（微软）",
+    "description": "微软相关服务的上游综合分类，含办公、云平台、开发及游戏等子分类；不等于微软所有产品的完整网络清单。",
+    "provider": "Microsoft（微软）",
+    "references": [
+      "https://www.microsoft.com/en-us/about"
+    ]
+  },
+  "google": {
+    "label": "Google（谷歌）",
+    "description": "谷歌相关搜索、开发工具及媒体服务的上游综合分类；与单独的产品子分类存在规则包含关系。",
+    "provider": "Google（谷歌）",
+    "references": [
+      "https://about.google/products/"
+    ]
+  },
+  "apple": {
+    "label": "Apple（苹果）",
+    "description": "苹果相关账号、设备生态、开发及媒体服务的上游综合分类；部分服务可单独指定策略。",
+    "provider": "Apple（苹果）",
+    "references": [
+      "https://www.apple.com/services/"
+    ]
+  },
+  "amazon": {
+    "label": "Amazon（亚马逊）",
+    "description": "亚马逊相关电商、云平台与数字内容服务的上游综合分类。",
+    "provider": "Amazon（亚马逊）",
+    "references": [
+      "https://www.aboutamazon.com/what-we-do"
+    ]
+  },
+  "meta": {
+    "label": "Meta",
+    "description": "Meta 相关社交与通信产品的上游综合分类，含 Facebook、Instagram、WhatsApp 等上游子分类。",
+    "provider": "Meta",
+    "references": [
+      "https://www.meta.com/about/"
+    ]
+  },
+  "tencent": {
+    "label": "Tencent（腾讯）",
+    "description": "腾讯相关云平台、开发及内容服务的上游综合分类；各子分类的包含关系以快照为准。",
+    "provider": "Tencent（腾讯）",
+    "references": [
+      "https://www.tencent.com/what-we-create/"
+    ]
+  },
+  "alibaba": {
+    "label": "Alibaba（阿里巴巴）",
+    "description": "阿里巴巴相关电商、云平台及生活服务的上游综合分类；规则引用不替代实际运营主体核验。",
+    "provider": "Alibaba（阿里巴巴）",
+    "references": [
+      "https://www.alibabagroup.com/en-US/about-alibaba"
+    ]
+  },
+  "bytedance": {
+    "label": "ByteDance（字节跳动）",
+    "description": "字节跳动相关内容、协作及 AI 服务的上游综合分类，包含多个可独立选择的产品分类。",
+    "provider": "ByteDance（字节跳动）",
+    "references": [
+      "https://www.bytedance.com/en/"
+    ]
+  },
+  "sony": {
+    "label": "Sony（索尼）",
+    "description": "索尼相关游戏及影视服务的上游综合分类。",
+    "provider": "Sony（索尼）",
+    "references": [
+      "https://www.sony.com/en/SonyInfo/CorporateInfo/"
+    ]
+  },
+  "mozilla": {
+    "label": "Mozilla",
+    "description": "Firefox 浏览器及相关开放网络产品、开发文档服务的上游综合分类。",
+    "provider": "Mozilla",
+    "references": [
+      "https://www.mozilla.org/en-US/about/"
+    ]
+  },
+  "adobe": {
+    "label": "Adobe（奥多比）",
+    "description": "Adobe 创意设计、PDF 文档和数字体验产品相关域名的上游综合分类。",
+    "provider": "Adobe（奥多比）",
+    "references": [
+      "https://www.adobe.com/about-adobe.html"
+    ]
+  },
+  "huawei": {
+    "label": "Huawei（华为）",
+    "description": "华为相关设备、开发和云服务的上游综合分类。",
+    "provider": "Huawei（华为）",
+    "references": [
+      "https://www.huawei.com/en/corporate-information"
+    ]
+  },
+  "cloudflare": {
+    "label": "Cloudflare",
+    "description": "Cloudflare 网络、安全及性能相关服务的上游综合分类；共享基础设施可能也被其他业务使用。",
+    "provider": "Cloudflare",
+    "references": [
+      "https://www.cloudflare.com/what-is-cloudflare/"
+    ]
+  },
+  "ea": {
+    "label": "Electronic Arts（艺电）",
+    "description": "Electronic Arts 游戏发行、账号及相关在线服务的上游分类。",
+    "provider": "Electronic Arts（艺电）",
+    "references": [
+      "https://www.ea.com/"
+    ]
+  },
+  "onedrive": {
+    "label": "OneDrive",
+    "description": "微软的文件云存储、分享及同步服务；域名可能同时用于网页、客户端与登录，不能仅凭本文件分离网页和同步流量。",
+    "provider": "Microsoft（微软）",
+    "references": [
+      "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage"
+    ]
+  },
+  "youtube": {
+    "label": "YouTube",
+    "description": "谷歌旗下视频平台相关域名，视频播放与账号登录可能涉及其他共享域名。",
+    "provider": "Google（谷歌）",
+    "references": [
+      "https://about.google/products/"
+    ]
+  },
+  "apple-music": {
+    "label": "Apple Music",
+    "description": "苹果的音乐订阅、播放及相关内容服务。",
+    "provider": "Apple（苹果）",
+    "references": [
+      "https://www.apple.com/services/"
+    ]
+  },
+  "apple-tvplus": {
+    "label": "Apple TV",
+    "description": "苹果的影视订阅与播放服务；上游仍使用 apple-tvplus 分类名。",
+    "provider": "Apple（苹果）",
+    "references": [
+      "https://www.apple.com/services/"
+    ]
+  },
+  "apple-podcasts": {
+    "label": "Apple Podcasts",
+    "description": "苹果的播客目录、内容访问和播放相关服务。",
+    "provider": "Apple（苹果）",
+    "references": [
+      "https://www.apple.com/services/"
+    ]
+  },
+  "aws": {
+    "label": "AWS",
+    "description": "Amazon Web Services 云计算平台相关域名，可能作为其他公司的基础设施；不要按平台名判断所有流量的业务归属。",
+    "provider": "Amazon（亚马逊）",
+    "references": [
+      "https://www.aboutamazon.com/what-we-do"
+    ]
+  },
+  "primevideo": {
+    "label": "Prime Video",
+    "description": "亚马逊的影视内容播放服务；具体内容可用性取决于账号、地区及服务授权。",
+    "provider": "Amazon（亚马逊）",
+    "references": [
+      "https://www.aboutamazon.com/what-we-do"
+    ]
+  },
+  "azure": {
+    "label": "azure",
+    "description": "Azure 云平台相关接口与服务；共享云基础设施不等于某个单一业务。"
+  },
+  "bing": {
+    "label": "bing",
+    "description": "Bing 搜索及相关接口；与其他微软分类可能存在重叠。"
+  },
+  "github": {
+    "label": "github",
+    "description": "GitHub 代码托管与开发协作平台，上游还引用 Copilot 与 npm 子分类。"
+  },
+  "github-copilot": {
+    "label": "github-copilot",
+    "description": "GitHub Copilot 编程辅助与相关 AI 接口。"
+  },
+  "npmjs": {
+    "label": "npmjs",
+    "description": "npm JavaScript 软件包分发与开发生态相关服务。"
+  },
+  "microsoft-dev": {
+    "label": "microsoft-dev",
+    "description": "微软开发工具、开发者资源和相关服务的上游分类。"
+  },
+  "microsoft-pki": {
+    "label": "microsoft-pki",
+    "description": "微软证书、公钥基础设施和证书验证相关域名；不建议随意阻断。"
+  },
+  "msn": {
+    "label": "msn",
+    "description": "MSN 新闻、门户和相关内容服务。"
+  },
+  "xbox": {
+    "label": "xbox",
+    "description": "Xbox 游戏平台、账号及在线服务；游戏内流量不一定全部由此覆盖。"
+  },
+  "bethesda": {
+    "label": "bethesda",
+    "description": "Bethesda 游戏发行与相关在线服务的上游分类。"
+  },
+  "mojang": {
+    "label": "mojang",
+    "description": "Mojang 及 Minecraft 相关服务。"
+  },
+  "forza": {
+    "label": "forza",
+    "description": "Forza 赛车游戏系列的相关在线服务。"
+  },
+  "android": {
+    "label": "android",
+    "description": "Android 系统生态及相关资源访问服务。"
+  },
+  "blogspot": {
+    "label": "blogspot",
+    "description": "Blogger/Blogspot 博客发布与访问服务。"
+  },
+  "firebase": {
+    "label": "firebase",
+    "description": "Firebase 应用开发后端与相关服务；也可能承载第三方应用的数据请求。"
+  },
+  "flutter": {
+    "label": "flutter",
+    "description": "Flutter 应用开发框架与开发资源。"
+  },
+  "dart": {
+    "label": "dart",
+    "description": "Dart 编程语言及开发资源。"
+  },
+  "golang": {
+    "label": "golang",
+    "description": "Go 编程语言、文档与软件包开发资源。"
+  },
+  "fastlane": {
+    "label": "fastlane",
+    "description": "移动应用构建、测试和发布自动化工具相关资源。"
+  },
+  "v8": {
+    "label": "v8",
+    "description": "V8 JavaScript 引擎相关开发资源。"
+  },
+  "polymer": {
+    "label": "polymer",
+    "description": "Polymer Web 开发项目与相关资源。"
+  },
+  "google-gemini": {
+    "label": "google-gemini",
+    "description": "Google 的 Gemini、DeepMind 与 Antigravity 相关域名；包含官方网络清单补充的明确 AI 接口，部分为 Google Cloud 共享端点。上游 Gemini 分类为兼容引用，不保证覆盖所有调用。",
+    "references": [
+      "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints"
+    ]
+  },
+  "google-deepmind": {
+    "label": "google-deepmind",
+    "description": "Google 的 Gemini、DeepMind 与 Antigravity 相关域名；包含官方网络清单补充的明确 AI 接口，部分为 Google Cloud 共享端点。上游 Gemini 分类为兼容引用，不保证覆盖所有调用。",
+    "references": [
+      "https://antigravity.google/docs/enterprise/#network-allowlists-and-mtls-endpoints"
+    ]
+  },
+  "google-play": {
+    "label": "google-play",
+    "description": "Google Play 应用商店及相关数字内容服务。"
+  },
+  "google-scholar": {
+    "label": "google-scholar",
+    "description": "Google Scholar（谷歌学术）文献检索服务。"
+  },
+  "googlefcm": {
+    "label": "googlefcm",
+    "description": "Firebase Cloud Messaging（FCM）应用消息推送服务；可能影响使用该通道的多个 App。"
+  },
+  "google-registry": {
+    "label": "google-registry",
+    "description": "Google Registry 域名注册管理相关服务；不是所有顶级域名的匹配清单。"
+  },
+  "google-trust-services": {
+    "label": "google-trust-services",
+    "description": "Google Trust Services 数字证书及验证相关域名；不建议随意阻断。"
+  },
+  "kaggle": {
+    "label": "kaggle",
+    "description": "Kaggle 数据科学竞赛、数据集与模型资源平台。"
+  },
+  "opensourceinsights": {
+    "label": "opensourceinsights",
+    "description": "Open Source Insights（deps.dev）开源依赖分析相关服务。"
+  },
+  "icloud": {
+    "label": "icloud",
+    "description": "iCloud 云存储、同步和苹果设备生态相关域名，多个应用可能共用这些地址。"
+  },
+  "icloudprivaterelay": {
+    "label": "icloudprivaterelay",
+    "description": "iCloud Private Relay（私密转送）相关域名；使用取决于账号、设备及地区支持。"
+  },
+  "apple-dev": {
+    "label": "apple-dev",
+    "description": "苹果开发者文档、开发工具与相关接口。"
+  },
+  "apple-intelligence": {
+    "label": "apple-intelligence",
+    "description": "Apple Intelligence 相关 AI 服务的上游分类。"
+  },
+  "apple-pki": {
+    "label": "apple-pki",
+    "description": "苹果证书和验证相关域名，不建议随意阻断。"
+  },
+  "apple-update": {
+    "label": "apple-update",
+    "description": "苹果系统及软件更新相关域名；是否允许更新由主配置策略决定。"
+  },
+  "itunes": {
+    "label": "itunes",
+    "description": "iTunes 数字内容与相关苹果服务。"
+  },
+  "swift": {
+    "label": "swift",
+    "description": "Swift 编程语言及开发资源。"
+  },
+  "beats": {
+    "label": "beats",
+    "description": "Beats 音频产品及相关服务。"
+  },
+  "imdb": {
+    "label": "imdb",
+    "description": "IMDb 影视资料、演职员信息与相关内容平台。"
+  },
+  "kindle": {
+    "label": "kindle",
+    "description": "Kindle 电子书、阅读设备及相关数字内容服务。"
+  },
+  "amazontrust": {
+    "label": "amazontrust",
+    "description": "Amazon Trust Services 证书及验证相关域名，不建议随意阻断。"
+  },
+  "aws-cn": {
+    "label": "aws-cn",
+    "description": "AWS 中国区域相关服务，上游将其与其他区域单独分类。"
+  },
+  "wholefoodsmarket": {
+    "label": "wholefoodsmarket",
+    "description": "Whole Foods Market 食品零售及相关线上服务。"
+  },
+  "facebook": {
+    "label": "facebook",
+    "description": "Facebook 社交平台及其内容分发相关域名。"
+  },
+  "facebook-dev": {
+    "label": "facebook-dev",
+    "description": "Facebook 开发者平台及相关接口。"
+  },
+  "instagram": {
+    "label": "instagram",
+    "description": "Instagram 图片、视频和社交内容服务。"
+  },
+  "messenger": {
+    "label": "messenger",
+    "description": "Messenger 即时通信相关服务。"
+  },
+  "oculus": {
+    "label": "oculus",
+    "description": "Oculus/Meta Quest 相关虚拟现实平台服务。"
+  },
+  "threads": {
+    "label": "threads",
+    "description": "Threads 社交内容服务。"
+  },
+  "whatsapp": {
+    "label": "whatsapp",
+    "description": "WhatsApp 即时通信服务。"
+  },
+  "qcloud": {
+    "label": "qcloud",
+    "description": "腾讯云相关服务，可能同时作为其他业务的基础设施。"
+  },
+  "coding": {
+    "label": "coding",
+    "description": "CODING 开发协作与代码管理相关服务。"
+  },
+  "cnb": {
+    "label": "cnb",
+    "description": "CNB 开发与代码协作相关服务。"
+  },
+  "dnspod": {
+    "label": "dnspod",
+    "description": "DNSPod 域名解析与管理相关服务。"
+  },
+  "discuz": {
+    "label": "discuz",
+    "description": "Discuz 论坛系统及相关服务。"
+  },
+  "sogou": {
+    "label": "sogou",
+    "description": "搜狗搜索与相关服务。"
+  },
+  "tencent-dev": {
+    "label": "tencent-dev",
+    "description": "腾讯开发者资源、接口与开发工具相关分类。"
+  },
+  "tencent-games": {
+    "label": "tencent-games",
+    "description": "腾讯游戏相关服务集合，包含的游戏子分类以上游快照为准。"
+  },
+  "tencent-tme": {
+    "label": "tencent-tme",
+    "description": "腾讯音乐相关内容平台集合；具体服务可按子分类选择。"
+  },
+  "yuewen": {
+    "label": "yuewen",
+    "description": "阅文相关数字阅读与内容服务。"
+  },
+  "webnovel": {
+    "label": "webnovel",
+    "description": "WebNovel 网络文学阅读服务。"
+  },
+  "kugou": {
+    "label": "kugou",
+    "description": "酷狗音乐播放及相关内容服务。"
+  },
+  "kuwo": {
+    "label": "kuwo",
+    "description": "酷我音乐播放及相关内容服务。"
+  },
+  "ximalaya": {
+    "label": "ximalaya",
+    "description": "喜马拉雅音频、播客与有声内容服务。"
+  },
+  "alibabacloud": {
+    "label": "alibabacloud",
+    "description": "Alibaba Cloud 国际服务相关域名。"
+  },
+  "aliyun": {
+    "label": "aliyun",
+    "description": "阿里云相关云计算、账号及开发接口。"
+  },
+  "aliyun-drive": {
+    "label": "aliyun-drive",
+    "description": "阿里云盘文件存储与分享服务。"
+  },
+  "amap": {
+    "label": "amap",
+    "description": "高德地图、定位与相关地理信息接口。"
+  },
+  "cainiao": {
+    "label": "cainiao",
+    "description": "菜鸟物流查询、配送与相关服务。"
+  },
+  "dingtalk": {
+    "label": "dingtalk",
+    "description": "钉钉办公、通信与协作服务。"
+  },
+  "eleme": {
+    "label": "eleme",
+    "description": "饿了么即时配送及生活服务相关域名。"
+  },
+  "shuqi": {
+    "label": "shuqi",
+    "description": "书旗阅读及相关数字内容服务。"
+  },
+  "teambition": {
+    "label": "teambition",
+    "description": "Teambition 项目管理与团队协作服务。"
+  },
+  "uc": {
+    "label": "uc",
+    "description": "UC 浏览器及相关服务。"
+  },
+  "umeng": {
+    "label": "umeng",
+    "description": "友盟统计与应用开发服务；共享统计接口可能被多个 App 使用。"
+  },
+  "youku": {
+    "label": "youku",
+    "description": "优酷视频与相关内容服务。"
+  },
+  "aligames": {
+    "label": "aligames",
+    "description": "阿里游戏相关服务的上游分类。"
+  },
+  "doubao": {
+    "label": "doubao",
+    "description": "豆包 AI 助手与相关模型应用服务。"
+  },
+  "douyin": {
+    "label": "douyin",
+    "description": "抖音短视频与相关内容服务。"
+  },
+  "tiktok": {
+    "label": "tiktok",
+    "description": "TikTok 短视频与相关内容服务；账号和地区限制不由规则本身解决。"
+  },
+  "feishu": {
+    "label": "feishu",
+    "description": "飞书团队通信、文档与办公协作服务。"
+  },
+  "lark": {
+    "label": "lark",
+    "description": "Lark/飞书协作相关域名的上游分类；包含关系以上游文件为准。"
+  },
+  "lark-global": {
+    "label": "lark-global",
+    "description": "Lark 国际服务相关分类。"
+  },
+  "fqnovel": {
+    "label": "fqnovel",
+    "description": "番茄小说及相关数字阅读服务。"
+  },
+  "juejin": {
+    "label": "juejin",
+    "description": "掘金技术社区和开发者内容服务。"
+  },
+  "trae": {
+    "label": "trae",
+    "description": "TRAE 编程辅助与开发工具相关服务。"
+  },
+  "volcengine": {
+    "label": "volcengine",
+    "description": "火山引擎云服务及相关开发接口。"
+  },
+  "dongchedi": {
+    "label": "dongchedi",
+    "description": "懂车帝汽车资讯及相关服务。"
+  },
+  "bytedance-ai-!cn": {
+    "label": "bytedance-ai-!cn",
+    "description": "上游划分的字节跳动境外 AI 相关域名集合。"
+  },
+  "dola": {
+    "label": "dola",
+    "description": "Dola 相关 AI 服务的上游分类，具体产品信息需结合官方页面进一步核实。"
+  },
+  "playstation": {
+    "label": "playstation",
+    "description": "PlayStation 游戏平台、商店及在线服务。"
+  },
+  "sonypictures": {
+    "label": "sonypictures",
+    "description": "Sony Pictures（索尼影视）相关内容服务。"
+  },
+  "jetbrains": {
+    "label": "jetbrains",
+    "description": "JetBrains 开发工具、账号与资源服务。"
+  },
+  "jetbrains-ai": {
+    "label": "jetbrains-ai",
+    "description": "JetBrains AI 编程辅助相关接口。"
+  },
+  "firefox": {
+    "label": "firefox",
+    "description": "Firefox 浏览器及相关账号、更新和资源服务。"
+  },
+  "mdn": {
+    "label": "mdn",
+    "description": "MDN Web Docs 开发者文档与相关服务。"
+  },
+  "adobe-activation": {
+    "label": "adobe-activation",
+    "description": "Adobe 软件授权、激活及相关接口分类；本规则不包含授权修改功能。"
+  },
+  "typekit": {
+    "label": "typekit",
+    "description": "Adobe Fonts/Typekit 字体分发与相关服务。"
+  },
+  "huawei-dev": {
+    "label": "huawei-dev",
+    "description": "华为开发者平台及相关接口。"
+  },
+  "huaweicloud": {
+    "label": "huaweicloud",
+    "description": "华为云计算和相关平台服务。"
+  },
+  "xiaomi": {
+    "label": "xiaomi",
+    "description": "小米设备生态、账号与相关互联网服务。"
+  },
+  "xiaomi-ai": {
+    "label": "xiaomi-ai",
+    "description": "小米 AI 相关服务的上游分类。"
+  },
+  "xiaomi-iot": {
+    "label": "xiaomi-iot",
+    "description": "小米物联网和智能家居相关域名。"
+  },
+  "cloudflare-cn": {
+    "label": "cloudflare-cn",
+    "description": "上游单独归类的 Cloudflare 中国相关服务。"
+  },
+  "cloudflare-ipfs": {
+    "label": "cloudflare-ipfs",
+    "description": "Cloudflare IPFS 网关相关服务。"
+  },
+  "yandex": {
+    "label": "yandex",
+    "description": "Yandex 搜索及相关互联网服务。"
+  },
+  "kinopoisk": {
+    "label": "kinopoisk",
+    "description": "Kinopoisk 影视资料与视频内容相关服务。"
+  },
+  "origin": {
+    "label": "origin",
+    "description": "Origin 游戏分发、登录和相关接口的上游分类；产品名称可能保留历史命名。"
+  },
+  "openai": {
+    "label": "OpenAI",
+    "provider": "OpenAI",
+    "description": "OpenAI 提供的 ChatGPT、模型 API 及相关资源服务；登录、支付或云平台可能依赖其他共享域名。",
+    "references": [
+      "https://openai.com/about/"
+    ]
+  },
+  "anthropic": {
+    "label": "Anthropic",
+    "provider": "Anthropic",
+    "description": "Anthropic 提供的 Claude AI 助手、模型 API 及相关开发服务。",
+    "references": [
+      "https://www.anthropic.com/company"
+    ]
+  },
+  "huggingface": {
+    "label": "huggingface",
+    "description": "Hugging Face 模型、数据集及机器学习应用托管相关服务。"
+  },
+  "deepseek": {
+    "label": "deepseek",
+    "description": "DeepSeek AI 助手和模型接口相关服务。"
+  },
+  "cursor": {
+    "label": "cursor",
+    "description": "Cursor AI 编程编辑器及相关接口。"
+  },
+  "perplexity": {
+    "label": "perplexity",
+    "description": "Perplexity AI 搜索与问答相关服务。"
+  },
+  "poe": {
+    "label": "poe",
+    "description": "Poe 多模型 AI 会话平台相关服务。"
+  },
+  "figma": {
+    "label": "figma",
+    "description": "Figma 协作设计、原型及相关资源服务。"
+  },
+  "anaconda": {
+    "label": "anaconda",
+    "description": "Anaconda Python 数据科学与软件包生态相关服务。"
+  },
+  "gog": {
+    "label": "gog",
+    "description": "GOG 游戏商店、下载及客户端相关服务。"
+  },
+  "cnki": {
+    "label": "cnki",
+    "description": "中国知网学术检索与内容访问相关域名；本规则不提供付费内容或机构访问授权。"
+  },
+  "wanfang": {
+    "label": "wanfang",
+    "description": "万方学术检索与内容访问相关域名；访问权限由服务方及机构授权决定。"
+  },
+  "elsevier": {
+    "label": "elsevier",
+    "description": "Elsevier（爱思唯尔）出版、期刊与科研信息相关服务。"
+  },
+  "springer": {
+    "label": "springer",
+    "description": "Springer 学术出版、期刊及相关科研内容服务。"
+  },
+  "ieee": {
+    "label": "ieee",
+    "description": "IEEE 电气电子工程及相关学术资源服务。"
+  },
+  "zotero": {
+    "label": "zotero",
+    "description": "Zotero 文献管理、同步与相关资源服务。"
+  },
+  "doi": {
+    "label": "doi",
+    "description": "DOI 数字对象标识符解析与相关文献跳转服务。"
+  },
+  "slack": {
+    "label": "slack",
+    "description": "Slack 团队通信与协作服务。"
+  },
+  "notion": {
+    "label": "notion",
+    "description": "Notion 笔记、文档与团队协作服务。"
+  },
+  "zoom": {
+    "label": "zoom",
+    "description": "Zoom 视频会议与通信服务。"
+  },
+  "atlassian": {
+    "label": "atlassian",
+    "description": "Atlassian 软件开发与团队协作产品相关服务。"
+  },
+  "docker": {
+    "label": "docker",
+    "description": "Docker 容器工具、镜像分发与开发服务。"
+  },
+  "gitlab": {
+    "label": "gitlab",
+    "description": "GitLab 代码托管、持续集成与开发协作服务。"
+  },
+  "python": {
+    "label": "python",
+    "description": "Python 编程语言、文档与开发资源。"
+  },
+  "steam": {
+    "label": "Valve / Steam",
+    "provider": "Valve / Steam",
+    "description": "Steam 游戏商店、社区、客户端和下载相关服务；游戏内流量与地区下载需求需另行判断。",
+    "references": [
+      "https://store.steampowered.com/about/"
+    ]
+  },
+  "epicgames": {
+    "label": "epicgames",
+    "description": "Epic Games 游戏商店、开发平台与相关服务。"
+  },
+  "netflix": {
+    "label": "Netflix",
+    "provider": "Netflix",
+    "description": "Netflix 影视及相关数字内容服务；规则不保证地区片库或账号可用。",
+    "references": [
+      "https://about.netflix.com/en"
+    ]
+  },
+  "spotify": {
+    "label": "Spotify",
+    "provider": "Spotify",
+    "description": "Spotify 音乐、播客及相关内容播放服务。",
+    "references": [
+      "https://www.spotify.com/us/about-us/contact/"
+    ]
+  },
+  "bilibili": {
+    "label": "bilibili",
+    "description": "哔哩哔哩视频、直播及相关内容服务。"
+  },
+  "telegram": {
+    "label": "telegram",
+    "description": "Telegram 即时通信相关服务。"
+  },
+  "linkedin": {
+    "label": "LinkedIn",
+    "provider": "LinkedIn",
+    "description": "LinkedIn 职业社交、招聘与企业服务相关域名。",
+    "references": [
+      "https://about.linkedin.com/"
+    ]
+  },
+  "baidu": {
+    "label": "baidu",
+    "description": "百度搜索及相关互联网服务的上游综合分类。"
+  },
+  "jd": {
+    "label": "jd",
+    "description": "京东电商、物流及相关线上服务。"
+  },
+  "meituan": {
+    "label": "meituan",
+    "description": "美团餐饮、配送及生活服务相关域名。"
+  },
+  "xiaohongshu": {
+    "label": "xiaohongshu",
+    "description": "小红书内容社区与相关资源服务。"
+  },
+  "zhihu": {
+    "label": "zhihu",
+    "description": "知乎问答、文章及相关内容服务。"
+  },
+  "hoyoverse": {
+    "label": "hoyoverse",
+    "description": "HoYoverse 游戏与社区相关服务，上游包括原神、崩坏系列及其他游戏域名。"
+  },
+  "disney": {
+    "label": "The Walt Disney Company（迪士尼）",
+    "provider": "The Walt Disney Company（迪士尼）",
+    "description": "迪士尼相关数字娱乐与流媒体域名的上游分类；请结合实际请求确认 Disney+ 等具体业务的覆盖。",
+    "references": [
+      "https://thewaltdisneycompany.com/about/"
+    ]
+  },
+  "wikimedia": {
+    "label": "Wikimedia Foundation（维基媒体基金会）",
+    "provider": "Wikimedia Foundation（维基媒体基金会）",
+    "description": "Wikipedia（维基百科）及维基媒体姊妹项目相关域名，含维基词典、维基数据、共享资源及相关基础设施；不包含所有使用 Wiki 技术的网站。",
+    "references": [
+      "https://wikimediafoundation.org/who-we-are/"
+    ]
+  },
+  "twitter": {
+    "label": "X（原 Twitter）",
+    "description": "X（原 Twitter）社交平台、短链接与媒体资源相关域名；上游分类名仍为 twitter，实际运营主体未单独核实。"
+  }
+}

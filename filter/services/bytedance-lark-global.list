@@ -1,0 +1,47 @@
+# 名称：bytedance-lark-global；原始分类：lark-global
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：按上游 ByteDance（字节跳动） 规则归组；具体运营主体未逐项核实
+# 服务说明：Lark 国际服务相关分类。
+# 说明状态：服务用途说明；运营主体未单独核实
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/lark-global
+# 规则分组：bytedance；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：31 条域名条件；示例：frontier-lark-lb-v3.lf.bytelb.net、lark-passport-qa-sg.net、lark.cn。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/lark-global
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, frontier-lark-lb-v3.lf.bytelb.net, proxy
+host-suffix, lark-passport-qa-sg.net, proxy
+host-suffix, lark.cn, proxy
+host-suffix, larkcloud.com, proxy
+host-suffix, larkcloud.net, proxy
+host-suffix, larkfn.com, proxy
+host-suffix, larkmeetings.cn, proxy
+host-suffix, larkmeetings.com, proxy
+host-suffix, larkoffice.com, proxy
+host-suffix, larkoffice.com.bytedns1.com, proxy
+host-suffix, larkofficeapp-boe.com, proxy
+host-suffix, larkofficeapp-pre.com, proxy
+host-suffix, larkofficeapp.com, proxy
+host-suffix, larkofficeboe.com, proxy
+host-suffix, larkofficecdn.com, proxy
+host-suffix, larkofficeimg.com, proxy
+host-suffix, larkofficepkg.com, proxy
+host-suffix, larkofficepre.com, proxy
+host-suffix, larkrooms.cn, proxy
+host-suffix, larkrooms.com, proxy
+host-suffix, larksuite-pre.com, proxy
+host-suffix, larksuite.com, proxy
+host-suffix, larksuite.com.ttdns1.com, proxy
+host-suffix, larksuite.com.ttdns2.com, proxy
+host-suffix, larksuitecdn.com, proxy
+host-suffix, larksuiteimg-boe.com, proxy
+host-suffix, larksuiteimg-pre.com, proxy
+host-suffix, larksuiteimg.com, proxy
+host-suffix, larkvc.com, proxy
+host-suffix, statuslarkoffice.com, proxy
+host-suffix, thelarkcloud.com, proxy

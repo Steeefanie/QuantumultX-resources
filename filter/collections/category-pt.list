@@ -1,0 +1,142 @@
+# 名称：category-pt；说明：上游综合分类
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：本文件为分类集合，不将集合名称解释为某家公司的运营主体。
+# 覆盖：127 条域名条件；包含的上游分类：category-pt。
+# 排除分类：未设置；排除专用条件不等于隔离共享登录或接口。
+# 排除边界：可能保留覆盖被排除子域名的宽泛父后缀；独立业务规则应优先匹配。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/category-pt
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；感谢原始规则作者与开源社区。
+# 本地修改：展开引用、合并去重并转换为 Quantumult X 域名规则；正文不引用外部文件。
+# 边界：关键词、正则及不合法条件未转换；共享根域名按原始分类处理。
+# 属性：广告属性条件排除。
+# 默认策略：proxy；可用 force-policy 覆盖。集合不保证覆盖所有网站或与其他集合互斥。
+# 状态：尚未完成真实设备业务验证；专用业务规则应优先于可能覆盖它的综合规则。
+host-suffix, 1ptba.com, proxy
+host-suffix, 52dic.vip, proxy
+host-suffix, 52pt.site, proxy
+host-suffix, animebytes.tv, proxy
+host-suffix, audiences.me, proxy
+host-suffix, avistaz.to, proxy
+host-suffix, beitai.pt, proxy
+host-suffix, beyond-hd.me, proxy
+host-suffix, bibliotik.me, proxy
+host-suffix, bitpt.cn, proxy
+host-suffix, blutopia.cc, proxy
+host-suffix, broadcasthe.net, proxy
+host-suffix, bt.byr.cn, proxy
+host-suffix, byr.pt, proxy
+host-suffix, carpt.net, proxy
+host-suffix, ccfbits.org, proxy
+host-suffix, chdbits.co, proxy
+host-suffix, chdbits.xyz, proxy
+host-suffix, chddiy.xyz, proxy
+host-suffix, cinefiles.info, proxy
+host-suffix, cinemaz.to, proxy
+host-suffix, cyanbug.net, proxy
+host-suffix, dicmusic.com, proxy
+host-suffix, digitalcore.club, proxy
+host-suffix, dmhy.best, proxy
+host-suffix, dmhy.org, proxy
+host-suffix, eastgame.org, proxy
+host-suffix, et8.org, proxy
+host-suffix, exoticaz.to, proxy
+host-suffix, filelist.io, proxy
+host-suffix, gazellegames.net, proxy
+host-suffix, greatposterwall.com, proxy
+host-suffix, haidan.video, proxy
+host-suffix, hdarea.club, proxy
+host-suffix, hdatmos.club, proxy
+host-suffix, hdbits.org, proxy
+host-suffix, hdchina.org, proxy
+host-suffix, hdcity.city, proxy
+host-suffix, hdcmct.org, proxy
+host-suffix, hddolby.com, proxy
+host-suffix, hdfans.org, proxy
+host-suffix, hdhome.org, proxy
+host-suffix, hdkyl.in, proxy
+host-suffix, hdkylin.top, proxy
+host-suffix, hdkylin.work, proxy
+host-suffix, hdmayi.com, proxy
+host-suffix, hdpt.xyz, proxy
+host-suffix, hdsky.me, proxy
+host-suffix, hdtime.org, proxy
+host-suffix, hdvideo.one, proxy
+host-suffix, hdzone.me, proxy
+host-suffix, hhan.club, proxy
+host-suffix, hhanclub.net, proxy
+host-suffix, hhanclub.top, proxy
+host-suffix, hitpt.com, proxy
+host-suffix, hudbt.hust.edu.cn, proxy
+host-suffix, ianon.app, proxy
+host-suffix, icc2022.com, proxy
+host-suffix, ilovelemonhd.me, proxy
+host-suffix, iptorrents.com, proxy
+host-suffix, jpopsuki.eu, proxy
+host-suffix, jptv.club, proxy
+host-suffix, keepfrds.com, proxy
+host-suffix, kufei.com, proxy
+host-suffix, kufei.org, proxy
+host-suffix, leaves.red, proxy
+host-suffix, lemonhd.club, proxy
+host-suffix, lemonhd.net, proxy
+host-suffix, lemonhd.org, proxy
+host-suffix, m-team.cc, proxy
+host-suffix, m-team.io, proxy
+host-suffix, morethantv.me, proxy
+host-suffix, mt.cc, proxy
+host-suffix, myanonamouse.net, proxy
+host-suffix, nanyangpt.com, proxy
+host-suffix, nebulance.io, proxy
+host-suffix, neu6.edu.cn, proxy
+host-suffix, nexushd.org, proxy
+host-suffix, nicept.net, proxy
+host-suffix, npupt.com, proxy
+host-suffix, open.cd, proxy
+host-suffix, orpheus.network, proxy
+host-suffix, ourbits.club, proxy
+host-suffix, pandapt.net, proxy
+host-suffix, passthepopcorn.me, proxy
+host-suffix, piggo.me, proxy
+host-suffix, privatehd.to, proxy
+host-suffix, pt.0ff.cc, proxy
+host-suffix, pt.btschool.club, proxy
+host-suffix, pt.eastgame.org, proxy
+host-suffix, pt.hd4fans.org, proxy
+host-suffix, pt.hdupt.com, proxy
+host-suffix, pt.nwsuaf6.edu.cn, proxy
+host-suffix, pt.sjtu.edu.cn, proxy
+host-suffix, pt.soulvoice.club, proxy
+host-suffix, pt.upxin.net, proxy
+host-suffix, pt.xauat.edu.cn, proxy
+host-suffix, ptcafe.club, proxy
+host-suffix, ptchdbits.co, proxy
+host-suffix, ptchina.org, proxy
+host-suffix, pterclub.com, proxy
+host-suffix, pterclub.net, proxy
+host-suffix, pthome.net, proxy
+host-suffix, ptsbao.club, proxy
+host-suffix, pttime.org, proxy
+host-suffix, pttime.top, proxy
+host-suffix, rainbowisland.co, proxy
+host-suffix, redacted.sh, proxy
+host-suffix, rousi.zip, proxy
+host-suffix, share.ilolicon.com, proxy
+host-suffix, sharkpt.net, proxy
+host-suffix, skyey2.com, proxy
+host-suffix, skyeysnow.com, proxy
+host-suffix, sportscult.org, proxy
+host-suffix, springsunday.net, proxy
+host-suffix, superbits.org, proxy
+host-suffix, tju.pt, proxy
+host-suffix, tjupt.org, proxy
+host-suffix, torrentleech.cc, proxy
+host-suffix, torrentleech.org, proxy
+host-suffix, totheglory.im, proxy
+host-suffix, ubits.club, proxy
+host-suffix, uhdbits.org, proxy
+host-suffix, ultrahd.net, proxy
+host-suffix, wintersakura.net, proxy
+host-suffix, zhuque.in, proxy
+host-suffix, zmpt.cc, proxy

@@ -1,0 +1,83 @@
+# 名称：ctyun；原始分类：ctyun
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 ctyun 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/ctyun
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：67 条域名条件；示例：bjctyiptv.cn、cqctyiptv.cn、ctacdn.cn。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/ctyun
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, bjctyiptv.cn, proxy
+host-suffix, cqctyiptv.cn, proxy
+host-suffix, ctacdn.cn, proxy
+host-suffix, ctadns.cn, proxy
+host-suffix, ctaigw.cn, proxy
+host-suffix, ctbcdn.com, proxy
+host-suffix, ctcdn.cn, proxy
+host-suffix, ctcdn.com.cn, proxy
+host-suffix, ctcdnov.net, proxy
+host-suffix, ctcloudzos.cn, proxy
+host-suffix, ctcns.cn, proxy
+host-suffix, ctdcdn.com, proxy
+host-suffix, ctdns.cn, proxy
+host-suffix, ctdns.com.cn, proxy
+host-suffix, ctdns.net, proxy
+host-suffix, ctecdn.cn, proxy
+host-suffix, ctecx.cn, proxy
+host-suffix, ctgcdn.com, proxy
+host-suffix, cthcdn.cn, proxy
+host-suffix, cthcdn.com, proxy
+host-suffix, cthcdn.net, proxy
+host-suffix, ctlcdn.cn, proxy
+host-suffix, ctlcdn.com, proxy
+host-suffix, ctlcdn.net, proxy
+host-suffix, ctmcdn.cn, proxy
+host-suffix, ctovcdn.com, proxy
+host-suffix, ctrender.com, proxy
+host-suffix, ctwcdn.cn, proxy
+host-suffix, ctxcdn.cn, proxy
+host-suffix, ctxcdn.com, proxy
+host-suffix, ctxcdn.net, proxy
+host-suffix, ctxirang.cn, proxy
+host-suffix, ctxirang.com, proxy
+host-suffix, ctycdn.cn, proxy
+host-suffix, ctycdn.net, proxy
+host-suffix, ctycdn.net.cn, proxy
+host-suffix, ctydoh.cn, proxy
+host-suffix, ctyecx.cn, proxy
+host-suffix, ctyiptv.cn, proxy
+host-suffix, ctyun.cn, proxy
+host-suffix, ctyun.com.cn, proxy
+host-suffix, ctyuncdn.cn, proxy
+host-suffix, ctyuncs.cn, proxy
+host-suffix, ctyuninner.com, proxy
+host-suffix, ctyunmds.cn, proxy
+host-suffix, ctyunwaf.cn, proxy
+host-suffix, ctyunwaf.com, proxy
+host-suffix, ctyunwaf1.com, proxy
+host-suffix, ctyunwaf3.cn, proxy
+host-suffix, ctyunxs.cn, proxy
+host-suffix, ctyunzos.cn, proxy
+host-suffix, ctzcdn.cn, proxy
+host-suffix, ctzcdn.com, proxy
+host-suffix, edgecloudx.cn, proxy
+host-suffix, faasapp.cn, proxy
+host-suffix, faasdev.cn, proxy
+host-suffix, fjctyiptv.cn, proxy
+host-suffix, gdctyiptv.cn, proxy
+host-suffix, gsctyiptv.cn, proxy
+host-suffix, gsjtyiptv.cn, proxy
+host-suffix, gzctyiptv.cn, proxy
+host-suffix, jsctyiptv.cn, proxy
+host-suffix, modelers.cn, proxy
+host-suffix, scctyiptv.cn, proxy
+host-suffix, snctyiptv.cn, proxy
+host-suffix, ynctyiptv.cn, proxy
+host-suffix, ynjtyiptv.cn, proxy

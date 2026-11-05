@@ -1,0 +1,216 @@
+{
+  "schema": 1,
+  "repository": "app2smile/rules",
+  "branch": "master",
+  "commit": "df6366a7024e0b3f0aa3510c5b791eea6f3cba89",
+  "checked_on": "2026-11-04",
+  "archive_sha256": "198f234d2ddd950971c1ab6dc03f1e01defa4466e764bc93b4a21b373a79c4e6",
+  "license": "MIT",
+  "license_path": "LICENSE.md",
+  "files": {
+    "LICENSE.md": "f833786adb858e82204ed85c604f844ec59d268d65485f8e6aa66ebcb69ebe5d",
+    "README.md": "b1523f04cdab094180f7d54c9fb13123510ab8ad104e8167a737f962e0db6fc3",
+    "js/bilibili-json.js": "748ad16a92532bde2c439a8b9975f465381d20e24328cf2a58ff3a2a27328d84",
+    "js/bilibili-proto.js": "70fa7cf0e3390da24db93bcfbf0c81c2af17b16f99012b483783f046f62c476e",
+    "js/qidian.js": "e599a063040ecb222ad5d4f8666157ef1ee31495aef6d87fb13453dce46f5c19",
+    "js/spotify-json.js": "41cf1074770cdef3948baa12ff4a8db9045d1cac888714c8b7e69909eb531bc9",
+    "js/spotify-proto.js": "2e6850e888d092905c766f0bbedc4b4afb9a712330970cc1265105d7fb4995d0",
+    "js/spotify-qx-header.js": "77267bc9bdcc8a2bc8eb1e70fffaeee0fb0c097a076bc9040b6c430acf051f3c",
+    "js/tieba-json.js": "91040c0d5bf906357829d8df344a3bdce00b59e6c24f255e54a2ef7a46d04c69",
+    "js/tieba-proto.js": "6015d737870b6d89c38a0181479ed715e07d11b5a2c3746f96f95e25835e8610",
+    "js/youtube.js": "366643a9bd121ed5d63003f1a5196e83c5b0ac5d427be63559f4770a32f52b39",
+    "js/zhihu.js": "f37f82608f476d08652035f4a0c2ec5576923962f554e69f5f53ec9f1b80fa4d",
+    "module/bilibili-qx.conf": "754551d06255a4518aec286d9b3c55a4b659e6b71e3bc954caba611d8c3c9c1b",
+    "module/qidian.conf": "d1a51bfec4d83cd9e9b2905084c627ee6c5cc652045d19d7a0c83e1a157d94d7",
+    "module/spotify.conf": "eec2c8e4004dd0b0b4753369a5bd108f02519e0597bdea64962ccc0d38cc612e",
+    "module/tieba-qx.conf": "4b8070ddc17a013d7cd38ac92550b3d9eade6660129fc27f01f06e3f260fb6f1",
+    "module/youtube-qx.conf": "4cb37284d2d56ded94e583a99a822b1f58bd3ddb7ce8efe8efb763092d307054",
+    "module/zhihu.conf": "c1a524d70e397a8c5b5b497798b6469a7df7d7fd0c226ea3e69f61cf9c8827cc",
+    "rule/bilibili-ad-qx.list": "dc29e1bacadcbc31592c1913db829b8b55580f90678bd871656869548e322178",
+    "rule/tieba-ad-qx.list": "365203242b581b40288935313cae7ccf7454c830e3d08226497004b4956bc58b",
+    "module/adsense.conf": "b2e18d8cd52b7080023d35f942809fc1ad3d93d6cc72e9deb7ca0f0f9f63b529",
+    "js/adsense.js": "171f97bb25c6cb29aeb134acdddca5c96b06e0e70a6e4f670914eba1c8f3b662",
+    "module/qqnews.conf": "d6b36c13cff7821f9000d019310d102c617f87c5e585a621d0e42f33b715517d",
+    "js/qq-news.js": "98b921f278eae3f4d99751a35c2b0c867b9716bd20713da14859f4033f8c7394",
+    "module/vgtime.conf": "3d8e201c8633b8c1b8370a135b3b36f47d06688aad2b852cff77a0d7c70e4596",
+    "js/vgtime.js": "489f711e41734a6c9a8749d79923c3dc3930c63239fc7e97cb3e25a29c9eafd3"
+  },
+  "modules": [
+    {
+      "id": "spotify",
+      "category": "vip",
+      "source": "module/spotify.conf",
+      "title": "Spotify VIP 解锁与净化",
+      "scripts": [
+        "js/spotify-qx-header.js",
+        "js/spotify-proto.js",
+        "js/spotify-json.js"
+      ],
+      "enabled": false,
+      "needs_mitm": true,
+      "notes": "上游限定 iOS 15 及以上；涉及广告与播放行为，不能提供超高音质；不保证付费权益或长期有效。",
+      "filters": [],
+      "description": "移除匹配请求中的 If-None-Match 缓存校验头，让对应接口重新返回响应内容。 / 解码并重编码匹配的协议响应，调整广告、播放行为及部分客户端账户属性字段。 / 将匹配请求中的 platform=iphone 改为 platform=ipad，并处理主机名后的 :443 写法。"
+    },
+    {
+      "id": "youtube-feed",
+      "category": "purify",
+      "source": "module/youtube-qx.conf",
+      "title": "YouTube 首页与推荐列表净化",
+      "scripts": [
+        "js/youtube.js"
+      ],
+      "enabled": false,
+      "needs_mitm": true,
+      "notes": "上游限定 iOS 15 及以上；处理首页与推荐列表，明确不包含贴片广告；不是旧 Maasea 模块的等效替换。",
+      "filters": [],
+      "description": "处理 browse / next 协议响应中的首页信息流和播放页推荐广告条目。"
+    },
+    {
+      "id": "zhihu",
+      "category": "purify",
+      "source": "module/zhihu.conf",
+      "title": "知乎 App 深度净化",
+      "scripts": [
+        "js/zhihu.js"
+      ],
+      "enabled": false,
+      "needs_mitm": true,
+      "notes": "上游功能说明及兼容性以原文为准；未做真实设备业务验证。",
+      "filters": [],
+      "description": "处理知乎开屏、推荐列表、问题回答列表及文章相关推荐接口中的广告字段。"
+    },
+    {
+      "id": "bilibili",
+      "category": "purify",
+      "source": "module/bilibili-qx.conf",
+      "title": "哔哩哔哩 App 深度净化",
+      "scripts": [
+        "js/bilibili-json.js",
+        "js/bilibili-proto.js"
+      ],
+      "enabled": false,
+      "needs_mitm": true,
+      "notes": "上游功能说明及兼容性以原文为准；未做真实设备业务验证。",
+      "filters": [
+        "rule/bilibili-ad-qx.list"
+      ],
+      "description": "处理开屏、首页推荐及部分导航字段，过滤源代码列出的广告卡片或推广入口。 / 解码并重编码匹配的二进制协议响应，处理动态、视频详情等接口中的广告与推广字段。"
+    },
+    {
+      "id": "tieba",
+      "category": "purify",
+      "source": "module/tieba-qx.conf",
+      "title": "百度贴吧 App 深度净化",
+      "scripts": [
+        "js/tieba-json.js",
+        "js/tieba-proto.js"
+      ],
+      "enabled": false,
+      "needs_mitm": true,
+      "notes": "上游功能说明及兼容性以原文为准；未做真实设备业务验证。",
+      "filters": [
+        "rule/tieba-ad-qx.list"
+      ],
+      "description": "处理开屏、帖子列表、详情、看图模式及部分广告配置字段。 / 处理匹配二进制接口中的帖子列表、详情及广告相关字段。"
+    },
+    {
+      "id": "qidian",
+      "category": "purify",
+      "source": "module/qidian.conf",
+      "title": "起点读书 App 深度净化",
+      "scripts": [
+        "js/qidian.js"
+      ],
+      "enabled": false,
+      "needs_mitm": true,
+      "notes": "上游功能说明及兼容性以原文为准；未做真实设备业务验证。",
+      "filters": [],
+      "description": "处理起点阅读匹配接口中的开屏、活动入口、书架及书城推广字段。"
+    },
+    {
+      "id": "ad-sdk",
+      "category": "purify",
+      "source": "module/adsense.conf",
+      "title": "四大广告联盟 SDK 净化",
+      "scripts": [
+        "js/adsense.js"
+      ],
+      "enabled": false,
+      "needs_mitm": true,
+      "notes": "按上游说明选择对应 App 版本；游戏时光信息流处理可能需要配合广告联盟模块；未完成设备验证。",
+      "filters": [],
+      "description": "处理穿山甲、腾讯优量汇、快手联盟匹配接口的返回码与填充状态，使对应广告不下发。"
+    },
+    {
+      "id": "qq-news",
+      "category": "purify",
+      "source": "module/qqnews.conf",
+      "title": "腾讯新闻 App 深度净化",
+      "scripts": [
+        "js/qq-news.js"
+      ],
+      "enabled": false,
+      "needs_mitm": true,
+      "notes": "按上游说明选择对应 App 版本；游戏时光信息流处理可能需要配合广告联盟模块；未完成设备验证。",
+      "filters": [],
+      "description": "清理开屏及新闻列表响应中的 adList、广告组件等字段。"
+    },
+    {
+      "id": "vgtime",
+      "category": "purify",
+      "source": "module/vgtime.conf",
+      "title": "游戏时光 App 开屏净化",
+      "scripts": [
+        "js/vgtime.js"
+      ],
+      "enabled": false,
+      "needs_mitm": false,
+      "notes": "按上游说明选择对应 App 版本；游戏时光信息流处理可能需要配合广告联盟模块；未完成设备验证。",
+      "filters": [],
+      "description": "将游戏时光初始化响应中的 data.ad 置空，处理对应开屏广告。"
+    }
+  ],
+  "third_party_licenses": [
+    {
+      "path": "sources/third-party-licenses/protobufjs-BSD-3-Clause.txt",
+      "component": "protobuf.js",
+      "reference": "https://github.com/protobufjs/protobuf.js/blob/master/LICENSE",
+      "sha256": "49d6a1c9a623784c61c6cb70f773f3457faceb1914a13c8560a9823b7631950c",
+      "checked_on": "2026-11-04",
+      "note": "Spotify 脚本中的 protobuf.js；捆绑版本未单独标注，保留来源许可"
+    },
+    {
+      "path": "sources/third-party-licenses/text-encoding-LICENSE.txt",
+      "component": "text-encoding",
+      "reference": "https://github.com/inexorabletash/text-encoding/blob/master/LICENSE.md",
+      "sha256": "d1c15dc8470e037b82da06a95b1a91558414a83625549c47dc3997a9985efa17",
+      "checked_on": "2026-11-04",
+      "note": "protobuf 脚本中的编码兼容代码；保留 Unlicense / Apache-2.0 双许可原文"
+    },
+    {
+      "path": "sources/third-party-licenses/protobuf-ts-Apache-2.0.txt",
+      "component": "protobuf-ts",
+      "reference": "https://github.com/timostamm/protobuf-ts/blob/v2.9.0/LICENSE",
+      "sha256": "5e3400b93bbb099e83e52bab885e7441750673c21f97988ca3f1240639b63283",
+      "checked_on": "2026-11-04",
+      "note": "YouTube / 哔哩哔哩注释为 2.9.0，贴吧注释为 2.10.0；运行库 Apache-2.0"
+    },
+    {
+      "path": "sources/third-party-licenses/maasea-sgmodule-Apache-2.0.txt",
+      "component": "Maasea/sgmodule",
+      "reference": "https://github.com/Maasea/sgmodule/blob/master/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "checked_on": "2026-11-05",
+      "note": "YouTube 贴片与协议响应脚本 youtube.response.js；保留上游 Apache-2.0 许可"
+    },
+    {
+      "path": "sources/third-party-licenses/blackmatrix7-GPL-2.0.txt",
+      "component": "blackmatrix7/ios_rule_script",
+      "reference": "https://github.com/blackmatrix7/ios_rule_script/blob/master/LICENSE",
+      "sha256": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "checked_on": "2026-11-05",
+      "note": "Redirect 重定向规则；保留上游 GPL-2.0 许可"
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+/*
+ * 名称：Xmind 客户端 Pro 状态调整
+ * 用途：处理 Xmind 设备与订阅校验接口响应，将客户端订阅状态字段设为有效。
+ * 处理阶段：响应体：JSON
+ * 使用前提：仅由 Xmind 重写规则调用；需要个人 MITM 证书及对应 hostname。
+ * 使用边界：仅调整客户端本地功能状态显示与导出限制，不包含云端账号同步权益。
+ * 本地说明日期：2026-11-05（非上游更新时间）
+ * 来源：https://github.com/fmz200/wool_scripts/blob/4b7830670baf235ed945085cb926dc499cf619e0/Scripts/xmind.js
+ * 来源许可：GPL-3.0；原作者署名及源代码保留在下方原文中，对应许可随目录保存。
+ * 本地修改：仅添加本段用途说明；下方保留上游正文，不把原始代码归为本项目原创。
+ */
+let obj = {};
+try {
+  obj = JSON.parse($response.body || "{}");
+} catch (e) {}
+
+obj.license = {
+  status: "sub",
+  expireTime: 4092599349000
+};
+obj._code = 200;
+obj.raw_data = "G0b6Wu5efcf/+093/V7+4/e4=";
+if (obj.sub) {
+  obj.sub.status = "sub";
+  obj.sub.expireTime = 4092599349000;
+}
+
+$done({ body: JSON.stringify(obj) });

@@ -1,0 +1,14 @@
+# 什么值得买界面净化 配套拦截；GPL-3.0，许可见 rewrite/licenses/fmz200-GPL-3.0.txt
+# 来源：fmz200/wool_scripts@4b7830670baf235ed945085cb926dc499cf619e0/QuantumultX/rewrite/split/partS/SMZDM.snippet
+# 从原重写拆出域名/IP 分流；仅在选择该模块时按需启用。
+host, aaid.uyunad.com, reject
+host, acs4baichuan.m.taobao.com, reject
+host, adashxgc.ut.taobao.com, reject
+host, analytics-api.smzdm.com, reject
+host, baichuan-sdk.alicdn.com, reject
+host, dgstatic.jd.com, reject
+host, msg.umengcloud.com, reject
+host, sec.umeng.com, reject
+host, ulogs.umeng.com, reject
+host, ynuf.aliapp.org, reject
+host-suffix, res-ga.smzdm.com, reject

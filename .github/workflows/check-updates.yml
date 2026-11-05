@@ -1,0 +1,26 @@
+name: 上游只读更新检查
+on:
+  schedule:
+    - cron: '23 2 * * 1'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  inspect:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: 获取仓库
+        uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with:
+          persist-credentials: false
+      - name: 比较上游提交及固定资源哈希
+        run: python3 tools/check_updates.py --report "$RUNNER_TEMP/upstream-check.md"
+      - name: 显示审阅报告
+        if: always()
+        run: |
+          if [ -f "$RUNNER_TEMP/upstream-check.md" ]; then
+            cat "$RUNNER_TEMP/upstream-check.md" >> "$GITHUB_STEP_SUMMARY"
+          else
+            echo '报告未生成，请查看检查步骤日志；不能视为上游没有变化。' >> "$GITHUB_STEP_SUMMARY"
+          fi

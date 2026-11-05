@@ -1,0 +1,567 @@
+{
+  "schema": 1,
+  "description": "额外重写来源及完整依赖；独立保留各来源许可，不改为根目录 MIT。",
+  "projects": [
+    {
+      "id": "fmz200",
+      "repository": "fmz200/wool_scripts",
+      "branch": "main",
+      "commit": "4b7830670baf235ed945085cb926dc499cf619e0",
+      "checked_on": "2026-11-04",
+      "source_directory": "sources/fmz200",
+      "license": "GPL-3.0",
+      "license_path": "LICENSE",
+      "files": {
+        "LICENSE": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+        "README.md": "326397aef384df338ad03cd7c342de645ad628b140a73d29a5d12484c1d4eb12",
+        "Scripts/cnftp.js": "4a95ce816c3e0bbaddf99e76c0f4b5ae3adb74318b9509e24ace40b675f11954",
+        "Scripts/quark.js": "a80632f4308d8971f2ee1b42cb1b2c3b72c90ec5619ed33849fcc0fcbf0f1bcc",
+        "Scripts/myBlockAds.js": "4cf62100424886068a5470daecec319e93ccd034c647d79a9daaa72bbbc341bb",
+        "Scripts/kuwo/kuwo.js": "d5119438070518dcd250dba9d678d85b063db97db3a52bdce2ae34760469ae8a",
+        "Scripts/caixin/caixinAd.js": "0366e7eb1ffc341c472304e526f93bf6104a1cda668c85f50e8798fe0f035e4d",
+        "Scripts/xiaohongshu/xiaohongshu.js": "318d89bce1117edb26a93b383804e195649ec4674a04efa9e3ddb4ef7f34b498",
+        "Scripts/jingdong/jingdong.js": "3e7cc975f8985a4d2dbdbdefc405d0e3e6c9c07bf3c5361da1ecae206b6c04a1",
+        "Scripts/smzdm/smzdm_ads.js": "8e8b27474b277b334b1b37b14b412330485140b0df1cb77112f66fa043c550db",
+        "Scripts/smzdm/Smzdm.js": "611b9fa8cb1022622d1df9a2952b0f0fa1a001069b5666cce7e09b87dbec8dff",
+        "Scripts/ithome/ithome.js": "afa7249bf854abe582d6c6b73e0297d24a8ee2221db0982c8cb4ce90bb0d4872",
+        "Scripts/zhihu/zhihu.js": "544fd88207b9d7005bb5cf427a1994028f91a95a65fde3db72a501983bff99f4",
+        "QuantumultX/rewrite/split/partJ/JD.com.snippet": "52908213a7a65e61dd7106741e6796fe27b0ad4cfaa4efb2866f1f6b4bd5ccce",
+        "QuantumultX/rewrite/split/partM/MeituanPowerBank.snippet": "03ada4f0bdc59169eca68dd47f760b5581811ee8430441f057e409de65f05a88",
+        "QuantumultX/rewrite/split/partM/Meituan.snippet": "92a24ed79e20275f149a1cabb5850ba0294677a2ba338a209a3e4b730f0f5fa7",
+        "QuantumultX/rewrite/split/partM/Meituan-MeituanWaimai.snippet": "2972b94abc87e08089a1ba2988b721268667b4669c7e12246bb20662960523ef",
+        "QuantumultX/rewrite/split/partM/MeituanZhongBao.snippet": "32f34e558612110e13de64e1a3b3ab345f343a18dd553b4c9c80fcd0a5bf94e8",
+        "QuantumultX/rewrite/split/partD/Douban.snippet": "2a3cde6cf414e57ee86604d7881ac5e786ac958fd440385743c5ffa2ef33230c",
+        "QuantumultX/rewrite/split/partD/DaZhiHui.snippet": "1d8dfa9ac614952198ed2b3f2bba56b5e1a4e054eaba502054ac296f20818069",
+        "QuantumultX/rewrite/split/partD/DouyuLive.snippet": "29f67fffe3cdc726f8fe50b1ddd623eda9066dc9c2a495b64ebcf162f85b998e",
+        "QuantumultX/rewrite/split/partC/CaiXin.snippet": "7a6bd91a6d6dce8050954107a0c2e70525ffe59ad246f3afff34267319fd28d5",
+        "QuantumultX/rewrite/split/partC/csdn.snippet": "29abfab4210f0b5087fb34645dd39640378abc39821bb1000bffe79b893bbaa3",
+        "QuantumultX/rewrite/split/partQ/QiDianReading.snippet": "bfbc6874320588e7114a6ba2b24891d2edf08b41fd003e0299cb612f93ac2c99",
+        "QuantumultX/rewrite/split/partQ/QQBrowser.snippet": "fd5d95f9574b018947c326d13dfc6d8e423c999fc167ac4bfaf2073711ee095b",
+        "QuantumultX/rewrite/split/partQ/QQMusic.snippet": "28e94b3c942efbb98843ae6f8caf762b3f092dfcc03fdb9b19f7c40823ec711c",
+        "QuantumultX/rewrite/split/part3/36kr.snippet": "d844ea5b56f50f02d3b2408ceaa63f604fff89791b66f8c7b4135819193e4f9a",
+        "QuantumultX/rewrite/split/partX/Ximalaya.snippet": "add003c1263f08d68cfdd9bea6b2b66e59fa3009d9aea425ab111e8eac23b3e1",
+        "QuantumultX/rewrite/split/partX/Xiaohongshu.snippet": "c9be7498a761c512fcc2f8bb2e5a2847238b39fc38cc7880ae3b45d6d7d34b70",
+        "QuantumultX/rewrite/split/partB/BaiduNetdisk.snippet": "298b3e0d8b83acab74fdcf139becc01582cbee03a4bd0af90d6c440d7e3def94",
+        "QuantumultX/rewrite/split/partB/BaiduTieba.snippet": "11757432e24c526f00c6611bbdedd1c11babdf47af09170e06e5dd53d6561402",
+        "QuantumultX/rewrite/split/partB/Baidu.snippet": "effd1d52c2e478e1fed937f6976b7c32e789a8c146bb52a0e75d75fbdf633906",
+        "QuantumultX/rewrite/split/partB/BilibiliComics.snippet": "1ca215020061c3c5fb2a2c33336b54dc842a4e6cfa618da10cd4781e912984fb",
+        "QuantumultX/rewrite/split/partE/Eleme.snippet": "f06d06b5eb53f56ae4e456df3fc899c89483a453e3bb932ca3966d06c6a25666",
+        "QuantumultX/rewrite/split/partK/KuGouMusic.snippet": "40c53d15c1be5ba05a25c9e2d26a551e81d7ab77d5357ef9aaf84df72e15e60e",
+        "QuantumultX/rewrite/split/partK/KuwoMusic.snippet": "9482813ef078d6a594eee165b8dc04b9c9b7ddb39a64687a177f632d24a3108c",
+        "QuantumultX/rewrite/split/partK/Quark.snippet": "9a7384b51ea988932042908a386886f5d71514c11dfbb8813e02a09b8b6d282b",
+        "QuantumultX/rewrite/split/partY/Youku.snippet": "6f503ee2429546edb90502e97ea100fe5cf328205d616b55b42c422ef69d5137",
+        "QuantumultX/rewrite/split/partW/WeChatUnlockLinkRestrict.snippet": "1357c7fae2bc4ddd1255e3fc216afadc202c7622c60025577194dcb08f99e1a0",
+        "QuantumultX/rewrite/split/partW/WeChatOfficialAccount.snippet": "a100f66b2ded1054e9d2b7bda29250fa9eaa73a690b94ab281b0a11a38b9f1c2",
+        "QuantumultX/rewrite/split/partW/NetEaseCloudMusic.snippet": "23cfabd30805e16c55260e9f3df5494a063382b70b16f0152a8cb4c7c4cabaca",
+        "QuantumultX/rewrite/split/partW/NetEaseMail.snippet": "11584c1ac0ba3db070ab9bad4eb50db2ec8c6baef2a682cb65197d8f5315a279",
+        "QuantumultX/rewrite/split/partP/PushPlusWeChatPushAd.snippet": "5b1b70bd8b8f0daee8027c55916e2599f14b08498b5e3acf4d69b87d02d48d7c",
+        "QuantumultX/rewrite/split/partP/Pinduoduo.snippet": "2313ba795e7a9840647bc1b09ab40a4cbcca1a7de1a1c6b004511206c65c3d41",
+        "QuantumultX/rewrite/split/partI/ITHome.snippet": "8f52be6208fb13dc59bdb2099bec815b62f0801349c55fa49e575d8f311712d9",
+        "QuantumultX/rewrite/split/part1/12306.snippet": "1266809b837132b04b890a2cc1e63f9137f88b02a31de8dba1990d97b199fec8",
+        "QuantumultX/rewrite/split/partZ/ChinaUnicom.snippet": "f56b7cee85dbe3b96930f8a7ecb657294dadc0f86765efab86c91d50e4264e12",
+        "QuantumultX/rewrite/split/partZ/Zhihu.snippet": "893b3c82b6ea7073acb25532c2febd2ea923d2ebdda561ac124b7e5de169aa88",
+        "QuantumultX/rewrite/split/partZ/ChinaMobile.snippet": "4298406d7e59a02294dc4ebe69e1f2298a80d0dff6f94123d646b2928dd18f69",
+        "QuantumultX/rewrite/split/partZ/ChinaTelecom.snippet": "6c062ca9d712c2923c4bba15f5b41ea8fa032ee21ae8fc9f5350bc6863b6fd98",
+        "QuantumultX/rewrite/split/partZ/ChinaMobileCloudDrive.snippet": "2bb9125de75bcec2d6b4d231e4d0d8a6a2c780c1d99ecdd044d75969004dc062",
+        "QuantumultX/rewrite/split/partS/SMZDM.snippet": "a29b544f448c6004d929bff057e55bb2b39394c7851aeccf21397d41439d324b",
+        "QuantumultX/rewrite/split/partT/TencentVideo.snippet": "609af4a61b1c1252e72fe5ef338c426c91f808b5cc1bfd31f3fa1303e3215fd2",
+        "QuantumultX/rewrite/split/partT/Taobao.snippet": "8827eac1cc5809905461177705af7198a9b5c26e11eaace809288ccd5130ea6e",
+        "QuantumultX/rewrite/split/partA/iQIYI.snippet": "b004d1bf3231afca4e11377779a297c1f9f79712d8a403f2d4a0ba44d3a00427",
+        "QuantumultX/rewrite/split/partH/HaoYouKuaiBao.snippet": "315f538048e6957809b44eac3e9031aceeef875c9b8cb383995887a0229c86d2",
+        "QuantumultX/rewrite/split/partH/HuyaLive.snippet": "2124685028ff5ba506ff15714a8b7069dd77dc1c711260515d0791dc56e88b60",
+        "Scripts/wyres.js": "b729d3f27bcb4992b7dc8d82ef7563af7b2a1380976f55975166f68defe3c393",
+        "Scripts/Wyy.js": "43c84c14478ec2a3b870b14c67c386591f4456ecedd1ffe6a57eb612f8738520",
+        "Scripts/UnblockURLinWeChat.js": "79098ac4d2eb7932c9b2b45ac7891469703626855e5d13ab4374af52cc48983e",
+        "Scripts/applet.js": "7bc20d06caec86eeb2f70ba817efe7341091ceba4dbdfb7a64dbe881e3fc04b3",
+        "Scripts/zhangshanggongjiao.js": "ee4e5a1ee5ce0817e0787578f7dd47874c65e9bd02bfda4b27527d4f6d59a44c",
+        "Scripts/youtube.response.js": "f98483d5f5017514f82502253c0db5ce2d4ffb7839887aa2cadc22666f5a7f12",
+        "QuantumultX/rewrite/split/partW/NetEaseVIP.snippet": "30c4255b69c61f2098f9f787b11fd94104aa3272336c7d9603b649e532896252",
+        "QuantumultX/rewrite/split/partW/WeChatApplet.snippet": "ce3a26c4cd11f418cd8d2ff4005ea85659fcbcf96460f83e8b156ffc5bcde445",
+        "QuantumultX/rewrite/split/partS/StartUpAds.snippet": "a6d8ada40f7413d9018ac81e7c6088492b71330601f1346f543c8a3d9fca2285",
+        "QuantumultX/rewrite/split/partY/YoutubeAds.snippet": "1832e8a4848a12957763e7141b6bfe73bf57211e17e16484149b614b2db28044",
+        "QuantumultX/rewrite/split/partY/YoutubeCC.snippet": "0341b82f4cbf7acf1237ecb674eca29084490a184d30764bc57637d1df46a1cd",
+        "QuantumultX/rewrite/split/partR/Redirect.snippet": "85311fcf996fbaf7279daba3ec4c3cff31d6035d333ae6b3c939d86039d16357",
+        "QuantumultX/rewrite/split/partW/WebAdBlock.snippet": "d729d6e6d3bdce404fa12b1f7b1d1c9042c060e29407de12fcb338c32604383f",
+        "Scripts/revenuecat.js": "ad0b6decf300ba05a7f912c375eea04fba19ccf206a1c85d394a0f4c45ca41f3",
+        "Scripts/xmind.js": "1914ffbd7e5405e5a26a98d7708f465ac106f8c51fa0b29b87528eb2ee13fd59",
+        "Scripts/meitu.js": "4eff18380816d1ea7dc52497e7e579c379bb8988378da80380bee2f95b4afbdd",
+        "Scripts/wps_camscanner.js": "724af0662732ba173857ad0de4c17336e065724907ef46ee9d1fbc0f3c4eb32c",
+        "Scripts/weibo.js": "94b6f89201ed898b3cd36b11f0e9d6c380e90049bf365bb4afc08f93a7965258",
+        "Scripts/amap.js": "699af3d957bddacd602d456c2cf120612d40c65b54939b12ca171457057ce8a1",
+        "QuantumultX/rewrite/split/partV/RevenueCat.snippet": "59b0e9a1015efa5993b57541e784dcca8d8f812f8c063ba6e26de27a0ab167f2",
+        "QuantumultX/rewrite/split/partV/Xmind.snippet": "049c5ae7030c14389bfdd3f813a34f2f51c9abbae297a2ba284ff9918a516f14",
+        "QuantumultX/rewrite/split/partV/Meitu.snippet": "44dc9af2fc637c502edcf0a85bbbe88ef95a5d427f6c3386866543977be5e111",
+        "QuantumultX/rewrite/split/partV/WpsCamScanner.snippet": "aba0918029c055b70605a00befbc611b528dcaaeb31133a9e9e9c7a196dbb54a",
+        "QuantumultX/rewrite/split/partP/Weibo.snippet": "e26ee5add368d2eb1bd6200062de2ba08f6c5134647b5c416b9f9b10a5548425",
+        "QuantumultX/rewrite/split/partP/Amap.snippet": "f5253c6111240ba5226272512bb95f3ae75b4541a413a02fa324caf9a75b8b47",
+        "QuantumultX/rewrite/split/partE/QSearch.snippet": "4201b4672564cdb944dab875296a1882a6c9800f1604eabba77bbc985d97ecf4"
+      },
+      "modules": [
+        {
+          "id": "12306",
+          "source": "QuantumultX/rewrite/split/part1/12306.snippet",
+          "title": "12306",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理12306的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "36kr",
+          "source": "QuantumultX/rewrite/split/part3/36kr.snippet",
+          "title": "36kr",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理36kr的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "i-qiyi",
+          "source": "QuantumultX/rewrite/split/partA/iQIYI.snippet",
+          "title": "爱奇艺",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理播放页开通会员提示、首页信息流广告、播放详情页等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "baidu",
+          "source": "QuantumultX/rewrite/split/partB/Baidu.snippet",
+          "title": "百度",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理百度的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "baidu-netdisk",
+          "source": "QuantumultX/rewrite/split/partB/BaiduNetdisk.snippet",
+          "title": "百度网盘弹窗与横幅净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理百度网盘的广告或推广接口；具体处理见下方保留原文。",
+          "category": "purify"
+        },
+        {
+          "id": "baidu-tieba",
+          "source": "QuantumultX/rewrite/split/partB/BaiduTieba.snippet",
+          "title": "百度贴吧",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理屏蔽域名dns查询等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "bilibili-comics",
+          "source": "QuantumultX/rewrite/split/partB/BilibiliComics.snippet",
+          "title": "哔哩哔哩漫画",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理哔哩哔哩漫画的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "caixin",
+          "source": "QuantumultX/rewrite/split/partC/CaiXin.snippet",
+          "title": "财新周刊文章净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理财新网的广告或推广接口；具体处理见下方保留原文。",
+          "category": "purify"
+        },
+        {
+          "id": "csdn",
+          "source": "QuantumultX/rewrite/split/partC/csdn.snippet",
+          "title": "CSDN",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理感谢【Jörgen Frecht】分享等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "da-zhi-hui",
+          "source": "QuantumultX/rewrite/split/partD/DaZhiHui.snippet",
+          "title": "大智慧",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理大智慧的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "douban",
+          "source": "QuantumultX/rewrite/split/partD/Douban.snippet",
+          "title": "豆瓣 App 界面净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理如开启可自行添加主机名 img*.douban.com, frodo.douban.com, erebor.douban.com等原文列出的接口。",
+          "category": "purify"
+        },
+        {
+          "id": "douyu-live",
+          "source": "QuantumultX/rewrite/split/partD/DouyuLive.snippet",
+          "title": "斗鱼直播",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理斗鱼直播的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "eleme",
+          "source": "QuantumultX/rewrite/split/partE/Eleme.snippet",
+          "title": "饿了么",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理开屏广告等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "hao-you-kuai-bao",
+          "source": "QuantumultX/rewrite/split/partH/HaoYouKuaiBao.snippet",
+          "title": "好游快爆",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理好游快爆的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "huya-live",
+          "source": "QuantumultX/rewrite/split/partH/HuyaLive.snippet",
+          "title": "虎牙直播",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理开屏广告等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "ithome",
+          "source": "QuantumultX/rewrite/split/partI/ITHome.snippet",
+          "title": "IT之家文章与信息流净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理移除 轮播图 置顶文章 信息流广告等原文列出的接口。",
+          "category": "purify"
+        },
+        {
+          "id": "jd",
+          "source": "QuantumultX/rewrite/split/partJ/JD.com.snippet",
+          "title": "京东 App 界面净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理屏蔽DNS、禁京东直播小窗等原文列出的接口。",
+          "category": "purify"
+        },
+        {
+          "id": "ku-gou-music",
+          "source": "QuantumultX/rewrite/split/partK/KuGouMusic.snippet",
+          "title": "酷狗音乐",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理酷狗音乐的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "kuwo-vip",
+          "source": "QuantumultX/rewrite/split/partK/KuwoMusic.snippet",
+          "title": "酷我音乐豪华 VIP+净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理广告、会员等原文列出的接口。",
+          "category": "vip"
+        },
+        {
+          "id": "quark",
+          "source": "QuantumultX/rewrite/split/partK/Quark.snippet",
+          "title": "夸克浏览器与网盘净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理夸克的广告或推广接口；具体处理见下方保留原文。",
+          "category": "purify"
+        },
+        {
+          "id": "meituan-meituan-waimai",
+          "source": "QuantumultX/rewrite/split/partM/Meituan-MeituanWaimai.snippet",
+          "title": "美团 & 美团外卖",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理美团 & 美团外卖的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "meituan",
+          "source": "QuantumultX/rewrite/split/partM/Meituan.snippet",
+          "title": "美团 App 界面净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理美团的广告或推广接口；具体处理见下方保留原文。",
+          "category": "purify"
+        },
+        {
+          "id": "meituan-power-bank",
+          "source": "QuantumultX/rewrite/split/partM/MeituanPowerBank.snippet",
+          "title": "美团充电宝小程序",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理美团充电宝小程序的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "meituan-zhong-bao",
+          "source": "QuantumultX/rewrite/split/partM/MeituanZhongBao.snippet",
+          "title": "美团众包",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理美团众包的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "pinduoduo",
+          "source": "QuantumultX/rewrite/split/partP/Pinduoduo.snippet",
+          "title": "拼多多",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理多多买菜 开屏广告等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "push-plus-we-chat-push-ad",
+          "source": "QuantumultX/rewrite/split/partP/PushPlusWeChatPushAd.snippet",
+          "title": "PushPlus微信推送广告",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理屏蔽图片广告，但是还有css空白模块, 如开启可自行添加主机名、屏蔽广告推送模块，会把“打开小程序”也屏蔽等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "qqbrowser",
+          "source": "QuantumultX/rewrite/split/partQ/QQBrowser.snippet",
+          "title": "QQ浏览器",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理QQ浏览器的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "qqmusic",
+          "source": "QuantumultX/rewrite/split/partQ/QQMusic.snippet",
+          "title": "QQ音乐",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理QQ音乐的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "qidian",
+          "source": "QuantumultX/rewrite/split/partQ/QiDianReading.snippet",
+          "title": "起点读书",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理起点读书投票、章末免费领取章节卡等、我的界面及活动按钮、我的界面内测推广等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "smzdm",
+          "source": "QuantumultX/rewrite/split/partS/SMZDM.snippet",
+          "title": "什么值得买界面净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理感谢【怎么肥事】分享等原文列出的接口。",
+          "category": "purify"
+        },
+        {
+          "id": "taobao",
+          "source": "QuantumultX/rewrite/split/partT/Taobao.snippet",
+          "title": "淘宝 App 界面净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理host-suffix, ai.m.taobao.com, reject等原文列出的接口。",
+          "category": "purify"
+        },
+        {
+          "id": "tencent-video",
+          "source": "QuantumultX/rewrite/split/partT/TencentVideo.snippet",
+          "title": "腾讯视频",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理腾讯视频的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "netease-svip",
+          "source": "QuantumultX/rewrite/split/partW/NetEaseCloudMusic.snippet",
+          "title": "网易云净化+本地黑胶 SVIP",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理网易云音乐的广告或推广接口；具体处理见下方保留原文。",
+          "category": "vip"
+        },
+        {
+          "id": "net-ease-mail",
+          "source": "QuantumultX/rewrite/split/partW/NetEaseMail.snippet",
+          "title": "网易邮箱",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理网易邮箱的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "wechat-mp",
+          "source": "QuantumultX/rewrite/split/partW/WeChatOfficialAccount.snippet",
+          "title": "微信公众号文章净化",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理公众号文章下方广告、微信公众号去除商品推广等原文列出的接口。",
+          "category": "purify"
+        },
+        {
+          "id": "wechat-unlock-url",
+          "source": "QuantumultX/rewrite/split/partW/WeChatUnlockLinkRestrict.snippet",
+          "title": "微信解锁被屏蔽的URL @zZPiglet",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理微信解除链接限制的广告或推广接口；具体处理见下方保留原文。",
+          "category": "enhance"
+        },
+        {
+          "id": "xiaohongshu",
+          "source": "QuantumultX/rewrite/split/partX/Xiaohongshu.snippet",
+          "title": "小红书深度净化+无水印存原图",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理惊喜弹窗、信息流、搜索页等原文列出的接口。",
+          "category": "purify"
+        },
+        {
+          "id": "ximalaya",
+          "source": "QuantumultX/rewrite/split/partX/Ximalaya.snippet",
+          "title": "喜马拉雅",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理喜马拉雅的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "youku",
+          "source": "QuantumultX/rewrite/split/partY/Youku.snippet",
+          "title": "优酷",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理host-suffix, gdt.qq.com, reject、host-suffix, sdk.e.qq.com, reject、host-suffix, mazu.m.qq.com, reject等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "china-mobile",
+          "source": "QuantumultX/rewrite/split/partZ/ChinaMobile.snippet",
+          "title": "中国移动",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理多个悬浮窗等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "china-mobile-cloud-drive",
+          "source": "QuantumultX/rewrite/split/partZ/ChinaMobileCloudDrive.snippet",
+          "title": "中国移动云盘",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理中国移动云盘的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "china-telecom",
+          "source": "QuantumultX/rewrite/split/partZ/ChinaTelecom.snippet",
+          "title": "中国电信",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理中国电信的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "china-unicom",
+          "source": "QuantumultX/rewrite/split/partZ/ChinaUnicom.snippet",
+          "title": "中国联通",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "按所列 URL 条件处理中国联通的广告或推广接口；具体处理见下方保留原文。",
+          "filter_only": true
+        },
+        {
+          "id": "zhihu",
+          "source": "QuantumultX/rewrite/split/partZ/Zhihu.snippet",
+          "title": "知乎",
+          "notes": "按来源原文收录；未完成真实设备验证。缺少可收录依赖的脚本行会隔离并在审查表注明。",
+          "description": "处理首页 悬浮图标,顶部横幅,开屏广告,关注页推荐,推荐信息流,热榜信息流,热榜直播,回答底部卡片、会员页面 弹窗,悬浮动图、我的页面 项目列表,会员卡片等原文列出的接口。",
+          "filter_only": true
+        },
+        {
+          "id": "netease-vip",
+          "source": "QuantumultX/rewrite/split/partW/NetEaseVIP.snippet",
+          "title": "网易云音乐 VIP",
+          "notes": "按来源原文收录；仅处理请求头试听权限，不改变黑胶外观或最高音质，可与网易云音乐净化模块配合使用。",
+          "description": "处理网易云音乐播放地址、歌单及搜索接口请求头以尝试解锁会员歌曲试听。",
+          "category": "vip"
+        },
+        {
+          "id": "wechat-applet",
+          "source": "QuantumultX/rewrite/split/partW/WeChatApplet.snippet",
+          "title": "微信小程序去激励广告净化",
+          "notes": "按来源原文收录；针对所列小程序接口与公众号图文广告生效，无法去除所有小程序通用 5 秒开屏。",
+          "description": "处理便利蜂、顺丰速运、掌上公交及 WordPress 类微信小程序与公众号图文广告接口。",
+          "category": "purify"
+        },
+        {
+          "id": "startup-ads",
+          "source": "QuantumultX/rewrite/split/partS/StartUpAds.snippet",
+          "title": "墨鱼通用去开屏 2.0",
+          "notes": "按来源原文收录；保留全部原生开屏拦截与本库已有脚本规则，另有配套拦截分流需按需启用。",
+          "description": "集中处理常见 App 的开屏广告、启动横幅与初始化推广接口。",
+          "category": "purify"
+        },
+        {
+          "id": "youtube",
+          "source": "QuantumultX/rewrite/split/partY/YoutubeAds.snippet",
+          "title": "油管视频与信息流深度净化 @Maasea",
+          "notes": "包含贴片广告、画中画与后台播放处理（脚本 Apache-2.0）；请勿与 app2smile 的 youtube.conf 同时启用。",
+          "description": "处理 YouTube 视频贴片广告、首页瀑布流、搜索页、播放页、短视频及后台画中画播放。",
+          "category": "purify"
+        },
+        {
+          "id": "youtube-subtitle",
+          "source": "QuantumultX/rewrite/split/partY/YoutubeCC.snippet",
+          "title": "油管字幕自动中译 @id77",
+          "notes": "默认将非中文字幕请求自动附加 zh-Hans 简体中文机翻参数，原生规则无需开启资源解析器。",
+          "description": "匹配 YouTube timedtext 外文字幕请求并自动机翻为简体中文（tlang=zh-Hans）。",
+          "category": "enhance"
+        },
+        {
+          "id": "url-redirect",
+          "source": "QuantumultX/rewrite/split/partR/Redirect.snippet",
+          "title": "神机重定向 @DivineEngine",
+          "notes": "纯 URL 302 重定向规则，无外部脚本依赖；将常见国内假冒软件站或特定域名重定向至官方地址。",
+          "description": "对 Google 本地域名、电商 HTTP 链接及常见国内软件渠道代理域名执行 302 重定向。",
+          "category": "enhance"
+        },
+        {
+          "id": "web-adblock",
+          "source": "QuantumultX/rewrite/split/partW/WebAdBlock.snippet",
+          "title": "影视网站与网页弹窗去广告",
+          "notes": "纯原生 jsonjq-response-body 与 reject-200 规则，无外部脚本依赖。",
+          "description": "清理常见伪装影视应用与网页接口中的启动公告、版本弹窗及广告配置字段。",
+          "category": "enhance"
+        },
+        {
+          "id": "revenuecat",
+          "category": "vip",
+          "source": "QuantumultX/rewrite/split/partV/RevenueCat.snippet",
+          "title": "RevenueCat 通用内购 VIP 解锁（No Fusion/Notability/Locket等）",
+          "notes": "适用于采用 RevenueCat 客户端校验的订阅制应用；服务端强校验功能不保证生效。",
+          "description": "拦截 RevenueCat 订阅校验接口并注入客户端本地 Pro/VIP 订阅与权益有效期。"
+        },
+        {
+          "id": "xmind",
+          "category": "vip",
+          "source": "QuantumultX/rewrite/split/partV/Xmind.snippet",
+          "title": "Xmind 思维导图 Pro 会员解锁",
+          "notes": "仅调整客户端本地 Pro 订阅状态与导出限制。",
+          "description": "处理 Xmind 客户端设备与订阅校验接口响应以解锁本地 Pro 会员功能。"
+        },
+        {
+          "id": "meitu",
+          "category": "vip",
+          "source": "QuantumultX/rewrite/split/partV/Meitu.snippet",
+          "title": "美图秀秀与 Wink 粉钻 VIP 解锁",
+          "notes": "仅调整客户端本地滤镜、修图与粉钻 VIP 状态标识，云端 AI 算力接口由服务端鉴权。",
+          "description": "处理美图秀秀及 Wink 用户与会员信息接口响应以开启客户端本地 VIP 标识。"
+        },
+        {
+          "id": "wps-camscanner",
+          "category": "vip",
+          "source": "QuantumultX/rewrite/split/partV/WpsCamScanner.snippet",
+          "title": "WPS 超级会员与扫描全能王 VIP 解锁",
+          "notes": "仅调整客户端本地超级会员/稻壳会员及扫描全能王高级账户状态，不含云盘空间扩容。",
+          "description": "处理 WPS Office 用户概览与扫描全能王资产查询接口以解锁本地会员特权。"
+        },
+        {
+          "id": "weibo",
+          "category": "purify",
+          "source": "QuantumultX/rewrite/split/partP/Weibo.snippet",
+          "title": "微博客户端深度净化 @ddgksf2013",
+          "notes": "过滤时间流推广微博、热推卡片与开屏广告。",
+          "description": "清理微博客户端时间流、卡片列表、搜索结果及开屏接口中的广告与推广内容。"
+        },
+        {
+          "id": "amap",
+          "category": "purify",
+          "source": "QuantumultX/rewrite/split/partP/Amap.snippet",
+          "title": "高德地图界面深度净化 @ddgksf2013",
+          "notes": "首次启用建议清理高德地图缓存；不影响定位与导航功能。",
+          "description": "清理高德地图开屏、首页底部推广卡片、语音包横幅及导航结束页广告。"
+        },
+        {
+          "id": "safari-qsearch",
+          "category": "enhance",
+          "source": "QuantumultX/rewrite/split/partE/QSearch.snippet",
+          "title": "Safari 超级搜索 Q-Search @ddgksf2013",
+          "notes": "需将 Safari 默认搜索引擎设为 DuckDuckGo；纯 302 重定向无脚本开销。",
+          "description": "在 Safari 地址栏输入 gh/yt/zh/bili/xh/db/wk/bd 加关键词直达对应站内搜索，无前缀默认转 Google。"
+        }
+      ]
+    }
+  ]
+}

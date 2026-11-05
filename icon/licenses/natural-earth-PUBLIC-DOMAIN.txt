@@ -1,0 +1,10 @@
+Natural Earth — public domain map data
+
+来源：https://www.naturalearthdata.com/about/terms-of-use/
+核对日期：2026-11-04
+
+Natural Earth 声明其矢量和栅格地图数据为公共领域数据，可使用和修改。
+本项目仅使用 ne_110m_land 的海陆轮廓，不使用行政边界。
+Made with Natural Earth.
+感谢 Tom Patterson、Nathaniel Vaughn Kelso 及所有贡献者。
+地球图标的投影、配色和渲染由本项目实现；此说明不把地图原始数据归为本项目原创。

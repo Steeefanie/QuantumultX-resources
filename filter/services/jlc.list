@@ -1,0 +1,59 @@
+# 名称：jlc；原始分类：jlc
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 jlc 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/jlc
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：43 条域名条件；示例：fa-part.com、forface3d.com、jlc-3dp.cn。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/jlc
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, fa-part.com, proxy
+host-suffix, forface3d.com, proxy
+host-suffix, jlc-3dp.cn, proxy
+host-suffix, jlc-3dp.com, proxy
+host-suffix, jlc-bbs.com, proxy
+host-suffix, jlc-cad.com, proxy
+host-suffix, jlc-cam.com, proxy
+host-suffix, jlc-cnc.com, proxy
+host-suffix, jlc-dfm.com, proxy
+host-suffix, jlc-drm.com, proxy
+host-suffix, jlc-ecad.com, proxy
+host-suffix, jlc-erp.com, proxy
+host-suffix, jlc-fpc.com, proxy
+host-suffix, jlc-gw.com, proxy
+host-suffix, jlc-jh.com, proxy
+host-suffix, jlc-layout.com, proxy
+host-suffix, jlc-pcb.com, proxy
+host-suffix, jlc-smt.com, proxy
+host-suffix, jlc-zh.com, proxy
+host-suffix, jlc.com, proxy
+host-suffix, jlc3dp.cn, proxy
+host-suffix, jlccad.com, proxy
+host-suffix, jlccam.com, proxy
+host-suffix, jlccnc.com, proxy
+host-suffix, jlcdfm.com, proxy
+host-suffix, jlcecad.com, proxy
+host-suffix, jlceda.cn, proxy
+host-suffix, jlceda.com, proxy
+host-suffix, jlcerp.com, proxy
+host-suffix, jlcfa.com, proxy
+host-suffix, jlcgroup.cn, proxy
+host-suffix, jlcops.com, proxy
+host-suffix, jlcsj.com, proxy
+host-suffix, jlcsmt.com, proxy
+host-suffix, lceda.cn, proxy
+host-suffix, lckfb.com, proxy
+host-suffix, oshwhub.com, proxy
+host-suffix, sanweihou.com, proxy
+host-suffix, sz-jlc.com, proxy
+host-suffix, szjlc.cn, proxy
+host-suffix, szlcsc.com, proxy
+host-suffix, zs-jlc.com, proxy
+host-suffix, zxhgroup.com, proxy

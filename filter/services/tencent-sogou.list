@@ -1,0 +1,48 @@
+# 名称：tencent-sogou；原始分类：sogou
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：按上游 Tencent（腾讯） 规则归组；具体运营主体未逐项核实
+# 服务说明：搜狗搜索与相关服务。
+# 说明状态：服务用途说明；运营主体未单独核实
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/sogou
+# 规则分组：tencent；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：32 条域名条件；示例：binglianhuajianzhan.com、ggoplay.com、ggowan.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/sogou
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, binglianhuajianzhan.com, proxy
+host-suffix, ggoplay.com, proxy
+host-suffix, ggowan.com, proxy
+host-suffix, go2map.com, proxy
+host-suffix, pinyin.cn, proxy
+host-suffix, qd.ink, proxy
+host-suffix, sg.cn, proxy
+host-suffix, sgtmos.com, proxy
+host-suffix, sgyeyou.com, proxy
+host-suffix, sgyouxi.com, proxy
+host-suffix, sogo.com, proxy
+host-suffix, sogou-inc.com, proxy
+host-suffix, sogou-op.org, proxy
+host-suffix, sogou.cn, proxy
+host-suffix, sogou.com, proxy
+host-suffix, sogou.com.cn, proxy
+host-suffix, sogou.net, proxy
+host-suffix, sogoucdn.com, proxy
+host-suffix, sogoucdndl.com, proxy
+host-suffix, sogouimecdn.com, proxy
+host-suffix, soso.com, proxy
+host-suffix, soso.com.cn, proxy
+host-suffix, sososnap.com, proxy
+host-suffix, teemo.cn, proxy
+host-suffix, wannianqingjianzhan.com, proxy
+host-suffix, xiangrikuijianzhan.com, proxy
+host-suffix, xiangrikuisite.com, proxy
+host-suffix, xinyan.cn, proxy
+host-suffix, yeyousg.com, proxy
+host-suffix, yidianliulan.cn, proxy
+host-suffix, yidianliulan.com, proxy
+host-suffix, yuweikuijianzhan.com, proxy

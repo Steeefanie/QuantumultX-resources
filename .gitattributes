@@ -1,0 +1,26 @@
+# 工具与生成文件固定 LF，便于 macOS、Linux、Windows 离线重建。
+*.py text eol=lf
+*.md text eol=lf
+*.yml text eol=lf
+*.json text eol=lf
+*.list text eol=lf
+*.conf text eol=lf
+*.txt text eol=lf
+
+# 原始来源及 CSV 按字节保存，保护锁定哈希与 CSV 的 BOM/CRLF。
+sources/v2fly/** -text
+sources/app2smile/** -text
+sources/local/** -text
+sources/third-party-licenses/** -text
+scripts/app2smile/** -text
+scripts/licenses/** -text
+metadata/*.csv -text
+icon/svg/*.svg -text
+icon/licenses/* -text
+
+# 地球原始地理数据按字节保存，保护来源哈希。
+icon/source/** -text
+
+# 额外重写来源与脚本按字节保存，保留原文及来源哈希。
+sources/fmz200/** -text
+scripts/fmz200/** -text

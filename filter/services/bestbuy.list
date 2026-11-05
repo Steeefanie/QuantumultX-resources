@@ -1,0 +1,98 @@
+# 名称：bestbuy；原始分类：bestbuy
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 bestbuy 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/bestbuy
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：82 条域名条件；示例：bby.com、bbycastatic.ca、bbycloud.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/bestbuy
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, bby.com, proxy
+host-suffix, bbycastatic.ca, proxy
+host-suffix, bbycloud.com, proxy
+host-suffix, bbycontent.com, proxy
+host-suffix, bbycontent.net, proxy
+host-suffix, bbyintl.com, proxy
+host-suffix, bbystatic.com, proxy
+host-suffix, bbyurl.us, proxy
+host-suffix, bestbhy.com, proxy
+host-suffix, bestbuy-audio.com, proxy
+host-suffix, bestbuy-communityrelations.com, proxy
+host-suffix, bestbuy-giftcard.info, proxy
+host-suffix, bestbuy-int.com, proxy
+host-suffix, bestbuy-jobs.com, proxy
+host-suffix, bestbuy.ca, proxy
+host-suffix, bestbuy.cn, proxy
+host-suffix, bestbuy.com, proxy
+host-suffix, bestbuy.com.cn, proxy
+host-suffix, bestbuy.com.mx, proxy
+host-suffix, bestbuy.info, proxy
+host-suffix, bestbuy24x7solutions.com, proxy
+host-suffix, bestbuybusiness.com, proxy
+host-suffix, bestbuybusinessadvantageaccount.com, proxy
+host-suffix, bestbuycanada.ca, proxy
+host-suffix, bestbuycanada.com, proxy
+host-suffix, bestbuycanadaltd.ca, proxy
+host-suffix, bestbuycharityclassic.com, proxy
+host-suffix, bestbuycoffeemakers.com, proxy
+host-suffix, bestbuyethics.com, proxy
+host-suffix, bestbuyforbusiness.ca, proxy
+host-suffix, bestbuygsm.com, proxy
+host-suffix, bestbuyideax.com, proxy
+host-suffix, bestbuyphotoworkshoptours.com, proxy
+host-suffix, bestbuyrewards.com, proxy
+host-suffix, bestbuyrewardzone.ca, proxy
+host-suffix, bestbuys.com, proxy
+host-suffix, bestbuysgeeksquad.com, proxy
+host-suffix, bestbuysolutions.net, proxy
+host-suffix, bestbuystores.com, proxy
+host-suffix, bestbuytradein.com, proxy
+host-suffix, bestbuyus.com, proxy
+host-suffix, besztbuy.com, proxy
+host-suffix, bextbuy.com, proxy
+host-suffix, bienvenuechezbestbuy.ca, proxy
+host-suffix, cowboom.com, proxy
+host-suffix, dealtree.org, proxy
+host-suffix, futureshop.ca, proxy
+host-suffix, geek-squad-support.com, proxy
+host-suffix, geek-squad.net, proxy
+host-suffix, geek-squad.org, proxy
+host-suffix, geek-squads.net, proxy
+host-suffix, geeksquad.ca, proxy
+host-suffix, geeksquad.cc, proxy
+host-suffix, geeksquad.com, proxy
+host-suffix, geeksquad.net, proxy
+host-suffix, geeksquad.tv, proxy
+host-suffix, geeksquadcares.com, proxy
+host-suffix, geeksquadcentral.com, proxy
+host-suffix, geeksquadforums.com, proxy
+host-suffix, geeksquadonline.com, proxy
+host-suffix, geeksquadprotectionplan.org, proxy
+host-suffix, geeksquadservices.org, proxy
+host-suffix, geeksquadwebroot.org, proxy
+host-suffix, gscanada.info, proxy
+host-suffix, gsccdn.com, proxy
+host-suffix, gslink.us, proxy
+host-suffix, initproducts.com, proxy
+host-suffix, magnoliaav.com.cn, proxy
+host-suffix, mybestbuy.com, proxy
+host-suffix, mybestbuyclaims.com, proxy
+host-suffix, myrewardzone.com, proxy
+host-suffix, myrz.com, proxy
+host-suffix, onlinegeeksquad.com, proxy
+host-suffix, pacifickitchenandhome.com, proxy
+host-suffix, rocketfishproducts.com, proxy
+host-suffix, techliquidators.com, proxy
+host-suffix, tiendabestbuy.com, proxy
+host-suffix, unbrandedproducts.com, proxy
+host-suffix, welcometobestbuy.ca, proxy
+host-suffix, wolfatbestbuy.com, proxy
+host-suffix, wolfatbestbuy.net, proxy
+host-suffix, www-bestbuystores.com, proxy

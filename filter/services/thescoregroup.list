@@ -1,0 +1,127 @@
+# 名称：thescoregroup；原始分类：thescoregroup
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 thescoregroup 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/thescoregroup
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：111 条域名条件；示例：18eighteen.com、40somethingmag.com、50plusmilfs.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/thescoregroup
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host-suffix, 18eighteen.com, proxy
+host-suffix, 40somethingmag.com, proxy
+host-suffix, 50plusmilfs.com, proxy
+host-suffix, 60plusmilfs.com, proxy
+host-suffix, analqts.com, proxy
+host-suffix, ashleysageellison.com, proxy
+host-suffix, asiancoochies.com, proxy
+host-suffix, autumn-jade.com, proxy
+host-suffix, beascoremodel.com, proxy
+host-suffix, bigboobalexya.com, proxy
+host-suffix, bigboobbundle.com, proxy
+host-suffix, bigboobdaria.com, proxy
+host-suffix, bigboobspov.com, proxy
+host-suffix, bigboobvanessay.com, proxy
+host-suffix, bigtitangelawhite.com, proxy
+host-suffix, bigtithitomi.com, proxy
+host-suffix, bigtithooker.com, proxy
+host-suffix, bigtitkatiethornton.com, proxy
+host-suffix, bigtitterrynova.com, proxy
+host-suffix, bigtitvenera.com, proxy
+host-suffix, blackandstacked.com, proxy
+host-suffix, bonedathome.com, proxy
+host-suffix, bootyliciousmag.com, proxy
+host-suffix, bustyangelique.com, proxy
+host-suffix, bustyarianna.com, proxy
+host-suffix, bustydanniashe.com, proxy
+host-suffix, bustydustystash.com, proxy
+host-suffix, bustyinescudna.com, proxy
+host-suffix, bustykellykay.com, proxy
+host-suffix, bustykerrymarie.com, proxy
+host-suffix, bustylezzies.com, proxy
+host-suffix, bustylornamorgan.com, proxy
+host-suffix, bustymerilyn.com, proxy
+host-suffix, bustyoldsluts.com, proxy
+host-suffix, bustysammieblack.com, proxy
+host-suffix, cherrybrady.com, proxy
+host-suffix, chicksonblackdicks.com, proxy
+host-suffix, chloesworld.com, proxy
+host-suffix, christymarks.com, proxy
+host-suffix, cock4stepmom.com, proxy
+host-suffix, codivorexxx.com, proxy
+host-suffix, creampieforgranny.com, proxy
+host-suffix, crystalgunnsworld.com, proxy
+host-suffix, daylenerio.com, proxy
+host-suffix, desiraesworld.com, proxy
+host-suffix, dianepoppos.com, proxy
+host-suffix, ebonythots.com, proxy
+host-suffix, eboobstore.com, proxy
+host-suffix, evanottyvideos.com, proxy
+host-suffix, feedherfuckher.com, proxy
+host-suffix, flatandfuckedmilfs.com, proxy
+host-suffix, getscorecash.com, proxy
+host-suffix, grannygetsafacial.com, proxy
+host-suffix, grannylovesbbc.com, proxy
+host-suffix, grannylovesyoungcock.com, proxy
+host-suffix, hairycoochies.com, proxy
+host-suffix, homealonemilfs.com, proxy
+host-suffix, hornyasianmilfs.com, proxy
+host-suffix, ibonedyourmom.com, proxy
+host-suffix, ifuckedtheboss.com, proxy
+host-suffix, jessicaturner.co.uk, proxy
+host-suffix, jessicaturner.com, proxy
+host-suffix, joanabliss.com, proxy
+host-suffix, juliamiles.com, proxy
+host-suffix, karinahart.com, proxy
+host-suffix, karlajames.com, proxy
+host-suffix, latinacoochies.com, proxy
+host-suffix, latinmommas.com, proxy
+host-suffix, leannecrowvideos.com, proxy
+host-suffix, legsex.com, proxy
+host-suffix, linseysworld.com, proxy
+host-suffix, megatitsminka.com, proxy
+host-suffix, mickybells.com, proxy
+host-suffix, milfbundle.com, proxy
+host-suffix, milfthreesomes.com, proxy
+host-suffix, milftugs.com, proxy
+host-suffix, millymarks.com, proxy
+host-suffix, mommystoytime.com, proxy
+host-suffix, nataliefiore.com, proxy
+host-suffix, naughtyfootjobs.com, proxy
+host-suffix, naughtymag.com, proxy
+host-suffix, naughtytugs.com, proxy
+host-suffix, nicolepeters.com, proxy
+host-suffix, oldhornymilfs.com, proxy
+host-suffix, pickinguppussy.com, proxy
+host-suffix, pornloser.com, proxy
+host-suffix, pornmegaload.com, proxy
+host-suffix, reneerossvideos.com, proxy
+host-suffix, roxired.com, proxy
+host-suffix, sarennasworld.com, proxy
+host-suffix, scoreclassics.com, proxy
+host-suffix, scoregroup.com, proxy
+host-suffix, scoreland.com, proxy
+host-suffix, scoreland2.com, proxy
+host-suffix, scorepass.com, proxy
+host-suffix, scoretv.tv, proxy
+host-suffix, scoreuniverse.com, proxy
+host-suffix, scorevideos.com, proxy
+host-suffix, sharizelvideos.com, proxy
+host-suffix, silversluts.com, proxy
+host-suffix, stacyvandenbergboobs.com, proxy
+host-suffix, susiewildin.com, proxy
+host-suffix, tawny-peaks.com, proxy
+host-suffix, tiffany-towers.com, proxy
+host-suffix, titsandtugs.com, proxy
+host-suffix, tnatryouts.com, proxy
+host-suffix, valoryirene.com, proxy
+host-suffix, xlgirls.com, proxy
+host-suffix, yourmomlovesanal.com, proxy
+host-suffix, yourmomsgotbigtits.com, proxy
+host-suffix, yourwifemymeat.com, proxy

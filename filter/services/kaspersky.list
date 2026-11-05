@@ -1,0 +1,148 @@
+# 名称：kaspersky；原始分类：kaspersky
+# 本地整理日期：2026-11-04（北京时间；非上游更新时间，离线重建不自动刷新）
+# 公司/组织：运营主体未核实，不根据分类名推断公司归属
+# 服务说明：上游 kaspersky 分类的域名汇总，用于对这组服务地址设置独立连接策略。
+# 说明状态：按上游分类生成基础说明，详细用途及主体待补充
+# 说明依据：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/kaspersky
+# 规则分组：无已确认的命名前缀父组；分组依据上游无条件 include，不代表股权或运营主体关系。
+# 上游直接引用：无直接 include 子分类
+# 覆盖：132 条域名条件；示例：activate.activation-v2.kaspersky.com、activation-v2.geo.kaspersky.com、activation-v2.kaspersky.com。不承诺覆盖该服务的全部连接。
+# 来源：https://github.com/v2fly/domain-list-community/tree/dd0d168c3b0dde4c92320f7857f5b2970f616361/data/kaspersky
+# 本地补充：0 个明确主机名；核对日期和官方依据见 sources/local-additions.json；上游快照未修改。
+# 原作者：V2Fly / V2Ray 社区贡献者；上游许可：MIT
+# 本项目角色：收集、整理、格式转换和校验；原始域名数据贡献归上游作者与社区。
+# 本地修改：展开引用、去重、分离广告属性；共享根域名按原始分类保留或隔离。
+# 默认策略：proxy；请用 force-policy 指定实际去向，文件名前缀不决定匹配顺序。
+# 状态：静态校验通过不代表真实设备业务验证通过。
+host, activate.activation-v2.kaspersky.com, proxy
+host, activation-v2.geo.kaspersky.com, proxy
+host, activation-v2.kaspersky.com, proxy
+host, crl.kaspersky.com, proxy
+host, dc1-cert.ksn.kaspersky-labs.com, proxy
+host, dc1-file.ksn.kaspersky-labs.com, proxy
+host, dc1-pp.ksn.kaspersky-labs.com, proxy
+host, dc1-st.ksn.kaspersky-labs.com, proxy
+host, dc1.ksn.kaspersky-labs.com, proxy
+host, dnl-00.geo.kaspersky.com, proxy
+host, dnl-01.geo.kaspersky.com, proxy
+host, dnl-02.geo.kaspersky.com, proxy
+host, dnl-03.geo.kaspersky.com, proxy
+host, dnl-04.geo.kaspersky.com, proxy
+host, dnl-05.geo.kaspersky.com, proxy
+host, dnl-06.geo.kaspersky.com, proxy
+host, dnl-07.geo.kaspersky.com, proxy
+host, dnl-08.geo.kaspersky.com, proxy
+host, dnl-09.geo.kaspersky.com, proxy
+host, dnl-10.geo.kaspersky.com, proxy
+host, dnl-11.geo.kaspersky.com, proxy
+host, dnl-12.geo.kaspersky.com, proxy
+host, dnl-13.geo.kaspersky.com, proxy
+host, dnl-14.geo.kaspersky.com, proxy
+host, dnl-15.geo.kaspersky.com, proxy
+host, dnl-16.geo.kaspersky.com, proxy
+host, dnl-17.geo.kaspersky.com, proxy
+host, dnl-18.geo.kaspersky.com, proxy
+host, dnl-19.geo.kaspersky.com, proxy
+host, edge.geo.kaspersky.com, proxy
+host, ksn-cinfo-geo.kaspersky-labs.com, proxy
+host, ksn-cinfo.geoksn.kaspersky.com, proxy
+host, ksn-crypto-info-geo.kaspersky-labs.com, proxy
+host, ksn-crypto-kas-geo.kaspersky-labs.com, proxy
+host, ksn-crypto-tcert-geo.kaspersky-labs.com, proxy
+host, ksn-crypto-url-geo.kaspersky-labs.com, proxy
+host, ksn-crypto-verdict-geo.kaspersky-labs.com, proxy
+host, ksn-crypto-wifiplus-geo.kaspersky-labs.com, proxy
+host, ksn-crypto-wifiplus.geoksn.kaspersky.com, proxy
+host, ksn-dc1-cert.geoksn.kaspersky.com, proxy
+host, ksn-dc1-file.geoksn.kaspersky.com, proxy
+host, ksn-dc1.geoksn.kaspersky.com, proxy
+host, ksn-file-geo.kaspersky-labs.com, proxy
+host, ksn-file.geoksn.kaspersky.com, proxy
+host, ksn-info-geo.kaspersky-labs.com, proxy
+host, ksn-info.geoksn.kaspersky.com, proxy
+host, ksn-kas.geoksn.kaspersky.com, proxy
+host, ksn-mdr.geoksn.kaspersky.com, proxy
+host, ksn-tcert-geo.kaspersky-labs.com, proxy
+host, ksn-tcert.geoksn.kaspersky.com, proxy
+host, ksn-url-geo.kaspersky-labs.com, proxy
+host, ksn-url.geoksn.kaspersky.com, proxy
+host, ksn-verdict-geo.kaspersky-labs.com, proxy
+host, ksn-verdict.geoksn.kaspersky.com, proxy
+host, mdr.ksn.kaspersky-labs.com, proxy
+host, p00.upd.kaspersky.com, proxy
+host, p01.upd.kaspersky.com, proxy
+host, p02.upd.kaspersky.com, proxy
+host, p03.upd.kaspersky.com, proxy
+host, p04.upd.kaspersky.com, proxy
+host, p05.upd.kaspersky.com, proxy
+host, p06.upd.kaspersky.com, proxy
+host, p07.upd.kaspersky.com, proxy
+host, p08.upd.kaspersky.com, proxy
+host, p09.upd.kaspersky.com, proxy
+host, p10.upd.kaspersky.com, proxy
+host, p11.upd.kaspersky.com, proxy
+host, p12.upd.kaspersky.com, proxy
+host, p13.upd.kaspersky.com, proxy
+host, p14.upd.kaspersky.com, proxy
+host, p15.upd.kaspersky.com, proxy
+host, p16.upd.kaspersky.com, proxy
+host, p17.upd.kaspersky.com, proxy
+host, p18.upd.kaspersky.com, proxy
+host, p19.upd.kaspersky.com, proxy
+host, refresh-bkg.activation-v2.kaspersky.com, proxy
+host, s00.upd.kaspersky.com, proxy
+host, s01.upd.kaspersky.com, proxy
+host, s02.upd.kaspersky.com, proxy
+host, s03.upd.kaspersky.com, proxy
+host, s04.upd.kaspersky.com, proxy
+host, s05.upd.kaspersky.com, proxy
+host, s06.upd.kaspersky.com, proxy
+host, s07.upd.kaspersky.com, proxy
+host, s08.upd.kaspersky.com, proxy
+host, s09.upd.kaspersky.com, proxy
+host, s10.upd.kaspersky.com, proxy
+host, s11.upd.kaspersky.com, proxy
+host, s12.upd.kaspersky.com, proxy
+host, s13.upd.kaspersky.com, proxy
+host, s14.upd.kaspersky.com, proxy
+host, s15.upd.kaspersky.com, proxy
+host, s16.upd.kaspersky.com, proxy
+host, s17.upd.kaspersky.com, proxy
+host, s18.upd.kaspersky.com, proxy
+host, s19.upd.kaspersky.com, proxy
+host-suffix, kaspersky-labs.com, proxy
+host-suffix, kaspersky.be, proxy
+host-suffix, kaspersky.ca, proxy
+host-suffix, kaspersky.co.in, proxy
+host-suffix, kaspersky.co.jp, proxy
+host-suffix, kaspersky.co.kr, proxy
+host-suffix, kaspersky.co.th, proxy
+host-suffix, kaspersky.co.uk, proxy
+host-suffix, kaspersky.co.za, proxy
+host-suffix, kaspersky.com, proxy
+host-suffix, kaspersky.com.au, proxy
+host-suffix, kaspersky.com.br, proxy
+host-suffix, kaspersky.com.cn, proxy
+host-suffix, kaspersky.com.hk, proxy
+host-suffix, kaspersky.com.pl, proxy
+host-suffix, kaspersky.com.tr, proxy
+host-suffix, kaspersky.com.tw, proxy
+host-suffix, kaspersky.com.vn, proxy
+host-suffix, kaspersky.cz, proxy
+host-suffix, kaspersky.de, proxy
+host-suffix, kaspersky.dk, proxy
+host-suffix, kaspersky.dz, proxy
+host-suffix, kaspersky.es, proxy
+host-suffix, kaspersky.fi, proxy
+host-suffix, kaspersky.fr, proxy
+host-suffix, kaspersky.gr, proxy
+host-suffix, kaspersky.it, proxy
+host-suffix, kaspersky.kz, proxy
+host-suffix, kaspersky.ma, proxy
+host-suffix, kaspersky.my, proxy
+host-suffix, kaspersky.nl, proxy
+host-suffix, kaspersky.pt, proxy
+host-suffix, kaspersky.ro, proxy
+host-suffix, kaspersky.rs, proxy
+host-suffix, kaspersky.ru, proxy
+host-suffix, kaspersky.se, proxy
