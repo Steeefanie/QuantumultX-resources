@@ -57,12 +57,12 @@ def render_full_config(profile, filter_text, annotation_date, rewrite_text='', c
             urls[resource['id']] = expected
     active = ', '.join(label for _, label, _, enabled in REGIONS if enabled)
     policies = [
-        f'static = Global, {active}, proxy, direct, img-url={RAW_ROOT}/icon/proxy.png',
+        f'static = Global, {active}, proxy, direct, img-url={RAW_ROOT}/icon/global.png',
         '# Global 对应原配置的“全球加速”总组（避免占用 Quantumult X 系统保留名 PROXY/proxy）。',
         '# 默认使用香港，可随时手动改选地区；首次导入后确认 Global 已勾选 Hong Kong。',
         '# Hong Kong 保留在首个候选；实际选中项以客户端界面为准，各地区内部自动按延迟择优。',
         '# 分流资源可直接选 reject / direct / Global，也可直接指定 Hong Kong 等地区组。',
-        '# 检测间隔 check-interval=600、延迟容差 tolerance=50；空闲组不持续检测。',
+        '# 检测间隔 check-interval=600、延迟容差 tolerance=20。',
         '# 检测受策略活动状态影响，不保证故障发生时立即切换，也不验证所有业务可用性。',
         f'# {sum(enabled for _, _, _, enabled in REGIONS)} 个地区默认全部定义，不保证空地区自动隐藏；没有候选的地区不要选择。',
         '# 不需要某地区时，注释该地区行，并从 Global 中移除同名候选。',
@@ -72,7 +72,7 @@ def render_full_config(profile, filter_text, annotation_date, rewrite_text='', c
     ]
     for code, label, expression, enabled in REGIONS:
         line = (f'url-latency-benchmark = {label}, server-tag-regex={region_regex(expression)}, '
-                'check-interval=600, tolerance=50, alive-checking=false, '
+                'check-interval=600, tolerance=20, '
                 f'img-url={RAW_ROOT}/icon/{code.lower()}.png')
         policies.extend([f'# {label} ({code})', line if enabled else '# ' + line])
     filter_body = filter_text.split('[filter_remote]\n', 1)[1].rstrip()
@@ -121,7 +121,7 @@ server_check_url = http://www.gstatic.com/generate_204
 # 沿用原配置的节点检测阈值：3000 毫秒为 3 秒，不是所有连接的超时设置。
 server_check_timeout = 3000
 # 整份配置的显示图标；策略组各自的图标由 img-url 设置。
-profile_img_url = {RAW_ROOT}/icon/proxy.png
+profile_img_url = {RAW_ROOT}/icon/global.png
 # 沿用原配置：关闭额外的 IP 地区查询入口。
 geo_location_checker = disabled
 # 沿用 Shawn 的资源解析器入口；本库原生 QX 规则继续使用 opt-parser=false。

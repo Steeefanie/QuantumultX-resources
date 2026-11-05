@@ -29,9 +29,9 @@ QuantumultX-resources/
 │   ├── app2smile/                  # 13 个重写配套脚本（MIT 许可）
 │   ├── fmz200/                     # 23 个重写配套脚本（GPL-3.0 许可）
 │   └── tools/                      # 4 个全局工具脚本（Shawn 资源解析器、流媒体解锁检测、BoxJS、UI 任务）
-├── icon/                       # 策略组图标（108×108 PNG）
-│   ├── proxy.png                   # Global 总组与配置封面蓝绿地球图标
-│   └── hk.png / tw.png / ...       # 13 个国家／地区正方形旗帜图标
+├── icon/                       # 策略组图标（108×108 圆形 RGBA PNG）
+│   ├── global.png                  # Global 总组与配置封面蓝绿地球图标
+│   └── hk.png / tw.png / ...       # 13 个国家／地区圆形旗帜图标
 ├── sources/                    # 上游原始快照、个人选择配置与版本哈希锁文件
 └── tools/                      # 规则构建、配置生成、域名查询与自动化测试工具
 ```
@@ -54,7 +54,7 @@ QuantumultX-resources/
 - **内置动作**：`direct`（直连）、`reject`（拒绝）、`proxy`（内置代理）。
 - **总代理组 `Global`**：手动选择地区（默认候选首位为 `Hong Kong`），切换 `Global` 时所有绑定 `Global` 的服务同步切换出口地区。
 - **地区策略组（默认启用 5 个主力地区 + 8 个注释备用）**：
-  - 默认启用：`Hong Kong`、`Taiwan`、`Japan`、`Singapore`、`United States`（各地区内部采用 `url-latency-benchmark`，间隔 600 秒、容差 50 毫秒自动按延迟择优）。
+  - 默认启用：`Hong Kong`、`Taiwan`、`Japan`、`Singapore`、`United States`（各地区内部采用 `url-latency-benchmark`，间隔 600 秒、容差 20 毫秒自动按延迟择优）。
   - 注释备用：`South Korea`、`United Kingdom`、`Germany`、`France`、`Canada`、`Australia`、`Turkey`、`Indonesia`（如需使用，取消对应行注释并加入 `Global` 候选即可）。
 - **多机场筛选**：见 [`examples/README.md`](examples/README.md#多机场筛选)。
 
@@ -138,4 +138,4 @@ python3 tools/build.py --refresh
 | [app2smile/rules](https://github.com/app2smile/rules) | 9 个重写模块与 13 个配套脚本（`scripts/app2smile/`） | [MIT](rewrite/licenses/app2smile-MIT.txt)（运行库见 [第三方说明](scripts/THIRD-PARTY-NOTICES.md)） |
 | [fmz200/wool_scripts](https://github.com/fmz200/wool_scripts) | 28 个重写模块、23 个配套脚本（`scripts/fmz200/`）及去广告分流 | [GPL-3.0](rewrite/licenses/fmz200-GPL-3.0.txt) |
 | [KOP-XIAO/QuantumultX](https://github.com/KOP-XIAO/QuantumultX) & [chavyleung/scripts](https://github.com/chavyleung/scripts) | 资源解析器、流媒体解锁检测、UI 任务与 BoxJS 脚本（`scripts/tools/`） | 保留原作者署名与固定版本哈希（[`sources/remote-resources.lock.json`](sources/remote-resources.lock.json)） |
-| [lipis/flag-icons](https://github.com/lipis/flag-icons) & [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) | `icon/` 下的 13 个国家／地区旗帜与 `proxy.png` 地球图标 | [MIT](icon/licenses/flag-icons-MIT.txt) & [Public Domain](icon/licenses/natural-earth-PUBLIC-DOMAIN.txt) |
+| [lipis/flag-icons](https://github.com/lipis/flag-icons) & [Natural Earth](https://www.naturalearthdata.com/about/terms-of-use/) | `icon/` 下的 13 个国家／地区旗帜与 `global.png` 地球图标 | [MIT](icon/licenses/flag-icons-MIT.txt) & [Public Domain](icon/licenses/natural-earth-PUBLIC-DOMAIN.txt) |

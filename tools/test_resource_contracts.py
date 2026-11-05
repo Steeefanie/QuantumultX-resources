@@ -45,7 +45,7 @@ class ConfigurationContractTests(unittest.TestCase):
         benchmarks=[x for x in policies if x.startswith('url-latency-benchmark = ')]
         self.assertEqual(len(benchmarks),sum(enabled for _,_,_,enabled in REGIONS))
         for line in benchmarks:
-            self.assertIn('tolerance=50,',line)
+            self.assertIn('tolerance=20,',line)
         self.assertFalse(any('自动选择' in x for x in policies))
 
     def test_rendered_resources_remain_enabled_and_sections_are_not_duplicated(self):

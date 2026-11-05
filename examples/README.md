@@ -33,10 +33,10 @@
 
 ```text
 机场订阅 → 带名称的节点 → 地区名称筛选 → Hong Kong / Taiwan / Japan / Singapore / United States / South Korea 等组
-服务规则 → PROXY → 手动选择某个地区组 → 在该地区内按检测延迟自动选择节点
+服务规则 → Global → 手动选择某个地区组 → 在该地区内按检测延迟自动选择节点
 ```
 
-`Global` 对应原配置的“全球加速”总组（避免占用 Quantumult X 系统保留名 `PROXY`/`proxy`），使用 `static` 手动选择地区，候选默认列入 **5 个主力地区**（`Hong Kong`、`Taiwan`、`Japan`、`Singapore`、`United States`）及内置 `proxy`、`direct`，其余 8 个地区保留注释备用；默认使用香港，可随时改选。香港保留在首个候选，首次导入后在客户端确认已勾选 `Hong Kong`，实际选中状态以界面为准。各地区组沿用 `url-latency-benchmark`，在筛选出的同地区节点中按检测延迟自动择优，`check-interval=600`、`tolerance=50`；`alive-checking=false` 表示不为空闲组持续检测。检测时机还受策略活动状态影响，不保证故障瞬间切换，也不保证低延迟节点能访问所有服务。
+`Global` 对应原配置的“全球加速”总组（避免占用 Quantumult X 系统保留名 `PROXY`/`proxy`），使用 `static` 手动选择地区，候选默认列入 **5 个主力地区**（`Hong Kong`、`Taiwan`、`Japan`、`Singapore`、`United States`）及内置 `proxy`、`direct`，其余 8 个地区保留注释备用；默认使用香港，可随时改选。香港保留在首个候选，首次导入后在客户端确认已勾选 `Hong Kong`，实际选中状态以界面为准。各地区组沿用 `url-latency-benchmark`，在筛选出的同地区节点中按检测延迟自动择优，`check-interval=600`、`tolerance=20`。检测时机还受策略活动状态影响，不保证故障瞬间切换，也不保证低延迟节点能访问所有服务。
 
 分流时可选择 `reject`（拒绝）、`direct`（直连）、`Global`（跟随总组当前所选地区），或直接选择 `Hong Kong`、`Japan` 等地区组。直接指定地区的资源独立于 `Global` 的地区选择。各地区在 `[policy]` 中分别定义筛选与测速，再由 `Global` 引用；这种引用形成总组与地区组的关系，配置文件不通过缩进表达层级。
 
