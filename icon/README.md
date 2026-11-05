@@ -21,6 +21,6 @@
 | Turkey | [Turkey.png](Turkey.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
 | Indonesia | [Indonesia.png](Indonesia.png) | [lipis/flag-icons](https://github.com/lipis/flag-icons)（[MIT 许可](licenses/flag-icons-MIT.txt)） |
 
-- 地区旗帜采用 1:1 圆形 108×108 RGBA PNG（圆外透明）。
+- 地区旗帜采用 1:1 圆角矩形 108×108 RGBA PNG（圆角外透明）。
 - `Global.png` 为正圆球体蓝海绿陆图标，圆外完全透明。
 - `direct` 与 `reject` 为 Quantumult X 内置动作，无需自定义策略组图标。

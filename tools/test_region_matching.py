@@ -31,5 +31,7 @@ class RegionNamesTests(unittest.TestCase):
             with self.subTest(name=name): self.assertEqual(groups(name),{expected})
 
     def test_status_items_and_ordinary_words_do_not_become_regions(self):
-        for name in ('Taipei 剩余流量','LosAngeles Quota','Vancouver Expire','candidate','shadow','judge'):
+        for name in ('Taipei 剩余流量','LosAngeles Quota','Vancouver Expire',
+                     '[BETA-1] HongKong [0.1x]','HongKong Beta 01','US beta',
+                     'candidate','shadow','judge'):
             with self.subTest(name=name): self.assertEqual(groups(name),set())
